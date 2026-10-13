@@ -27,7 +27,8 @@ imei-like	(?i)\b(?:imei|serial(?: number| no\.?)?|mac address)\b\D{0,10}[0-9A-F:
 windows-path	(?i)\b[A-Z]:[\\/](?:Users|Documents and Settings|Program Files)[\\/]
 unix-home-path	(?:^|[\s"'`(=])/(?:home|Users)/[\w.-]+/
 onedrive-path	(?i)OneDrive\s*-\s*\w
-email-address	[\w.+-]+@[\w-]+(?:\.[\w-]+)+
+# The author's own public contact address (site footer) is the one exception, at the user's request (13-10-2026).
+email-address	(?<![\w.+-])(?!hafifawwaz@hiroshima-u\.ac\.jp(?![\w.-]))[\w.+-]+@[\w-]+(?:\.[\w-]+)+
 github-token	\b(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9]{20,}|\bgithub_pat_[A-Za-z0-9_]{20,}
 aws-key	\bAKIA[0-9A-Z]{16}\b
 private-key	-----BEGIN [A-Z ]*PRIVATE KEY-----

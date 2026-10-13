@@ -1018,6 +1018,10 @@
    "target": "threads/calibration.md"
   },
   {
+   "source": "index.md",
+   "target": "threads/thesis-summary.md"
+  },
+  {
    "source": "notes/boundary-matching-analogy.md",
    "target": "analysis/candidate-density-bias.md"
   },

@@ -6,7 +6,9 @@ site_url: https://hafifawwaz.github.io/gps-assignment-reports/
 repo_url: https://github.com/hafifawwaz/gps-assignment-reports
 repo_name: gps-assignment-reports
 edit_uri: ""
-copyright: Hafiyyan Hilmy Fawwaz, Urban Transportation and Planning Lab, Hiroshima University
+copyright: >-
+  Hafiyyan Hilmy Fawwaz, Urban Transportation and Planning Lab, Hiroshima University
+  &middot; Contact me: <a href="mailto:hafifawwaz@hiroshima-u.ac.jp">hafifawwaz@hiroshima-u.ac.jp</a>
 
 docs_dir: ../content
 site_dir: ../docs

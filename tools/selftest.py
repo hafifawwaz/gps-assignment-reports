@@ -48,7 +48,15 @@ CLEAN = (
     "Grouped by (participant_id, stop_sequence), 907 stays, condition number 1,373.4.\n"
     "See `report/memory/29-07-2026/raw_density_final_model_refit.md` and Section 3.3.3.\n"
     "open_space stayed the stuck weak point    (0.40–0.47 range across every variant), at this point (3 of 5 folds).\n"
+    'Contact: <a href="mailto:hafifawwaz@hiroshima-u.ac.jp">hafifawwaz@hiroshima-u.ac.jp</a>\n'
 )
+# Addresses close to the one allowed contact address must still be blocked.
+EMAIL_NEAR_MISSES = {
+    "u.md": "write to x.hafifawwaz@hiroshima-u.ac.jp\n",
+    "v.md": "write to hafifawwaz@hiroshima-u.ac.jp.example.com\n",
+    "w.md": "write to hafifawwaz2@hiroshima-u.ac.jp\n",
+    "x.md": "write to someone@hiroshima-u.ac.jp\n",
+}
 
 
 def main() -> int:
@@ -59,6 +67,8 @@ def main() -> int:
         for name, content in list(BLOCK_CASES.values()) + list(WARN_CASES.values()):
             (root / name).write_text(content, encoding="utf-8")
         (root / "clean.md").write_text(CLEAN, encoding="utf-8")
+        for name, content in EMAIL_NEAR_MISSES.items():
+            (root / name).write_text(content, encoding="utf-8")
         findings = scanner.scan(root)
 
     for level, cases in (("BLOCK", BLOCK_CASES), ("WARN", WARN_CASES)):
@@ -67,6 +77,11 @@ def main() -> int:
             print(f"  {'ok  ' if hit else 'MISS'} {level:5} {rule:22} {name}")
             if not hit:
                 failures.append(rule)
+    for name in EMAIL_NEAR_MISSES:
+        hit = any(f.level == "BLOCK" and f.rule == "email-address" and f.path == name for f in findings)
+        print(f"  {'ok  ' if hit else 'MISS'} BLOCK email-address (near miss) {name}")
+        if not hit:
+            failures.append(f"email-address near miss {name}")
     false_pos = [f for f in findings if f.path == "clean.md" and f.level == "BLOCK"]
     print(f"  {'ok  ' if not false_pos else 'FAIL'} clean prose raises no blocking finding")
     for f in false_pos:

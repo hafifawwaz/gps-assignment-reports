@@ -8,7 +8,11 @@ hide:
 
 # Catch-up summary
 
-<p class="empty">No summary written yet. Add one in <code>report/catchup.md</code>.</p>
+The master's thesis is complete. Two things are in progress now:
+
+- **A methodological paper for *Computers, Environment and Urban Systems* (CEUS)**, in drafting. It presents the probabilistic framework for assigning GPS stay clusters to buildings, streets and open spaces under positional uncertainty, calibrated and validated on the 907-stay Hiroshima ground truth: the final twelve-parameter model reaches grouped CV accuracy 0.716 ± 0.076, beats Random Forest and XGBoost out of sample, and traces its street and open-space weakness to street segmentation density rather than to the GPS evidence. Start from [Thesis summary](threads/thesis-summary.md).
+- **A poster and a presentation for CSIS DAYS 2026**, in drafting.
+
 
 </div>
 

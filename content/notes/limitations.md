@@ -3,7 +3,7 @@ source: report/notes/limitations.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:59:39
+generated: 2026-10-13T17:38:15
 ---
 
 # Limitations
@@ -22,6 +22,6 @@ Part of [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md) · [Future work](future-work.md) · [Overfitting signature](overfitting-signature.md) · [Self-report form](self-report-form.md) · [Study area](study-area.md) · [Thesis draft recap](../progress/progress-25-07-2026.md)
+**Linked from** [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md) · [Future work](future-work.md) · [Overfitting signature](overfitting-signature.md) · [Self-report form](self-report-form.md) · [Study area](study-area.md)
 
 </div>

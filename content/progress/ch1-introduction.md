@@ -3,7 +3,7 @@ source: report/progress/ch1-introduction.md
 date: 13-10-2026
 kind: progress
 comments: true
-generated: 2026-10-13T16:59:39
+generated: 2026-10-13T17:38:15
 ---
 
 # Chapter 1: Introduction
@@ -18,6 +18,6 @@ Part of [Thesis summary](thesis-summary.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Motivation](../notes/motivation.md) · [Research questions](../notes/research-questions.md) · [Thesis draft recap](progress-25-07-2026.md) · [Thesis summary](thesis-summary.md)
+**Linked from** [Motivation](../notes/motivation.md) · [Research questions](../notes/research-questions.md) · [Thesis summary](thesis-summary.md)
 
 </div>

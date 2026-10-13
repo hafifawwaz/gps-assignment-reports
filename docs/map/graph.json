@@ -309,13 +309,6 @@
    "url": "../progress/progress-23-07-2026/"
   },
   {
-   "id": "progress/progress-25-07-2026.md",
-   "title": "Thesis draft recap",
-   "kind": "progress",
-   "date": "25-07-2026",
-   "url": "../progress/progress-25-07-2026/"
-  },
-  {
    "id": "progress/progress-29-07-2026.md",
    "title": "Does downsampling matter?",
    "kind": "progress",
@@ -1967,46 +1960,6 @@
    "target": "progress/progress-20-07-2026.md"
   },
   {
-   "source": "progress/progress-25-07-2026.md",
-   "target": "notes/contributions.md"
-  },
-  {
-   "source": "progress/progress-25-07-2026.md",
-   "target": "notes/future-work.md"
-  },
-  {
-   "source": "progress/progress-25-07-2026.md",
-   "target": "notes/limitations.md"
-  },
-  {
-   "source": "progress/progress-25-07-2026.md",
-   "target": "notes/overfitting-signature.md"
-  },
-  {
-   "source": "progress/progress-25-07-2026.md",
-   "target": "progress/ch1-introduction.md"
-  },
-  {
-   "source": "progress/progress-25-07-2026.md",
-   "target": "progress/ch3-data.md"
-  },
-  {
-   "source": "progress/progress-25-07-2026.md",
-   "target": "progress/ch4-framework.md"
-  },
-  {
-   "source": "progress/progress-25-07-2026.md",
-   "target": "progress/ch5-results.md"
-  },
-  {
-   "source": "progress/progress-25-07-2026.md",
-   "target": "progress/ch6-discussion.md"
-  },
-  {
-   "source": "progress/progress-25-07-2026.md",
-   "target": "progress/thesis-summary.md"
-  },
-  {
    "source": "progress/progress-29-07-2026.md",
    "target": "analysis/candidate-search-area.md"
   },
@@ -2089,10 +2042,6 @@
   {
    "source": "progress/thesis-summary.md",
    "target": "progress/progress-23-07-2026.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "progress/progress-25-07-2026.md"
   },
   {
    "source": "progress/thesis-summary.md",

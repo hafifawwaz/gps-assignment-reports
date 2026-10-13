@@ -3,7 +3,7 @@ source: report/progress/thesis-summary.md
 date: 13-10-2026
 kind: progress
 comments: true
-generated: 2026-10-13T16:59:39
+generated: 2026-10-13T17:38:15
 ---
 
 # Thesis summary
@@ -37,11 +37,11 @@ A GPS stay cluster rarely tells us which place a person visited: positional erro
 
 ## Dated updates
 
-[MNL model development](progress-19-07-2026.md) · [ML baseline](progress-20-07-2026.md) · [RQ1 rebuilt with grouped CV](progress-21-07-2026.md) · [RQ2 diagnostics and RQ3 ceiling check](progress-23-07-2026.md) · [Thesis draft recap](progress-25-07-2026.md) · [Does downsampling matter?](progress-29-07-2026.md)
+[MNL model development](progress-19-07-2026.md) · [ML baseline](progress-20-07-2026.md) · [RQ1 rebuilt with grouped CV](progress-21-07-2026.md) · [RQ2 diagnostics and RQ3 ceiling check](progress-23-07-2026.md) · [Does downsampling matter?](progress-29-07-2026.md)
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 1: Introduction](ch1-introduction.md) · [Chapter 2: Literature](ch2-literature.md) · [Chapter 3: Data and ground truth](ch3-data.md) · [Chapter 4: Framework](ch4-framework.md) · [Chapter 5: Results](ch5-results.md) · [Chapter 6: Discussion and conclusion](ch6-discussion.md) · [Thesis draft recap](progress-25-07-2026.md)
+**Linked from** [Chapter 1: Introduction](ch1-introduction.md) · [Chapter 2: Literature](ch2-literature.md) · [Chapter 3: Data and ground truth](ch3-data.md) · [Chapter 4: Framework](ch4-framework.md) · [Chapter 5: Results](ch5-results.md) · [Chapter 6: Discussion and conclusion](ch6-discussion.md)
 
 </div>

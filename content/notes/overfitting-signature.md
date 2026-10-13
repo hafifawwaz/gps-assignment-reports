@@ -3,7 +3,7 @@ source: report/notes/overfitting-signature.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:59:39
+generated: 2026-10-13T17:38:15
 ---
 
 # Overfitting signature
@@ -25,6 +25,6 @@ Answers [Research questions](research-questions.md) RQ3. Part of [Chapter 5: Res
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [Future work](future-work.md) · [Ground truth dataset](ground-truth-dataset.md) · [Limitations](limitations.md) · [ML ceiling check, row level](../analysis/ml-ceiling-row-level.md) · [Model 5: alternative-specific constants (rejected)](../analysis/model-5-asc-rejected.md) · [Research questions](research-questions.md) · [The f_distance² artifact](../analysis/f-distance-squared-artifact.md) · [Thesis draft recap](../progress/progress-25-07-2026.md) · [f_directional: shared vs split](../analysis/f-directional-shared-vs-split.md)
+**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [Future work](future-work.md) · [Ground truth dataset](ground-truth-dataset.md) · [Limitations](limitations.md) · [ML ceiling check, row level](../analysis/ml-ceiling-row-level.md) · [Model 5: alternative-specific constants (rejected)](../analysis/model-5-asc-rejected.md) · [Research questions](research-questions.md) · [The f_distance² artifact](../analysis/f-distance-squared-artifact.md) · [f_directional: shared vs split](../analysis/f-directional-shared-vs-split.md)
 
 </div>

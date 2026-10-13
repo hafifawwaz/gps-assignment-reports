@@ -58,10 +58,6 @@ Hubs ready to present: the thesis summary, one per chapter, dated updates and sl
 
 -   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
 
-    **[Thesis draft recap](progress-25-07-2026.md)**
-
--   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
-
     **[RQ2 diagnostics and RQ3 ceiling check](progress-23-07-2026.md)**
 
 -   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>

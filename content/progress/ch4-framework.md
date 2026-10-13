@@ -3,7 +3,7 @@ source: report/progress/ch4-framework.md
 date: 13-10-2026
 kind: progress
 comments: true
-generated: 2026-10-13T16:59:39
+generated: 2026-10-13T17:38:15
 ---
 
 # Chapter 4: Framework
@@ -21,6 +21,6 @@ Part of [Thesis summary](thesis-summary.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Framework overview](../notes/framework-overview.md) · [Grouped cross-validation](../notes/grouped-cross-validation.md) · [Model evaluation metrics](../notes/model-evaluation-metrics.md) · [Thesis draft recap](progress-25-07-2026.md) · [Thesis summary](thesis-summary.md) · [share_type](../notes/share-type.md) · [sigma](../notes/sigma.md)
+**Linked from** [Framework overview](../notes/framework-overview.md) · [Grouped cross-validation](../notes/grouped-cross-validation.md) · [Model evaluation metrics](../notes/model-evaluation-metrics.md) · [Thesis summary](thesis-summary.md) · [share_type](../notes/share-type.md) · [sigma](../notes/sigma.md)
 
 </div>

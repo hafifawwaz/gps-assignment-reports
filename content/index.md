@@ -42,7 +42,7 @@ hide:
 - [Chapter 4: Framework](progress/ch4-framework.md)
 - [Chapter 3: Data and ground truth](progress/ch3-data.md)
 
-[All 14](progress/index.md){ .more }
+[All 13](progress/index.md){ .more }
 
 </div>
 

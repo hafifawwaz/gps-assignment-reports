@@ -3,7 +3,7 @@ source: report/progress/ch3-data.md
 date: 13-10-2026
 kind: progress
 comments: true
-generated: 2026-10-13T16:59:39
+generated: 2026-10-13T17:38:15
 ---
 
 # Chapter 3: Data and ground truth
@@ -25,6 +25,6 @@ Part of [Thesis summary](thesis-summary.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Downsampling to MILES density](../notes/downsampling-to-miles-density.md) · [Experiment design](../notes/experiment-design.md) · [Ground truth cleaning](../notes/ground-truth-cleaning.md) · [Ground truth dataset](../notes/ground-truth-dataset.md) · [Ground truth drop list](../analysis/drop-list.md) · [Spatial entity layers](../notes/spatial-entity-layers.md) · [Study area](../notes/study-area.md) · [Thesis draft recap](progress-25-07-2026.md) · [Thesis summary](thesis-summary.md)
+**Linked from** [Downsampling to MILES density](../notes/downsampling-to-miles-density.md) · [Experiment design](../notes/experiment-design.md) · [Ground truth cleaning](../notes/ground-truth-cleaning.md) · [Ground truth dataset](../notes/ground-truth-dataset.md) · [Ground truth drop list](../analysis/drop-list.md) · [Spatial entity layers](../notes/spatial-entity-layers.md) · [Study area](../notes/study-area.md) · [Thesis summary](thesis-summary.md)
 
 </div>

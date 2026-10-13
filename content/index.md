@@ -20,11 +20,11 @@ hide:
 
 <p class="section-blurb">Small pieces of progress: method, data, interpretation, discussion.</p>
 
-- [Ground truth cleaning](notes/ground-truth-cleaning.md)
 - [Study area](notes/study-area.md)
 - [Spatial entity layers](notes/spatial-entity-layers.md)
 - [Research questions](notes/research-questions.md)
 - [Overfitting signature](notes/overfitting-signature.md)
+- [Motivation](notes/motivation.md)
 
 [All 34](notes/index.md){ .more }
 

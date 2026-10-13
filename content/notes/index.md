@@ -4,16 +4,6 @@ Small pieces of progress: method, data, interpretation, discussion.
 
 ## 2026
 
-### October
-
-<div class="grid cards" markdown>
-
--   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
-
-    **[Ground truth cleaning](ground-truth-cleaning.md)**
-
-</div>
-
 ### July
 
 <div class="grid cards" markdown>
@@ -101,6 +91,10 @@ Small pieces of progress: method, data, interpretation, discussion.
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
     **[Extending map matching to stationary stays](map-matching-extension.md)**
+
+-   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
+
+    **[Ground truth cleaning](ground-truth-cleaning.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 

@@ -5,8 +5,6 @@ nav:
 - Notes:
   - notes/index.md
   - '2026':
-    - October:
-      - ground truth cleaning: notes/ground-truth-cleaning.md
     - July:
       - study area: notes/study-area.md
       - spatial entity layers: notes/spatial-entity-layers.md
@@ -29,6 +27,7 @@ nav:
       - self-report form: notes/self-report-form.md
       - positioning against deterministic assignment: notes/positioning-vs-deterministic-assignment.md
       - extending map matching to stationary stays: notes/map-matching-extension.md
+      - ground truth cleaning: notes/ground-truth-cleaning.md
       - 'group e: ambiguous edge cases': notes/experiment-group-e.md
       - 'group d: movement type': notes/experiment-group-d.md
       - 'group c: indoor position': notes/experiment-group-c.md

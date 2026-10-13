@@ -1,14 +1,14 @@
 ---
 source: report/notes/ground-truth-cleaning.md
-date: 13-10-2026
+date: 23-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T18:27:52
 ---
 
 # Ground truth cleaning
 
-<p class="doc-meta"><span class="chip chip-note">Note</span> <span class="chip chip-date">13-10-2026</span></p>
+<p class="doc-meta"><span class="chip chip-note">Note</span> <span class="chip chip-date">23-07-2026</span></p>
 
 From the final thesis (Section 3.3.4):
 

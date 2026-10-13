@@ -16,6 +16,38 @@ hide:
 
 <div class="home-col" markdown>
 
+## [Threads](threads/index.md) { .home-section }
+
+<p class="section-blurb">Hubs by theme: the thesis summary, then one list of notes per theme.</p>
+
+- [Thesis summary](threads/thesis-summary.md)
+- [Ground truth data](threads/ground-truth-data.md)
+- [Complexity and transfer](threads/complexity-and-transfer.md)
+- [Outlook](threads/outlook.md)
+- [Assignment framework](threads/assignment-framework.md)
+
+[All 8](threads/index.md){ .more }
+
+</div>
+
+<div class="home-col" markdown>
+
+## [Progress](progress/index.md) { .home-section }
+
+<p class="section-blurb">Dated updates for sensei, and slide exports.</p>
+
+- [PhD interview slides](progress/phd-interview-slide-slides-export.md) <span class="chip chip-pdf">PDF</span>
+- [Does downsampling matter?](progress/progress-29-07-2026.md)
+- [RQ2 diagnostics and RQ3 ceiling check](progress/progress-23-07-2026.md)
+- [RQ1 rebuilt with grouped CV](progress/progress-21-07-2026.md)
+- [ML baseline](progress/progress-20-07-2026.md)
+
+[All 6](progress/index.md){ .more }
+
+</div>
+
+<div class="home-col" markdown>
+
 ## [Notes](notes/index.md) { .home-section }
 
 <p class="section-blurb">Small pieces of progress: method, data, interpretation, discussion.</p>
@@ -32,32 +64,6 @@ hide:
 
 <div class="home-col" markdown>
 
-## [Progress](progress/index.md) { .home-section }
-
-<p class="section-blurb">Hubs ready to present: the thesis summary, one per chapter, dated updates and slide exports.</p>
-
-- [Thesis summary](progress/thesis-summary.md)
-- [Chapter 6: Discussion and conclusion](progress/ch6-discussion.md)
-- [Chapter 5: Results](progress/ch5-results.md)
-- [Chapter 4: Framework](progress/ch4-framework.md)
-- [Chapter 3: Data and ground truth](progress/ch3-data.md)
-
-[All 13](progress/index.md){ .more }
-
-</div>
-
-<div class="home-col" markdown>
-
-## [Inbox](inbox/index.md) { .home-section }
-
-<p class="section-blurb">Open items not yet settled with sensei.</p>
-
-<p class="empty">Nothing yet.</p>
-
-</div>
-
-<div class="home-col" markdown>
-
 ## [Analysis](analysis/index.md) { .home-section }
 
 <p class="section-blurb">Raw analysis output: tables, numbers and diagnostics.</p>
@@ -69,6 +75,16 @@ hide:
 - [ML ceiling check, row level](analysis/ml-ceiling-row-level.md)
 
 [All 25](analysis/index.md){ .more }
+
+</div>
+
+<div class="home-col" markdown>
+
+## [Inbox](inbox/index.md) { .home-section }
+
+<p class="section-blurb">Open items not yet settled with sensei.</p>
+
+<p class="empty">Nothing yet.</p>
 
 </div>
 

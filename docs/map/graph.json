@@ -1,6 +1,97 @@
 {
  "nodes": [
   {
+   "id": "threads/assignment-framework.md",
+   "title": "Assignment framework",
+   "kind": "thread",
+   "date": "25-07-2026",
+   "url": "../threads/assignment-framework/"
+  },
+  {
+   "id": "threads/calibration.md",
+   "title": "Calibration",
+   "kind": "thread",
+   "date": "21-07-2026",
+   "url": "../threads/calibration/"
+  },
+  {
+   "id": "threads/complexity-and-transfer.md",
+   "title": "Complexity and transfer",
+   "kind": "thread",
+   "date": "29-07-2026",
+   "url": "../threads/complexity-and-transfer/"
+  },
+  {
+   "id": "threads/error-analysis.md",
+   "title": "Error analysis",
+   "kind": "thread",
+   "date": "23-07-2026",
+   "url": "../threads/error-analysis/"
+  },
+  {
+   "id": "threads/ground-truth-data.md",
+   "title": "Ground truth data",
+   "kind": "thread",
+   "date": "29-07-2026",
+   "url": "../threads/ground-truth-data/"
+  },
+  {
+   "id": "threads/outlook.md",
+   "title": "Outlook",
+   "kind": "thread",
+   "date": "25-07-2026",
+   "url": "../threads/outlook/"
+  },
+  {
+   "id": "threads/problem-and-positioning.md",
+   "title": "Problem and positioning",
+   "kind": "thread",
+   "date": "23-07-2026",
+   "url": "../threads/problem-and-positioning/"
+  },
+  {
+   "id": "threads/thesis-summary.md",
+   "title": "Thesis summary",
+   "kind": "thread",
+   "date": "13-10-2026",
+   "url": "../threads/thesis-summary/"
+  },
+  {
+   "id": "progress/progress-19-07-2026.md",
+   "title": "MNL model development",
+   "kind": "progress",
+   "date": "19-07-2026",
+   "url": "../progress/progress-19-07-2026/"
+  },
+  {
+   "id": "progress/progress-20-07-2026.md",
+   "title": "ML baseline",
+   "kind": "progress",
+   "date": "20-07-2026",
+   "url": "../progress/progress-20-07-2026/"
+  },
+  {
+   "id": "progress/progress-21-07-2026.md",
+   "title": "RQ1 rebuilt with grouped CV",
+   "kind": "progress",
+   "date": "21-07-2026",
+   "url": "../progress/progress-21-07-2026/"
+  },
+  {
+   "id": "progress/progress-23-07-2026.md",
+   "title": "RQ2 diagnostics and RQ3 ceiling check",
+   "kind": "progress",
+   "date": "23-07-2026",
+   "url": "../progress/progress-23-07-2026/"
+  },
+  {
+   "id": "progress/progress-29-07-2026.md",
+   "title": "Does downsampling matter?",
+   "kind": "progress",
+   "date": "29-07-2026",
+   "url": "../progress/progress-29-07-2026/"
+  },
+  {
    "id": "notes/boundary-matching-analogy.md",
    "title": "Candidate density as boundary-matching difficulty",
    "kind": "note",
@@ -239,90 +330,6 @@
    "url": "../notes/study-area/"
   },
   {
-   "id": "progress/ch1-introduction.md",
-   "title": "Chapter 1: Introduction",
-   "kind": "progress",
-   "date": "13-10-2026",
-   "url": "../progress/ch1-introduction/"
-  },
-  {
-   "id": "progress/ch2-literature.md",
-   "title": "Chapter 2: Literature",
-   "kind": "progress",
-   "date": "13-10-2026",
-   "url": "../progress/ch2-literature/"
-  },
-  {
-   "id": "progress/ch3-data.md",
-   "title": "Chapter 3: Data and ground truth",
-   "kind": "progress",
-   "date": "13-10-2026",
-   "url": "../progress/ch3-data/"
-  },
-  {
-   "id": "progress/ch4-framework.md",
-   "title": "Chapter 4: Framework",
-   "kind": "progress",
-   "date": "13-10-2026",
-   "url": "../progress/ch4-framework/"
-  },
-  {
-   "id": "progress/ch5-results.md",
-   "title": "Chapter 5: Results",
-   "kind": "progress",
-   "date": "13-10-2026",
-   "url": "../progress/ch5-results/"
-  },
-  {
-   "id": "progress/ch6-discussion.md",
-   "title": "Chapter 6: Discussion and conclusion",
-   "kind": "progress",
-   "date": "13-10-2026",
-   "url": "../progress/ch6-discussion/"
-  },
-  {
-   "id": "progress/progress-19-07-2026.md",
-   "title": "MNL model development",
-   "kind": "progress",
-   "date": "19-07-2026",
-   "url": "../progress/progress-19-07-2026/"
-  },
-  {
-   "id": "progress/progress-20-07-2026.md",
-   "title": "ML baseline",
-   "kind": "progress",
-   "date": "20-07-2026",
-   "url": "../progress/progress-20-07-2026/"
-  },
-  {
-   "id": "progress/progress-21-07-2026.md",
-   "title": "RQ1 rebuilt with grouped CV",
-   "kind": "progress",
-   "date": "21-07-2026",
-   "url": "../progress/progress-21-07-2026/"
-  },
-  {
-   "id": "progress/progress-23-07-2026.md",
-   "title": "RQ2 diagnostics and RQ3 ceiling check",
-   "kind": "progress",
-   "date": "23-07-2026",
-   "url": "../progress/progress-23-07-2026/"
-  },
-  {
-   "id": "progress/progress-29-07-2026.md",
-   "title": "Does downsampling matter?",
-   "kind": "progress",
-   "date": "29-07-2026",
-   "url": "../progress/progress-29-07-2026/"
-  },
-  {
-   "id": "progress/thesis-summary.md",
-   "title": "Thesis summary",
-   "kind": "progress",
-   "date": "13-10-2026",
-   "url": "../progress/thesis-summary/"
-  },
-  {
    "id": "analysis/alpha-calibration.md",
    "title": "Alpha calibration",
    "kind": "analysis",
@@ -525,7 +532,7 @@
   },
   {
    "source": "analysis/alpha-calibration.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/candidate-density-bias.md",
@@ -557,7 +564,7 @@
   },
   {
    "source": "analysis/candidate-density-bias.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/error-analysis.md"
   },
   {
    "source": "analysis/candidate-search-area.md",
@@ -589,7 +596,7 @@
   },
   {
    "source": "analysis/confusion-matrix.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/error-analysis.md"
   },
   {
    "source": "analysis/directional-scope-ablation.md",
@@ -605,7 +612,7 @@
   },
   {
    "source": "analysis/directional-scope-ablation.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/drop-list.md",
@@ -617,7 +624,7 @@
   },
   {
    "source": "analysis/drop-list.md",
-   "target": "progress/ch3-data.md"
+   "target": "threads/ground-truth-data.md"
   },
   {
    "source": "analysis/f-directional-shared-vs-split.md",
@@ -637,7 +644,7 @@
   },
   {
    "source": "analysis/f-directional-shared-vs-split.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/f-distance-squared-artifact.md",
@@ -657,7 +664,7 @@
   },
   {
    "source": "analysis/f-distance-squared-artifact.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/final-model-correlation-matrix.md",
@@ -669,7 +676,7 @@
   },
   {
    "source": "analysis/final-model-correlation-matrix.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/final-model.md",
@@ -689,7 +696,7 @@
   },
   {
    "source": "analysis/final-model.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/fold-difficulty.md",
@@ -701,7 +708,7 @@
   },
   {
    "source": "analysis/fold-difficulty.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/error-analysis.md"
   },
   {
    "source": "analysis/interaction-term-screen.md",
@@ -717,7 +724,7 @@
   },
   {
    "source": "analysis/interaction-term-screen.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/ml-baseline-stay-level.md",
@@ -733,7 +740,7 @@
   },
   {
    "source": "analysis/ml-baseline-stay-level.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/complexity-and-transfer.md"
   },
   {
    "source": "analysis/ml-ceiling-row-level.md",
@@ -757,7 +764,7 @@
   },
   {
    "source": "analysis/ml-ceiling-row-level.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/complexity-and-transfer.md"
   },
   {
    "source": "analysis/model-1-base.md",
@@ -781,7 +788,7 @@
   },
   {
    "source": "analysis/model-1-base.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/model-2-share-type-sigma.md",
@@ -817,7 +824,7 @@
   },
   {
    "source": "analysis/model-2-share-type-sigma.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/model-4a-alternative-specific.md",
@@ -841,7 +848,7 @@
   },
   {
    "source": "analysis/model-4a-alternative-specific.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/model-5-asc-rejected.md",
@@ -857,7 +864,7 @@
   },
   {
    "source": "analysis/model-5-asc-rejected.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/model-6-rederived.md",
@@ -869,7 +876,7 @@
   },
   {
    "source": "analysis/model-6-rederived.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/model-progression-table.md",
@@ -913,7 +920,7 @@
   },
   {
    "source": "analysis/model-progression-table.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/r-buffer-10m-vs-15m.md",
@@ -937,7 +944,7 @@
   },
   {
    "source": "analysis/r-buffer-10m-vs-15m.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "analysis/raw-density-alpha-profile.md",
@@ -965,7 +972,7 @@
   },
   {
    "source": "analysis/raw-density-refit.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/complexity-and-transfer.md"
   },
   {
    "source": "analysis/sigma-tree-importance.md",
@@ -989,7 +996,7 @@
   },
   {
    "source": "analysis/sigma-tree-importance.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/complexity-and-transfer.md"
   },
   {
    "source": "analysis/stepwise-vif-elimination.md",
@@ -1005,7 +1012,7 @@
   },
   {
    "source": "analysis/stepwise-vif-elimination.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "notes/boundary-matching-analogy.md",
@@ -1013,7 +1020,7 @@
   },
   {
    "source": "notes/boundary-matching-analogy.md",
-   "target": "progress/ch6-discussion.md"
+   "target": "threads/error-analysis.md"
   },
   {
    "source": "notes/candidate-selection.md",
@@ -1049,7 +1056,7 @@
   },
   {
    "source": "notes/contributions.md",
-   "target": "progress/ch6-discussion.md"
+   "target": "threads/outlook.md"
   },
   {
    "source": "notes/discussion-citation-checks.md",
@@ -1069,7 +1076,7 @@
   },
   {
    "source": "notes/discussion-citation-checks.md",
-   "target": "progress/ch2-literature.md"
+   "target": "threads/problem-and-positioning.md"
   },
   {
    "source": "notes/downsampling-to-miles-density.md",
@@ -1081,7 +1088,7 @@
   },
   {
    "source": "notes/downsampling-to-miles-density.md",
-   "target": "progress/ch3-data.md"
+   "target": "threads/ground-truth-data.md"
   },
   {
    "source": "notes/experiment-design.md",
@@ -1117,7 +1124,7 @@
   },
   {
    "source": "notes/experiment-design.md",
-   "target": "progress/ch3-data.md"
+   "target": "threads/ground-truth-data.md"
   },
   {
    "source": "notes/experiment-group-a.md",
@@ -1245,7 +1252,7 @@
   },
   {
    "source": "notes/framework-overview.md",
-   "target": "progress/ch4-framework.md"
+   "target": "threads/assignment-framework.md"
   },
   {
    "source": "notes/future-work.md",
@@ -1261,7 +1268,7 @@
   },
   {
    "source": "notes/future-work.md",
-   "target": "progress/ch6-discussion.md"
+   "target": "threads/outlook.md"
   },
   {
    "source": "notes/ground-truth-cleaning.md",
@@ -1273,7 +1280,7 @@
   },
   {
    "source": "notes/ground-truth-cleaning.md",
-   "target": "progress/ch3-data.md"
+   "target": "threads/ground-truth-data.md"
   },
   {
    "source": "notes/ground-truth-dataset.md",
@@ -1293,7 +1300,7 @@
   },
   {
    "source": "notes/ground-truth-dataset.md",
-   "target": "progress/ch3-data.md"
+   "target": "threads/ground-truth-data.md"
   },
   {
    "source": "notes/grouped-cross-validation.md",
@@ -1309,7 +1316,7 @@
   },
   {
    "source": "notes/grouped-cross-validation.md",
-   "target": "progress/ch4-framework.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "notes/limitations.md",
@@ -1333,7 +1340,7 @@
   },
   {
    "source": "notes/limitations.md",
-   "target": "progress/ch6-discussion.md"
+   "target": "threads/outlook.md"
   },
   {
    "source": "notes/map-matching-extension.md",
@@ -1345,7 +1352,7 @@
   },
   {
    "source": "notes/map-matching-extension.md",
-   "target": "progress/ch6-discussion.md"
+   "target": "threads/problem-and-positioning.md"
   },
   {
    "source": "notes/model-evaluation-metrics.md",
@@ -1357,7 +1364,7 @@
   },
   {
    "source": "notes/model-evaluation-metrics.md",
-   "target": "progress/ch4-framework.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "notes/motivation.md",
@@ -1373,7 +1380,7 @@
   },
   {
    "source": "notes/motivation.md",
-   "target": "progress/ch1-introduction.md"
+   "target": "threads/problem-and-positioning.md"
   },
   {
    "source": "notes/multicollinearity-is-structural.md",
@@ -1393,7 +1400,7 @@
   },
   {
    "source": "notes/multicollinearity-is-structural.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "notes/overfitting-signature.md",
@@ -1425,7 +1432,7 @@
   },
   {
    "source": "notes/overfitting-signature.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/complexity-and-transfer.md"
   },
   {
    "source": "notes/positioning-vs-deterministic-assignment.md",
@@ -1437,11 +1444,7 @@
   },
   {
    "source": "notes/positioning-vs-deterministic-assignment.md",
-   "target": "progress/ch2-literature.md"
-  },
-  {
-   "source": "notes/positioning-vs-deterministic-assignment.md",
-   "target": "progress/ch6-discussion.md"
+   "target": "threads/problem-and-positioning.md"
   },
   {
    "source": "notes/research-questions.md",
@@ -1461,11 +1464,11 @@
   },
   {
    "source": "notes/research-questions.md",
-   "target": "progress/ch1-introduction.md"
+   "target": "threads/calibration.md"
   },
   {
    "source": "notes/research-questions.md",
-   "target": "progress/ch5-results.md"
+   "target": "threads/problem-and-positioning.md"
   },
   {
    "source": "notes/self-report-form.md",
@@ -1485,7 +1488,7 @@
   },
   {
    "source": "notes/share-type.md",
-   "target": "progress/ch4-framework.md"
+   "target": "threads/assignment-framework.md"
   },
   {
    "source": "notes/sigma.md",
@@ -1501,7 +1504,7 @@
   },
   {
    "source": "notes/sigma.md",
-   "target": "progress/ch4-framework.md"
+   "target": "threads/assignment-framework.md"
   },
   {
    "source": "notes/spatial-entity-layers.md",
@@ -1513,7 +1516,7 @@
   },
   {
    "source": "notes/spatial-entity-layers.md",
-   "target": "progress/ch3-data.md"
+   "target": "threads/ground-truth-data.md"
   },
   {
    "source": "notes/street-space-tension.md",
@@ -1533,7 +1536,7 @@
   },
   {
    "source": "notes/street-space-tension.md",
-   "target": "progress/ch6-discussion.md"
+   "target": "threads/error-analysis.md"
   },
   {
    "source": "notes/study-area.md",
@@ -1549,503 +1552,551 @@
   },
   {
    "source": "notes/study-area.md",
-   "target": "progress/ch3-data.md"
+   "target": "threads/ground-truth-data.md"
   },
   {
-   "source": "progress/ch1-introduction.md",
-   "target": "notes/motivation.md"
+   "source": "progress/progress-19-07-2026.md",
+   "target": "analysis/alpha-calibration.md"
   },
   {
-   "source": "progress/ch1-introduction.md",
-   "target": "notes/research-questions.md"
+   "source": "progress/progress-19-07-2026.md",
+   "target": "analysis/directional-scope-ablation.md"
   },
   {
-   "source": "progress/ch1-introduction.md",
-   "target": "progress/thesis-summary.md"
+   "source": "progress/progress-19-07-2026.md",
+   "target": "analysis/f-distance-squared-artifact.md"
   },
   {
-   "source": "progress/ch2-literature.md",
-   "target": "notes/boundary-matching-analogy.md"
+   "source": "progress/progress-19-07-2026.md",
+   "target": "analysis/interaction-term-screen.md"
   },
   {
-   "source": "progress/ch2-literature.md",
-   "target": "notes/discussion-citation-checks.md"
+   "source": "progress/progress-19-07-2026.md",
+   "target": "analysis/model-1-base.md"
   },
   {
-   "source": "progress/ch2-literature.md",
-   "target": "notes/map-matching-extension.md"
+   "source": "progress/progress-19-07-2026.md",
+   "target": "analysis/model-2-share-type-sigma.md"
   },
   {
-   "source": "progress/ch2-literature.md",
-   "target": "notes/positioning-vs-deterministic-assignment.md"
+   "source": "progress/progress-19-07-2026.md",
+   "target": "analysis/model-4a-alternative-specific.md"
   },
   {
-   "source": "progress/ch2-literature.md",
-   "target": "notes/street-space-tension.md"
+   "source": "progress/progress-19-07-2026.md",
+   "target": "analysis/model-5-asc-rejected.md"
   },
   {
-   "source": "progress/ch2-literature.md",
-   "target": "progress/thesis-summary.md"
+   "source": "progress/progress-19-07-2026.md",
+   "target": "analysis/r-buffer-10m-vs-15m.md"
   },
   {
-   "source": "progress/ch3-data.md",
+   "source": "progress/progress-19-07-2026.md",
+   "target": "notes/multicollinearity-is-structural.md"
+  },
+  {
+   "source": "progress/progress-19-07-2026.md",
+   "target": "progress/progress-21-07-2026.md"
+  },
+  {
+   "source": "progress/progress-20-07-2026.md",
+   "target": "analysis/ml-baseline-stay-level.md"
+  },
+  {
+   "source": "progress/progress-20-07-2026.md",
+   "target": "analysis/sigma-tree-importance.md"
+  },
+  {
+   "source": "progress/progress-20-07-2026.md",
+   "target": "progress/progress-23-07-2026.md"
+  },
+  {
+   "source": "progress/progress-21-07-2026.md",
+   "target": "analysis/alpha-calibration.md"
+  },
+  {
+   "source": "progress/progress-21-07-2026.md",
+   "target": "analysis/f-directional-shared-vs-split.md"
+  },
+  {
+   "source": "progress/progress-21-07-2026.md",
+   "target": "analysis/f-distance-squared-artifact.md"
+  },
+  {
+   "source": "progress/progress-21-07-2026.md",
+   "target": "analysis/final-model.md"
+  },
+  {
+   "source": "progress/progress-21-07-2026.md",
+   "target": "analysis/model-5-asc-rejected.md"
+  },
+  {
+   "source": "progress/progress-21-07-2026.md",
+   "target": "analysis/model-progression-table.md"
+  },
+  {
+   "source": "progress/progress-21-07-2026.md",
+   "target": "analysis/stepwise-vif-elimination.md"
+  },
+  {
+   "source": "progress/progress-21-07-2026.md",
+   "target": "notes/grouped-cross-validation.md"
+  },
+  {
+   "source": "progress/progress-23-07-2026.md",
+   "target": "analysis/candidate-density-bias.md"
+  },
+  {
+   "source": "progress/progress-23-07-2026.md",
+   "target": "analysis/confusion-matrix.md"
+  },
+  {
+   "source": "progress/progress-23-07-2026.md",
    "target": "analysis/drop-list.md"
   },
   {
-   "source": "progress/ch3-data.md",
-   "target": "notes/downsampling-to-miles-density.md"
+   "source": "progress/progress-23-07-2026.md",
+   "target": "analysis/final-model-correlation-matrix.md"
   },
   {
-   "source": "progress/ch3-data.md",
-   "target": "notes/experiment-design.md"
+   "source": "progress/progress-23-07-2026.md",
+   "target": "analysis/final-model.md"
   },
   {
-   "source": "progress/ch3-data.md",
-   "target": "notes/experiment-group-a.md"
+   "source": "progress/progress-23-07-2026.md",
+   "target": "analysis/fold-difficulty.md"
   },
   {
-   "source": "progress/ch3-data.md",
-   "target": "notes/experiment-group-b.md"
+   "source": "progress/progress-23-07-2026.md",
+   "target": "analysis/ml-ceiling-row-level.md"
   },
   {
-   "source": "progress/ch3-data.md",
-   "target": "notes/experiment-group-c.md"
-  },
-  {
-   "source": "progress/ch3-data.md",
-   "target": "notes/experiment-group-d.md"
-  },
-  {
-   "source": "progress/ch3-data.md",
-   "target": "notes/experiment-group-e.md"
-  },
-  {
-   "source": "progress/ch3-data.md",
+   "source": "progress/progress-23-07-2026.md",
    "target": "notes/ground-truth-cleaning.md"
   },
   {
-   "source": "progress/ch3-data.md",
-   "target": "notes/ground-truth-dataset.md"
-  },
-  {
-   "source": "progress/ch3-data.md",
+   "source": "progress/progress-23-07-2026.md",
    "target": "notes/self-report-form.md"
   },
   {
-   "source": "progress/ch3-data.md",
-   "target": "notes/spatial-entity-layers.md"
+   "source": "progress/progress-23-07-2026.md",
+   "target": "progress/progress-20-07-2026.md"
   },
   {
-   "source": "progress/ch3-data.md",
-   "target": "notes/study-area.md"
+   "source": "progress/progress-23-07-2026.md",
+   "target": "threads/error-analysis.md"
   },
   {
-   "source": "progress/ch3-data.md",
-   "target": "progress/thesis-summary.md"
+   "source": "progress/progress-23-07-2026.md",
+   "target": "threads/problem-and-positioning.md"
   },
   {
-   "source": "progress/ch4-framework.md",
+   "source": "progress/progress-29-07-2026.md",
+   "target": "analysis/candidate-search-area.md"
+  },
+  {
+   "source": "progress/progress-29-07-2026.md",
+   "target": "analysis/final-model.md"
+  },
+  {
+   "source": "progress/progress-29-07-2026.md",
+   "target": "analysis/raw-density-alpha-profile.md"
+  },
+  {
+   "source": "progress/progress-29-07-2026.md",
+   "target": "analysis/raw-density-refit.md"
+  },
+  {
+   "source": "threads/assignment-framework.md",
    "target": "notes/candidate-selection.md"
   },
   {
-   "source": "progress/ch4-framework.md",
+   "source": "threads/assignment-framework.md",
    "target": "notes/f-directional.md"
   },
   {
-   "source": "progress/ch4-framework.md",
+   "source": "threads/assignment-framework.md",
    "target": "notes/f-distance.md"
   },
   {
-   "source": "progress/ch4-framework.md",
+   "source": "threads/assignment-framework.md",
    "target": "notes/f-distribution.md"
   },
   {
-   "source": "progress/ch4-framework.md",
+   "source": "threads/assignment-framework.md",
    "target": "notes/f-temporal.md"
   },
   {
-   "source": "progress/ch4-framework.md",
+   "source": "threads/assignment-framework.md",
    "target": "notes/framework-overview.md"
   },
   {
-   "source": "progress/ch4-framework.md",
-   "target": "notes/grouped-cross-validation.md"
-  },
-  {
-   "source": "progress/ch4-framework.md",
-   "target": "notes/model-evaluation-metrics.md"
-  },
-  {
-   "source": "progress/ch4-framework.md",
+   "source": "threads/assignment-framework.md",
    "target": "notes/share-type.md"
   },
   {
-   "source": "progress/ch4-framework.md",
+   "source": "threads/assignment-framework.md",
    "target": "notes/sigma.md"
   },
   {
-   "source": "progress/ch4-framework.md",
-   "target": "progress/thesis-summary.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/alpha-calibration.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/candidate-density-bias.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/candidate-search-area.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/confusion-matrix.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/directional-scope-ablation.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/f-directional-shared-vs-split.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/f-distance-squared-artifact.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/final-model-correlation-matrix.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/final-model.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/fold-difficulty.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/interaction-term-screen.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/ml-baseline-stay-level.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/ml-ceiling-row-level.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/model-1-base.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/model-2-share-type-sigma.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/model-4a-alternative-specific.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/model-5-asc-rejected.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/model-6-rederived.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/model-progression-table.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/r-buffer-10m-vs-15m.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/raw-density-alpha-profile.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/raw-density-refit.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/sigma-tree-importance.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "analysis/stepwise-vif-elimination.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "notes/multicollinearity-is-structural.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "notes/overfitting-signature.md"
-  },
-  {
-   "source": "progress/ch5-results.md",
-   "target": "progress/thesis-summary.md"
-  },
-  {
-   "source": "progress/ch6-discussion.md",
-   "target": "notes/boundary-matching-analogy.md"
-  },
-  {
-   "source": "progress/ch6-discussion.md",
-   "target": "notes/contributions.md"
-  },
-  {
-   "source": "progress/ch6-discussion.md",
-   "target": "notes/future-work.md"
-  },
-  {
-   "source": "progress/ch6-discussion.md",
-   "target": "notes/limitations.md"
-  },
-  {
-   "source": "progress/ch6-discussion.md",
-   "target": "notes/map-matching-extension.md"
-  },
-  {
-   "source": "progress/ch6-discussion.md",
-   "target": "notes/positioning-vs-deterministic-assignment.md"
-  },
-  {
-   "source": "progress/ch6-discussion.md",
-   "target": "notes/street-space-tension.md"
-  },
-  {
-   "source": "progress/ch6-discussion.md",
-   "target": "progress/thesis-summary.md"
-  },
-  {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/alpha-calibration.md"
-  },
-  {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/directional-scope-ablation.md"
-  },
-  {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/f-distance-squared-artifact.md"
-  },
-  {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/interaction-term-screen.md"
-  },
-  {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/model-1-base.md"
-  },
-  {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/model-2-share-type-sigma.md"
-  },
-  {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/model-4a-alternative-specific.md"
-  },
-  {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/model-5-asc-rejected.md"
-  },
-  {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/r-buffer-10m-vs-15m.md"
-  },
-  {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "notes/multicollinearity-is-structural.md"
-  },
-  {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "progress/progress-21-07-2026.md"
-  },
-  {
-   "source": "progress/progress-20-07-2026.md",
-   "target": "analysis/ml-baseline-stay-level.md"
-  },
-  {
-   "source": "progress/progress-20-07-2026.md",
-   "target": "analysis/sigma-tree-importance.md"
-  },
-  {
-   "source": "progress/progress-20-07-2026.md",
-   "target": "progress/progress-23-07-2026.md"
-  },
-  {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/alpha-calibration.md"
-  },
-  {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/f-directional-shared-vs-split.md"
-  },
-  {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/f-distance-squared-artifact.md"
-  },
-  {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/final-model.md"
-  },
-  {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/model-5-asc-rejected.md"
-  },
-  {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/model-progression-table.md"
-  },
-  {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/stepwise-vif-elimination.md"
-  },
-  {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "notes/grouped-cross-validation.md"
-  },
-  {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/candidate-density-bias.md"
-  },
-  {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/confusion-matrix.md"
-  },
-  {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/drop-list.md"
-  },
-  {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/final-model-correlation-matrix.md"
-  },
-  {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/final-model.md"
-  },
-  {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/fold-difficulty.md"
-  },
-  {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/ml-ceiling-row-level.md"
-  },
-  {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "notes/ground-truth-cleaning.md"
-  },
-  {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "notes/self-report-form.md"
-  },
-  {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "progress/ch6-discussion.md"
-  },
-  {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "progress/progress-20-07-2026.md"
-  },
-  {
-   "source": "progress/progress-29-07-2026.md",
-   "target": "analysis/candidate-search-area.md"
-  },
-  {
-   "source": "progress/progress-29-07-2026.md",
-   "target": "analysis/final-model.md"
-  },
-  {
-   "source": "progress/progress-29-07-2026.md",
-   "target": "analysis/raw-density-alpha-profile.md"
-  },
-  {
-   "source": "progress/progress-29-07-2026.md",
-   "target": "analysis/raw-density-refit.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "analysis/candidate-density-bias.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "analysis/confusion-matrix.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "analysis/final-model.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "analysis/ml-ceiling-row-level.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "notes/ground-truth-cleaning.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "notes/motivation.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "notes/research-questions.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "progress/ch1-introduction.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "progress/ch2-literature.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "progress/ch3-data.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "progress/ch4-framework.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "progress/ch5-results.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
-   "target": "progress/ch6-discussion.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
+   "source": "threads/assignment-framework.md",
    "target": "progress/progress-19-07-2026.md"
   },
   {
-   "source": "progress/thesis-summary.md",
-   "target": "progress/progress-20-07-2026.md"
-  },
-  {
-   "source": "progress/thesis-summary.md",
+   "source": "threads/assignment-framework.md",
    "target": "progress/progress-21-07-2026.md"
   },
   {
-   "source": "progress/thesis-summary.md",
+   "source": "threads/assignment-framework.md",
+   "target": "threads/calibration.md"
+  },
+  {
+   "source": "threads/assignment-framework.md",
+   "target": "threads/thesis-summary.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/alpha-calibration.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/directional-scope-ablation.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/f-directional-shared-vs-split.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/f-distance-squared-artifact.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/final-model-correlation-matrix.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/final-model.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/interaction-term-screen.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/model-1-base.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/model-2-share-type-sigma.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/model-4a-alternative-specific.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/model-5-asc-rejected.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/model-6-rederived.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/model-progression-table.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/r-buffer-10m-vs-15m.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "analysis/stepwise-vif-elimination.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "notes/grouped-cross-validation.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "notes/model-evaluation-metrics.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "notes/multicollinearity-is-structural.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "progress/progress-19-07-2026.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "progress/progress-21-07-2026.md"
+  },
+  {
+   "source": "threads/calibration.md",
+   "target": "threads/thesis-summary.md"
+  },
+  {
+   "source": "threads/complexity-and-transfer.md",
+   "target": "analysis/candidate-search-area.md"
+  },
+  {
+   "source": "threads/complexity-and-transfer.md",
+   "target": "analysis/ml-baseline-stay-level.md"
+  },
+  {
+   "source": "threads/complexity-and-transfer.md",
+   "target": "analysis/ml-ceiling-row-level.md"
+  },
+  {
+   "source": "threads/complexity-and-transfer.md",
+   "target": "analysis/raw-density-alpha-profile.md"
+  },
+  {
+   "source": "threads/complexity-and-transfer.md",
+   "target": "analysis/raw-density-refit.md"
+  },
+  {
+   "source": "threads/complexity-and-transfer.md",
+   "target": "analysis/sigma-tree-importance.md"
+  },
+  {
+   "source": "threads/complexity-and-transfer.md",
+   "target": "notes/overfitting-signature.md"
+  },
+  {
+   "source": "threads/complexity-and-transfer.md",
+   "target": "progress/progress-20-07-2026.md"
+  },
+  {
+   "source": "threads/complexity-and-transfer.md",
    "target": "progress/progress-23-07-2026.md"
   },
   {
-   "source": "progress/thesis-summary.md",
+   "source": "threads/complexity-and-transfer.md",
    "target": "progress/progress-29-07-2026.md"
+  },
+  {
+   "source": "threads/complexity-and-transfer.md",
+   "target": "threads/thesis-summary.md"
+  },
+  {
+   "source": "threads/error-analysis.md",
+   "target": "analysis/candidate-density-bias.md"
+  },
+  {
+   "source": "threads/error-analysis.md",
+   "target": "analysis/confusion-matrix.md"
+  },
+  {
+   "source": "threads/error-analysis.md",
+   "target": "analysis/fold-difficulty.md"
+  },
+  {
+   "source": "threads/error-analysis.md",
+   "target": "notes/boundary-matching-analogy.md"
+  },
+  {
+   "source": "threads/error-analysis.md",
+   "target": "notes/street-space-tension.md"
+  },
+  {
+   "source": "threads/error-analysis.md",
+   "target": "progress/progress-23-07-2026.md"
+  },
+  {
+   "source": "threads/error-analysis.md",
+   "target": "threads/thesis-summary.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "analysis/drop-list.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "notes/downsampling-to-miles-density.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "notes/experiment-design.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "notes/experiment-group-a.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "notes/experiment-group-b.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "notes/experiment-group-c.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "notes/experiment-group-d.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "notes/experiment-group-e.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "notes/ground-truth-cleaning.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "notes/ground-truth-dataset.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "notes/self-report-form.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "notes/spatial-entity-layers.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "notes/study-area.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "progress/progress-23-07-2026.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "progress/progress-29-07-2026.md"
+  },
+  {
+   "source": "threads/ground-truth-data.md",
+   "target": "threads/thesis-summary.md"
+  },
+  {
+   "source": "threads/outlook.md",
+   "target": "notes/contributions.md"
+  },
+  {
+   "source": "threads/outlook.md",
+   "target": "notes/future-work.md"
+  },
+  {
+   "source": "threads/outlook.md",
+   "target": "notes/limitations.md"
+  },
+  {
+   "source": "threads/outlook.md",
+   "target": "threads/thesis-summary.md"
+  },
+  {
+   "source": "threads/problem-and-positioning.md",
+   "target": "notes/discussion-citation-checks.md"
+  },
+  {
+   "source": "threads/problem-and-positioning.md",
+   "target": "notes/map-matching-extension.md"
+  },
+  {
+   "source": "threads/problem-and-positioning.md",
+   "target": "notes/motivation.md"
+  },
+  {
+   "source": "threads/problem-and-positioning.md",
+   "target": "notes/positioning-vs-deterministic-assignment.md"
+  },
+  {
+   "source": "threads/problem-and-positioning.md",
+   "target": "notes/research-questions.md"
+  },
+  {
+   "source": "threads/problem-and-positioning.md",
+   "target": "progress/progress-23-07-2026.md"
+  },
+  {
+   "source": "threads/problem-and-positioning.md",
+   "target": "threads/thesis-summary.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "analysis/candidate-density-bias.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "analysis/confusion-matrix.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "analysis/final-model.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "analysis/ml-ceiling-row-level.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "notes/ground-truth-cleaning.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "notes/motivation.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "notes/research-questions.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "notes/street-space-tension.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "progress/progress-19-07-2026.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "progress/progress-20-07-2026.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "progress/progress-21-07-2026.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "progress/progress-23-07-2026.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "progress/progress-29-07-2026.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "threads/assignment-framework.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "threads/calibration.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "threads/complexity-and-transfer.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "threads/error-analysis.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "threads/ground-truth-data.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "threads/outlook.md"
+  },
+  {
+   "source": "threads/thesis-summary.md",
+   "target": "threads/problem-and-positioning.md"
   }
  ]
 }

@@ -3,7 +3,7 @@ source: report/notes/study-area.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Study area
@@ -14,11 +14,11 @@ generated: 2026-10-13T16:57:34
 
 The framework is calibrated on the [Ground truth dataset](ground-truth-dataset.md) first and is meant to be applied to the **MILES** GPS trajectory dataset afterwards (not done yet, see [Limitations](limitations.md)).
 
-Part of [Chapter 3: Data and ground truth](../progress/ch3-data.md). Layers: [Spatial entity layers](spatial-entity-layers.md).
+Part of [Ground truth data](../threads/ground-truth-data.md). Layers: [Spatial entity layers](spatial-entity-layers.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 3: Data and ground truth](../progress/ch3-data.md)
+**Linked from** [Ground truth data](../threads/ground-truth-data.md)
 
 </div>

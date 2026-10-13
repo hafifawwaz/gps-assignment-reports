@@ -3,7 +3,7 @@ source: report/notes/experiment-group-e.md
 date: 23-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Group E: ambiguous edge cases
@@ -32,6 +32,6 @@ Part of [Experiment design](experiment-design.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 3: Data and ground truth](../progress/ch3-data.md) · [Experiment design](experiment-design.md)
+**Linked from** [Experiment design](experiment-design.md) · [Ground truth data](../threads/ground-truth-data.md)
 
 </div>

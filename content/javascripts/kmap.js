@@ -5,8 +5,9 @@
   if (!host || typeof d3 === "undefined") return;
 
   const css = (name) => getComputedStyle(document.body).getPropertyValue(name).trim();
-  const isHub = (n) => n.kind === "progress";  // progress notes are the hubs (report/ workflow)
+  const isHub = (n) => n.kind === "thread";  // threads are the hubs (report/ workflow)
   const nodeColor = (n) => (isHub(n) ? css("--c-surface") : {
+    progress: css("--c-chip-progress"),
     inbox: css("--c-red"),
     analysis: css("--c-chip-analysis"),
   }[n.kind] || css("--c-node-note"));

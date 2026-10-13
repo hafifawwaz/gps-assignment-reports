@@ -3,7 +3,7 @@ source: report/notes/grouped-cross-validation.md
 date: 21-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Grouped cross-validation
@@ -16,11 +16,11 @@ Since 21-07-2026 every CV number uses `StratifiedGroupKFold` (5 folds) **grouped
 
 Effect on the headline: in-sample accuracy unchanged (~0.724), but CV became **0.709 ± 0.075** for the 14-parameter model instead of the earlier 0.716 ± 0.035. The wider band is the honest one. Earlier stay-level CV results, such as [ML baseline, stay level (superseded)](../analysis/ml-baseline-stay-level.md), are superseded.
 
-Part of [Chapter 4: Framework](../progress/ch4-framework.md).
+Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 4: Framework](../progress/ch4-framework.md) · [Experiment design](experiment-design.md) · [Limitations](limitations.md) · [ML baseline, stay level (superseded)](../analysis/ml-baseline-stay-level.md) · [Model evaluation metrics](model-evaluation-metrics.md) · [Model progression](../analysis/model-progression-table.md) · [RQ1 rebuilt with grouped CV](../progress/progress-21-07-2026.md) · [R_buffer: 10 m vs 15 m](../analysis/r-buffer-10m-vs-15m.md)
+**Linked from** [Calibration](../threads/calibration.md) · [Experiment design](experiment-design.md) · [Limitations](limitations.md) · [ML baseline, stay level (superseded)](../analysis/ml-baseline-stay-level.md) · [Model evaluation metrics](model-evaluation-metrics.md) · [Model progression](../analysis/model-progression-table.md) · [RQ1 rebuilt with grouped CV](../progress/progress-21-07-2026.md) · [R_buffer: 10 m vs 15 m](../analysis/r-buffer-10m-vs-15m.md)
 
 </div>

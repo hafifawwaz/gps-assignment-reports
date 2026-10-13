@@ -3,7 +3,7 @@ source: report/notes/boundary-matching-analogy.md
 date: 23-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Candidate density as boundary-matching difficulty
@@ -16,11 +16,11 @@ A narrower analogue exists in the positional-error literature. Weng et al. (2025
 
 The limit of the analogy: those papers resolve between alternatives of the same kind, while the street disadvantage here is a **between-type** competition (street losing to building). The shared root is closely packed candidates, not an identical mechanism.
 
-Part of [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md) (a subsection of the thesis's Discussion).
+Part of [Error analysis](../threads/error-analysis.md) (a subsection of the thesis's Discussion).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate density bias toward building](../analysis/candidate-density-bias.md) · [Chapter 2: Literature](../progress/ch2-literature.md) · [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md) · [Discussion citation checks](discussion-citation-checks.md)
+**Linked from** [Candidate density bias toward building](../analysis/candidate-density-bias.md) · [Discussion citation checks](discussion-citation-checks.md) · [Error analysis](../threads/error-analysis.md)
 
 </div>

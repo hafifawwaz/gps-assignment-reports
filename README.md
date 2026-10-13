@@ -14,11 +14,12 @@ then applied to a large GPS trajectory dataset.
 | Section | What is there |
 |---|---|
 | **Home** | A short catch-up summary of current work, and the newest items from every section. |
-| **Notes** | Small pieces of progress: method, data, interpretation, discussion. |
-| **Progress** | Hubs ready to present: the thesis summary, one hub per chapter, dated updates for seminar (zemi) and supervision, and slide exports. |
-| **Inbox** | Open items not yet settled in supervision. |
-| **Analysis** | Raw analysis output: model tables, numbers and diagnostics, one finding per note. |
 | **Map** | A knowledge graph of every note and the links between them. Start from *Thesis summary*. |
+| **Threads** | Hubs by theme: the *Thesis summary*, then one list of notes per theme (data, framework, calibration, error analysis, ...). |
+| **Progress** | Dated updates for seminar (zemi) and supervision, and slide exports. |
+| **Notes** | Small pieces of progress: method, data, interpretation, discussion. |
+| **Analysis** | Raw analysis output: model tables, numbers and diagnostics, one finding per note. |
+| **Inbox** | Open items not yet settled in supervision. |
 
 Dates are written
 `DD-MM-YYYY`. A light/dark switch is in the header.

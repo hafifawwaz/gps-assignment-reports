@@ -3,7 +3,7 @@ source: report/analysis/r-buffer-10m-vs-15m.md
 date: 19-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # R_buffer: 10 m vs 15 m
@@ -26,11 +26,11 @@ Two cautions: ρ² vs LL(C) is not comparable across radii ([Model evaluation me
 
 Wider buffers pull in more low-quality street candidates; street accuracy suffers most at 15 m ([Model 1: base](model-1-base.md)).
 
-Part of [Chapter 5: Results](../progress/ch5-results.md). Mechanism: [Candidate selection](../notes/candidate-selection.md).
+Part of [Calibration](../threads/calibration.md). Mechanism: [Candidate selection](../notes/candidate-selection.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate selection](../notes/candidate-selection.md) · [Chapter 5: Results](../progress/ch5-results.md) · [Downsampling shrinks the candidate search area](candidate-search-area.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model evaluation metrics](../notes/model-evaluation-metrics.md)
+**Linked from** [Calibration](../threads/calibration.md) · [Candidate selection](../notes/candidate-selection.md) · [Downsampling shrinks the candidate search area](candidate-search-area.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model evaluation metrics](../notes/model-evaluation-metrics.md)
 
 </div>

@@ -3,7 +3,7 @@ source: report/analysis/stepwise-vif-elimination.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Stepwise VIF elimination
@@ -21,11 +21,11 @@ Dropping σ² costs nothing (LR = 1.18, df = 1, **p = 0.278**) and cuts the cond
 
 **Result, the 14-parameter model:** Model 4a + f_distribution × share_type. Accuracy 0.724, grouped CV **0.709 ± 0.075**, condition number 2,430. Same shape as reported on 19-07-2026, now re-derived from scratch.
 
-It was then simplified to 12 parameters: [f_directional: shared vs split](f-directional-shared-vs-split.md). Part of [Chapter 5: Results](../progress/ch5-results.md).
+It was then simplified to 12 parameters: [f_directional: shared vs split](f-directional-shared-vs-split.md). Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [Model 6, re-derived at calibrated alpha](model-6-rederived.md) · [Model progression](model-progression-table.md) · [Multicollinearity is structural](../notes/multicollinearity-is-structural.md) · [RQ1 rebuilt with grouped CV](../progress/progress-21-07-2026.md) · [Sigma in tree importance](sigma-tree-importance.md)
+**Linked from** [Calibration](../threads/calibration.md) · [Model 6, re-derived at calibrated alpha](model-6-rederived.md) · [Model progression](model-progression-table.md) · [Multicollinearity is structural](../notes/multicollinearity-is-structural.md) · [RQ1 rebuilt with grouped CV](../progress/progress-21-07-2026.md) · [Sigma in tree importance](sigma-tree-importance.md)
 
 </div>

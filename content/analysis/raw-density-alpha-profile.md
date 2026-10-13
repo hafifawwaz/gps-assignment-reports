@@ -3,7 +3,7 @@ source: report/analysis/raw-density-alpha-profile.md
 date: 29-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Raw-density alpha profile
@@ -28,6 +28,6 @@ Part of [Raw-density refit](raw-density-refit.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Alpha calibration](alpha-calibration.md) · [Chapter 5: Results](../progress/ch5-results.md) · [Does downsampling matter?](../progress/progress-29-07-2026.md) · [Raw-density refit](raw-density-refit.md)
+**Linked from** [Alpha calibration](alpha-calibration.md) · [Complexity and transfer](../threads/complexity-and-transfer.md) · [Does downsampling matter?](../progress/progress-29-07-2026.md) · [Raw-density refit](raw-density-refit.md)
 
 </div>

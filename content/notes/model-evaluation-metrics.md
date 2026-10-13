@@ -3,7 +3,7 @@ source: report/notes/model-evaluation-metrics.md
 date: 19-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Model evaluation metrics
@@ -22,11 +22,11 @@ generated: 2026-10-13T16:57:34
 
 ρ² vs LL(C) cannot compare different `R_buffer` values, because LL(C) itself changes with the candidate pool ([R_buffer: 10 m vs 15 m](../analysis/r-buffer-10m-vs-15m.md)). All CV numbers use [Grouped cross-validation](grouped-cross-validation.md).
 
-Part of [Chapter 4: Framework](../progress/ch4-framework.md).
+Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 4: Framework](../progress/ch4-framework.md) · [R_buffer: 10 m vs 15 m](../analysis/r-buffer-10m-vs-15m.md)
+**Linked from** [Calibration](../threads/calibration.md) · [R_buffer: 10 m vs 15 m](../analysis/r-buffer-10m-vs-15m.md)
 
 </div>

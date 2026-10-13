@@ -3,7 +3,7 @@ source: report/notes/motivation.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Motivation
@@ -17,11 +17,11 @@ Deterministic GPS-to-entity assignment (nearest or containing building) has two 
 
 Probabilistic assignment exists for moving segments (map matching), but its logic had not been extended to **stationary** stay clusters, nor combined with a multi-target building/street/open-space scope ([Extending map matching to stationary stays](map-matching-extension.md)).
 
-Part of [Chapter 1: Introduction](../progress/ch1-introduction.md). Leads to [Research questions](research-questions.md).
+Part of [Problem and positioning](../threads/problem-and-positioning.md). Leads to [Research questions](research-questions.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 1: Introduction](../progress/ch1-introduction.md) · [Extending map matching to stationary stays](map-matching-extension.md) · [Thesis summary](../progress/thesis-summary.md)
+**Linked from** [Extending map matching to stationary stays](map-matching-extension.md) · [Problem and positioning](../threads/problem-and-positioning.md) · [Thesis summary](../threads/thesis-summary.md)
 
 </div>

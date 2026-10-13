@@ -3,7 +3,7 @@ source: report/notes/f-directional.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # f_directional
@@ -19,6 +19,6 @@ Part of [Framework overview](framework-overview.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 4: Framework](../progress/ch4-framework.md) · [Directional scope ablation (3a vs 3b)](../analysis/directional-scope-ablation.md) · [Framework overview](framework-overview.md) · [Model 2: share-type and sigma](../analysis/model-2-share-type-sigma.md) · [Model 5: alternative-specific constants (rejected)](../analysis/model-5-asc-rejected.md) · [f_directional: shared vs split](../analysis/f-directional-shared-vs-split.md)
+**Linked from** [Assignment framework](../threads/assignment-framework.md) · [Directional scope ablation (3a vs 3b)](../analysis/directional-scope-ablation.md) · [Framework overview](framework-overview.md) · [Model 2: share-type and sigma](../analysis/model-2-share-type-sigma.md) · [Model 5: alternative-specific constants (rejected)](../analysis/model-5-asc-rejected.md) · [f_directional: shared vs split](../analysis/f-directional-shared-vs-split.md)
 
 </div>

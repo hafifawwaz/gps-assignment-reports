@@ -3,7 +3,7 @@ source: report/notes/future-work.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T17:38:15
+generated: 2026-10-13T20:05:33
 ---
 
 # Future work
@@ -16,11 +16,11 @@ generated: 2026-10-13T17:38:15
 - Treat "Building-attached Outdoor" as its own subtype ([Limitations](limitations.md)).
 - Revisit the 3-device collection protocol for a more independent future sample.
 
-Part of [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md).
+Part of [Outlook](../threads/outlook.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md) · [Tension with the street-space argument](street-space-tension.md)
+**Linked from** [Outlook](../threads/outlook.md) · [Tension with the street-space argument](street-space-tension.md)
 
 </div>

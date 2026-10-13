@@ -134,6 +134,7 @@
   display: inline-block; font-size: .56rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
   padding: .1rem .55rem; border-radius: 999px; border: 1px solid transparent; line-height: 1.6;
 }
+.chip-thread { background: transparent; color: var(--c-green); border-color: var(--c-green); }
 .chip-progress { background: var(--c-chip-progress); color: var(--c-on-fill); }
 .chip-inbox { background: var(--c-red); color: var(--c-on-fill); }
 .chip-note { background: transparent; color: var(--c-text); border-color: rgba(64, 64, 64, 0.45); }
@@ -235,7 +236,7 @@
 [data-md-color-scheme="slate"] [data-md-component="palette"] .md-header__button.md-icon::after { right: .13rem; background: var(--c-red); }
 
 /* home: the four sections side by side */
-.md-typeset .home-columns { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin-top: 1.4rem; }
+.md-typeset .home-columns { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; margin-top: 1.4rem; }
 .md-typeset .home-col {
   background: var(--c-surface); border: 1px solid var(--c-line); border-radius: .6rem; padding: .2rem 1rem .9rem;
 }

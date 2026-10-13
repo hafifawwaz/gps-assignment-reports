@@ -3,7 +3,7 @@ source: report/analysis/drop-list.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Ground truth drop list
@@ -35,11 +35,11 @@ All 21 names were cross-checked against the raw self-report data and matched.
 
 Where this round sits in the whole cleaning chain: [Ground truth cleaning](../notes/ground-truth-cleaning.md).
 
-Part of [Chapter 3: Data and ground truth](../progress/ch3-data.md).
+Part of [Ground truth data](../threads/ground-truth-data.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 3: Data and ground truth](../progress/ch3-data.md) · [Ground truth cleaning](../notes/ground-truth-cleaning.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md) · [Spatial entity layers](../notes/spatial-entity-layers.md)
+**Linked from** [Ground truth cleaning](../notes/ground-truth-cleaning.md) · [Ground truth data](../threads/ground-truth-data.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md) · [Spatial entity layers](../notes/spatial-entity-layers.md)
 
 </div>

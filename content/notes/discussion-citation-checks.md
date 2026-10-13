@@ -3,7 +3,7 @@ source: report/notes/discussion-citation-checks.md
 date: 23-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Discussion citation checks
@@ -19,11 +19,11 @@ Every citation in the discussion notes was checked against the plain-text litera
 
 Housekeeping found, not fixed: the bibliography has two entries for Brakatsoulas et al.; Yan et al. (2010) is filed under the key `hutchison_hybrid_2010` (also duplicated); an earlier check wrongly reported no source file for Okabe (2000), which exists.
 
-Part of [Chapter 2: Literature](../progress/ch2-literature.md).
+Part of [Problem and positioning](../threads/problem-and-positioning.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 2: Literature](../progress/ch2-literature.md) · [Tension with the street-space argument](street-space-tension.md)
+**Linked from** [Problem and positioning](../threads/problem-and-positioning.md) · [Tension with the street-space argument](street-space-tension.md)
 
 </div>

@@ -1,42 +1,8 @@
 # Progress
 
-Hubs ready to present: the thesis summary, one per chapter, dated updates and slide exports.
+Dated updates for sensei, and slide exports.
 
 ## 2026
-
-### October
-
-<div class="grid cards" markdown>
-
--   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
-
-    **[Thesis summary](thesis-summary.md)**
-
--   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
-
-    **[Chapter 6: Discussion and conclusion](ch6-discussion.md)**
-
--   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
-
-    **[Chapter 5: Results](ch5-results.md)**
-
--   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
-
-    **[Chapter 4: Framework](ch4-framework.md)**
-
--   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
-
-    **[Chapter 3: Data and ground truth](ch3-data.md)**
-
--   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
-
-    **[Chapter 2: Literature](ch2-literature.md)**
-
--   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
-
-    **[Chapter 1: Introduction](ch1-introduction.md)**
-
-</div>
 
 ### August
 

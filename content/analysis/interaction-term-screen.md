@@ -3,7 +3,7 @@ source: report/analysis/interaction-term-screen.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Interaction term screen (α = 1)
@@ -33,11 +33,11 @@ The first model to move **open space** (to 0.524), at a cost to building. But σ
 
 The screen's two non-significant terms sit on badly collinear ingredients (VIF up to 73), so "not significant" is weak evidence here.
 
-Re-run at calibrated alpha: [Model 6, re-derived at calibrated alpha](model-6-rederived.md). Part of [Chapter 5: Results](../progress/ch5-results.md).
+Re-run at calibrated alpha: [Model 6, re-derived at calibrated alpha](model-6-rederived.md). Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 4a: alternative-specific parameters](model-4a-alternative-specific.md) · [Model progression](model-progression-table.md) · [The f_distance² artifact](f-distance-squared-artifact.md) · [f_distribution](../notes/f-distribution.md)
+**Linked from** [Calibration](../threads/calibration.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 4a: alternative-specific parameters](model-4a-alternative-specific.md) · [Model progression](model-progression-table.md) · [The f_distance² artifact](f-distance-squared-artifact.md) · [f_distribution](../notes/f-distribution.md)
 
 </div>

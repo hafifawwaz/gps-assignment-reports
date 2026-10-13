@@ -3,7 +3,7 @@ source: report/analysis/model-1-base.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Model 1: base
@@ -35,11 +35,11 @@ $$V_k = w_1 f_\text{distribution} + w_2 f_\text{distance} + w_3 f_\text{temporal
 - [f_distance](../notes/f-distance.md) changes sign between radii (-0.47 at 10 m, +0.95 at 15 m), blocked on alpha calibration.
 - Healthy conditioning: the problems are specification, not identification.
 
-Next: [Model 2: share-type and sigma](model-2-share-type-sigma.md). Part of [Chapter 5: Results](../progress/ch5-results.md).
+Next: [Model 2: share-type and sigma](model-2-share-type-sigma.md). Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Alpha calibration](alpha-calibration.md) · [Chapter 5: Results](../progress/ch5-results.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 2: share-type and sigma](model-2-share-type-sigma.md) · [Model progression](model-progression-table.md) · [R_buffer: 10 m vs 15 m](r-buffer-10m-vs-15m.md) · [f_distance](../notes/f-distance.md) · [f_distribution](../notes/f-distribution.md) · [f_temporal](../notes/f-temporal.md)
+**Linked from** [Alpha calibration](alpha-calibration.md) · [Calibration](../threads/calibration.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 2: share-type and sigma](model-2-share-type-sigma.md) · [Model progression](model-progression-table.md) · [R_buffer: 10 m vs 15 m](r-buffer-10m-vs-15m.md) · [f_distance](../notes/f-distance.md) · [f_distribution](../notes/f-distribution.md) · [f_temporal](../notes/f-temporal.md)
 
 </div>

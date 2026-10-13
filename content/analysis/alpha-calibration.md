@@ -3,7 +3,7 @@ source: report/analysis/alpha-calibration.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Alpha calibration
@@ -26,11 +26,11 @@ Single peak; optimizer gives **α\* = 2.4297**. Real rescoring at that value mat
 - **Calibrate once on 4a and re-derive downstream models**, rather than recalibrating inside richer ones: for Models 5 and 6 that marginally raised LL, lowered accuracy and roughly doubled VIFs.
 - Model 1's surface is not single-peaked and no α fixes its core problem ([Model 1: base](model-1-base.md)).
 
-Main payoff: [The f_distance² artifact](f-distance-squared-artifact.md). On raw-density data the optimum moves: [Raw-density alpha profile](raw-density-alpha-profile.md). Part of [Chapter 5: Results](../progress/ch5-results.md).
+Main payoff: [The f_distance² artifact](f-distance-squared-artifact.md). On raw-density data the optimum moves: [Raw-density alpha profile](raw-density-alpha-profile.md). Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 1: base](model-1-base.md) · [Model 4a: alternative-specific parameters](model-4a-alternative-specific.md) · [RQ1 rebuilt with grouped CV](../progress/progress-21-07-2026.md) · [Raw-density alpha profile](raw-density-alpha-profile.md) · [The f_distance² artifact](f-distance-squared-artifact.md) · [f_distance](../notes/f-distance.md)
+**Linked from** [Calibration](../threads/calibration.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 1: base](model-1-base.md) · [Model 4a: alternative-specific parameters](model-4a-alternative-specific.md) · [RQ1 rebuilt with grouped CV](../progress/progress-21-07-2026.md) · [Raw-density alpha profile](raw-density-alpha-profile.md) · [The f_distance² artifact](f-distance-squared-artifact.md) · [f_distance](../notes/f-distance.md)
 
 </div>

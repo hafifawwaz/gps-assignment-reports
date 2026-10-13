@@ -3,7 +3,7 @@ source: report/analysis/f-directional-shared-vs-split.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # f_directional: shared vs split
@@ -22,11 +22,11 @@ Does [f_directional](../notes/f-directional.md) need one coefficient per type ("
 
 The shared coefficient is cleanly significant (t = +3.12); in the split version only the building term clears 1.96. Street-only is statistically equivalent to shared at this size, never better; at the 7-parameter size shared wins on every metric (CV 0.666 vs 0.656), echoing [Directional scope ablation (3a vs 3b)](directional-scope-ablation.md).
 
-**Decision: shared, 12 parameters** → [Final model](final-model.md), adopted as the thesis's final model (Section 5.1.8). Part of [Chapter 5: Results](../progress/ch5-results.md).
+**Decision: shared, 12 parameters** → [Final model](final-model.md), adopted as the thesis's final model (Section 5.1.8). Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [Directional scope ablation (3a vs 3b)](directional-scope-ablation.md) · [Overfitting signature](../notes/overfitting-signature.md) · [RQ1 rebuilt with grouped CV](../progress/progress-21-07-2026.md) · [Stepwise VIF elimination](stepwise-vif-elimination.md) · [f_directional](../notes/f-directional.md)
+**Linked from** [Calibration](../threads/calibration.md) · [Directional scope ablation (3a vs 3b)](directional-scope-ablation.md) · [Overfitting signature](../notes/overfitting-signature.md) · [RQ1 rebuilt with grouped CV](../progress/progress-21-07-2026.md) · [Stepwise VIF elimination](stepwise-vif-elimination.md) · [f_directional](../notes/f-directional.md)
 
 </div>

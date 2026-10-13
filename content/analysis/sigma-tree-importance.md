@@ -3,7 +3,7 @@ source: report/analysis/sigma-tree-importance.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Sigma in tree importance
@@ -23,11 +23,11 @@ Either positional dispersion carries nonlinear, threshold-like signal a single l
 
 In the row-level run the trees learn type-specific boundaries straight from the one-hot type indicator; `f_distance` ranks last in both.
 
-Sources: [ML baseline, stay level (superseded)](ml-baseline-stay-level.md), [ML ceiling check, row level](ml-ceiling-row-level.md). Part of [Chapter 5: Results](../progress/ch5-results.md).
+Sources: [ML baseline, stay level (superseded)](ml-baseline-stay-level.md), [ML ceiling check, row level](ml-ceiling-row-level.md). Part of [Complexity and transfer](../threads/complexity-and-transfer.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [ML baseline](../progress/progress-20-07-2026.md) · [ML baseline, stay level (superseded)](ml-baseline-stay-level.md) · [ML ceiling check, row level](ml-ceiling-row-level.md) · [sigma](../notes/sigma.md)
+**Linked from** [Complexity and transfer](../threads/complexity-and-transfer.md) · [ML baseline](../progress/progress-20-07-2026.md) · [ML baseline, stay level (superseded)](ml-baseline-stay-level.md) · [ML ceiling check, row level](ml-ceiling-row-level.md) · [sigma](../notes/sigma.md)
 
 </div>

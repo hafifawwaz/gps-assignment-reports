@@ -3,7 +3,7 @@ source: report/analysis/candidate-density-bias.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Candidate density bias toward building
@@ -22,11 +22,11 @@ It is not candidate sparsity. True street stays have the **densest** same-type p
 
 This is a fixable artifact of the street layer, not a GPS-evidence ceiling ([Contributions](../notes/contributions.md)), but it undercuts the street-space motivation: [Tension with the street-space argument](../notes/street-space-tension.md), [Candidate density as boundary-matching difficulty](../notes/boundary-matching-analogy.md).
 
-Part of [Chapter 5: Results](../progress/ch5-results.md).
+Part of [Error analysis](../threads/error-analysis.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate density as boundary-matching difficulty](../notes/boundary-matching-analogy.md) · [Chapter 5: Results](../progress/ch5-results.md) · [Confusion matrix](confusion-matrix.md) · [Contributions](../notes/contributions.md) · [Limitations](../notes/limitations.md) · [Model 2: share-type and sigma](model-2-share-type-sigma.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md) · [Spatial entity layers](../notes/spatial-entity-layers.md) · [Tension with the street-space argument](../notes/street-space-tension.md) · [Thesis summary](../progress/thesis-summary.md) · [share_type](../notes/share-type.md)
+**Linked from** [Candidate density as boundary-matching difficulty](../notes/boundary-matching-analogy.md) · [Confusion matrix](confusion-matrix.md) · [Contributions](../notes/contributions.md) · [Error analysis](../threads/error-analysis.md) · [Limitations](../notes/limitations.md) · [Model 2: share-type and sigma](model-2-share-type-sigma.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md) · [Spatial entity layers](../notes/spatial-entity-layers.md) · [Tension with the street-space argument](../notes/street-space-tension.md) · [Thesis summary](../threads/thesis-summary.md) · [share_type](../notes/share-type.md)
 
 </div>

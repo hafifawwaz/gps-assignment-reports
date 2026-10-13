@@ -3,7 +3,7 @@ source: report/notes/map-matching-extension.md
 date: 23-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Extending map matching to stationary stays
@@ -14,11 +14,11 @@ Bierlaire et al. (2013), Chen and Bierlaire (2015) and Kempinska et al. (2016) a
 
 What carries over is the commitment to several plausible entities with likelihoods. What does not is the mechanism: this framework scores properties **intrinsic to one static cluster** ([Framework overview](framework-overview.md)). Quddus et al. (2007) support that this substitution is necessary: fix-by-fix matching without trajectory history risks selecting the wrong link, and off-network cases such as car parks are named as an unresolved limitation.
 
-Part of [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md) (a subsection of the thesis's Discussion). Motivated in [Motivation](motivation.md).
+Part of [Problem and positioning](../threads/problem-and-positioning.md) (a subsection of the thesis's Discussion). Motivated in [Motivation](motivation.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 2: Literature](../progress/ch2-literature.md) · [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md) · [Discussion citation checks](discussion-citation-checks.md) · [Motivation](motivation.md)
+**Linked from** [Discussion citation checks](discussion-citation-checks.md) · [Motivation](motivation.md) · [Problem and positioning](../threads/problem-and-positioning.md)
 
 </div>

@@ -3,7 +3,7 @@ source: report/analysis/model-progression-table.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Model progression
@@ -29,11 +29,11 @@ Every model refit under [Grouped cross-validation](../notes/grouped-cross-valida
 
 Accuracy climbs about 20 points, mostly from two steps: adding share-type and σ (+15) and going alternative-specific (+5). After that, complexity mostly moves conditioning, not accuracy.
 
-Part of [Chapter 5: Results](../progress/ch5-results.md).
+Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [Final model](final-model.md) · [Grouped cross-validation](../notes/grouped-cross-validation.md) · [RQ1 rebuilt with grouped CV](../progress/progress-21-07-2026.md)
+**Linked from** [Calibration](../threads/calibration.md) · [Final model](final-model.md) · [Grouped cross-validation](../notes/grouped-cross-validation.md) · [RQ1 rebuilt with grouped CV](../progress/progress-21-07-2026.md)
 
 </div>

@@ -3,7 +3,7 @@ source: report/notes/framework-overview.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Framework overview
@@ -21,11 +21,11 @@ $$P(t \mid C_i) = \frac{\sum_{k \in t} \exp(V_k)}{\sum_j \exp(V_j)}$$
 
 The weights are estimated by maximum likelihood on the [Ground truth dataset](ground-truth-dataset.md) rather than fixed in advance.
 
-Part of [Chapter 4: Framework](../progress/ch4-framework.md). Answers the "how" of [Research questions](research-questions.md) RQ1.
+Part of [Assignment framework](../threads/assignment-framework.md). Answers the "how" of [Research questions](research-questions.md) RQ1.
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate selection](candidate-selection.md) · [Chapter 4: Framework](../progress/ch4-framework.md) · [Contributions](contributions.md) · [Extending map matching to stationary stays](map-matching-extension.md) · [Research questions](research-questions.md) · [f_directional](f-directional.md) · [f_distance](f-distance.md) · [f_distribution](f-distribution.md) · [f_temporal](f-temporal.md)
+**Linked from** [Assignment framework](../threads/assignment-framework.md) · [Candidate selection](candidate-selection.md) · [Contributions](contributions.md) · [Extending map matching to stationary stays](map-matching-extension.md) · [Research questions](research-questions.md) · [f_directional](f-directional.md) · [f_distance](f-distance.md) · [f_distribution](f-distribution.md) · [f_temporal](f-temporal.md)
 
 </div>

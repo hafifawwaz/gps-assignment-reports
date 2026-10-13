@@ -3,7 +3,7 @@ source: report/analysis/candidate-search-area.md
 date: 29-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Downsampling shrinks the candidate search area
@@ -19,6 +19,6 @@ Part of [Raw-density refit](raw-density-refit.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate selection](../notes/candidate-selection.md) · [Chapter 5: Results](../progress/ch5-results.md) · [Does downsampling matter?](../progress/progress-29-07-2026.md) · [Downsampling to MILES density](../notes/downsampling-to-miles-density.md) · [Raw-density refit](raw-density-refit.md)
+**Linked from** [Candidate selection](../notes/candidate-selection.md) · [Complexity and transfer](../threads/complexity-and-transfer.md) · [Does downsampling matter?](../progress/progress-29-07-2026.md) · [Downsampling to MILES density](../notes/downsampling-to-miles-density.md) · [Raw-density refit](raw-density-refit.md)
 
 </div>

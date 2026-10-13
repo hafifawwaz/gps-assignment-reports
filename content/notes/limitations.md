@@ -3,7 +3,7 @@ source: report/notes/limitations.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T17:38:15
+generated: 2026-10-13T20:30:42
 ---
 
 # Limitations
@@ -17,11 +17,11 @@ generated: 2026-10-13T17:38:15
 - Stays are treated independently of the participant's trip chain.
 - Not yet applied to MILES, so the transfer risk in [Overfitting signature](overfitting-signature.md) is untested.
 
-Part of [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md).
+Part of [Outlook](../threads/outlook.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md) · [Future work](future-work.md) · [Overfitting signature](overfitting-signature.md) · [Self-report form](self-report-form.md) · [Study area](study-area.md)
+**Linked from** [Future work](future-work.md) · [Outlook](../threads/outlook.md) · [Overfitting signature](overfitting-signature.md) · [Self-report form](self-report-form.md) · [Study area](study-area.md)
 
 </div>

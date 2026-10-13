@@ -3,7 +3,7 @@ source: report/notes/f-distribution.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # f_distribution
@@ -19,6 +19,6 @@ Part of [Framework overview](framework-overview.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate selection](candidate-selection.md) · [Chapter 4: Framework](../progress/ch4-framework.md) · [Framework overview](framework-overview.md) · [Model 1: base](../analysis/model-1-base.md) · [f_temporal](f-temporal.md)
+**Linked from** [Assignment framework](../threads/assignment-framework.md) · [Candidate selection](candidate-selection.md) · [Framework overview](framework-overview.md) · [Model 1: base](../analysis/model-1-base.md) · [f_temporal](f-temporal.md)
 
 </div>

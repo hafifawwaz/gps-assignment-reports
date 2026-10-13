@@ -3,7 +3,7 @@ source: report/analysis/model-2-share-type-sigma.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Model 2: share-type and sigma
@@ -39,11 +39,11 @@ $$V_k = w_1 f_\text{distribution} + w_2 f_\text{distance} + w_3 f_\text{directio
 - [sigma](../notes/sigma.md) is a clean positive effect; [f_directional](../notes/f-directional.md) becomes significant once `f_temporal` is gone.
 - [f_distance](../notes/f-distance.md) now flips sign *significantly* between radii.
 
-Next: [Directional scope ablation (3a vs 3b)](directional-scope-ablation.md). Part of [Chapter 5: Results](../progress/ch5-results.md).
+Next: [Directional scope ablation (3a vs 3b)](directional-scope-ablation.md). Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 1: base](model-1-base.md) · [Model progression](model-progression-table.md) · [f_distance](../notes/f-distance.md) · [share_type](../notes/share-type.md) · [sigma](../notes/sigma.md)
+**Linked from** [Calibration](../threads/calibration.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 1: base](model-1-base.md) · [Model progression](model-progression-table.md) · [f_distance](../notes/f-distance.md) · [share_type](../notes/share-type.md) · [sigma](../notes/sigma.md)
 
 </div>

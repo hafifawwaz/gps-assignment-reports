@@ -3,7 +3,7 @@ source: report/notes/street-space-tension.md
 date: 23-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Tension with the street-space argument
@@ -16,11 +16,11 @@ The cause is a calibration artifact, not weaker GPS evidence: `share_type` penal
 
 Two readings stay open: an artifact of this street layer (fewer, longer segments would narrow it), or a general disadvantage of elongated, repeated entity types under any density-based mechanism. No reviewed source settles it ([Discussion citation checks](discussion-citation-checks.md)); testing other segmentation schemes would ([Future work](future-work.md)).
 
-Part of [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md) (a subsection of the thesis's Discussion).
+Part of [Error analysis](../threads/error-analysis.md) (a subsection of the thesis's Discussion).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate density bias toward building](../analysis/candidate-density-bias.md) · [Chapter 2: Literature](../progress/ch2-literature.md) · [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md) · [Discussion citation checks](discussion-citation-checks.md) · [Future work](future-work.md) · [Motivation](motivation.md)
+**Linked from** [Candidate density bias toward building](../analysis/candidate-density-bias.md) · [Discussion citation checks](discussion-citation-checks.md) · [Error analysis](../threads/error-analysis.md) · [Future work](future-work.md) · [Motivation](motivation.md) · [Thesis summary](../threads/thesis-summary.md)
 
 </div>

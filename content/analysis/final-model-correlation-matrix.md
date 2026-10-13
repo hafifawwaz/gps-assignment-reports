@@ -3,7 +3,7 @@ source: report/analysis/final-model-correlation-matrix.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Final model correlation matrix
@@ -31,11 +31,11 @@ Pairwise correlations of the [Final model](final-model.md)'s 12 features.
 
 The strongest pairs are all same-type: f_distance ↔ share for open space (.92), street (.91) and building (.87). See [Multicollinearity is structural](../notes/multicollinearity-is-structural.md). Even shared, f_directional tracks street distance and share (.71, .66), consistent with it being most meaningful for streets.
 
-Part of [Chapter 5: Results](../progress/ch5-results.md).
+Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [Final model](final-model.md) · [Multicollinearity is structural](../notes/multicollinearity-is-structural.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md)
+**Linked from** [Calibration](../threads/calibration.md) · [Final model](final-model.md) · [Multicollinearity is structural](../notes/multicollinearity-is-structural.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md)
 
 </div>

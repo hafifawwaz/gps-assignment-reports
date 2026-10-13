@@ -3,7 +3,7 @@ source: report/analysis/ml-ceiling-row-level.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # ML ceiling check, row level
@@ -22,11 +22,11 @@ Both trees win in-sample, and **both lose under grouped CV**. The gap is almost 
 
 Settings: RF 400 trees, depth 8, min leaf 5; XGBoost 300 rounds, depth 4, learning rate 0.1; not tuned. All three models rank the folds the same way ([Fold difficulty](fold-difficulty.md)).
 
-The clearest case of [Overfitting signature](../notes/overfitting-signature.md). Importance: [Sigma in tree importance](sigma-tree-importance.md). Part of [Chapter 5: Results](../progress/ch5-results.md).
+The clearest case of [Overfitting signature](../notes/overfitting-signature.md). Importance: [Sigma in tree importance](sigma-tree-importance.md). Part of [Complexity and transfer](../threads/complexity-and-transfer.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [Fold difficulty](fold-difficulty.md) · [ML baseline, stay level (superseded)](ml-baseline-stay-level.md) · [Overfitting signature](../notes/overfitting-signature.md) · [Positioning against deterministic assignment](../notes/positioning-vs-deterministic-assignment.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md) · [Research questions](../notes/research-questions.md) · [Sigma in tree importance](sigma-tree-importance.md) · [Thesis summary](../progress/thesis-summary.md)
+**Linked from** [Complexity and transfer](../threads/complexity-and-transfer.md) · [Fold difficulty](fold-difficulty.md) · [ML baseline, stay level (superseded)](ml-baseline-stay-level.md) · [Overfitting signature](../notes/overfitting-signature.md) · [Positioning against deterministic assignment](../notes/positioning-vs-deterministic-assignment.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md) · [Research questions](../notes/research-questions.md) · [Sigma in tree importance](sigma-tree-importance.md) · [Thesis summary](../threads/thesis-summary.md)
 
 </div>

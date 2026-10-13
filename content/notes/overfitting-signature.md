@@ -3,7 +3,7 @@ source: report/notes/overfitting-signature.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T17:38:15
+generated: 2026-10-13T20:05:33
 ---
 
 # Overfitting signature
@@ -20,11 +20,11 @@ Tree models show it at larger scale: both beat the logit in-sample and lose to i
 
 Why it matters for MILES: the ground truth's 59/20/21 type split is a design artifact ([Ground truth dataset](ground-truth-dataset.md)), and `share_type` weights fit sample-specific patterns, so transfer to MILES's unknown type mix is an untested risk ([Limitations](limitations.md)).
 
-Answers [Research questions](research-questions.md) RQ3. Part of [Chapter 5: Results](../progress/ch5-results.md).
+Answers [Research questions](research-questions.md) RQ3. Part of [Complexity and transfer](../threads/complexity-and-transfer.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [Future work](future-work.md) · [Ground truth dataset](ground-truth-dataset.md) · [Limitations](limitations.md) · [ML ceiling check, row level](../analysis/ml-ceiling-row-level.md) · [Model 5: alternative-specific constants (rejected)](../analysis/model-5-asc-rejected.md) · [Research questions](research-questions.md) · [The f_distance² artifact](../analysis/f-distance-squared-artifact.md) · [f_directional: shared vs split](../analysis/f-directional-shared-vs-split.md)
+**Linked from** [Complexity and transfer](../threads/complexity-and-transfer.md) · [Future work](future-work.md) · [Ground truth dataset](ground-truth-dataset.md) · [Limitations](limitations.md) · [ML ceiling check, row level](../analysis/ml-ceiling-row-level.md) · [Model 5: alternative-specific constants (rejected)](../analysis/model-5-asc-rejected.md) · [Research questions](research-questions.md) · [The f_distance² artifact](../analysis/f-distance-squared-artifact.md) · [f_directional: shared vs split](../analysis/f-directional-shared-vs-split.md)
 
 </div>

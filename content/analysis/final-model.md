@@ -3,7 +3,7 @@ source: report/analysis/final-model.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Final model
@@ -42,11 +42,11 @@ $$V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_3 f_\text{
 
 How it was reached: [Model progression](model-progression-table.md). Correlations: [Final model correlation matrix](final-model-correlation-matrix.md). How it fails: [Confusion matrix](confusion-matrix.md). Robust to downsampling: [Raw-density refit](raw-density-refit.md).
 
-Part of [Chapter 5: Results](../progress/ch5-results.md).
+Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate density bias toward building](candidate-density-bias.md) · [Chapter 5: Results](../progress/ch5-results.md) · [Confusion matrix](confusion-matrix.md) · [Contributions](../notes/contributions.md) · [Does downsampling matter?](../progress/progress-29-07-2026.md) · [Final model correlation matrix](final-model-correlation-matrix.md) · [Fold difficulty](fold-difficulty.md) · [ML ceiling check, row level](ml-ceiling-row-level.md) · [Model progression](model-progression-table.md) · [Positioning against deterministic assignment](../notes/positioning-vs-deterministic-assignment.md) · [RQ1 rebuilt with grouped CV](../progress/progress-21-07-2026.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md) · [Raw-density refit](raw-density-refit.md) · [Sigma in tree importance](sigma-tree-importance.md) · [Thesis summary](../progress/thesis-summary.md) · [f_directional: shared vs split](f-directional-shared-vs-split.md) · [f_distribution](../notes/f-distribution.md) · [sigma](../notes/sigma.md)
+**Linked from** [Calibration](../threads/calibration.md) · [Candidate density bias toward building](candidate-density-bias.md) · [Confusion matrix](confusion-matrix.md) · [Contributions](../notes/contributions.md) · [Does downsampling matter?](../progress/progress-29-07-2026.md) · [Final model correlation matrix](final-model-correlation-matrix.md) · [Fold difficulty](fold-difficulty.md) · [ML ceiling check, row level](ml-ceiling-row-level.md) · [Model progression](model-progression-table.md) · [Positioning against deterministic assignment](../notes/positioning-vs-deterministic-assignment.md) · [RQ1 rebuilt with grouped CV](../progress/progress-21-07-2026.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md) · [Raw-density refit](raw-density-refit.md) · [Sigma in tree importance](sigma-tree-importance.md) · [Thesis summary](../threads/thesis-summary.md) · [f_directional: shared vs split](f-directional-shared-vs-split.md) · [f_distribution](../notes/f-distribution.md) · [sigma](../notes/sigma.md)
 
 </div>

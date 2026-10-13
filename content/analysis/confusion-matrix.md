@@ -3,7 +3,7 @@ source: report/analysis/confusion-matrix.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Confusion matrix
@@ -24,11 +24,11 @@ generated: 2026-10-13T16:57:34
 
 The in-sample matrix is nearly identical (building 89.8%, street 44.3%, open space 49.7%), so this is not an overfitting effect.
 
-Why: [Candidate density bias toward building](candidate-density-bias.md). Fold-to-fold behaviour: [Fold difficulty](fold-difficulty.md). Answers RQ2 of [Research questions](../notes/research-questions.md). Part of [Chapter 5: Results](../progress/ch5-results.md).
+Why: [Candidate density bias toward building](candidate-density-bias.md). Fold-to-fold behaviour: [Fold difficulty](fold-difficulty.md). Answers RQ2 of [Research questions](../notes/research-questions.md). Part of [Error analysis](../threads/error-analysis.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate density bias toward building](candidate-density-bias.md) · [Chapter 5: Results](../progress/ch5-results.md) · [Final model](final-model.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md) · [Research questions](../notes/research-questions.md) · [Tension with the street-space argument](../notes/street-space-tension.md) · [Thesis summary](../progress/thesis-summary.md)
+**Linked from** [Candidate density bias toward building](candidate-density-bias.md) · [Error analysis](../threads/error-analysis.md) · [Final model](final-model.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md) · [Research questions](../notes/research-questions.md) · [Tension with the street-space argument](../notes/street-space-tension.md) · [Thesis summary](../threads/thesis-summary.md)
 
 </div>

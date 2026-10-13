@@ -3,7 +3,7 @@ source: report/notes/multicollinearity-is-structural.md
 date: 19-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Multicollinearity is structural
@@ -16,11 +16,11 @@ This is a property of the design, not redundant feature choice. Getting every VI
 
 What is *not* structural: an ASC that duplicates a near-constant feature ([Model 5: alternative-specific constants (rejected)](../analysis/model-5-asc-rejected.md)).
 
-Seen in [Final model correlation matrix](../analysis/final-model-correlation-matrix.md). Part of [Chapter 5: Results](../progress/ch5-results.md).
+Seen in [Final model correlation matrix](../analysis/final-model-correlation-matrix.md). Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [Final model correlation matrix](../analysis/final-model-correlation-matrix.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 4a: alternative-specific parameters](../analysis/model-4a-alternative-specific.md) · [Stepwise VIF elimination](../analysis/stepwise-vif-elimination.md)
+**Linked from** [Calibration](../threads/calibration.md) · [Final model correlation matrix](../analysis/final-model-correlation-matrix.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 4a: alternative-specific parameters](../analysis/model-4a-alternative-specific.md) · [Stepwise VIF elimination](../analysis/stepwise-vif-elimination.md)
 
 </div>

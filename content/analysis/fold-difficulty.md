@@ -3,7 +3,7 @@ source: report/analysis/fold-difficulty.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Fold difficulty
@@ -22,11 +22,11 @@ Per-fold accuracy of the [Final model](final-model.md) (grouped CV):
 
 Building is stable (0.877-0.906). Street swings more than 4× (0.162-0.667) with nearly equal support per fold (36-38 stays), so the swings are not a sample-size effect. Folds 0 and 1 are hardest for **every** type and for Random Forest and XGBoost too ([ML ceiling check, row level](ml-ceiling-row-level.md)): difficulty belongs to which stays land in a fold, not to one type.
 
-Part of [Chapter 5: Results](../progress/ch5-results.md).
+Part of [Error analysis](../threads/error-analysis.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [Confusion matrix](confusion-matrix.md) · [ML ceiling check, row level](ml-ceiling-row-level.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md)
+**Linked from** [Confusion matrix](confusion-matrix.md) · [Error analysis](../threads/error-analysis.md) · [ML ceiling check, row level](ml-ceiling-row-level.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md)
 
 </div>

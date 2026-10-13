@@ -3,7 +3,7 @@ source: report/analysis/model-4a-alternative-specific.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Model 4a: alternative-specific parameters
@@ -29,11 +29,11 @@ $$V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_{3,t} f_\t
 
 `f_distance_bldg` and `f_distance_street` are not individually significant (t = 0.29, 0.34): part of the distance signal is absorbed by share and sigma once split by type.
 
-Becomes the base for everything after. Next: [Model 5: alternative-specific constants (rejected)](model-5-asc-rejected.md), [Interaction term screen (α = 1)](interaction-term-screen.md). Alpha is calibrated on this model: [Alpha calibration](alpha-calibration.md). Part of [Chapter 5: Results](../progress/ch5-results.md).
+Becomes the base for everything after. Next: [Model 5: alternative-specific constants (rejected)](model-5-asc-rejected.md), [Interaction term screen (α = 1)](interaction-term-screen.md). Alpha is calibrated on this model: [Alpha calibration](alpha-calibration.md). Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [Directional scope ablation (3a vs 3b)](directional-scope-ablation.md) · [Interaction term screen (α = 1)](interaction-term-screen.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 5: alternative-specific constants (rejected)](model-5-asc-rejected.md) · [Model 6, re-derived at calibrated alpha](model-6-rederived.md) · [Model progression](model-progression-table.md) · [Multicollinearity is structural](../notes/multicollinearity-is-structural.md)
+**Linked from** [Calibration](../threads/calibration.md) · [Directional scope ablation (3a vs 3b)](directional-scope-ablation.md) · [Interaction term screen (α = 1)](interaction-term-screen.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 5: alternative-specific constants (rejected)](model-5-asc-rejected.md) · [Model 6, re-derived at calibrated alpha](model-6-rederived.md) · [Model progression](model-progression-table.md) · [Multicollinearity is structural](../notes/multicollinearity-is-structural.md)
 
 </div>

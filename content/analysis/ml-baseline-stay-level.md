@@ -3,7 +3,7 @@ source: report/analysis/ml-baseline-stay-level.md
 date: 20-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # ML baseline, stay level (superseded)
@@ -24,11 +24,11 @@ At the time this read as modest headroom (RF +3.8 pp). Every tree variant scored
 
 **Superseded:** stay-level CV leaks sibling recordings ([Grouped cross-validation](../notes/grouped-cross-validation.md)). The corrected comparison reverses the ranking: [ML ceiling check, row level](ml-ceiling-row-level.md). The σ importance flag carried over: [Sigma in tree importance](sigma-tree-importance.md).
 
-Part of [Chapter 5: Results](../progress/ch5-results.md).
+Part of [Complexity and transfer](../threads/complexity-and-transfer.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [Grouped cross-validation](../notes/grouped-cross-validation.md) · [ML baseline](../progress/progress-20-07-2026.md) · [ML ceiling check, row level](ml-ceiling-row-level.md) · [Sigma in tree importance](sigma-tree-importance.md)
+**Linked from** [Complexity and transfer](../threads/complexity-and-transfer.md) · [Grouped cross-validation](../notes/grouped-cross-validation.md) · [ML baseline](../progress/progress-20-07-2026.md) · [ML ceiling check, row level](ml-ceiling-row-level.md) · [Sigma in tree importance](sigma-tree-importance.md)
 
 </div>

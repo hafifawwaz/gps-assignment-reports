@@ -2,6 +2,31 @@
 INHERIT: mkdocs.base.yml
 nav:
 - Home: index.md
+- Map: map/index.md
+- Threads:
+  - threads/index.md
+  - '2026':
+    - October:
+      - thesis summary: threads/thesis-summary.md
+    - July:
+      - ground truth data: threads/ground-truth-data.md
+      - complexity and transfer: threads/complexity-and-transfer.md
+      - outlook: threads/outlook.md
+      - assignment framework: threads/assignment-framework.md
+      - problem and positioning: threads/problem-and-positioning.md
+      - error analysis: threads/error-analysis.md
+      - calibration: threads/calibration.md
+- Progress:
+  - progress/index.md
+  - '2026':
+    - August:
+      - phd interview slides (pdf): progress/phd-interview-slide-slides-export.md
+    - July:
+      - does downsampling matter?: progress/progress-29-07-2026.md
+      - rq2 diagnostics and rq3 ceiling check: progress/progress-23-07-2026.md
+      - rq1 rebuilt with grouped cv: progress/progress-21-07-2026.md
+      - ml baseline: progress/progress-20-07-2026.md
+      - mnl model development: progress/progress-19-07-2026.md
 - Notes:
   - notes/index.md
   - '2026':
@@ -40,27 +65,6 @@ nav:
       - share_type: notes/share-type.md
       - multicollinearity is structural: notes/multicollinearity-is-structural.md
       - model evaluation metrics: notes/model-evaluation-metrics.md
-- Progress:
-  - progress/index.md
-  - '2026':
-    - October:
-      - thesis summary: progress/thesis-summary.md
-      - 'chapter 6: discussion and conclusion': progress/ch6-discussion.md
-      - 'chapter 5: results': progress/ch5-results.md
-      - 'chapter 4: framework': progress/ch4-framework.md
-      - 'chapter 3: data and ground truth': progress/ch3-data.md
-      - 'chapter 2: literature': progress/ch2-literature.md
-      - 'chapter 1: introduction': progress/ch1-introduction.md
-    - August:
-      - phd interview slides (pdf): progress/phd-interview-slide-slides-export.md
-    - July:
-      - does downsampling matter?: progress/progress-29-07-2026.md
-      - rq2 diagnostics and rq3 ceiling check: progress/progress-23-07-2026.md
-      - rq1 rebuilt with grouped cv: progress/progress-21-07-2026.md
-      - ml baseline: progress/progress-20-07-2026.md
-      - mnl model development: progress/progress-19-07-2026.md
-- Inbox:
-  - inbox/index.md
 - Analysis:
   - analysis/index.md
   - '2026':
@@ -90,4 +94,5 @@ nav:
       - alpha calibration: analysis/alpha-calibration.md
       - ml baseline, stay level (superseded): analysis/ml-baseline-stay-level.md
       - 'r_buffer: 10 m vs 15 m': analysis/r-buffer-10m-vs-15m.md
-- Map: map/index.md
+- Inbox:
+  - inbox/index.md

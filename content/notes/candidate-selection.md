@@ -3,7 +3,7 @@ source: report/notes/candidate-selection.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Candidate selection
@@ -19,6 +19,6 @@ Part of [Framework overview](framework-overview.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 4: Framework](../progress/ch4-framework.md) · [Downsampling shrinks the candidate search area](../analysis/candidate-search-area.md) · [Framework overview](framework-overview.md) · [R_buffer: 10 m vs 15 m](../analysis/r-buffer-10m-vs-15m.md)
+**Linked from** [Assignment framework](../threads/assignment-framework.md) · [Downsampling shrinks the candidate search area](../analysis/candidate-search-area.md) · [Framework overview](framework-overview.md) · [R_buffer: 10 m vs 15 m](../analysis/r-buffer-10m-vs-15m.md)
 
 </div>

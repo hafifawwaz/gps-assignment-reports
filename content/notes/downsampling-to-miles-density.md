@@ -3,7 +3,7 @@ source: report/notes/downsampling-to-miles-density.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Downsampling to MILES density
@@ -16,11 +16,11 @@ For the 907 stays this means **17,010** points instead of the raw **167,615** (a
 
 Does it matter? Refitting on raw density says no: [Raw-density refit](../analysis/raw-density-refit.md). It also shrinks the candidate search area as a side effect: [Downsampling shrinks the candidate search area](../analysis/candidate-search-area.md).
 
-Part of [Chapter 3: Data and ground truth](../progress/ch3-data.md).
+Part of [Ground truth data](../threads/ground-truth-data.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 3: Data and ground truth](../progress/ch3-data.md) · [Ground truth dataset](ground-truth-dataset.md) · [Raw-density refit](../analysis/raw-density-refit.md)
+**Linked from** [Ground truth data](../threads/ground-truth-data.md) · [Ground truth dataset](ground-truth-dataset.md) · [Raw-density refit](../analysis/raw-density-refit.md)
 
 </div>

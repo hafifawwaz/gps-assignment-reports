@@ -3,7 +3,7 @@ source: report/analysis/directional-scope-ablation.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Directional scope ablation (3a vs 3b)
@@ -24,11 +24,11 @@ Does [f_directional](../notes/f-directional.md) only mean something for streets?
 - It only **trades** street accuracy for open-space accuracy.
 - `share_bldg` turns significant in 3b (t 0.76 → 2.54) as a side effect, so its significance depends on how the directional term is scoped.
 
-3a carried forward. Reconfirmed at calibrated alpha in [f_directional: shared vs split](f-directional-shared-vs-split.md). Next: [Model 4a: alternative-specific parameters](model-4a-alternative-specific.md). Part of [Chapter 5: Results](../progress/ch5-results.md).
+3a carried forward. Reconfirmed at calibrated alpha in [f_directional: shared vs split](f-directional-shared-vs-split.md). Next: [Model 4a: alternative-specific parameters](model-4a-alternative-specific.md). Part of [Calibration](../threads/calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 2: share-type and sigma](model-2-share-type-sigma.md) · [Model progression](model-progression-table.md) · [f_directional](../notes/f-directional.md) · [f_directional: shared vs split](f-directional-shared-vs-split.md)
+**Linked from** [Calibration](../threads/calibration.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 2: share-type and sigma](model-2-share-type-sigma.md) · [Model progression](model-progression-table.md) · [f_directional](../notes/f-directional.md) · [f_directional: shared vs split](f-directional-shared-vs-split.md)
 
 </div>

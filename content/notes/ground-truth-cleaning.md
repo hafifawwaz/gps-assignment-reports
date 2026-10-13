@@ -3,7 +3,7 @@ source: report/notes/ground-truth-cleaning.md
 date: 23-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T18:27:52
+generated: 2026-10-13T20:05:33
 ---
 
 # Ground truth cleaning
@@ -22,11 +22,11 @@ Battery failures on several devices are part of the 1,029 → 975 drop; that att
 
 An earlier draft stated 956 before the second round; the saved data showed 975, and the final thesis uses 975.
 
-Result: [Ground truth dataset](ground-truth-dataset.md). Part of [Chapter 3: Data and ground truth](../progress/ch3-data.md).
+Result: [Ground truth dataset](ground-truth-dataset.md). Part of [Ground truth data](../threads/ground-truth-data.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 3: Data and ground truth](../progress/ch3-data.md) · [Ground truth dataset](ground-truth-dataset.md) · [Ground truth drop list](../analysis/drop-list.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md) · [Thesis summary](../progress/thesis-summary.md)
+**Linked from** [Ground truth data](../threads/ground-truth-data.md) · [Ground truth dataset](ground-truth-dataset.md) · [Ground truth drop list](../analysis/drop-list.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/progress-23-07-2026.md) · [Thesis summary](../threads/thesis-summary.md)
 
 </div>

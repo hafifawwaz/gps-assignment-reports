@@ -3,7 +3,7 @@ source: report/analysis/raw-density-refit.md
 date: 29-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Raw-density refit
@@ -22,11 +22,11 @@ Sensei asked whether [Downsampling to MILES density](../notes/downsampling-to-mi
 
 **Downsampling does not hurt; the downsampled model is slightly better** on accuracy and conditioning. All 12 coefficients keep their sign. `f_distance` weights are about 2.5× larger on raw data, which tracks the doubled α (the feature is a power transform of α), not a real disagreement.
 
-Side findings: [Raw-density alpha profile](raw-density-alpha-profile.md), [Downsampling shrinks the candidate search area](candidate-search-area.md). Part of [Chapter 5: Results](../progress/ch5-results.md).
+Side findings: [Raw-density alpha profile](raw-density-alpha-profile.md), [Downsampling shrinks the candidate search area](candidate-search-area.md). Part of [Complexity and transfer](../threads/complexity-and-transfer.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 5: Results](../progress/ch5-results.md) · [Does downsampling matter?](../progress/progress-29-07-2026.md) · [Downsampling shrinks the candidate search area](candidate-search-area.md) · [Downsampling to MILES density](../notes/downsampling-to-miles-density.md) · [Final model](final-model.md) · [Raw-density alpha profile](raw-density-alpha-profile.md)
+**Linked from** [Complexity and transfer](../threads/complexity-and-transfer.md) · [Does downsampling matter?](../progress/progress-29-07-2026.md) · [Downsampling shrinks the candidate search area](candidate-search-area.md) · [Downsampling to MILES density](../notes/downsampling-to-miles-density.md) · [Final model](final-model.md) · [Raw-density alpha profile](raw-density-alpha-profile.md)
 
 </div>

@@ -3,7 +3,7 @@ source: report/notes/spatial-entity-layers.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Spatial entity layers
@@ -20,11 +20,11 @@ Three entity types, mutually exclusive by construction:
 
 Streets are drawn as many short adjacent segments, which matters later: [Candidate density bias toward building](../analysis/candidate-density-bias.md). Underground arcades are not in ZTOWN, which is why some stays had to be dropped: [Ground truth drop list](../analysis/drop-list.md).
 
-Part of [Chapter 3: Data and ground truth](../progress/ch3-data.md).
+Part of [Ground truth data](../threads/ground-truth-data.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate density bias toward building](../analysis/candidate-density-bias.md) · [Chapter 3: Data and ground truth](../progress/ch3-data.md) · [Ground truth drop list](../analysis/drop-list.md) · [Study area](study-area.md)
+**Linked from** [Candidate density bias toward building](../analysis/candidate-density-bias.md) · [Ground truth data](../threads/ground-truth-data.md) · [Ground truth drop list](../analysis/drop-list.md) · [Study area](study-area.md)
 
 </div>

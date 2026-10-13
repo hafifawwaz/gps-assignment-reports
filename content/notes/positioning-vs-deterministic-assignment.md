@@ -3,7 +3,7 @@ source: report/notes/positioning-vs-deterministic-assignment.md
 date: 23-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:05:33
 ---
 
 # Positioning against deterministic assignment
@@ -16,11 +16,11 @@ Wu et al. do define a misclassification probability that depends on GPS error an
 
 Would a more flexible model do better? RQ3 says no: Random Forest and XGBoost fit closer in-sample (0.762, 0.849 vs 0.721) but generalize worse (0.699, 0.695 vs 0.716) ([ML ceiling check, row level](../analysis/ml-ceiling-row-level.md)). The advantage is complexity matched to what generalizes, while staying interpretable as twelve signed coefficients.
 
-Part of [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md) (a subsection of the thesis's Discussion). Literature: [Chapter 2: Literature](../progress/ch2-literature.md).
+Part of [Problem and positioning](../threads/problem-and-positioning.md) (a subsection of the thesis's Discussion).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 2: Literature](../progress/ch2-literature.md) · [Chapter 6: Discussion and conclusion](../progress/ch6-discussion.md) · [Discussion citation checks](discussion-citation-checks.md)
+**Linked from** [Discussion citation checks](discussion-citation-checks.md) · [Problem and positioning](../threads/problem-and-positioning.md)
 
 </div>

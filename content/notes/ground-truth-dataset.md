@@ -3,7 +3,7 @@ source: report/notes/ground-truth-dataset.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # Ground truth dataset
@@ -22,11 +22,11 @@ The 59/20/21 split comes from the [Experiment design](experiment-design.md), not
 
 How 1,029 stop records became 907: [Ground truth cleaning](ground-truth-cleaning.md).
 
-Part of [Chapter 3: Data and ground truth](../progress/ch3-data.md).
+Part of [Ground truth data](../threads/ground-truth-data.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 3: Data and ground truth](../progress/ch3-data.md) · [Contributions](contributions.md) · [Experiment design](experiment-design.md) · [Framework overview](framework-overview.md) · [Ground truth cleaning](ground-truth-cleaning.md) · [Overfitting signature](overfitting-signature.md) · [Study area](study-area.md)
+**Linked from** [Contributions](contributions.md) · [Experiment design](experiment-design.md) · [Framework overview](framework-overview.md) · [Ground truth cleaning](ground-truth-cleaning.md) · [Ground truth data](../threads/ground-truth-data.md) · [Overfitting signature](overfitting-signature.md) · [Study area](study-area.md)
 
 </div>

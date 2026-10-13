@@ -3,7 +3,7 @@ source: report/notes/sigma.md
 date: 19-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T16:57:34
+generated: 2026-10-13T20:30:42
 ---
 
 # sigma
@@ -16,11 +16,11 @@ It enters with **one shared coefficient** and building as the reference (0 for b
 
 Clean positive effect in every model ([Model 2: share-type and sigma](../analysis/model-2-share-type-sigma.md), [Final model](../analysis/final-model.md)), yet tree models rank it far higher than its modest coefficient suggests: [Sigma in tree importance](../analysis/sigma-tree-importance.md).
 
-Part of [Chapter 4: Framework](../progress/ch4-framework.md).
+Part of [Assignment framework](../threads/assignment-framework.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Chapter 4: Framework](../progress/ch4-framework.md) · [Framework overview](framework-overview.md) · [Model 2: share-type and sigma](../analysis/model-2-share-type-sigma.md) · [Model 4a: alternative-specific parameters](../analysis/model-4a-alternative-specific.md) · [Sigma in tree importance](../analysis/sigma-tree-importance.md)
+**Linked from** [Assignment framework](../threads/assignment-framework.md) · [Framework overview](framework-overview.md) · [Model 2: share-type and sigma](../analysis/model-2-share-type-sigma.md) · [Model 4a: alternative-specific parameters](../analysis/model-4a-alternative-specific.md) · [Sigma in tree importance](../analysis/sigma-tree-importance.md)
 
 </div>

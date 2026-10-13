@@ -1,0 +1,14 @@
+[project]
+name = "gps-assignment-reports"
+version = "0.1.0"
+description = "Static report site for the GPS staypoint assignment research project"
+requires-python = ">=3.10"
+dependencies = [
+    "mkdocs>=1.6",
+    "mkdocs-material>=9.5",
+    "pyyaml>=6",
+    "pymupdf>=1.24",
+]
+
+[tool.uv]
+package = false

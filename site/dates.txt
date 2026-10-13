@@ -1,0 +1,2 @@
+# Dates for sources whose path carries none, one per line:  source-path<TAB>DD-MM-YYYY
+manuscript/slides/phd-interview-slide/slides-export.pdf	07-08-2026

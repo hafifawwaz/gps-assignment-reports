@@ -1,0 +1,8 @@
+# Path prefixes (relative to dashboard/) skipped by the TEXT pattern rules only.
+# File-type and size rules still apply to them. Keep this list as short as possible.
+
+# The rule files and the self-test contain the patterns and planted cases themselves.
+tools/rules/
+tools/selftest.py
+# Theme assets bundled by MkDocs Material (minified third-party JS/CSS, not our content).
+docs/assets/

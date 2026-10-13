@@ -1,0 +1,10 @@
+# Warning text patterns. One per line:  rule-name<TAB>python-regex
+# A hit does not stop the publish, but it must be acknowledged explicitly in the approval step.
+
+# Raw dataset file names from licensed sources.
+licensed-data-file	(?i)[\w./\\-]*(?:MILES|ZENRIN|ZTOWN|MAPPLE)[\w./\\-]*\.(?:shp|dbf|csv|gpkg|parquet|geoparquet|zip|gpx|xlsx|bmp|tif|tiff)\b
+# People referred to with a title or honorific (names listed in names.txt are checked separately).
+titled-person	\b(?:Prof\.|Professor|Dr\.|Mr\.|Ms\.|Mrs\.)\s+[A-Z][a-z]+
+honorific-person	\b(?!(?:Per|The|Our|My|From|With|For|To|By|As|And|But|When|After|Before|Ask|Asked|Told|Tell|Show|Email|Meet|Met|See|Thank|Thanks|Dear|Pending|Needs|Need|Confirm|Confirmed|Of|Await|Awaiting|Until|Without|Ask|Asking) )[A-Z][a-z]+[- ](?:sensei|san|sama|kun|chan)\b
+# Entity ids derived from licensed map layers (B_ building, S_ street link).
+entity-id	(?<![\w])[BS]_\d{4,}\b

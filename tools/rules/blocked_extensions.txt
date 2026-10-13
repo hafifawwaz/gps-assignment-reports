@@ -1,0 +1,30 @@
+# Data-like file types. Any file with one of these extensions anywhere in the publish tree
+# is a hard block. One extension per line, with the leading dot.
+.parquet
+.geoparquet
+.gpkg
+.shp
+.dbf
+.shx
+.prj
+.cpg
+.csv
+.tsv
+.gpx
+.geojson
+.kml
+.kmz
+.xlsx
+.xls
+.zip
+.7z
+.tar
+.pkl
+.pickle
+.feather
+.sqlite
+.db
+.npy
+.npz
+.h5
+.hdf5

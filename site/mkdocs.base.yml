@@ -1,0 +1,78 @@
+# Hand-edited site configuration. tools/sync.py generates mkdocs.yml (this file + nav) next to it.
+site_name: GPS Staypoint Assignment
+site_description: Research reports on probabilistic assignment of GPS staypoints to urban spatial entities
+site_author: Hafiyyan Hilmy Fawwaz
+site_url: https://hafihafiyyan.github.io/gps-assignment-reports/
+repo_url: https://github.com/hafihafiyyan/gps-assignment-reports
+repo_name: gps-assignment-reports
+edit_uri: ""
+copyright: Hafiyyan Hilmy Fawwaz, Urban Transportation and Planning Lab, Hiroshima University
+
+docs_dir: ../content
+site_dir: ../docs
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  font:
+    text: Inter
+    code: Fira Code
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode (Ravenclaw)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: false
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tilde
+  - pymdownx.mark
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&display=swap
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  # Per-page comment threads (GitHub Discussions). Turn on after installing the giscus app
+  # on the repo: https://github.com/apps/giscus
+  giscus:
+    enabled: false
+    repo: hafihafiyyan/gps-assignment-reports
+    repo_id: ""
+    category: Announcements
+    category_id: ""

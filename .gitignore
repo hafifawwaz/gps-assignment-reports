@@ -1,0 +1,15 @@
+# Local publish state: file names and hashes of reports, including ones NOT published.
+tools/approved.json
+tools/.scan_pass.json
+tools/.last_sync.json
+# Names to warn on stay private.
+tools/rules/names.txt
+# Censorship rules may list exact names or ids, so they stay private too.
+tools/rules/redactions.txt
+
+__pycache__/
+*.pyc
+.venv/
+
+# Planning notes for the dashboard itself stay private.
+PLAN.md

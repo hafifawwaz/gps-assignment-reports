@@ -21,10 +21,10 @@ hide:
 <p class="section-blurb">Hubs by theme: the thesis summary, then one list of notes per theme.</p>
 
 - [Thesis summary](threads/thesis-summary.md)
-- [Ground truth data](threads/ground-truth-data.md)
-- [Complexity and transfer](threads/complexity-and-transfer.md)
+- [Problem and positioning](threads/problem-and-positioning.md)
 - [Outlook](threads/outlook.md)
-- [Assignment framework](threads/assignment-framework.md)
+- [Ground truth data](threads/ground-truth-data.md)
+- [Error analysis](threads/error-analysis.md)
 
 [All 8](threads/index.md){ .more }
 

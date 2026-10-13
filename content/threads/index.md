@@ -4,7 +4,7 @@ Hubs by theme: the thesis summary, then one list of notes per theme.
 
 ## 2026
 
-### October
+### August
 
 <div class="grid cards" markdown>
 
@@ -12,19 +12,9 @@ Hubs by theme: the thesis summary, then one list of notes per theme.
 
     **[Thesis summary](thesis-summary.md)**
 
-</div>
-
-### July
-
-<div class="grid cards" markdown>
-
 -   <p class="doc-meta"><span class="chip chip-thread">Thread</span></p>
 
-    **[Ground truth data](ground-truth-data.md)**
-
--   <p class="doc-meta"><span class="chip chip-thread">Thread</span></p>
-
-    **[Complexity and transfer](complexity-and-transfer.md)**
+    **[Problem and positioning](problem-and-positioning.md)**
 
 -   <p class="doc-meta"><span class="chip chip-thread">Thread</span></p>
 
@@ -32,11 +22,7 @@ Hubs by theme: the thesis summary, then one list of notes per theme.
 
 -   <p class="doc-meta"><span class="chip chip-thread">Thread</span></p>
 
-    **[Assignment framework](assignment-framework.md)**
-
--   <p class="doc-meta"><span class="chip chip-thread">Thread</span></p>
-
-    **[Problem and positioning](problem-and-positioning.md)**
+    **[Ground truth data](ground-truth-data.md)**
 
 -   <p class="doc-meta"><span class="chip chip-thread">Thread</span></p>
 
@@ -44,6 +30,14 @@ Hubs by theme: the thesis summary, then one list of notes per theme.
 
 -   <p class="doc-meta"><span class="chip chip-thread">Thread</span></p>
 
+    **[Complexity and transfer](complexity-and-transfer.md)**
+
+-   <p class="doc-meta"><span class="chip chip-thread">Thread</span></p>
+
     **[Calibration](calibration.md)**
+
+-   <p class="doc-meta"><span class="chip chip-thread">Thread</span></p>
+
+    **[Assignment framework](assignment-framework.md)**
 
 </div>

@@ -1,14 +1,14 @@
 ---
 source: report/threads/calibration.md
-date: 21-07-2026
+date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-13T20:30:42
+generated: 2026-10-13T21:08:51
 ---
 
 # Calibration
 
-<p class="doc-meta"><span class="chip chip-thread">Thread</span> <span class="chip chip-date">21-07-2026</span></p>
+<p class="doc-meta"><span class="chip chip-thread">Thread</span> <span class="chip chip-date">05-08-2026</span></p>
 
 Part of [Thesis summary](thesis-summary.md). RQ1: from the base model to the final 12-parameter model.
 

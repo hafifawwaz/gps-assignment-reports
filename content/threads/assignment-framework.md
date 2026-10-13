@@ -1,14 +1,14 @@
 ---
 source: report/threads/assignment-framework.md
-date: 25-07-2026
+date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-13T20:30:42
+generated: 2026-10-13T21:08:51
 ---
 
 # Assignment framework
 
-<p class="doc-meta"><span class="chip chip-thread">Thread</span> <span class="chip chip-date">25-07-2026</span></p>
+<p class="doc-meta"><span class="chip chip-thread">Thread</span> <span class="chip chip-date">05-08-2026</span></p>
 
 Part of [Thesis summary](thesis-summary.md). How a stay cluster becomes a probability over building, street and open space.
 

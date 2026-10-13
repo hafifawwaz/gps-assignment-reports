@@ -6,16 +6,15 @@ nav:
 - Threads:
   - threads/index.md
   - '2026':
-    - October:
+    - August:
       - thesis summary: threads/thesis-summary.md
-    - July:
-      - ground truth data: threads/ground-truth-data.md
-      - complexity and transfer: threads/complexity-and-transfer.md
-      - outlook: threads/outlook.md
-      - assignment framework: threads/assignment-framework.md
       - problem and positioning: threads/problem-and-positioning.md
+      - outlook: threads/outlook.md
+      - ground truth data: threads/ground-truth-data.md
       - error analysis: threads/error-analysis.md
+      - complexity and transfer: threads/complexity-and-transfer.md
       - calibration: threads/calibration.md
+      - assignment framework: threads/assignment-framework.md
 - Progress:
   - progress/index.md
   - '2026':

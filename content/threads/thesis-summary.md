@@ -1,14 +1,14 @@
 ---
 source: report/threads/thesis-summary.md
-date: 13-10-2026
+date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-13T20:06:43
+generated: 2026-10-13T21:08:51
 ---
 
 # Thesis summary
 
-<p class="doc-meta"><span class="chip chip-thread">Thread</span> <span class="chip chip-date">13-10-2026</span></p>
+<p class="doc-meta"><span class="chip chip-thread">Thread</span> <span class="chip chip-date">05-08-2026</span></p>
 
 **Beyond the Building: A Probabilistic Framework for GPS Assignment Under Positional Uncertainty**
 

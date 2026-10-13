@@ -2,8 +2,8 @@
 site_name: GPS Staypoint Assignment
 site_description: Research reports on probabilistic assignment of GPS staypoints to urban spatial entities
 site_author: Hafiyyan Hilmy Fawwaz
-site_url: https://hafihafiyyan.github.io/gps-assignment-reports/
-repo_url: https://github.com/hafihafiyyan/gps-assignment-reports
+site_url: https://hafifawwaz.github.io/gps-assignment-reports/
+repo_url: https://github.com/hafifawwaz/gps-assignment-reports
 repo_name: gps-assignment-reports
 edit_uri: ""
 copyright: Hafiyyan Hilmy Fawwaz, Urban Transportation and Planning Lab, Hiroshima University
@@ -72,7 +72,7 @@ extra:
   # on the repo: https://github.com/apps/giscus
   giscus:
     enabled: false
-    repo: hafihafiyyan/gps-assignment-reports
+    repo: hafifawwaz/gps-assignment-reports
     repo_id: ""
     category: Announcements
     category_id: ""

@@ -3,7 +3,7 @@ source: report/notes/future-work.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T20:05:33
+generated: 2026-10-13T20:58:39
 ---
 
 # Future work
@@ -21,6 +21,6 @@ Part of [Outlook](../threads/outlook.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Outlook](../threads/outlook.md) · [Tension with the street-space argument](street-space-tension.md)
+**Linked from** [Outlook](../threads/outlook.md) · [PhD interview slides](../progress/phd-interview-slides.md) · [Tension with the street-space argument](street-space-tension.md)
 
 </div>

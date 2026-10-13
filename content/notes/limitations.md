@@ -3,7 +3,7 @@ source: report/notes/limitations.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T20:30:42
+generated: 2026-10-13T20:58:39
 ---
 
 # Limitations
@@ -22,6 +22,6 @@ Part of [Outlook](../threads/outlook.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Future work](future-work.md) · [Outlook](../threads/outlook.md) · [Overfitting signature](overfitting-signature.md) · [Self-report form](self-report-form.md) · [Study area](study-area.md)
+**Linked from** [Future work](future-work.md) · [Outlook](../threads/outlook.md) · [Overfitting signature](overfitting-signature.md) · [PhD interview slides](../progress/phd-interview-slides.md) · [Self-report form](self-report-form.md) · [Study area](study-area.md)
 
 </div>

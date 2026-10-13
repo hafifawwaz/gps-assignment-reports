@@ -10,7 +10,7 @@ Dated updates for sensei, and slide exports.
 
 -   <p class="doc-meta"><span class="chip chip-progress">Progress</span> <span class="chip chip-pdf">PDF</span></p>
 
-    **[PhD interview slides](phd-interview-slide-slides-export.md)**
+    **[PhD interview slides](phd-interview-slides.md)**
 
 </div>
 

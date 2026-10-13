@@ -57,6 +57,13 @@
    "url": "../threads/thesis-summary/"
   },
   {
+   "id": "progress/phd-interview-slides.md",
+   "title": "PhD interview slides",
+   "kind": "progress",
+   "date": "07-08-2026",
+   "url": "../progress/phd-interview-slides/"
+  },
+  {
    "id": "progress/progress-19-07-2026.md",
    "title": "MNL model development",
    "kind": "progress",
@@ -503,14 +510,6 @@
    "kind": "analysis",
    "date": "21-07-2026",
    "url": "../analysis/stepwise-vif-elimination/"
-  },
-  {
-   "id": "progress/phd-interview-slide-slides-export.md",
-   "title": "PhD interview slides",
-   "kind": "progress",
-   "date": "07-08-2026",
-   "url": "../progress/phd-interview-slide-slides-export/",
-   "pdf": true
   }
  ],
  "links": [
@@ -1567,6 +1566,18 @@
    "target": "threads/ground-truth-data.md"
   },
   {
+   "source": "progress/phd-interview-slides.md",
+   "target": "notes/future-work.md"
+  },
+  {
+   "source": "progress/phd-interview-slides.md",
+   "target": "notes/limitations.md"
+  },
+  {
+   "source": "progress/phd-interview-slides.md",
+   "target": "threads/outlook.md"
+  },
+  {
    "source": "progress/progress-19-07-2026.md",
    "target": "analysis/alpha-calibration.md"
   },
@@ -1997,6 +2008,10 @@
   {
    "source": "threads/outlook.md",
    "target": "notes/limitations.md"
+  },
+  {
+   "source": "threads/outlook.md",
+   "target": "progress/phd-interview-slides.md"
   },
   {
    "source": "threads/outlook.md",

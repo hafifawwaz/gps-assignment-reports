@@ -36,7 +36,7 @@ hide:
 
 <p class="section-blurb">Dated updates for sensei, and slide exports.</p>
 
-- [PhD interview slides](progress/phd-interview-slide-slides-export.md) <span class="chip chip-pdf">PDF</span>
+- [PhD interview slides](progress/phd-interview-slides.md) <span class="chip chip-pdf">PDF</span>
 - [Does downsampling matter?](progress/progress-29-07-2026.md)
 - [RQ2 diagnostics and RQ3 ceiling check](progress/progress-23-07-2026.md)
 - [RQ1 rebuilt with grouped CV](progress/progress-21-07-2026.md)

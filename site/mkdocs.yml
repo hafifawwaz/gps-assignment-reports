@@ -20,7 +20,7 @@ nav:
   - progress/index.md
   - '2026':
     - August:
-      - phd interview slides (pdf): progress/phd-interview-slide-slides-export.md
+      - phd interview slides (pdf): progress/phd-interview-slides.md
     - July:
       - does downsampling matter?: progress/progress-29-07-2026.md
       - rq2 diagnostics and rq3 ceiling check: progress/progress-23-07-2026.md

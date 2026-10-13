@@ -272,6 +272,10 @@ class Renderer:
         self.page_dests = {s.dest for s in selected}
         self.edges: set[tuple[str, str]] = set()  # (from dest, to dest)
         self.errors: list[str] = []
+        # PDFs picked in this run: resolved path -> {"name", "cover", "title", "dest"}. A note that
+        # embeds one (![[...pdf]]) becomes its page; otherwise it gets a page of its own.
+        self.pdfs: dict[Path, dict] = {}
+        self.pdf_embedders: dict[Path, str] = {}  # PDF -> dest of the first page embedding it
 
     # -- target resolution ------------------------------------------------
     def _find(self, src: Source, target: str) -> Path | None:
@@ -294,7 +298,17 @@ class Renderer:
             if hit:
                 return hit
         matches = self.stems.get(Path(name).stem.lower(), [])
-        return matches[0].path.resolve() if len(matches) == 1 else None
+        if len(matches) == 1:
+            return matches[0].path.resolve()
+        return self._pdf(src, name)
+
+    def _pdf(self, src: Source, target: str) -> Path | None:
+        """A picked PDF named by path or (if unique among the picked ones) by file name."""
+        hit = self._find(src, target)
+        if hit in self.pdfs:
+            return hit
+        named = [q for q in self.pdfs if q.name.lower() == Path(target.strip()).name.lower()]
+        return named[0] if len(named) == 1 else None
 
     def _rel(self, dest: str, target_dest: str) -> str:
         return posixpath.relpath(target_dest, posixpath.dirname(dest) or ".")
@@ -320,11 +334,30 @@ class Renderer:
             if dest in self.page_dests and dest != hit.dest:
                 self.edges.add((dest, hit.dest))
             return self._rel(dest, hit.dest)
+        pdf = self.pdfs.get(path)
+        if pdf and pdf["dest"]:
+            if dest in self.page_dests and dest != pdf["dest"]:
+                self.edges.add((dest, pdf["dest"]))
+            return self._rel(dest, pdf["dest"])
         return self._figure(path, dest)
 
     # -- rewriting --------------------------------------------------------
     def _text(self, text: str, src: Source, dest: str) -> str:
         def embed(alt: str, target: str) -> str:
+            if target.lower().endswith(".pdf"):
+                pdf_path = self._pdf(src, target)
+                if pdf_path is None:  # not picked in this run: no file to show
+                    return alt or Path(target).stem
+                self.pdf_embedders.setdefault(pdf_path, dest)
+                pdf = self.pdfs[pdf_path]
+                # raw HTML is not rewritten by MkDocs, and a page x.md is served as x/ (directory URLs)
+                up = "" if dest.endswith("index.md") else "../"
+                href = up + self._rel(dest, f"progress/files/{pdf['name']}")
+                img = up + self._rel(dest, f"progress/files/{pdf['cover']}")
+                # HTML, so the link rewriting that runs after embeds leaves these paths alone
+                return (f'<a class="md-button md-button--primary" href="{href}" target="_blank">Open the PDF in a new tab</a>\n\n'
+                        f'<a href="{href}" target="_blank"><img class="pdf-cover" src="{img}" '
+                        f'alt="First page of {html.escape(pdf["title"])}"></a>')
             path = self._find(src, target) or self._find(src, Path(target).name)
             link = self._figure(path, dest) if path else None
             if not link:
@@ -359,6 +392,8 @@ class Renderer:
             path = self._find_wiki(src, name)
             hit = self.by_path.get(path) if path else None
             label = alias or (hit.title if hit else name.strip())  # [[file-name]] shows the note's title
+            if not alias and path in self.pdfs:
+                label = self.pdfs[path]["title"]
             new = self._link(path, dest)
             return f"[{label}]({new}{anchor})" if new else label
 
@@ -464,14 +499,14 @@ def chips(status: str, date: str | None, pdf: bool = False) -> str:
     return " ".join(out)
 
 
-def page(src: Source, renderer: Renderer, titles: dict[str, str] | None = None) -> str:
+def page(src: Source, renderer: Renderer, titles: dict[str, str] | None = None, pdf: bool = False) -> str:
     lines = renderer.body(src, src.dest).split("\n")
     h1 = next((i for i, line in enumerate(lines) if line.startswith("# ")), None)
     if h1 is None:
         lines.insert(0, f"# {pretty(src.path.stem)}")
         h1 = 0
     lines[h1] = "# " + (short_titles().get(src.key) or clean_title(lines[h1][2:].strip()))
-    extra = ["", f'<p class="doc-meta">{chips(src.status, src.date)}</p>']
+    extra = ["", f'<p class="doc-meta">{chips(src.status, src.date, pdf=pdf)}</p>']
     if src.status == "inbox":
         extra += ["", '!!! question "For discussion"', "    Rough draft and open questions. Not yet reviewed."]
     lines[h1 + 1 : h1 + 1] = extra
@@ -546,15 +581,11 @@ def build(mode: str, pdfs: list[str]) -> dict:
     hero = next((s for s in selected if s.section == "hero"), None)
     listing: dict[str, list[Item]] = {name: [] for name in SECTIONS}
     pages = [s for s in selected if s.section != "hero"]
-    for s in pages:  # first pass: collect the link graph so every page can list what links to it
-        r.body(s, s.dest)
-    titles = {s.dest: s.title for s in pages}
-    for s in pages:
-        files[s.dest] = page(s, r, titles)
-        listing[s.section].append(Item(s.title, s.dest, s.status, s.date))
 
-    # PDFs picked in this run become Progress entries, each with its own page (and so its own link).
+    # PDFs picked in this run. Each is shown under Progress: on the page of the note that embeds it
+    # (![[...pdf]]), or else on a page of its own.
     allowed = set(pdf_candidates())
+    picked: list[tuple[Path, str, str | None]] = []
     for item in pdfs:
         item = item.replace("\\", "/")
         if item not in allowed:
@@ -562,15 +593,34 @@ def build(mode: str, pdfs: list[str]) -> dict:
         source = Path(item)
         generic = source.stem.lower() in GENERIC_PDF_NAMES
         name = slug(f"{source.parent.name}-{source.name}" if generic else source.name)
-        dest = f"progress/{name[:-4]}.md"
-        if dest in files:
-            raise SyncError(f"a picked PDF and another page both map to {dest}")
         m = DATE_RE.search(item)
         date = m.group(0) if m else source_dates().get(item)
         title = short_titles().get(item) or pretty(source.parent.name if generic else source.stem)
-        cover = f"{name[:-4]}-page1.png"
-        files[f"progress/files/{name}"] = (REPO / item).read_bytes()
-        files[f"progress/files/{cover}"] = first_page_png(REPO / item)
+        r.pdfs[(REPO / item).resolve()] = {"name": name, "cover": f"{name[:-4]}-page1.png", "title": title, "dest": None}
+        picked.append(((REPO / item).resolve(), item, date))
+    for s in pages:  # pass 0: find which note embeds which PDF
+        r.body(s, s.dest)
+    for path, info in r.pdfs.items():
+        info["dest"] = r.pdf_embedders.get(path) or f"progress/{info['name'][:-4]}.md"
+    pdf_pages = set(r.pdf_embedders.values())
+    r.edges.clear()
+
+    for s in pages:  # first pass: collect the link graph so every page can list what links to it
+        r.body(s, s.dest)
+    titles = {s.dest: s.title for s in pages}
+    for s in pages:
+        files[s.dest] = page(s, r, titles, pdf=s.dest in pdf_pages)
+        listing[s.section].append(Item(s.title, s.dest, s.status, s.date, pdf=s.dest in pdf_pages))
+
+    for path, item, date in picked:
+        info = r.pdfs[path]
+        files[f"progress/files/{info['name']}"] = path.read_bytes()
+        files[f"progress/files/{info['cover']}"] = first_page_png(path)
+        if path in r.pdf_embedders:
+            continue  # shown on the embedding note's page
+        dest, title, name, cover = info["dest"], info["title"], info["name"], info["cover"]
+        if dest in files:
+            raise SyncError(f"a picked PDF and another page both map to {dest}")
         files[dest] = "\n".join([
             "---", "kind: progress", "comments: true", "generated: {generated}", "---", "",
             f"# {title}", "", f'<p class="doc-meta">{chips("progress", date, pdf=True)}</p>', "",
@@ -635,7 +685,7 @@ def build(mode: str, pdfs: list[str]) -> dict:
     nodes = [{"id": s.dest, "title": s.title, "kind": s.status, "date": s.date or "",
               "url": "../" + s.dest[:-3] + "/"} for s in pages]
     for it in listing["progress"]:
-        if it.pdf:
+        if it.pdf and it.dest not in {s.dest for s in pages}:
             nodes.append({"id": it.dest, "title": it.title, "kind": "progress", "date": it.date or "",
                           "url": "../" + it.dest[:-3] + "/", "pdf": True})
     graph = {"nodes": nodes, "links": [{"source": a, "target": b} for a, b in sorted(r.edges)]}

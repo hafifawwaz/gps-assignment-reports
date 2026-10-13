@@ -3696,7 +3696,9 @@
 <h1 id="directional-scope-ablation-3a-vs-3b">Directional scope ablation (3a vs 3b)</h1>
 <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-date">21-07-2026</span></p>
 
-<p>Does <a href="../../notes/f-directional/">f_directional</a> only mean something for streets? Both variants have 7 parameters, so they compare directly (not nested).</p>
+<p>Does <a href="../../notes/f-directional/">f_directional</a> only mean something for streets? 3a is <a href="../model-2-share-type-sigma/">Model 2: share-type and sigma</a> as is; 3b sets the directional term to 0 for building and open-space rows:</p>
+<div class="arithmatex">\[V_k = w_1 f_\text{distribution} + w_2 f_\text{distance} + w_3 f_\text{dir,street} + w_4\,share_\text{bldg} + w_5\,share_\text{street} + w_6\,share_\text{os} + w_7\,\sigma\]</div>
+<p>Both variants have 7 parameters, so they compare directly (not nested).</p>
 <table>
 <thead>
 <tr>

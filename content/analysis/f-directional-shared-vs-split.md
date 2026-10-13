@@ -3,14 +3,14 @@ source: report/analysis/f-directional-shared-vs-split.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T20:30:42
+generated: 2026-10-13T20:41:00
 ---
 
 # f_directional: shared vs split
 
 <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-date">21-07-2026</span></p>
 
-Does [f_directional](../notes/f-directional.md) need one coefficient per type ("split", the 14-parameter model) or one for all types ("shared", 12 parameters)? Everything else held fixed.
+Does [f_directional](../notes/f-directional.md) need one coefficient per type ("split", the 14-parameter model, $w_{3,t} f_\text{directional}$) or one for all types ("shared", 12 parameters, $w_3 f_\text{directional}$)? Everything else held fixed.
 
 | | Shared (12) | Split (14) | Street only (12) |
 |---|---:|---:|---:|

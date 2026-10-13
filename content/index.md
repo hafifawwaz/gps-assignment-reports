@@ -78,15 +78,15 @@ hide:
 
 </div>
 
-<div class="home-col" markdown>
+</div>
+
+<div class="home-col home-below" markdown>
 
 ## [Inbox](inbox/index.md) { .home-section }
 
 <p class="section-blurb">Open items not yet settled with sensei.</p>
 
 <p class="empty">Nothing yet.</p>
-
-</div>
 
 </div>
 

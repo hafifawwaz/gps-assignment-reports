@@ -3696,7 +3696,10 @@
 <h1 id="f_distribution">f_distribution</h1>
 <p class="doc-meta"><span class="chip chip-note">Note</span> <span class="chip chip-date">25-07-2026</span></p>
 
-<p>Time-weighted share of the cluster's points that fall within the buffer of the candidate.</p>
+<p>Time-weighted share of the cluster's points that fall within the buffer of the candidate:</p>
+<div class="arithmatex">\[f_\text{distribution}(E_k, C_i) = \frac{\sum_{p \in C_i} W_p \cdot \mathbf{1}\{d(p, E_k) \leq R_\text{buffer}\}}{\sum_{p \in C_i} W_p}\]</div>
+<p><span class="arithmatex">\(W_p\)</span> is the time weight of point <span class="arithmatex">\(p\)</span> (following Wu et al., 2026), so irregular sampling does not bias the share. Interior points get <span class="arithmatex">\(W_p = (t_{p+1} - t_{p-1})/2\)</span>; the first and last points</p>
+<div class="arithmatex">\[W_1 = \frac{t_1 + t_2}{2}, \qquad W_n = 1 - \frac{t_{n-1} + t_n}{2}\]</div>
 <p>The most consistently significant score from the very first model (<a href="../../analysis/model-1-base/">Model 1: base</a>) and the strongest open-space term in the <a href="../../analysis/final-model/">Final model</a>. Its product with <a href="../share-type/">share_type</a> is the one interaction that survived (<a href="../../analysis/interaction-term-screen/">Interaction term screen (α = 1)</a>).</p>
 <p>Part of <a href="../framework-overview/">Framework overview</a>.</p>
 <div class="backlinks">

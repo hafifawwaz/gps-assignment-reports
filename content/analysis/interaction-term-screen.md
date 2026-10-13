@@ -3,7 +3,7 @@ source: report/analysis/interaction-term-screen.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T20:30:42
+generated: 2026-10-13T20:41:00
 ---
 
 # Interaction term screen (α = 1)
@@ -21,6 +21,10 @@ Five candidate terms screened jointly on the generic 7-parameter base:
 | **f_distribution × share_type** | **+5.264** | **5.57** | significant, largest |
 
 The three significant terms were added to [Model 4a: alternative-specific parameters](model-4a-alternative-specific.md) (Model 6, 16 parameters):
+
+
+$$V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_{3,t} f_\text{directional} + w_{4,t}\,share_t + w_5\,\sigma + w_6\,f_\text{distance}^2 + w_7\,\sigma^2 + w_8\,(f_\text{distribution}\times share_\text{type})$$
+
 
 | | 4a | Model 6 (α = 1) |
 |---|---:|---:|

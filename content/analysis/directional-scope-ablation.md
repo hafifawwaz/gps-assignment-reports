@@ -3,14 +3,20 @@ source: report/analysis/directional-scope-ablation.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T20:30:42
+generated: 2026-10-13T20:41:00
 ---
 
 # Directional scope ablation (3a vs 3b)
 
 <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-date">21-07-2026</span></p>
 
-Does [f_directional](../notes/f-directional.md) only mean something for streets? Both variants have 7 parameters, so they compare directly (not nested).
+Does [f_directional](../notes/f-directional.md) only mean something for streets? 3a is [Model 2: share-type and sigma](model-2-share-type-sigma.md) as is; 3b sets the directional term to 0 for building and open-space rows:
+
+
+$$V_k = w_1 f_\text{distribution} + w_2 f_\text{distance} + w_3 f_\text{dir,street} + w_4\,share_\text{bldg} + w_5\,share_\text{street} + w_6\,share_\text{os} + w_7\,\sigma$$
+
+
+Both variants have 7 parameters, so they compare directly (not nested).
 
 | R=10 m | 3a: shared | 3b: street only |
 |---|---:|---:|

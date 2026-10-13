@@ -3,14 +3,18 @@ source: report/analysis/model-5-asc-rejected.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T20:30:42
+generated: 2026-10-13T20:41:00
 ---
 
 # Model 5: alternative-specific constants (rejected)
 
 <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-date">21-07-2026</span></p>
 
-[Model 4a: alternative-specific parameters](model-4a-alternative-specific.md) plus `asc_street`, `asc_os` (building = reference), 15 parameters.
+[Model 4a: alternative-specific parameters](model-4a-alternative-specific.md) plus `asc_street`, `asc_os` (building = reference, $ASC_\text{bldg} = 0$), 15 parameters:
+
+
+$$V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_{3,t} f_\text{directional} + w_{4,t}\,share_t + w_5\,\sigma + ASC_t$$
+
 
 | | 4a | 5 (+ ASC) |
 |---|---:|---:|

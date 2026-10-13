@@ -3,7 +3,7 @@ source: report/analysis/model-2-share-type-sigma.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-13T20:30:42
+generated: 2026-10-13T20:41:00
 ---
 
 # Model 2: share-type and sigma
@@ -44,6 +44,6 @@ Next: [Directional scope ablation (3a vs 3b)](directional-scope-ablation.md). Pa
 
 <div class="backlinks" markdown>
 
-**Linked from** [Calibration](../threads/calibration.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 1: base](model-1-base.md) · [Model progression](model-progression-table.md) · [f_distance](../notes/f-distance.md) · [share_type](../notes/share-type.md) · [sigma](../notes/sigma.md)
+**Linked from** [Calibration](../threads/calibration.md) · [Directional scope ablation (3a vs 3b)](directional-scope-ablation.md) · [MNL model development](../progress/progress-19-07-2026.md) · [Model 1: base](model-1-base.md) · [Model progression](model-progression-table.md) · [f_distance](../notes/f-distance.md) · [share_type](../notes/share-type.md) · [sigma](../notes/sigma.md)
 
 </div>

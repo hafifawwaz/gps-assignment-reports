@@ -604,6 +604,10 @@
   },
   {
    "source": "analysis/directional-scope-ablation.md",
+   "target": "analysis/model-2-share-type-sigma.md"
+  },
+  {
+   "source": "analysis/directional-scope-ablation.md",
    "target": "analysis/model-4a-alternative-specific.md"
   },
   {
@@ -1183,6 +1187,10 @@
    "target": "notes/framework-overview.md"
   },
   {
+   "source": "notes/f-distance.md",
+   "target": "notes/sigma.md"
+  },
+  {
    "source": "notes/f-distribution.md",
    "target": "analysis/final-model.md"
   },
@@ -1501,6 +1509,10 @@
   {
    "source": "notes/sigma.md",
    "target": "analysis/sigma-tree-importance.md"
+  },
+  {
+   "source": "notes/sigma.md",
+   "target": "notes/f-distance.md"
   },
   {
    "source": "notes/sigma.md",

@@ -3699,10 +3699,12 @@
 <ol>
 <li><strong>Candidates:</strong> every entity within <code>R_buffer</code> of the stay cluster (<a href="../candidate-selection/">Candidate selection</a>).</li>
 <li><strong>Scores:</strong> four components per candidate: <a href="../f-distribution/">f_distribution</a>, <a href="../f-distance/">f_distance</a>, <a href="../f-temporal/">f_temporal</a>, <a href="../f-directional/">f_directional</a>.</li>
-<li><strong>Utility:</strong> a weighted sum <span class="arithmatex">\(V_k\)</span> of the scores (plus <a href="../share-type/">share_type</a> and <a href="../sigma/">sigma</a> once calibration added them).</li>
-<li><strong>Probability:</strong> a type-level conditional logit,</li>
+<li><strong>Utility:</strong> a weighted sum of the scores (plus <a href="../share-type/">share_type</a> and <a href="../sigma/">sigma</a> once calibration added them),</li>
 </ol>
-<div class="arithmatex">\[P(t \mid C_i) = \frac{\sum_{k \in t} \exp(V_k)}{\sum_j \exp(V_j)}\]</div>
+<div class="arithmatex">\[V_k = w_1 f_\text{distribution} + w_2 f_\text{distance} + w_3 f_\text{temporal} + w_4 f_\text{directional}\]</div>
+<p>additive rather than multiplicative, so a single zero score cannot eliminate a candidate.
+4. <strong>Probability:</strong> a type-level conditional logit,</p>
+<div class="arithmatex">\[P(t \mid C_i) = \frac{\sum_{k \in t} \exp(V_k)}{\sum_{j \in \text{Candidates}(C_i)} \exp(V_j)}\]</div>
 <p>The weights are estimated by maximum likelihood on the <a href="../ground-truth-dataset/">Ground truth dataset</a> rather than fixed in advance.</p>
 <p>Part of <a href="../../threads/assignment-framework/">Assignment framework</a>. Answers the "how" of <a href="../research-questions/">Research questions</a> RQ1.</p>
 <div class="backlinks">

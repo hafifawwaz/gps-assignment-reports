@@ -3696,7 +3696,9 @@
 <h1 id="downsampling-to-miles-density">Downsampling to MILES density</h1>
 <p class="doc-meta"><span class="chip chip-note">Note</span> <span class="chip chip-date">25-07-2026</span></p>
 
-<p>The survey devices record a point roughly every metre. MILES is far sparser, so ground-truth points are downsampled to MILES's median density of <strong>0.967 points/minute</strong> before scoring.</p>
+<p>The survey devices record a point roughly every metre. MILES is far sparser, so ground-truth points are downsampled to MILES's median density of <strong>0.967 points/minute</strong> before scoring. For a cluster spanning <span class="arithmatex">\(d\)</span> minutes the target point count is</p>
+<div class="arithmatex">\[n = \max\big(1,\ \mathrm{round}(d \times 0.967)\big)\]</div>
+<p>capped at the cluster's original count. The first and last points are kept; the other <span class="arithmatex">\(n - 2\)</span> are drawn at random, without replacement, from the interior points.</p>
 <p>For the 907 stays this means <strong>17,010</strong> points instead of the raw <strong>167,615</strong> (about 9.9× fewer).</p>
 <p>Does it matter? Refitting on raw density says no: <a href="../../analysis/raw-density-refit/">Raw-density refit</a>. It also shrinks the candidate search area as a side effect: <a href="../../analysis/candidate-search-area/">Downsampling shrinks the candidate search area</a>.</p>
 <p>Part of <a href="../../threads/ground-truth-data/">Ground truth data</a>.</p>

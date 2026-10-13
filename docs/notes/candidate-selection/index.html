@@ -3696,7 +3696,9 @@
 <h1 id="candidate-selection">Candidate selection</h1>
 <p class="doc-meta"><span class="chip chip-note">Note</span> <span class="chip chip-date">25-07-2026</span></p>
 
-<p>A stay's candidates are the entities that intersect the <strong>union of its GPS points, each buffered by <code>R_buffer</code></strong>. The same radius is used inside <a href="../f-distribution/">f_distribution</a>, on purpose.</p>
+<p>A stay's candidates are the entities that intersect the <strong>union of its GPS points, each buffered by <code>R_buffer</code></strong>:</p>
+<div class="arithmatex">\[\text{Candidates}(C_i) = \{E_k \mid \min_{p \in C_i} d(p, E_k) \leq R_\text{buffer}\}\]</div>
+<p>A buffer instead of strict containment, because GPS error can push recorded positions past the true entity boundary. The same radius is used inside <a href="../f-distribution/">f_distribution</a>, on purpose.</p>
 <p><code>R_buffer = 10 m</code> was chosen over 15 m: <a href="../../analysis/r-buffer-10m-vs-15m/">R_buffer: 10 m vs 15 m</a>. Because the search area is a union of buffered points, more points mean a larger area: <a href="../../analysis/candidate-search-area/">Downsampling shrinks the candidate search area</a>.</p>
 <p>Part of <a href="../framework-overview/">Framework overview</a>.</p>
 <div class="backlinks">

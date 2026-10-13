@@ -50,6 +50,7 @@ SECTIONS = {  # also the tab order (after Home and Map)
 }
 CATCHUP = "catchup.md"  # report/catchup.md: the hand-written hero text on the home page
 HOME_CARDS = 5  # newest items shown per section on the home page
+HOME_BELOW = "inbox"  # shown as a full-width row under the home columns
 GENERIC_PDF_NAMES = {"slides-export", "slides", "main", "export"}
 IMAGE_EXT = {".png", ".jpg", ".jpeg", ".svg", ".gif", ".webp"}
 # Never offered for publishing, whatever the user picks.
@@ -607,20 +608,26 @@ def build(mode: str, pdfs: list[str]) -> dict:
     else:
         home += ['<p class="empty">No summary written yet. Add one in <code>report/catchup.md</code>.</p>']
     home += ["", "</div>", ""]
-    home += ['<div class="home-columns" markdown>', ""]
-    for section, (folder, _, heading, blurb) in SECTIONS.items():
+    def home_col(section: str, cls: str) -> list[str]:
+        folder, _, heading, blurb = SECTIONS[section]
         items = listing[section]
-        home += ['<div class="home-col" markdown>', "", f"## [{heading}]({folder}/index.md) {{ .home-section }}", "",
-                 f'<p class="section-blurb">{blurb}</p>', ""]
+        out = [f'<div class="{cls}" markdown>', "", f"## [{heading}]({folder}/index.md) {{ .home-section }}", "",
+               f'<p class="section-blurb">{blurb}</p>', ""]
         if items:
             for it in items[:HOME_CARDS]:
                 pdf = ' <span class="chip chip-pdf">PDF</span>' if it.pdf else ""
-                home += [f"- [{it.title}]({rel('index.md', it.dest)}){pdf}"]
-            home += ["", f"[All {len(items)}]({folder}/index.md){{ .more }}", ""]
+                out += [f"- [{it.title}]({rel('index.md', it.dest)}){pdf}"]
+            out += ["", f"[All {len(items)}]({folder}/index.md){{ .more }}", ""]
         else:
-            home += ['<p class="empty">Nothing yet.</p>', ""]
-        home += ["</div>", ""]
+            out += ['<p class="empty">Nothing yet.</p>', ""]
+        return out + ["</div>", ""]
+
+    home += ['<div class="home-columns" markdown>', ""]
+    for section in SECTIONS:
+        if section != HOME_BELOW:
+            home += home_col(section, "home-col")
     home += ["</div>", ""]
+    home += home_col(HOME_BELOW, "home-col home-below")
     home += [read_text(SITE / "about.md").strip(), ""]
     files["index.md"] = "\n".join(home)
 

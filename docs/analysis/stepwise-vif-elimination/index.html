@@ -3722,7 +3722,9 @@
 </tbody>
 </table>
 <p>Dropping σ² costs nothing (LR = 1.18, df = 1, <strong>p = 0.278</strong>) and cuts the condition number about 6× (14,851 → 2,430).</p>
-<p><strong>Result, the 14-parameter model:</strong> Model 4a + f_distribution × share_type. Accuracy 0.724, grouped CV <strong>0.709 ± 0.075</strong>, condition number 2,430. Same shape as reported on 19-07-2026, now re-derived from scratch.</p>
+<p><strong>Result, the 14-parameter model:</strong></p>
+<div class="arithmatex">\[V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_{3,t} f_\text{directional} + w_{4,t}\,share_t + w_5\,\sigma + w_6\,(f_\text{distribution}\times share_\text{type})\]</div>
+<p>Model 4a + f_distribution × share_type. Accuracy 0.724, grouped CV <strong>0.709 ± 0.075</strong>, condition number 2,430. Same shape as reported on 19-07-2026, now re-derived from scratch.</p>
 <p>It was then simplified to 12 parameters: <a href="../f-directional-shared-vs-split/">f_directional: shared vs split</a>. Part of <a href="../../threads/calibration/">Calibration</a>.</p>
 <div class="backlinks">
 <p><strong>Linked from</strong> <a href="../../threads/calibration/">Calibration</a> · <a href="../model-6-rederived/">Model 6, re-derived at calibrated alpha</a> · <a href="../model-progression-table/">Model progression</a> · <a href="../../notes/multicollinearity-is-structural/">Multicollinearity is structural</a> · <a href="../../progress/progress-21-07-2026/">RQ1 rebuilt with grouped CV</a> · <a href="../sigma-tree-importance/">Sigma in tree importance</a></p>

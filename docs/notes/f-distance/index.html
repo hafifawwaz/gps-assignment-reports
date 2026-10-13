@@ -3698,10 +3698,11 @@
 
 <p>Gaussian decay with distance, its width scaled by the cluster's dispersion <span class="arithmatex">\(\sigma_i\)</span> and a calibrated factor <span class="arithmatex">\(\alpha\)</span>:</p>
 <div class="arithmatex">\[f_{\text{distance}}(E_k, C_i) = \exp\left(-\frac{d_{ki}^2}{2(\alpha \cdot \sigma_i)^2}\right)\]</div>
+<p><span class="arithmatex">\(d_{ki}\)</span> is the distance from the cluster medoid (the GPS point closest to the cluster mean) to the nearest edge of <span class="arithmatex">\(E_k\)</span>; <span class="arithmatex">\(\sigma_i\)</span> is the cluster's spatial standard deviation (<a href="../sigma/">sigma</a>) with a 5 m floor.</p>
 <p><span class="arithmatex">\(\alpha\)</span> was 1.0 (uncalibrated) until <a href="../../analysis/alpha-calibration/">Alpha calibration</a> set it to <strong>2.4297</strong>. Before that, its coefficient flipped sign between radii (<a href="../../analysis/model-1-base/">Model 1: base</a>, <a href="../../analysis/model-2-share-type-sigma/">Model 2: share-type and sigma</a>) and a squared term appeared significant for the wrong reason (<a href="../../analysis/f-distance-squared-artifact/">The f_distance² artifact</a>).</p>
 <p>Part of <a href="../framework-overview/">Framework overview</a>.</p>
 <div class="backlinks">
-<p><strong>Linked from</strong> <a href="../../analysis/alpha-calibration/">Alpha calibration</a> · <a href="../../threads/assignment-framework/">Assignment framework</a> · <a href="../framework-overview/">Framework overview</a> · <a href="../../analysis/model-1-base/">Model 1: base</a> · <a href="../../analysis/model-2-share-type-sigma/">Model 2: share-type and sigma</a></p>
+<p><strong>Linked from</strong> <a href="../../analysis/alpha-calibration/">Alpha calibration</a> · <a href="../../threads/assignment-framework/">Assignment framework</a> · <a href="../framework-overview/">Framework overview</a> · <a href="../../analysis/model-1-base/">Model 1: base</a> · <a href="../../analysis/model-2-share-type-sigma/">Model 2: share-type and sigma</a> · <a href="../sigma/">sigma</a></p>
 </div>
 
 

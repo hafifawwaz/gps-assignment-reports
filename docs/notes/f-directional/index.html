@@ -3696,7 +3696,11 @@
 <h1 id="f_directional">f_directional</h1>
 <p class="doc-meta"><span class="chip chip-note">Note</span> <span class="chip chip-date">25-07-2026</span></p>
 
-<p>Bearing alignment with the street's orientation. For buildings and open spaces it is computed as <strong>1 − max alignment with any adjacent street</strong>, so it carries a value for every candidate.</p>
+<p>Bearing alignment of the stay's micro-movement with the street's orientation. For a street candidate:</p>
+<div class="arithmatex">\[f_\text{directional}(E_k, C_i) = \frac{1}{n-1} \sum_{j=1}^{n-1} |\cos(\theta_j - \theta_{E_k})|\]</div>
+<p>For buildings and open spaces it is computed as <strong>1 − max alignment with any adjacent street</strong>, so it carries a value for every candidate:</p>
+<div class="arithmatex">\[f_\text{directional}(E_k, C_i) = 1 - \max_{s \in \text{Adjacent}(E_k)} \left\{ \frac{1}{n-1} \sum_{j=1}^{n-1} |\cos(\theta_j - \theta_s)| \right\}\]</div>
+<p><span class="arithmatex">\(\theta_j\)</span> is the bearing from point <span class="arithmatex">\(j\)</span> to <span class="arithmatex">\(j+1\)</span>, computed only for displacements over 0.5 m; <span class="arithmatex">\(\theta_{E_k}\)</span> is the street's orientation from its polygon; <span class="arithmatex">\(\text{Adjacent}(E_k)\)</span> is the set of street segments within 30 m. With no displacement over 0.5 m the score is a neutral 0.5.</p>
 <p>How to specify it took three tests: <a href="../../analysis/directional-scope-ablation/">Directional scope ablation (3a vs 3b)</a>, its collinearity with an ASC in <a href="../../analysis/model-5-asc-rejected/">Model 5: alternative-specific constants (rejected)</a>, and finally <a href="../../analysis/f-directional-shared-vs-split/">f_directional: shared vs split</a>, which settled on one coefficient shared across types.</p>
 <p>Part of <a href="../framework-overview/">Framework overview</a>.</p>
 <div class="backlinks">

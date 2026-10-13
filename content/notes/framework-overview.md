@@ -3,7 +3,7 @@ source: report/notes/framework-overview.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-13T20:30:42
+generated: 2026-10-13T20:41:00
 ---
 
 # Framework overview
@@ -12,11 +12,17 @@ generated: 2026-10-13T20:30:42
 
 1. **Candidates:** every entity within `R_buffer` of the stay cluster ([Candidate selection](candidate-selection.md)).
 2. **Scores:** four components per candidate: [f_distribution](f-distribution.md), [f_distance](f-distance.md), [f_temporal](f-temporal.md), [f_directional](f-directional.md).
-3. **Utility:** a weighted sum $V_k$ of the scores (plus [share_type](share-type.md) and [sigma](sigma.md) once calibration added them).
+3. **Utility:** a weighted sum of the scores (plus [share_type](share-type.md) and [sigma](sigma.md) once calibration added them),
+
+
+$$V_k = w_1 f_\text{distribution} + w_2 f_\text{distance} + w_3 f_\text{temporal} + w_4 f_\text{directional}$$
+
+
+   additive rather than multiplicative, so a single zero score cannot eliminate a candidate.
 4. **Probability:** a type-level conditional logit,
 
 
-$$P(t \mid C_i) = \frac{\sum_{k \in t} \exp(V_k)}{\sum_j \exp(V_j)}$$
+$$P(t \mid C_i) = \frac{\sum_{k \in t} \exp(V_k)}{\sum_{j \in \text{Candidates}(C_i)} \exp(V_j)}$$
 
 
 The weights are estimated by maximum likelihood on the [Ground truth dataset](ground-truth-dataset.md) rather than fixed in advance.

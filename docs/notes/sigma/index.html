@@ -3696,12 +3696,15 @@
 <h1 id="sigma">sigma</h1>
 <p class="doc-meta"><span class="chip chip-note">Note</span> <span class="chip chip-date">19-07-2026</span></p>
 
-<p>Stay-level positional dispersion, <span class="arithmatex">\(\sigma = \sqrt{\mathrm{var}(x) + \mathrm{var}(y)}\)</span>, standardized once by <code>sigma_scale</code> = 36.708 (99th-percentile cap 179.14 m) and reused unchanged in every model.</p>
+<p>Stay-level positional dispersion,</p>
+<div class="arithmatex">\[\sigma_i = \sqrt{\mathrm{var}(x) + \mathrm{var}(y)}\]</div>
+<p>Inside <a href="../f-distance/">f_distance</a> it sets the decay width (5 m floor). As a model feature it is capped at the 99th percentile (179.14 m) and standardized once by <code>sigma_scale</code> = 36.708, then reused unchanged in every model:</p>
+<div class="arithmatex">\[\sigma_k = \begin{cases} \min(\sigma_i,\ 179.14) \,/\, 36.708 &amp; \text{street or open-space candidate} \\ 0 &amp; \text{building candidate} \end{cases}\]</div>
 <p>It enters with <strong>one shared coefficient</strong> and building as the reference (0 for building rows). Splitting it by type is an identification problem, not a modelling option.</p>
 <p>Clean positive effect in every model (<a href="../../analysis/model-2-share-type-sigma/">Model 2: share-type and sigma</a>, <a href="../../analysis/final-model/">Final model</a>), yet tree models rank it far higher than its modest coefficient suggests: <a href="../../analysis/sigma-tree-importance/">Sigma in tree importance</a>.</p>
 <p>Part of <a href="../../threads/assignment-framework/">Assignment framework</a>.</p>
 <div class="backlinks">
-<p><strong>Linked from</strong> <a href="../../threads/assignment-framework/">Assignment framework</a> · <a href="../framework-overview/">Framework overview</a> · <a href="../../analysis/model-2-share-type-sigma/">Model 2: share-type and sigma</a> · <a href="../../analysis/model-4a-alternative-specific/">Model 4a: alternative-specific parameters</a> · <a href="../../analysis/sigma-tree-importance/">Sigma in tree importance</a></p>
+<p><strong>Linked from</strong> <a href="../../threads/assignment-framework/">Assignment framework</a> · <a href="../framework-overview/">Framework overview</a> · <a href="../../analysis/model-2-share-type-sigma/">Model 2: share-type and sigma</a> · <a href="../../analysis/model-4a-alternative-specific/">Model 4a: alternative-specific parameters</a> · <a href="../../analysis/sigma-tree-importance/">Sigma in tree importance</a> · <a href="../f-distance/">f_distance</a></p>
 </div>
 
 

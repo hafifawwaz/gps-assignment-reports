@@ -59,7 +59,6 @@ nav:
       - 'group c: indoor position': notes/m-experiment-group-c.md
       - 'group b: sky view obstruction': notes/m-experiment-group-b.md
       - 'group a: vertical position': notes/m-experiment-group-a.md
-      - discussion citation checks: notes/m-discussion-citation-checks.md
       - candidate density as boundary-matching difficulty: notes/m-boundary-matching-analogy.md
       - grouped cross-validation: notes/m-grouped-cross-validation.md
       - sigma: notes/m-sigma.md

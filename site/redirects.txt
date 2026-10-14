@@ -17,7 +17,6 @@ progress/progress-29-07-2026.md	progress/m-progress-29-07-2026.md
 notes/boundary-matching-analogy.md	notes/m-boundary-matching-analogy.md
 notes/candidate-selection.md	notes/m-candidate-selection.md
 notes/contributions.md	notes/m-contributions.md
-notes/discussion-citation-checks.md	notes/m-discussion-citation-checks.md
 notes/downsampling-to-miles-density.md	notes/m-downsampling-to-miles-density.md
 notes/experiment-design.md	notes/m-experiment-design.md
 notes/experiment-group-a.md	notes/m-experiment-group-a.md

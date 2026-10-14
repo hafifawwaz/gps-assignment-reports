@@ -3,7 +3,7 @@ source: report/notes/m-positioning-vs-deterministic-assignment.md
 date: 23-07-2026
 kind: note
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-14T14:57:57
 ---
 
 # Positioning against deterministic assignment
@@ -23,6 +23,6 @@ A subsection of the Discussion in the thesis. Part of [Problem and positioning](
 
 <div class="backlinks" markdown>
 
-**Linked from** [Discussion citation checks](m-discussion-citation-checks.md) · [Problem and positioning](../threads/m-problem-and-positioning.md)
+**Linked from** [Problem and positioning](../threads/m-problem-and-positioning.md)
 
 </div>

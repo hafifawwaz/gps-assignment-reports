@@ -127,13 +127,6 @@
    "url": "../notes/m-contributions/"
   },
   {
-   "id": "notes/m-discussion-citation-checks.md",
-   "title": "Discussion citation checks",
-   "kind": "note",
-   "date": "23-07-2026",
-   "url": "../notes/m-discussion-citation-checks/"
-  },
-  {
    "id": "notes/m-downsampling-to-miles-density.md",
    "title": "Downsampling to MILES density",
    "kind": "note",
@@ -1081,26 +1074,6 @@
    "target": "threads/m-outlook.md"
   },
   {
-   "source": "notes/m-discussion-citation-checks.md",
-   "target": "notes/m-boundary-matching-analogy.md"
-  },
-  {
-   "source": "notes/m-discussion-citation-checks.md",
-   "target": "notes/m-map-matching-extension.md"
-  },
-  {
-   "source": "notes/m-discussion-citation-checks.md",
-   "target": "notes/m-positioning-vs-deterministic-assignment.md"
-  },
-  {
-   "source": "notes/m-discussion-citation-checks.md",
-   "target": "notes/m-street-space-tension.md"
-  },
-  {
-   "source": "notes/m-discussion-citation-checks.md",
-   "target": "threads/m-problem-and-positioning.md"
-  },
-  {
    "source": "notes/m-downsampling-to-miles-density.md",
    "target": "analysis/m-candidate-search-area.md"
   },
@@ -1559,10 +1532,6 @@
   {
    "source": "notes/m-street-space-tension.md",
    "target": "analysis/m-confusion-matrix.md"
-  },
-  {
-   "source": "notes/m-street-space-tension.md",
-   "target": "notes/m-discussion-citation-checks.md"
   },
   {
    "source": "notes/m-street-space-tension.md",
@@ -2043,10 +2012,6 @@
   {
    "source": "threads/m-outlook.md",
    "target": "threads/m-thesis-summary.md"
-  },
-  {
-   "source": "threads/m-problem-and-positioning.md",
-   "target": "notes/m-discussion-citation-checks.md"
   },
   {
    "source": "threads/m-problem-and-positioning.md",

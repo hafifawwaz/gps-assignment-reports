@@ -62,7 +62,7 @@ The master's thesis is complete. Two things are in progress now:
 - [Research questions](notes/m-research-questions.md)
 - [Overfitting signature](notes/m-overfitting-signature.md)
 
-[All 35](notes/index.md){ .more }
+[All 34](notes/index.md){ .more }
 
 </div>
 

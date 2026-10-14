@@ -38,7 +38,7 @@ from paths import (
 )
 
 # report subfolder -> (site folder, page status, nav label, one-line description)
-# report/_archive-v1/ and _archive-v2.zip (old structures) are not listed, so they are never published.
+# report/_archive-v*.zip (old structures) are not listed, so they are never published.
 SECTIONS = {  # also the tab order (after Home and Map)
     "threads": ("threads", "thread", "Threads",
                 "Hubs by theme: the thesis summary, then one list of notes per theme."),

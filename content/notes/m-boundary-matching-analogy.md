@@ -3,7 +3,7 @@ source: report/notes/m-boundary-matching-analogy.md
 date: 23-07-2026
 kind: note
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-14T14:57:57
 ---
 
 # Candidate density as boundary-matching difficulty
@@ -21,6 +21,6 @@ A subsection of the Discussion in the thesis. Part of [Error analysis](../thread
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate density bias toward building](../analysis/m-candidate-density-bias.md) · [Discussion citation checks](m-discussion-citation-checks.md) · [Error analysis](../threads/m-error-analysis.md)
+**Linked from** [Candidate density bias toward building](../analysis/m-candidate-density-bias.md) · [Error analysis](../threads/m-error-analysis.md)
 
 </div>

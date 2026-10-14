@@ -3,7 +3,7 @@ source: report/threads/m-problem-and-positioning.md
 date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-14T14:57:57
 ---
 
 # Problem and positioning
@@ -16,13 +16,12 @@ Part of [Thesis summary](m-thesis-summary.md). Why this method is needed, and ho
 - [Research questions](../notes/m-research-questions.md): the goal of the thesis and its three research questions.
 - [Positioning against deterministic assignment](../notes/m-positioning-vs-deterministic-assignment.md): methods that give one fixed answer, compared with this method, which gives probabilities.
 - [Extending map matching to stationary stays](../notes/m-map-matching-extension.md): which ideas from map matching (matching moving GPS tracks to roads) still work for a person who is standing still.
-- [Discussion citation checks](../notes/m-discussion-citation-checks.md): how the references behind these notes were checked.
 
 Meetings: [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) (the first draft of the discussion, which later became Section 6.1).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Discussion citation checks](../notes/m-discussion-citation-checks.md) · [Extending map matching to stationary stays](../notes/m-map-matching-extension.md) · [Motivation](../notes/m-motivation.md) · [Positioning against deterministic assignment](../notes/m-positioning-vs-deterministic-assignment.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) · [Research questions](../notes/m-research-questions.md) · [Thesis summary](m-thesis-summary.md)
+**Linked from** [Extending map matching to stationary stays](../notes/m-map-matching-extension.md) · [Motivation](../notes/m-motivation.md) · [Positioning against deterministic assignment](../notes/m-positioning-vs-deterministic-assignment.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) · [Research questions](../notes/m-research-questions.md) · [Thesis summary](m-thesis-summary.md)
 
 </div>

@@ -3,7 +3,7 @@ source: report/notes/m-street-space-tension.md
 date: 23-07-2026
 kind: note
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-14T14:57:57
 ---
 
 # Tension with the street-space argument
@@ -19,13 +19,13 @@ Two explanations are still possible:
 - The problem belongs to this street map. A map with fewer, longer street pieces would make the gap smaller.
 - Long, repeated place types like streets are at a disadvantage in any method that counts nearby candidates.
 
-None of the papers checked can decide between the two ([Discussion citation checks](m-discussion-citation-checks.md)). Testing other ways of cutting the street map could ([Future work](m-future-work.md)).
+None of the papers checked can decide between the two. Testing other ways of cutting the street map could ([Future work](m-future-work.md)).
 
 A subsection of the Discussion in the thesis. Part of [Error analysis](../threads/m-error-analysis.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate density bias toward building](../analysis/m-candidate-density-bias.md) · [Discussion citation checks](m-discussion-citation-checks.md) · [Error analysis](../threads/m-error-analysis.md) · [Future work](m-future-work.md) · [Motivation](m-motivation.md) · [Thesis summary](../threads/m-thesis-summary.md)
+**Linked from** [Candidate density bias toward building](../analysis/m-candidate-density-bias.md) · [Error analysis](../threads/m-error-analysis.md) · [Future work](m-future-work.md) · [Motivation](m-motivation.md) · [Thesis summary](../threads/m-thesis-summary.md)
 
 </div>

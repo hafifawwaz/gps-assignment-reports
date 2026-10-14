@@ -128,10 +128,6 @@ Small pieces of progress: method, data, interpretation, discussion.
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Discussion citation checks](m-discussion-citation-checks.md)**
-
--   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
-
     **[Candidate density as boundary-matching difficulty](m-boundary-matching-analogy.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>

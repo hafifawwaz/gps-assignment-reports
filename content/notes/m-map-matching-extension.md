@@ -3,7 +3,7 @@ source: report/notes/m-map-matching-extension.md
 date: 23-07-2026
 kind: note
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-14T14:57:57
 ---
 
 # Extending map matching to stationary stays
@@ -21,6 +21,6 @@ A subsection of the Discussion in the thesis. Part of [Problem and positioning](
 
 <div class="backlinks" markdown>
 
-**Linked from** [Discussion citation checks](m-discussion-citation-checks.md) · [Motivation](m-motivation.md) · [Problem and positioning](../threads/m-problem-and-positioning.md)
+**Linked from** [Motivation](m-motivation.md) · [Problem and positioning](../threads/m-problem-and-positioning.md)
 
 </div>

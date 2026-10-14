@@ -281,16 +281,11 @@
 .kmap .kmap-node circle { stroke-width: unset; }
 
 /* "Back to <page>" button, added by javascripts/backlink.js when a page was opened from another one.
-   The label is quiet; the destination is the part that stands out (link colour, bold, underlined). */
+   The destination title is bold in the secondary accent (red in light mode, gold in dark mode). */
 .md-typeset a.backlink-button {
-  display: inline-flex; align-items: baseline; gap: .35rem; margin: 0 0 .6rem; padding: .25rem .8rem;
-  border-radius: 999px; border: 1px solid var(--c-line); background: var(--c-surface);
-  font-size: .68rem; text-decoration: none;
+  display: inline-block; margin: 0 0 .6rem; padding: .2rem .75rem; border-radius: 999px;
+  border: 1px solid var(--c-line); background: var(--c-surface); color: var(--c-heading);
+  font-size: .68rem; font-weight: 500; text-decoration: none;
 }
-.md-typeset a.backlink-button .backlink-label { color: var(--c-muted); font-weight: 400; }
-.md-typeset a.backlink-button .backlink-target {
-  color: var(--c-link); font-weight: 600; text-decoration: underline;
-  text-decoration-color: var(--c-link-line); text-underline-offset: 2px;
-}
-.md-typeset a.backlink-button:hover { border-color: var(--c-link); text-decoration: none; }
-.md-typeset a.backlink-button:hover .backlink-target { color: var(--c-link-hover); text-decoration-color: currentColor; }
+.md-typeset a.backlink-button:hover { border-color: var(--c-heading); color: var(--c-heading); text-decoration: none; }
+.md-typeset a.backlink-button .backlink-target { color: var(--c-link); font-weight: 700; }

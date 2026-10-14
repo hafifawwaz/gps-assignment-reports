@@ -10,7 +10,7 @@ Dated updates for sensei, and slide exports.
 
 -   <p class="doc-meta"><span class="chip chip-progress">Progress</span> <span class="chip chip-pdf">PDF</span></p>
 
-    **[PhD interview slides](phd-interview-slides.md)**
+    **[PhD interview slides](m-phd-interview-slides.md)**
 
 </div>
 
@@ -20,22 +20,22 @@ Dated updates for sensei, and slide exports.
 
 -   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
 
-    **[Does downsampling matter?](progress-29-07-2026.md)**
+    **[Does downsampling matter?](m-progress-29-07-2026.md)**
 
 -   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
 
-    **[RQ2 diagnostics and RQ3 ceiling check](progress-23-07-2026.md)**
+    **[RQ2 diagnostics and RQ3 ceiling check](m-progress-23-07-2026.md)**
 
 -   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
 
-    **[RQ1 rebuilt with grouped CV](progress-21-07-2026.md)**
+    **[RQ1 rebuilt with grouped CV](m-progress-21-07-2026.md)**
 
 -   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
 
-    **[ML baseline](progress-20-07-2026.md)**
+    **[ML baseline](m-progress-20-07-2026.md)**
 
 -   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
 
-    **[MNL model development](progress-19-07-2026.md)**
+    **[MNL model development](m-progress-19-07-2026.md)**
 
 </div>

@@ -1,2133 +1,2160 @@
 {
  "nodes": [
   {
-   "id": "threads/assignment-framework.md",
+   "id": "threads/m-assignment-framework.md",
    "title": "Assignment framework",
    "kind": "thread",
    "date": "05-08-2026",
-   "url": "../threads/assignment-framework/"
+   "url": "../threads/m-assignment-framework/"
   },
   {
-   "id": "threads/calibration.md",
+   "id": "threads/m-calibration.md",
    "title": "Calibration",
    "kind": "thread",
    "date": "05-08-2026",
-   "url": "../threads/calibration/"
+   "url": "../threads/m-calibration/"
   },
   {
-   "id": "threads/complexity-and-transfer.md",
+   "id": "threads/m-complexity-and-transfer.md",
    "title": "Complexity and transfer",
    "kind": "thread",
    "date": "05-08-2026",
-   "url": "../threads/complexity-and-transfer/"
+   "url": "../threads/m-complexity-and-transfer/"
   },
   {
-   "id": "threads/error-analysis.md",
+   "id": "threads/m-error-analysis.md",
    "title": "Error analysis",
    "kind": "thread",
    "date": "05-08-2026",
-   "url": "../threads/error-analysis/"
+   "url": "../threads/m-error-analysis/"
   },
   {
-   "id": "threads/ground-truth-data.md",
+   "id": "threads/m-ground-truth-data.md",
    "title": "Ground truth data",
    "kind": "thread",
    "date": "05-08-2026",
-   "url": "../threads/ground-truth-data/"
+   "url": "../threads/m-ground-truth-data/"
   },
   {
-   "id": "threads/outlook.md",
+   "id": "threads/m-outlook.md",
    "title": "Outlook",
    "kind": "thread",
    "date": "05-08-2026",
-   "url": "../threads/outlook/"
+   "url": "../threads/m-outlook/"
   },
   {
-   "id": "threads/problem-and-positioning.md",
+   "id": "threads/m-problem-and-positioning.md",
    "title": "Problem and positioning",
    "kind": "thread",
    "date": "05-08-2026",
-   "url": "../threads/problem-and-positioning/"
+   "url": "../threads/m-problem-and-positioning/"
   },
   {
-   "id": "threads/thesis-summary.md",
+   "id": "threads/m-thesis-summary.md",
    "title": "Thesis summary",
    "kind": "thread",
    "date": "05-08-2026",
-   "url": "../threads/thesis-summary/"
+   "url": "../threads/m-thesis-summary/"
   },
   {
-   "id": "progress/phd-interview-slides.md",
+   "id": "progress/m-phd-interview-slides.md",
    "title": "PhD interview slides",
    "kind": "progress",
    "date": "07-08-2026",
-   "url": "../progress/phd-interview-slides/"
+   "url": "../progress/m-phd-interview-slides/"
   },
   {
-   "id": "progress/progress-19-07-2026.md",
+   "id": "progress/m-progress-19-07-2026.md",
    "title": "MNL model development",
    "kind": "progress",
    "date": "19-07-2026",
-   "url": "../progress/progress-19-07-2026/"
+   "url": "../progress/m-progress-19-07-2026/"
   },
   {
-   "id": "progress/progress-20-07-2026.md",
+   "id": "progress/m-progress-20-07-2026.md",
    "title": "ML baseline",
    "kind": "progress",
    "date": "20-07-2026",
-   "url": "../progress/progress-20-07-2026/"
+   "url": "../progress/m-progress-20-07-2026/"
   },
   {
-   "id": "progress/progress-21-07-2026.md",
+   "id": "progress/m-progress-21-07-2026.md",
    "title": "RQ1 rebuilt with grouped CV",
    "kind": "progress",
    "date": "21-07-2026",
-   "url": "../progress/progress-21-07-2026/"
+   "url": "../progress/m-progress-21-07-2026/"
   },
   {
-   "id": "progress/progress-23-07-2026.md",
+   "id": "progress/m-progress-23-07-2026.md",
    "title": "RQ2 diagnostics and RQ3 ceiling check",
    "kind": "progress",
    "date": "23-07-2026",
-   "url": "../progress/progress-23-07-2026/"
+   "url": "../progress/m-progress-23-07-2026/"
   },
   {
-   "id": "progress/progress-29-07-2026.md",
+   "id": "progress/m-progress-29-07-2026.md",
    "title": "Does downsampling matter?",
    "kind": "progress",
    "date": "29-07-2026",
-   "url": "../progress/progress-29-07-2026/"
+   "url": "../progress/m-progress-29-07-2026/"
   },
   {
-   "id": "notes/boundary-matching-analogy.md",
+   "id": "notes/glossary.md",
+   "title": "Glossary",
+   "kind": "note",
+   "date": "05-08-2026",
+   "url": "../notes/glossary/"
+  },
+  {
+   "id": "notes/m-boundary-matching-analogy.md",
    "title": "Candidate density as boundary-matching difficulty",
    "kind": "note",
    "date": "23-07-2026",
-   "url": "../notes/boundary-matching-analogy/"
+   "url": "../notes/m-boundary-matching-analogy/"
   },
   {
-   "id": "notes/candidate-selection.md",
+   "id": "notes/m-candidate-selection.md",
    "title": "Candidate selection",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/candidate-selection/"
+   "url": "../notes/m-candidate-selection/"
   },
   {
-   "id": "notes/contributions.md",
+   "id": "notes/m-contributions.md",
    "title": "Contributions",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/contributions/"
+   "url": "../notes/m-contributions/"
   },
   {
-   "id": "notes/discussion-citation-checks.md",
+   "id": "notes/m-discussion-citation-checks.md",
    "title": "Discussion citation checks",
    "kind": "note",
    "date": "23-07-2026",
-   "url": "../notes/discussion-citation-checks/"
+   "url": "../notes/m-discussion-citation-checks/"
   },
   {
-   "id": "notes/downsampling-to-miles-density.md",
+   "id": "notes/m-downsampling-to-miles-density.md",
    "title": "Downsampling to MILES density",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/downsampling-to-miles-density/"
+   "url": "../notes/m-downsampling-to-miles-density/"
   },
   {
-   "id": "notes/experiment-design.md",
+   "id": "notes/m-experiment-design.md",
    "title": "Experiment design",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/experiment-design/"
+   "url": "../notes/m-experiment-design/"
   },
   {
-   "id": "notes/experiment-group-a.md",
+   "id": "notes/m-experiment-group-a.md",
    "title": "Group A: vertical position",
    "kind": "note",
    "date": "23-07-2026",
-   "url": "../notes/experiment-group-a/"
+   "url": "../notes/m-experiment-group-a/"
   },
   {
-   "id": "notes/experiment-group-b.md",
+   "id": "notes/m-experiment-group-b.md",
    "title": "Group B: sky view obstruction",
    "kind": "note",
    "date": "23-07-2026",
-   "url": "../notes/experiment-group-b/"
+   "url": "../notes/m-experiment-group-b/"
   },
   {
-   "id": "notes/experiment-group-c.md",
+   "id": "notes/m-experiment-group-c.md",
    "title": "Group C: indoor position",
    "kind": "note",
    "date": "23-07-2026",
-   "url": "../notes/experiment-group-c/"
+   "url": "../notes/m-experiment-group-c/"
   },
   {
-   "id": "notes/experiment-group-d.md",
+   "id": "notes/m-experiment-group-d.md",
    "title": "Group D: movement type",
    "kind": "note",
    "date": "23-07-2026",
-   "url": "../notes/experiment-group-d/"
+   "url": "../notes/m-experiment-group-d/"
   },
   {
-   "id": "notes/experiment-group-e.md",
+   "id": "notes/m-experiment-group-e.md",
    "title": "Group E: ambiguous edge cases",
    "kind": "note",
    "date": "23-07-2026",
-   "url": "../notes/experiment-group-e/"
+   "url": "../notes/m-experiment-group-e/"
   },
   {
-   "id": "notes/f-directional.md",
+   "id": "notes/m-f-directional.md",
    "title": "f_directional",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/f-directional/"
+   "url": "../notes/m-f-directional/"
   },
   {
-   "id": "notes/f-distance.md",
+   "id": "notes/m-f-distance.md",
    "title": "f_distance",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/f-distance/"
+   "url": "../notes/m-f-distance/"
   },
   {
-   "id": "notes/f-distribution.md",
+   "id": "notes/m-f-distribution.md",
    "title": "f_distribution",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/f-distribution/"
+   "url": "../notes/m-f-distribution/"
   },
   {
-   "id": "notes/f-temporal.md",
+   "id": "notes/m-f-temporal.md",
    "title": "f_temporal",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/f-temporal/"
+   "url": "../notes/m-f-temporal/"
   },
   {
-   "id": "notes/framework-overview.md",
+   "id": "notes/m-framework-overview.md",
    "title": "Framework overview",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/framework-overview/"
+   "url": "../notes/m-framework-overview/"
   },
   {
-   "id": "notes/future-work.md",
+   "id": "notes/m-future-work.md",
    "title": "Future work",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/future-work/"
+   "url": "../notes/m-future-work/"
   },
   {
-   "id": "notes/ground-truth-cleaning.md",
+   "id": "notes/m-ground-truth-cleaning.md",
    "title": "Ground truth cleaning",
    "kind": "note",
    "date": "23-07-2026",
-   "url": "../notes/ground-truth-cleaning/"
+   "url": "../notes/m-ground-truth-cleaning/"
   },
   {
-   "id": "notes/ground-truth-dataset.md",
+   "id": "notes/m-ground-truth-dataset.md",
    "title": "Ground truth dataset",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/ground-truth-dataset/"
+   "url": "../notes/m-ground-truth-dataset/"
   },
   {
-   "id": "notes/grouped-cross-validation.md",
+   "id": "notes/m-grouped-cross-validation.md",
    "title": "Grouped cross-validation",
    "kind": "note",
    "date": "21-07-2026",
-   "url": "../notes/grouped-cross-validation/"
+   "url": "../notes/m-grouped-cross-validation/"
   },
   {
-   "id": "notes/limitations.md",
+   "id": "notes/m-limitations.md",
    "title": "Limitations",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/limitations/"
+   "url": "../notes/m-limitations/"
   },
   {
-   "id": "notes/map-matching-extension.md",
+   "id": "notes/m-map-matching-extension.md",
    "title": "Extending map matching to stationary stays",
    "kind": "note",
    "date": "23-07-2026",
-   "url": "../notes/map-matching-extension/"
+   "url": "../notes/m-map-matching-extension/"
   },
   {
-   "id": "notes/model-evaluation-metrics.md",
+   "id": "notes/m-model-evaluation-metrics.md",
    "title": "Model evaluation metrics",
    "kind": "note",
    "date": "19-07-2026",
-   "url": "../notes/model-evaluation-metrics/"
+   "url": "../notes/m-model-evaluation-metrics/"
   },
   {
-   "id": "notes/motivation.md",
+   "id": "notes/m-motivation.md",
    "title": "Motivation",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/motivation/"
+   "url": "../notes/m-motivation/"
   },
   {
-   "id": "notes/multicollinearity-is-structural.md",
+   "id": "notes/m-multicollinearity-is-structural.md",
    "title": "Multicollinearity is structural",
    "kind": "note",
    "date": "19-07-2026",
-   "url": "../notes/multicollinearity-is-structural/"
+   "url": "../notes/m-multicollinearity-is-structural/"
   },
   {
-   "id": "notes/overfitting-signature.md",
+   "id": "notes/m-overfitting-signature.md",
    "title": "Overfitting signature",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/overfitting-signature/"
+   "url": "../notes/m-overfitting-signature/"
   },
   {
-   "id": "notes/positioning-vs-deterministic-assignment.md",
+   "id": "notes/m-positioning-vs-deterministic-assignment.md",
    "title": "Positioning against deterministic assignment",
    "kind": "note",
    "date": "23-07-2026",
-   "url": "../notes/positioning-vs-deterministic-assignment/"
+   "url": "../notes/m-positioning-vs-deterministic-assignment/"
   },
   {
-   "id": "notes/research-questions.md",
+   "id": "notes/m-research-questions.md",
    "title": "Research questions",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/research-questions/"
+   "url": "../notes/m-research-questions/"
   },
   {
-   "id": "notes/self-report-form.md",
+   "id": "notes/m-self-report-form.md",
    "title": "Self-report form",
    "kind": "note",
    "date": "23-07-2026",
-   "url": "../notes/self-report-form/"
+   "url": "../notes/m-self-report-form/"
   },
   {
-   "id": "notes/share-type.md",
+   "id": "notes/m-share-type.md",
    "title": "share_type",
    "kind": "note",
    "date": "19-07-2026",
-   "url": "../notes/share-type/"
+   "url": "../notes/m-share-type/"
   },
   {
-   "id": "notes/sigma.md",
+   "id": "notes/m-sigma.md",
    "title": "sigma",
    "kind": "note",
    "date": "19-07-2026",
-   "url": "../notes/sigma/"
+   "url": "../notes/m-sigma/"
   },
   {
-   "id": "notes/spatial-entity-layers.md",
+   "id": "notes/m-spatial-entity-layers.md",
    "title": "Spatial entity layers",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/spatial-entity-layers/"
+   "url": "../notes/m-spatial-entity-layers/"
   },
   {
-   "id": "notes/street-space-tension.md",
+   "id": "notes/m-street-space-tension.md",
    "title": "Tension with the street-space argument",
    "kind": "note",
    "date": "23-07-2026",
-   "url": "../notes/street-space-tension/"
+   "url": "../notes/m-street-space-tension/"
   },
   {
-   "id": "notes/study-area.md",
+   "id": "notes/m-study-area.md",
    "title": "Study area",
    "kind": "note",
    "date": "25-07-2026",
-   "url": "../notes/study-area/"
+   "url": "../notes/m-study-area/"
   },
   {
-   "id": "analysis/alpha-calibration.md",
+   "id": "analysis/m-alpha-calibration.md",
    "title": "Alpha calibration",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/alpha-calibration/"
+   "url": "../analysis/m-alpha-calibration/"
   },
   {
-   "id": "analysis/candidate-density-bias.md",
+   "id": "analysis/m-candidate-density-bias.md",
    "title": "Candidate density bias toward building",
    "kind": "analysis",
    "date": "23-07-2026",
-   "url": "../analysis/candidate-density-bias/"
+   "url": "../analysis/m-candidate-density-bias/"
   },
   {
-   "id": "analysis/candidate-search-area.md",
+   "id": "analysis/m-candidate-search-area.md",
    "title": "Downsampling shrinks the candidate search area",
    "kind": "analysis",
    "date": "29-07-2026",
-   "url": "../analysis/candidate-search-area/"
+   "url": "../analysis/m-candidate-search-area/"
   },
   {
-   "id": "analysis/confusion-matrix.md",
+   "id": "analysis/m-confusion-matrix.md",
    "title": "Confusion matrix",
    "kind": "analysis",
    "date": "23-07-2026",
-   "url": "../analysis/confusion-matrix/"
+   "url": "../analysis/m-confusion-matrix/"
   },
   {
-   "id": "analysis/directional-scope-ablation.md",
+   "id": "analysis/m-directional-scope-ablation.md",
    "title": "Directional scope ablation (3a vs 3b)",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/directional-scope-ablation/"
+   "url": "../analysis/m-directional-scope-ablation/"
   },
   {
-   "id": "analysis/drop-list.md",
+   "id": "analysis/m-drop-list.md",
    "title": "Ground truth drop list",
    "kind": "analysis",
    "date": "23-07-2026",
-   "url": "../analysis/drop-list/"
+   "url": "../analysis/m-drop-list/"
   },
   {
-   "id": "analysis/f-directional-shared-vs-split.md",
+   "id": "analysis/m-f-directional-shared-vs-split.md",
    "title": "f_directional: shared vs split",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/f-directional-shared-vs-split/"
+   "url": "../analysis/m-f-directional-shared-vs-split/"
   },
   {
-   "id": "analysis/f-distance-squared-artifact.md",
+   "id": "analysis/m-f-distance-squared-artifact.md",
    "title": "The f_distance² artifact",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/f-distance-squared-artifact/"
+   "url": "../analysis/m-f-distance-squared-artifact/"
   },
   {
-   "id": "analysis/final-model-correlation-matrix.md",
+   "id": "analysis/m-final-model-correlation-matrix.md",
    "title": "Final model correlation matrix",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/final-model-correlation-matrix/"
+   "url": "../analysis/m-final-model-correlation-matrix/"
   },
   {
-   "id": "analysis/final-model.md",
+   "id": "analysis/m-final-model.md",
    "title": "Final model",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/final-model/"
+   "url": "../analysis/m-final-model/"
   },
   {
-   "id": "analysis/fold-difficulty.md",
+   "id": "analysis/m-fold-difficulty.md",
    "title": "Fold difficulty",
    "kind": "analysis",
    "date": "23-07-2026",
-   "url": "../analysis/fold-difficulty/"
+   "url": "../analysis/m-fold-difficulty/"
   },
   {
-   "id": "analysis/interaction-term-screen.md",
+   "id": "analysis/m-interaction-term-screen.md",
    "title": "Interaction term screen (α = 1)",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/interaction-term-screen/"
+   "url": "../analysis/m-interaction-term-screen/"
   },
   {
-   "id": "analysis/ml-baseline-stay-level.md",
+   "id": "analysis/m-ml-baseline-stay-level.md",
    "title": "ML baseline, stay level (superseded)",
    "kind": "analysis",
    "date": "20-07-2026",
-   "url": "../analysis/ml-baseline-stay-level/"
+   "url": "../analysis/m-ml-baseline-stay-level/"
   },
   {
-   "id": "analysis/ml-ceiling-row-level.md",
+   "id": "analysis/m-ml-ceiling-row-level.md",
    "title": "ML ceiling check, row level",
    "kind": "analysis",
    "date": "23-07-2026",
-   "url": "../analysis/ml-ceiling-row-level/"
+   "url": "../analysis/m-ml-ceiling-row-level/"
   },
   {
-   "id": "analysis/model-1-base.md",
+   "id": "analysis/m-model-1-base.md",
    "title": "Model 1: base",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/model-1-base/"
+   "url": "../analysis/m-model-1-base/"
   },
   {
-   "id": "analysis/model-2-share-type-sigma.md",
+   "id": "analysis/m-model-2-share-type-sigma.md",
    "title": "Model 2: share-type and sigma",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/model-2-share-type-sigma/"
+   "url": "../analysis/m-model-2-share-type-sigma/"
   },
   {
-   "id": "analysis/model-4a-alternative-specific.md",
+   "id": "analysis/m-model-4a-alternative-specific.md",
    "title": "Model 4a: alternative-specific parameters",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/model-4a-alternative-specific/"
+   "url": "../analysis/m-model-4a-alternative-specific/"
   },
   {
-   "id": "analysis/model-5-asc-rejected.md",
+   "id": "analysis/m-model-5-asc-rejected.md",
    "title": "Model 5: alternative-specific constants (rejected)",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/model-5-asc-rejected/"
+   "url": "../analysis/m-model-5-asc-rejected/"
   },
   {
-   "id": "analysis/model-6-rederived.md",
+   "id": "analysis/m-model-6-rederived.md",
    "title": "Model 6, re-derived at calibrated alpha",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/model-6-rederived/"
+   "url": "../analysis/m-model-6-rederived/"
   },
   {
-   "id": "analysis/model-progression-table.md",
+   "id": "analysis/m-model-progression-table.md",
    "title": "Model progression",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/model-progression-table/"
+   "url": "../analysis/m-model-progression-table/"
   },
   {
-   "id": "analysis/r-buffer-10m-vs-15m.md",
+   "id": "analysis/m-r-buffer-10m-vs-15m.md",
    "title": "R_buffer: 10 m vs 15 m",
    "kind": "analysis",
    "date": "19-07-2026",
-   "url": "../analysis/r-buffer-10m-vs-15m/"
+   "url": "../analysis/m-r-buffer-10m-vs-15m/"
   },
   {
-   "id": "analysis/raw-density-alpha-profile.md",
+   "id": "analysis/m-raw-density-alpha-profile.md",
    "title": "Raw-density alpha profile",
    "kind": "analysis",
    "date": "29-07-2026",
-   "url": "../analysis/raw-density-alpha-profile/"
+   "url": "../analysis/m-raw-density-alpha-profile/"
   },
   {
-   "id": "analysis/raw-density-refit.md",
+   "id": "analysis/m-raw-density-refit.md",
    "title": "Raw-density refit",
    "kind": "analysis",
    "date": "29-07-2026",
-   "url": "../analysis/raw-density-refit/"
+   "url": "../analysis/m-raw-density-refit/"
   },
   {
-   "id": "analysis/sigma-tree-importance.md",
+   "id": "analysis/m-sigma-tree-importance.md",
    "title": "Sigma in tree importance",
    "kind": "analysis",
    "date": "23-07-2026",
-   "url": "../analysis/sigma-tree-importance/"
+   "url": "../analysis/m-sigma-tree-importance/"
   },
   {
-   "id": "analysis/stepwise-vif-elimination.md",
+   "id": "analysis/m-stepwise-vif-elimination.md",
    "title": "Stepwise VIF elimination",
    "kind": "analysis",
    "date": "21-07-2026",
-   "url": "../analysis/stepwise-vif-elimination/"
+   "url": "../analysis/m-stepwise-vif-elimination/"
   }
  ],
  "links": [
   {
-   "source": "analysis/alpha-calibration.md",
-   "target": "analysis/f-distance-squared-artifact.md"
+   "source": "analysis/m-alpha-calibration.md",
+   "target": "analysis/m-f-distance-squared-artifact.md"
   },
   {
-   "source": "analysis/alpha-calibration.md",
-   "target": "analysis/model-1-base.md"
+   "source": "analysis/m-alpha-calibration.md",
+   "target": "analysis/m-model-1-base.md"
   },
   {
-   "source": "analysis/alpha-calibration.md",
-   "target": "analysis/raw-density-alpha-profile.md"
+   "source": "analysis/m-alpha-calibration.md",
+   "target": "analysis/m-raw-density-alpha-profile.md"
   },
   {
-   "source": "analysis/alpha-calibration.md",
-   "target": "notes/f-distance.md"
+   "source": "analysis/m-alpha-calibration.md",
+   "target": "notes/m-f-distance.md"
   },
   {
-   "source": "analysis/alpha-calibration.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-alpha-calibration.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/candidate-density-bias.md",
-   "target": "analysis/confusion-matrix.md"
+   "source": "analysis/m-candidate-density-bias.md",
+   "target": "analysis/m-confusion-matrix.md"
   },
   {
-   "source": "analysis/candidate-density-bias.md",
-   "target": "analysis/final-model.md"
+   "source": "analysis/m-candidate-density-bias.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "analysis/candidate-density-bias.md",
-   "target": "notes/boundary-matching-analogy.md"
+   "source": "analysis/m-candidate-density-bias.md",
+   "target": "notes/m-boundary-matching-analogy.md"
   },
   {
-   "source": "analysis/candidate-density-bias.md",
-   "target": "notes/contributions.md"
+   "source": "analysis/m-candidate-density-bias.md",
+   "target": "notes/m-contributions.md"
   },
   {
-   "source": "analysis/candidate-density-bias.md",
-   "target": "notes/share-type.md"
+   "source": "analysis/m-candidate-density-bias.md",
+   "target": "notes/m-share-type.md"
   },
   {
-   "source": "analysis/candidate-density-bias.md",
-   "target": "notes/spatial-entity-layers.md"
+   "source": "analysis/m-candidate-density-bias.md",
+   "target": "notes/m-spatial-entity-layers.md"
   },
   {
-   "source": "analysis/candidate-density-bias.md",
-   "target": "notes/street-space-tension.md"
+   "source": "analysis/m-candidate-density-bias.md",
+   "target": "notes/m-street-space-tension.md"
   },
   {
-   "source": "analysis/candidate-density-bias.md",
-   "target": "threads/error-analysis.md"
+   "source": "analysis/m-candidate-density-bias.md",
+   "target": "threads/m-error-analysis.md"
   },
   {
-   "source": "analysis/candidate-search-area.md",
-   "target": "analysis/r-buffer-10m-vs-15m.md"
+   "source": "analysis/m-candidate-search-area.md",
+   "target": "analysis/m-r-buffer-10m-vs-15m.md"
   },
   {
-   "source": "analysis/candidate-search-area.md",
-   "target": "analysis/raw-density-refit.md"
+   "source": "analysis/m-candidate-search-area.md",
+   "target": "analysis/m-raw-density-refit.md"
   },
   {
-   "source": "analysis/candidate-search-area.md",
-   "target": "notes/candidate-selection.md"
+   "source": "analysis/m-candidate-search-area.md",
+   "target": "notes/m-candidate-selection.md"
   },
   {
-   "source": "analysis/confusion-matrix.md",
-   "target": "analysis/candidate-density-bias.md"
+   "source": "analysis/m-confusion-matrix.md",
+   "target": "analysis/m-candidate-density-bias.md"
   },
   {
-   "source": "analysis/confusion-matrix.md",
-   "target": "analysis/final-model.md"
+   "source": "analysis/m-confusion-matrix.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "analysis/confusion-matrix.md",
-   "target": "analysis/fold-difficulty.md"
+   "source": "analysis/m-confusion-matrix.md",
+   "target": "analysis/m-fold-difficulty.md"
   },
   {
-   "source": "analysis/confusion-matrix.md",
-   "target": "notes/research-questions.md"
+   "source": "analysis/m-confusion-matrix.md",
+   "target": "notes/m-research-questions.md"
   },
   {
-   "source": "analysis/confusion-matrix.md",
-   "target": "threads/error-analysis.md"
+   "source": "analysis/m-confusion-matrix.md",
+   "target": "threads/m-error-analysis.md"
   },
   {
-   "source": "analysis/directional-scope-ablation.md",
-   "target": "analysis/f-directional-shared-vs-split.md"
+   "source": "analysis/m-directional-scope-ablation.md",
+   "target": "analysis/m-f-directional-shared-vs-split.md"
   },
   {
-   "source": "analysis/directional-scope-ablation.md",
-   "target": "analysis/model-2-share-type-sigma.md"
+   "source": "analysis/m-directional-scope-ablation.md",
+   "target": "analysis/m-model-2-share-type-sigma.md"
   },
   {
-   "source": "analysis/directional-scope-ablation.md",
-   "target": "analysis/model-4a-alternative-specific.md"
+   "source": "analysis/m-directional-scope-ablation.md",
+   "target": "analysis/m-model-4a-alternative-specific.md"
   },
   {
-   "source": "analysis/directional-scope-ablation.md",
-   "target": "notes/f-directional.md"
+   "source": "analysis/m-directional-scope-ablation.md",
+   "target": "notes/m-f-directional.md"
   },
   {
-   "source": "analysis/directional-scope-ablation.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-directional-scope-ablation.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/drop-list.md",
-   "target": "notes/ground-truth-cleaning.md"
+   "source": "analysis/m-drop-list.md",
+   "target": "notes/m-ground-truth-cleaning.md"
   },
   {
-   "source": "analysis/drop-list.md",
-   "target": "notes/spatial-entity-layers.md"
+   "source": "analysis/m-drop-list.md",
+   "target": "notes/m-spatial-entity-layers.md"
   },
   {
-   "source": "analysis/drop-list.md",
-   "target": "threads/ground-truth-data.md"
+   "source": "analysis/m-drop-list.md",
+   "target": "threads/m-ground-truth-data.md"
   },
   {
-   "source": "analysis/f-directional-shared-vs-split.md",
-   "target": "analysis/directional-scope-ablation.md"
+   "source": "analysis/m-f-directional-shared-vs-split.md",
+   "target": "analysis/m-directional-scope-ablation.md"
   },
   {
-   "source": "analysis/f-directional-shared-vs-split.md",
-   "target": "analysis/final-model.md"
+   "source": "analysis/m-f-directional-shared-vs-split.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "analysis/f-directional-shared-vs-split.md",
-   "target": "notes/f-directional.md"
+   "source": "analysis/m-f-directional-shared-vs-split.md",
+   "target": "notes/m-f-directional.md"
   },
   {
-   "source": "analysis/f-directional-shared-vs-split.md",
-   "target": "notes/overfitting-signature.md"
+   "source": "analysis/m-f-directional-shared-vs-split.md",
+   "target": "notes/m-overfitting-signature.md"
   },
   {
-   "source": "analysis/f-directional-shared-vs-split.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-f-directional-shared-vs-split.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/f-distance-squared-artifact.md",
-   "target": "analysis/alpha-calibration.md"
+   "source": "analysis/m-f-distance-squared-artifact.md",
+   "target": "analysis/m-alpha-calibration.md"
   },
   {
-   "source": "analysis/f-distance-squared-artifact.md",
-   "target": "analysis/interaction-term-screen.md"
+   "source": "analysis/m-f-distance-squared-artifact.md",
+   "target": "analysis/m-interaction-term-screen.md"
   },
   {
-   "source": "analysis/f-distance-squared-artifact.md",
-   "target": "analysis/model-6-rederived.md"
+   "source": "analysis/m-f-distance-squared-artifact.md",
+   "target": "analysis/m-model-6-rederived.md"
   },
   {
-   "source": "analysis/f-distance-squared-artifact.md",
-   "target": "notes/overfitting-signature.md"
+   "source": "analysis/m-f-distance-squared-artifact.md",
+   "target": "notes/m-overfitting-signature.md"
   },
   {
-   "source": "analysis/f-distance-squared-artifact.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-f-distance-squared-artifact.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/final-model-correlation-matrix.md",
-   "target": "analysis/final-model.md"
+   "source": "analysis/m-final-model-correlation-matrix.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "analysis/final-model-correlation-matrix.md",
-   "target": "notes/multicollinearity-is-structural.md"
+   "source": "analysis/m-final-model-correlation-matrix.md",
+   "target": "notes/m-multicollinearity-is-structural.md"
   },
   {
-   "source": "analysis/final-model-correlation-matrix.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-final-model-correlation-matrix.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/final-model.md",
-   "target": "analysis/confusion-matrix.md"
+   "source": "analysis/m-final-model.md",
+   "target": "analysis/m-confusion-matrix.md"
   },
   {
-   "source": "analysis/final-model.md",
-   "target": "analysis/final-model-correlation-matrix.md"
+   "source": "analysis/m-final-model.md",
+   "target": "analysis/m-final-model-correlation-matrix.md"
   },
   {
-   "source": "analysis/final-model.md",
-   "target": "analysis/model-progression-table.md"
+   "source": "analysis/m-final-model.md",
+   "target": "analysis/m-model-progression-table.md"
   },
   {
-   "source": "analysis/final-model.md",
-   "target": "analysis/raw-density-refit.md"
+   "source": "analysis/m-final-model.md",
+   "target": "analysis/m-raw-density-refit.md"
   },
   {
-   "source": "analysis/final-model.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-final-model.md",
+   "target": "notes/m-multicollinearity-is-structural.md"
   },
   {
-   "source": "analysis/fold-difficulty.md",
-   "target": "analysis/final-model.md"
+   "source": "analysis/m-final-model.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/fold-difficulty.md",
-   "target": "analysis/ml-ceiling-row-level.md"
+   "source": "analysis/m-fold-difficulty.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "analysis/fold-difficulty.md",
-   "target": "threads/error-analysis.md"
+   "source": "analysis/m-fold-difficulty.md",
+   "target": "analysis/m-ml-ceiling-row-level.md"
   },
   {
-   "source": "analysis/interaction-term-screen.md",
-   "target": "analysis/f-distance-squared-artifact.md"
+   "source": "analysis/m-fold-difficulty.md",
+   "target": "threads/m-error-analysis.md"
   },
   {
-   "source": "analysis/interaction-term-screen.md",
-   "target": "analysis/model-4a-alternative-specific.md"
+   "source": "analysis/m-interaction-term-screen.md",
+   "target": "analysis/m-f-distance-squared-artifact.md"
   },
   {
-   "source": "analysis/interaction-term-screen.md",
-   "target": "analysis/model-6-rederived.md"
+   "source": "analysis/m-interaction-term-screen.md",
+   "target": "analysis/m-model-4a-alternative-specific.md"
   },
   {
-   "source": "analysis/interaction-term-screen.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-interaction-term-screen.md",
+   "target": "analysis/m-model-6-rederived.md"
   },
   {
-   "source": "analysis/ml-baseline-stay-level.md",
-   "target": "analysis/ml-ceiling-row-level.md"
+   "source": "analysis/m-interaction-term-screen.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/ml-baseline-stay-level.md",
-   "target": "analysis/sigma-tree-importance.md"
+   "source": "analysis/m-ml-baseline-stay-level.md",
+   "target": "analysis/m-ml-ceiling-row-level.md"
   },
   {
-   "source": "analysis/ml-baseline-stay-level.md",
-   "target": "notes/grouped-cross-validation.md"
+   "source": "analysis/m-ml-baseline-stay-level.md",
+   "target": "analysis/m-sigma-tree-importance.md"
   },
   {
-   "source": "analysis/ml-baseline-stay-level.md",
-   "target": "threads/complexity-and-transfer.md"
+   "source": "analysis/m-ml-baseline-stay-level.md",
+   "target": "notes/m-grouped-cross-validation.md"
   },
   {
-   "source": "analysis/ml-ceiling-row-level.md",
-   "target": "analysis/final-model.md"
+   "source": "analysis/m-ml-baseline-stay-level.md",
+   "target": "threads/m-complexity-and-transfer.md"
   },
   {
-   "source": "analysis/ml-ceiling-row-level.md",
-   "target": "analysis/fold-difficulty.md"
+   "source": "analysis/m-ml-ceiling-row-level.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "analysis/ml-ceiling-row-level.md",
-   "target": "analysis/ml-baseline-stay-level.md"
+   "source": "analysis/m-ml-ceiling-row-level.md",
+   "target": "analysis/m-fold-difficulty.md"
   },
   {
-   "source": "analysis/ml-ceiling-row-level.md",
-   "target": "analysis/sigma-tree-importance.md"
+   "source": "analysis/m-ml-ceiling-row-level.md",
+   "target": "analysis/m-ml-baseline-stay-level.md"
   },
   {
-   "source": "analysis/ml-ceiling-row-level.md",
-   "target": "notes/overfitting-signature.md"
+   "source": "analysis/m-ml-ceiling-row-level.md",
+   "target": "analysis/m-sigma-tree-importance.md"
   },
   {
-   "source": "analysis/ml-ceiling-row-level.md",
-   "target": "threads/complexity-and-transfer.md"
+   "source": "analysis/m-ml-ceiling-row-level.md",
+   "target": "notes/m-overfitting-signature.md"
   },
   {
-   "source": "analysis/model-1-base.md",
-   "target": "analysis/alpha-calibration.md"
+   "source": "analysis/m-ml-ceiling-row-level.md",
+   "target": "threads/m-complexity-and-transfer.md"
   },
   {
-   "source": "analysis/model-1-base.md",
-   "target": "analysis/model-2-share-type-sigma.md"
+   "source": "analysis/m-model-1-base.md",
+   "target": "analysis/m-alpha-calibration.md"
   },
   {
-   "source": "analysis/model-1-base.md",
-   "target": "notes/f-distance.md"
+   "source": "analysis/m-model-1-base.md",
+   "target": "analysis/m-model-2-share-type-sigma.md"
   },
   {
-   "source": "analysis/model-1-base.md",
-   "target": "notes/f-distribution.md"
+   "source": "analysis/m-model-1-base.md",
+   "target": "notes/m-f-distance.md"
   },
   {
-   "source": "analysis/model-1-base.md",
-   "target": "notes/f-temporal.md"
+   "source": "analysis/m-model-1-base.md",
+   "target": "notes/m-f-distribution.md"
   },
   {
-   "source": "analysis/model-1-base.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-model-1-base.md",
+   "target": "notes/m-f-temporal.md"
   },
   {
-   "source": "analysis/model-2-share-type-sigma.md",
-   "target": "analysis/candidate-density-bias.md"
+   "source": "analysis/m-model-1-base.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/model-2-share-type-sigma.md",
-   "target": "analysis/directional-scope-ablation.md"
+   "source": "analysis/m-model-2-share-type-sigma.md",
+   "target": "analysis/m-candidate-density-bias.md"
   },
   {
-   "source": "analysis/model-2-share-type-sigma.md",
-   "target": "analysis/model-1-base.md"
+   "source": "analysis/m-model-2-share-type-sigma.md",
+   "target": "analysis/m-directional-scope-ablation.md"
   },
   {
-   "source": "analysis/model-2-share-type-sigma.md",
-   "target": "notes/f-directional.md"
+   "source": "analysis/m-model-2-share-type-sigma.md",
+   "target": "analysis/m-model-1-base.md"
   },
   {
-   "source": "analysis/model-2-share-type-sigma.md",
-   "target": "notes/f-distance.md"
+   "source": "analysis/m-model-2-share-type-sigma.md",
+   "target": "notes/m-f-directional.md"
   },
   {
-   "source": "analysis/model-2-share-type-sigma.md",
-   "target": "notes/f-temporal.md"
+   "source": "analysis/m-model-2-share-type-sigma.md",
+   "target": "notes/m-f-distance.md"
   },
   {
-   "source": "analysis/model-2-share-type-sigma.md",
-   "target": "notes/share-type.md"
+   "source": "analysis/m-model-2-share-type-sigma.md",
+   "target": "notes/m-f-temporal.md"
   },
   {
-   "source": "analysis/model-2-share-type-sigma.md",
-   "target": "notes/sigma.md"
+   "source": "analysis/m-model-2-share-type-sigma.md",
+   "target": "notes/m-share-type.md"
   },
   {
-   "source": "analysis/model-2-share-type-sigma.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-model-2-share-type-sigma.md",
+   "target": "notes/m-sigma.md"
   },
   {
-   "source": "analysis/model-4a-alternative-specific.md",
-   "target": "analysis/alpha-calibration.md"
+   "source": "analysis/m-model-2-share-type-sigma.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/model-4a-alternative-specific.md",
-   "target": "analysis/interaction-term-screen.md"
+   "source": "analysis/m-model-4a-alternative-specific.md",
+   "target": "analysis/m-alpha-calibration.md"
   },
   {
-   "source": "analysis/model-4a-alternative-specific.md",
-   "target": "analysis/model-5-asc-rejected.md"
+   "source": "analysis/m-model-4a-alternative-specific.md",
+   "target": "analysis/m-interaction-term-screen.md"
   },
   {
-   "source": "analysis/model-4a-alternative-specific.md",
-   "target": "notes/multicollinearity-is-structural.md"
+   "source": "analysis/m-model-4a-alternative-specific.md",
+   "target": "analysis/m-model-5-asc-rejected.md"
   },
   {
-   "source": "analysis/model-4a-alternative-specific.md",
-   "target": "notes/sigma.md"
+   "source": "analysis/m-model-4a-alternative-specific.md",
+   "target": "notes/m-multicollinearity-is-structural.md"
   },
   {
-   "source": "analysis/model-4a-alternative-specific.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-model-4a-alternative-specific.md",
+   "target": "notes/m-sigma.md"
   },
   {
-   "source": "analysis/model-5-asc-rejected.md",
-   "target": "analysis/model-4a-alternative-specific.md"
+   "source": "analysis/m-model-4a-alternative-specific.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/model-5-asc-rejected.md",
-   "target": "notes/f-directional.md"
+   "source": "analysis/m-model-5-asc-rejected.md",
+   "target": "analysis/m-model-4a-alternative-specific.md"
   },
   {
-   "source": "analysis/model-5-asc-rejected.md",
-   "target": "notes/overfitting-signature.md"
+   "source": "analysis/m-model-5-asc-rejected.md",
+   "target": "notes/m-f-directional.md"
   },
   {
-   "source": "analysis/model-5-asc-rejected.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-model-5-asc-rejected.md",
+   "target": "notes/m-overfitting-signature.md"
   },
   {
-   "source": "analysis/model-6-rederived.md",
-   "target": "analysis/model-4a-alternative-specific.md"
+   "source": "analysis/m-model-5-asc-rejected.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/model-6-rederived.md",
-   "target": "analysis/stepwise-vif-elimination.md"
+   "source": "analysis/m-model-6-rederived.md",
+   "target": "analysis/m-model-4a-alternative-specific.md"
   },
   {
-   "source": "analysis/model-6-rederived.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-model-6-rederived.md",
+   "target": "analysis/m-stepwise-vif-elimination.md"
   },
   {
-   "source": "analysis/model-progression-table.md",
-   "target": "analysis/directional-scope-ablation.md"
+   "source": "analysis/m-model-6-rederived.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/model-progression-table.md",
-   "target": "analysis/final-model.md"
+   "source": "analysis/m-model-progression-table.md",
+   "target": "analysis/m-directional-scope-ablation.md"
   },
   {
-   "source": "analysis/model-progression-table.md",
-   "target": "analysis/interaction-term-screen.md"
+   "source": "analysis/m-model-progression-table.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "analysis/model-progression-table.md",
-   "target": "analysis/model-1-base.md"
+   "source": "analysis/m-model-progression-table.md",
+   "target": "analysis/m-interaction-term-screen.md"
   },
   {
-   "source": "analysis/model-progression-table.md",
-   "target": "analysis/model-2-share-type-sigma.md"
+   "source": "analysis/m-model-progression-table.md",
+   "target": "analysis/m-model-1-base.md"
   },
   {
-   "source": "analysis/model-progression-table.md",
-   "target": "analysis/model-4a-alternative-specific.md"
+   "source": "analysis/m-model-progression-table.md",
+   "target": "analysis/m-model-2-share-type-sigma.md"
   },
   {
-   "source": "analysis/model-progression-table.md",
-   "target": "analysis/model-5-asc-rejected.md"
+   "source": "analysis/m-model-progression-table.md",
+   "target": "analysis/m-model-4a-alternative-specific.md"
   },
   {
-   "source": "analysis/model-progression-table.md",
-   "target": "analysis/model-6-rederived.md"
+   "source": "analysis/m-model-progression-table.md",
+   "target": "analysis/m-model-5-asc-rejected.md"
   },
   {
-   "source": "analysis/model-progression-table.md",
-   "target": "analysis/stepwise-vif-elimination.md"
+   "source": "analysis/m-model-progression-table.md",
+   "target": "analysis/m-model-6-rederived.md"
   },
   {
-   "source": "analysis/model-progression-table.md",
-   "target": "notes/grouped-cross-validation.md"
+   "source": "analysis/m-model-progression-table.md",
+   "target": "analysis/m-stepwise-vif-elimination.md"
   },
   {
-   "source": "analysis/model-progression-table.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-model-progression-table.md",
+   "target": "notes/m-grouped-cross-validation.md"
   },
   {
-   "source": "analysis/r-buffer-10m-vs-15m.md",
-   "target": "analysis/model-1-base.md"
+   "source": "analysis/m-model-progression-table.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/r-buffer-10m-vs-15m.md",
-   "target": "analysis/model-5-asc-rejected.md"
+   "source": "analysis/m-r-buffer-10m-vs-15m.md",
+   "target": "analysis/m-model-1-base.md"
   },
   {
-   "source": "analysis/r-buffer-10m-vs-15m.md",
-   "target": "notes/candidate-selection.md"
+   "source": "analysis/m-r-buffer-10m-vs-15m.md",
+   "target": "analysis/m-model-5-asc-rejected.md"
   },
   {
-   "source": "analysis/r-buffer-10m-vs-15m.md",
-   "target": "notes/grouped-cross-validation.md"
+   "source": "analysis/m-r-buffer-10m-vs-15m.md",
+   "target": "notes/m-candidate-selection.md"
   },
   {
-   "source": "analysis/r-buffer-10m-vs-15m.md",
-   "target": "notes/model-evaluation-metrics.md"
+   "source": "analysis/m-r-buffer-10m-vs-15m.md",
+   "target": "notes/m-grouped-cross-validation.md"
   },
   {
-   "source": "analysis/r-buffer-10m-vs-15m.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-r-buffer-10m-vs-15m.md",
+   "target": "notes/m-model-evaluation-metrics.md"
   },
   {
-   "source": "analysis/raw-density-alpha-profile.md",
-   "target": "analysis/alpha-calibration.md"
+   "source": "analysis/m-r-buffer-10m-vs-15m.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "analysis/raw-density-alpha-profile.md",
-   "target": "analysis/raw-density-refit.md"
+   "source": "analysis/m-raw-density-alpha-profile.md",
+   "target": "analysis/m-alpha-calibration.md"
   },
   {
-   "source": "analysis/raw-density-refit.md",
-   "target": "analysis/candidate-search-area.md"
+   "source": "analysis/m-raw-density-alpha-profile.md",
+   "target": "analysis/m-raw-density-refit.md"
   },
   {
-   "source": "analysis/raw-density-refit.md",
-   "target": "analysis/final-model.md"
+   "source": "analysis/m-raw-density-refit.md",
+   "target": "analysis/m-candidate-search-area.md"
   },
   {
-   "source": "analysis/raw-density-refit.md",
-   "target": "analysis/raw-density-alpha-profile.md"
+   "source": "analysis/m-raw-density-refit.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "analysis/raw-density-refit.md",
-   "target": "notes/downsampling-to-miles-density.md"
+   "source": "analysis/m-raw-density-refit.md",
+   "target": "analysis/m-raw-density-alpha-profile.md"
   },
   {
-   "source": "analysis/raw-density-refit.md",
-   "target": "threads/complexity-and-transfer.md"
+   "source": "analysis/m-raw-density-refit.md",
+   "target": "notes/m-downsampling-to-miles-density.md"
   },
   {
-   "source": "analysis/sigma-tree-importance.md",
-   "target": "analysis/final-model.md"
+   "source": "analysis/m-raw-density-refit.md",
+   "target": "threads/m-complexity-and-transfer.md"
   },
   {
-   "source": "analysis/sigma-tree-importance.md",
-   "target": "analysis/ml-baseline-stay-level.md"
+   "source": "analysis/m-sigma-tree-importance.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "analysis/sigma-tree-importance.md",
-   "target": "analysis/ml-ceiling-row-level.md"
+   "source": "analysis/m-sigma-tree-importance.md",
+   "target": "analysis/m-ml-baseline-stay-level.md"
   },
   {
-   "source": "analysis/sigma-tree-importance.md",
-   "target": "analysis/stepwise-vif-elimination.md"
+   "source": "analysis/m-sigma-tree-importance.md",
+   "target": "analysis/m-ml-ceiling-row-level.md"
   },
   {
-   "source": "analysis/sigma-tree-importance.md",
-   "target": "notes/sigma.md"
+   "source": "analysis/m-sigma-tree-importance.md",
+   "target": "analysis/m-stepwise-vif-elimination.md"
   },
   {
-   "source": "analysis/sigma-tree-importance.md",
-   "target": "threads/complexity-and-transfer.md"
+   "source": "analysis/m-sigma-tree-importance.md",
+   "target": "notes/m-sigma.md"
   },
   {
-   "source": "analysis/stepwise-vif-elimination.md",
-   "target": "analysis/f-directional-shared-vs-split.md"
+   "source": "analysis/m-sigma-tree-importance.md",
+   "target": "threads/m-complexity-and-transfer.md"
   },
   {
-   "source": "analysis/stepwise-vif-elimination.md",
-   "target": "analysis/model-6-rederived.md"
+   "source": "analysis/m-stepwise-vif-elimination.md",
+   "target": "analysis/m-f-directional-shared-vs-split.md"
   },
   {
-   "source": "analysis/stepwise-vif-elimination.md",
-   "target": "notes/multicollinearity-is-structural.md"
+   "source": "analysis/m-stepwise-vif-elimination.md",
+   "target": "analysis/m-model-6-rederived.md"
   },
   {
-   "source": "analysis/stepwise-vif-elimination.md",
-   "target": "threads/calibration.md"
+   "source": "analysis/m-stepwise-vif-elimination.md",
+   "target": "notes/m-multicollinearity-is-structural.md"
+  },
+  {
+   "source": "analysis/m-stepwise-vif-elimination.md",
+   "target": "threads/m-calibration.md"
   },
   {
    "source": "index.md",
-   "target": "threads/thesis-summary.md"
+   "target": "threads/m-thesis-summary.md"
   },
   {
-   "source": "notes/boundary-matching-analogy.md",
-   "target": "analysis/candidate-density-bias.md"
+   "source": "notes/glossary.md",
+   "target": "threads/m-thesis-summary.md"
   },
   {
-   "source": "notes/boundary-matching-analogy.md",
-   "target": "threads/error-analysis.md"
+   "source": "notes/m-boundary-matching-analogy.md",
+   "target": "analysis/m-candidate-density-bias.md"
   },
   {
-   "source": "notes/candidate-selection.md",
-   "target": "analysis/candidate-search-area.md"
+   "source": "notes/m-boundary-matching-analogy.md",
+   "target": "threads/m-error-analysis.md"
   },
   {
-   "source": "notes/candidate-selection.md",
-   "target": "analysis/r-buffer-10m-vs-15m.md"
+   "source": "notes/m-candidate-selection.md",
+   "target": "analysis/m-candidate-search-area.md"
   },
   {
-   "source": "notes/candidate-selection.md",
-   "target": "notes/f-distribution.md"
+   "source": "notes/m-candidate-selection.md",
+   "target": "analysis/m-r-buffer-10m-vs-15m.md"
   },
   {
-   "source": "notes/candidate-selection.md",
-   "target": "notes/framework-overview.md"
+   "source": "notes/m-candidate-selection.md",
+   "target": "notes/m-f-distribution.md"
   },
   {
-   "source": "notes/contributions.md",
-   "target": "analysis/candidate-density-bias.md"
+   "source": "notes/m-candidate-selection.md",
+   "target": "notes/m-framework-overview.md"
   },
   {
-   "source": "notes/contributions.md",
-   "target": "analysis/final-model.md"
+   "source": "notes/m-contributions.md",
+   "target": "analysis/m-candidate-density-bias.md"
   },
   {
-   "source": "notes/contributions.md",
-   "target": "notes/framework-overview.md"
+   "source": "notes/m-contributions.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "notes/contributions.md",
-   "target": "notes/ground-truth-dataset.md"
+   "source": "notes/m-contributions.md",
+   "target": "notes/m-framework-overview.md"
   },
   {
-   "source": "notes/contributions.md",
-   "target": "threads/outlook.md"
+   "source": "notes/m-contributions.md",
+   "target": "notes/m-ground-truth-dataset.md"
   },
   {
-   "source": "notes/discussion-citation-checks.md",
-   "target": "notes/boundary-matching-analogy.md"
+   "source": "notes/m-contributions.md",
+   "target": "threads/m-outlook.md"
   },
   {
-   "source": "notes/discussion-citation-checks.md",
-   "target": "notes/map-matching-extension.md"
+   "source": "notes/m-discussion-citation-checks.md",
+   "target": "notes/m-boundary-matching-analogy.md"
   },
   {
-   "source": "notes/discussion-citation-checks.md",
-   "target": "notes/positioning-vs-deterministic-assignment.md"
+   "source": "notes/m-discussion-citation-checks.md",
+   "target": "notes/m-map-matching-extension.md"
   },
   {
-   "source": "notes/discussion-citation-checks.md",
-   "target": "notes/street-space-tension.md"
+   "source": "notes/m-discussion-citation-checks.md",
+   "target": "notes/m-positioning-vs-deterministic-assignment.md"
   },
   {
-   "source": "notes/discussion-citation-checks.md",
-   "target": "threads/problem-and-positioning.md"
+   "source": "notes/m-discussion-citation-checks.md",
+   "target": "notes/m-street-space-tension.md"
   },
   {
-   "source": "notes/downsampling-to-miles-density.md",
-   "target": "analysis/candidate-search-area.md"
+   "source": "notes/m-discussion-citation-checks.md",
+   "target": "threads/m-problem-and-positioning.md"
   },
   {
-   "source": "notes/downsampling-to-miles-density.md",
-   "target": "analysis/raw-density-refit.md"
+   "source": "notes/m-downsampling-to-miles-density.md",
+   "target": "analysis/m-candidate-search-area.md"
   },
   {
-   "source": "notes/downsampling-to-miles-density.md",
-   "target": "threads/ground-truth-data.md"
+   "source": "notes/m-downsampling-to-miles-density.md",
+   "target": "analysis/m-raw-density-refit.md"
   },
   {
-   "source": "notes/experiment-design.md",
-   "target": "notes/experiment-group-a.md"
+   "source": "notes/m-downsampling-to-miles-density.md",
+   "target": "threads/m-ground-truth-data.md"
   },
   {
-   "source": "notes/experiment-design.md",
-   "target": "notes/experiment-group-b.md"
+   "source": "notes/m-experiment-design.md",
+   "target": "notes/m-experiment-group-a.md"
   },
   {
-   "source": "notes/experiment-design.md",
-   "target": "notes/experiment-group-c.md"
+   "source": "notes/m-experiment-design.md",
+   "target": "notes/m-experiment-group-b.md"
   },
   {
-   "source": "notes/experiment-design.md",
-   "target": "notes/experiment-group-d.md"
+   "source": "notes/m-experiment-design.md",
+   "target": "notes/m-experiment-group-c.md"
   },
   {
-   "source": "notes/experiment-design.md",
-   "target": "notes/experiment-group-e.md"
+   "source": "notes/m-experiment-design.md",
+   "target": "notes/m-experiment-group-d.md"
   },
   {
-   "source": "notes/experiment-design.md",
-   "target": "notes/ground-truth-dataset.md"
+   "source": "notes/m-experiment-design.md",
+   "target": "notes/m-experiment-group-e.md"
   },
   {
-   "source": "notes/experiment-design.md",
-   "target": "notes/grouped-cross-validation.md"
+   "source": "notes/m-experiment-design.md",
+   "target": "notes/m-ground-truth-dataset.md"
   },
   {
-   "source": "notes/experiment-design.md",
-   "target": "notes/self-report-form.md"
+   "source": "notes/m-experiment-design.md",
+   "target": "notes/m-grouped-cross-validation.md"
   },
   {
-   "source": "notes/experiment-design.md",
-   "target": "threads/ground-truth-data.md"
+   "source": "notes/m-experiment-design.md",
+   "target": "notes/m-self-report-form.md"
   },
   {
-   "source": "notes/experiment-group-a.md",
-   "target": "notes/experiment-design.md"
+   "source": "notes/m-experiment-design.md",
+   "target": "threads/m-ground-truth-data.md"
   },
   {
-   "source": "notes/experiment-group-b.md",
-   "target": "notes/experiment-design.md"
+   "source": "notes/m-experiment-group-a.md",
+   "target": "notes/m-experiment-design.md"
   },
   {
-   "source": "notes/experiment-group-c.md",
-   "target": "notes/experiment-design.md"
+   "source": "notes/m-experiment-group-b.md",
+   "target": "notes/m-experiment-design.md"
   },
   {
-   "source": "notes/experiment-group-d.md",
-   "target": "notes/experiment-design.md"
+   "source": "notes/m-experiment-group-c.md",
+   "target": "notes/m-experiment-design.md"
   },
   {
-   "source": "notes/experiment-group-e.md",
-   "target": "notes/experiment-design.md"
+   "source": "notes/m-experiment-group-d.md",
+   "target": "notes/m-experiment-design.md"
   },
   {
-   "source": "notes/f-directional.md",
-   "target": "analysis/directional-scope-ablation.md"
+   "source": "notes/m-experiment-group-e.md",
+   "target": "notes/m-experiment-design.md"
   },
   {
-   "source": "notes/f-directional.md",
-   "target": "analysis/f-directional-shared-vs-split.md"
+   "source": "notes/m-f-directional.md",
+   "target": "analysis/m-directional-scope-ablation.md"
   },
   {
-   "source": "notes/f-directional.md",
-   "target": "analysis/model-5-asc-rejected.md"
+   "source": "notes/m-f-directional.md",
+   "target": "analysis/m-f-directional-shared-vs-split.md"
   },
   {
-   "source": "notes/f-directional.md",
-   "target": "notes/framework-overview.md"
+   "source": "notes/m-f-directional.md",
+   "target": "analysis/m-model-5-asc-rejected.md"
   },
   {
-   "source": "notes/f-distance.md",
-   "target": "analysis/alpha-calibration.md"
+   "source": "notes/m-f-directional.md",
+   "target": "notes/m-framework-overview.md"
   },
   {
-   "source": "notes/f-distance.md",
-   "target": "analysis/f-distance-squared-artifact.md"
+   "source": "notes/m-f-distance.md",
+   "target": "analysis/m-alpha-calibration.md"
   },
   {
-   "source": "notes/f-distance.md",
-   "target": "analysis/model-1-base.md"
+   "source": "notes/m-f-distance.md",
+   "target": "analysis/m-f-distance-squared-artifact.md"
   },
   {
-   "source": "notes/f-distance.md",
-   "target": "analysis/model-2-share-type-sigma.md"
+   "source": "notes/m-f-distance.md",
+   "target": "analysis/m-model-1-base.md"
   },
   {
-   "source": "notes/f-distance.md",
-   "target": "notes/framework-overview.md"
+   "source": "notes/m-f-distance.md",
+   "target": "analysis/m-model-2-share-type-sigma.md"
   },
   {
-   "source": "notes/f-distance.md",
-   "target": "notes/sigma.md"
+   "source": "notes/m-f-distance.md",
+   "target": "notes/m-framework-overview.md"
   },
   {
-   "source": "notes/f-distribution.md",
-   "target": "analysis/final-model.md"
+   "source": "notes/m-f-distance.md",
+   "target": "notes/m-sigma.md"
   },
   {
-   "source": "notes/f-distribution.md",
-   "target": "analysis/interaction-term-screen.md"
+   "source": "notes/m-f-distribution.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "notes/f-distribution.md",
-   "target": "analysis/model-1-base.md"
+   "source": "notes/m-f-distribution.md",
+   "target": "analysis/m-interaction-term-screen.md"
   },
   {
-   "source": "notes/f-distribution.md",
-   "target": "notes/framework-overview.md"
+   "source": "notes/m-f-distribution.md",
+   "target": "analysis/m-model-1-base.md"
   },
   {
-   "source": "notes/f-distribution.md",
-   "target": "notes/share-type.md"
+   "source": "notes/m-f-distribution.md",
+   "target": "notes/m-framework-overview.md"
   },
   {
-   "source": "notes/f-temporal.md",
-   "target": "analysis/model-1-base.md"
+   "source": "notes/m-f-distribution.md",
+   "target": "notes/m-share-type.md"
   },
   {
-   "source": "notes/f-temporal.md",
-   "target": "notes/f-distribution.md"
+   "source": "notes/m-f-temporal.md",
+   "target": "analysis/m-model-1-base.md"
   },
   {
-   "source": "notes/f-temporal.md",
-   "target": "notes/framework-overview.md"
+   "source": "notes/m-f-temporal.md",
+   "target": "notes/m-f-distribution.md"
   },
   {
-   "source": "notes/framework-overview.md",
-   "target": "notes/candidate-selection.md"
+   "source": "notes/m-f-temporal.md",
+   "target": "notes/m-framework-overview.md"
   },
   {
-   "source": "notes/framework-overview.md",
-   "target": "notes/f-directional.md"
+   "source": "notes/m-framework-overview.md",
+   "target": "notes/m-candidate-selection.md"
   },
   {
-   "source": "notes/framework-overview.md",
-   "target": "notes/f-distance.md"
+   "source": "notes/m-framework-overview.md",
+   "target": "notes/m-f-directional.md"
   },
   {
-   "source": "notes/framework-overview.md",
-   "target": "notes/f-distribution.md"
+   "source": "notes/m-framework-overview.md",
+   "target": "notes/m-f-distance.md"
   },
   {
-   "source": "notes/framework-overview.md",
-   "target": "notes/f-temporal.md"
+   "source": "notes/m-framework-overview.md",
+   "target": "notes/m-f-distribution.md"
   },
   {
-   "source": "notes/framework-overview.md",
-   "target": "notes/ground-truth-dataset.md"
+   "source": "notes/m-framework-overview.md",
+   "target": "notes/m-f-temporal.md"
   },
   {
-   "source": "notes/framework-overview.md",
-   "target": "notes/research-questions.md"
+   "source": "notes/m-framework-overview.md",
+   "target": "notes/m-ground-truth-dataset.md"
   },
   {
-   "source": "notes/framework-overview.md",
-   "target": "notes/share-type.md"
+   "source": "notes/m-framework-overview.md",
+   "target": "notes/m-research-questions.md"
   },
   {
-   "source": "notes/framework-overview.md",
-   "target": "notes/sigma.md"
+   "source": "notes/m-framework-overview.md",
+   "target": "notes/m-share-type.md"
   },
   {
-   "source": "notes/framework-overview.md",
-   "target": "threads/assignment-framework.md"
+   "source": "notes/m-framework-overview.md",
+   "target": "notes/m-sigma.md"
   },
   {
-   "source": "notes/future-work.md",
-   "target": "notes/limitations.md"
+   "source": "notes/m-framework-overview.md",
+   "target": "threads/m-assignment-framework.md"
   },
   {
-   "source": "notes/future-work.md",
-   "target": "notes/overfitting-signature.md"
+   "source": "notes/m-future-work.md",
+   "target": "notes/m-limitations.md"
   },
   {
-   "source": "notes/future-work.md",
-   "target": "notes/street-space-tension.md"
+   "source": "notes/m-future-work.md",
+   "target": "notes/m-overfitting-signature.md"
   },
   {
-   "source": "notes/future-work.md",
-   "target": "threads/outlook.md"
+   "source": "notes/m-future-work.md",
+   "target": "notes/m-street-space-tension.md"
   },
   {
-   "source": "notes/ground-truth-cleaning.md",
-   "target": "analysis/drop-list.md"
+   "source": "notes/m-future-work.md",
+   "target": "threads/m-outlook.md"
   },
   {
-   "source": "notes/ground-truth-cleaning.md",
-   "target": "notes/ground-truth-dataset.md"
+   "source": "notes/m-ground-truth-cleaning.md",
+   "target": "analysis/m-drop-list.md"
   },
   {
-   "source": "notes/ground-truth-cleaning.md",
-   "target": "threads/ground-truth-data.md"
+   "source": "notes/m-ground-truth-cleaning.md",
+   "target": "notes/m-ground-truth-dataset.md"
   },
   {
-   "source": "notes/ground-truth-dataset.md",
-   "target": "notes/downsampling-to-miles-density.md"
+   "source": "notes/m-ground-truth-cleaning.md",
+   "target": "threads/m-ground-truth-data.md"
   },
   {
-   "source": "notes/ground-truth-dataset.md",
-   "target": "notes/experiment-design.md"
+   "source": "notes/m-ground-truth-dataset.md",
+   "target": "notes/m-downsampling-to-miles-density.md"
   },
   {
-   "source": "notes/ground-truth-dataset.md",
-   "target": "notes/ground-truth-cleaning.md"
+   "source": "notes/m-ground-truth-dataset.md",
+   "target": "notes/m-experiment-design.md"
   },
   {
-   "source": "notes/ground-truth-dataset.md",
-   "target": "notes/overfitting-signature.md"
+   "source": "notes/m-ground-truth-dataset.md",
+   "target": "notes/m-ground-truth-cleaning.md"
   },
   {
-   "source": "notes/ground-truth-dataset.md",
-   "target": "threads/ground-truth-data.md"
+   "source": "notes/m-ground-truth-dataset.md",
+   "target": "notes/m-overfitting-signature.md"
   },
   {
-   "source": "notes/grouped-cross-validation.md",
-   "target": "analysis/ml-baseline-stay-level.md"
+   "source": "notes/m-ground-truth-dataset.md",
+   "target": "threads/m-ground-truth-data.md"
   },
   {
-   "source": "notes/grouped-cross-validation.md",
-   "target": "analysis/model-progression-table.md"
+   "source": "notes/m-grouped-cross-validation.md",
+   "target": "analysis/m-ml-baseline-stay-level.md"
   },
   {
-   "source": "notes/grouped-cross-validation.md",
-   "target": "notes/experiment-design.md"
+   "source": "notes/m-grouped-cross-validation.md",
+   "target": "analysis/m-model-progression-table.md"
   },
   {
-   "source": "notes/grouped-cross-validation.md",
-   "target": "threads/calibration.md"
+   "source": "notes/m-grouped-cross-validation.md",
+   "target": "notes/m-experiment-design.md"
   },
   {
-   "source": "notes/limitations.md",
-   "target": "analysis/candidate-density-bias.md"
+   "source": "notes/m-grouped-cross-validation.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "notes/limitations.md",
-   "target": "notes/experiment-group-d.md"
+   "source": "notes/m-limitations.md",
+   "target": "analysis/m-candidate-density-bias.md"
   },
   {
-   "source": "notes/limitations.md",
-   "target": "notes/grouped-cross-validation.md"
+   "source": "notes/m-limitations.md",
+   "target": "notes/m-experiment-group-d.md"
   },
   {
-   "source": "notes/limitations.md",
-   "target": "notes/overfitting-signature.md"
+   "source": "notes/m-limitations.md",
+   "target": "notes/m-grouped-cross-validation.md"
   },
   {
-   "source": "notes/limitations.md",
-   "target": "notes/self-report-form.md"
+   "source": "notes/m-limitations.md",
+   "target": "notes/m-overfitting-signature.md"
   },
   {
-   "source": "notes/limitations.md",
-   "target": "threads/outlook.md"
+   "source": "notes/m-limitations.md",
+   "target": "notes/m-self-report-form.md"
   },
   {
-   "source": "notes/map-matching-extension.md",
-   "target": "notes/framework-overview.md"
+   "source": "notes/m-limitations.md",
+   "target": "threads/m-outlook.md"
   },
   {
-   "source": "notes/map-matching-extension.md",
-   "target": "notes/motivation.md"
+   "source": "notes/m-map-matching-extension.md",
+   "target": "notes/m-framework-overview.md"
   },
   {
-   "source": "notes/map-matching-extension.md",
-   "target": "threads/problem-and-positioning.md"
+   "source": "notes/m-map-matching-extension.md",
+   "target": "notes/m-motivation.md"
   },
   {
-   "source": "notes/model-evaluation-metrics.md",
-   "target": "analysis/r-buffer-10m-vs-15m.md"
+   "source": "notes/m-map-matching-extension.md",
+   "target": "threads/m-problem-and-positioning.md"
   },
   {
-   "source": "notes/model-evaluation-metrics.md",
-   "target": "notes/grouped-cross-validation.md"
+   "source": "notes/m-model-evaluation-metrics.md",
+   "target": "analysis/m-r-buffer-10m-vs-15m.md"
   },
   {
-   "source": "notes/model-evaluation-metrics.md",
-   "target": "threads/calibration.md"
+   "source": "notes/m-model-evaluation-metrics.md",
+   "target": "notes/glossary.md"
   },
   {
-   "source": "notes/motivation.md",
-   "target": "notes/map-matching-extension.md"
+   "source": "notes/m-model-evaluation-metrics.md",
+   "target": "notes/m-grouped-cross-validation.md"
   },
   {
-   "source": "notes/motivation.md",
-   "target": "notes/research-questions.md"
+   "source": "notes/m-model-evaluation-metrics.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "notes/motivation.md",
-   "target": "notes/street-space-tension.md"
+   "source": "notes/m-motivation.md",
+   "target": "notes/m-map-matching-extension.md"
   },
   {
-   "source": "notes/motivation.md",
-   "target": "threads/problem-and-positioning.md"
+   "source": "notes/m-motivation.md",
+   "target": "notes/m-research-questions.md"
   },
   {
-   "source": "notes/multicollinearity-is-structural.md",
-   "target": "analysis/final-model-correlation-matrix.md"
+   "source": "notes/m-motivation.md",
+   "target": "notes/m-street-space-tension.md"
   },
   {
-   "source": "notes/multicollinearity-is-structural.md",
-   "target": "analysis/model-4a-alternative-specific.md"
+   "source": "notes/m-motivation.md",
+   "target": "threads/m-problem-and-positioning.md"
   },
   {
-   "source": "notes/multicollinearity-is-structural.md",
-   "target": "analysis/model-5-asc-rejected.md"
+   "source": "notes/m-multicollinearity-is-structural.md",
+   "target": "analysis/m-final-model-correlation-matrix.md"
   },
   {
-   "source": "notes/multicollinearity-is-structural.md",
-   "target": "analysis/stepwise-vif-elimination.md"
+   "source": "notes/m-multicollinearity-is-structural.md",
+   "target": "analysis/m-model-4a-alternative-specific.md"
   },
   {
-   "source": "notes/multicollinearity-is-structural.md",
-   "target": "threads/calibration.md"
+   "source": "notes/m-multicollinearity-is-structural.md",
+   "target": "analysis/m-model-5-asc-rejected.md"
   },
   {
-   "source": "notes/overfitting-signature.md",
-   "target": "analysis/f-directional-shared-vs-split.md"
+   "source": "notes/m-multicollinearity-is-structural.md",
+   "target": "analysis/m-stepwise-vif-elimination.md"
   },
   {
-   "source": "notes/overfitting-signature.md",
-   "target": "analysis/f-distance-squared-artifact.md"
+   "source": "notes/m-multicollinearity-is-structural.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "notes/overfitting-signature.md",
-   "target": "analysis/ml-ceiling-row-level.md"
+   "source": "notes/m-overfitting-signature.md",
+   "target": "analysis/m-f-directional-shared-vs-split.md"
   },
   {
-   "source": "notes/overfitting-signature.md",
-   "target": "analysis/model-5-asc-rejected.md"
+   "source": "notes/m-overfitting-signature.md",
+   "target": "analysis/m-f-distance-squared-artifact.md"
   },
   {
-   "source": "notes/overfitting-signature.md",
-   "target": "notes/ground-truth-dataset.md"
+   "source": "notes/m-overfitting-signature.md",
+   "target": "analysis/m-ml-ceiling-row-level.md"
   },
   {
-   "source": "notes/overfitting-signature.md",
-   "target": "notes/limitations.md"
+   "source": "notes/m-overfitting-signature.md",
+   "target": "analysis/m-model-5-asc-rejected.md"
   },
   {
-   "source": "notes/overfitting-signature.md",
-   "target": "notes/research-questions.md"
+   "source": "notes/m-overfitting-signature.md",
+   "target": "notes/m-ground-truth-dataset.md"
   },
   {
-   "source": "notes/overfitting-signature.md",
-   "target": "threads/complexity-and-transfer.md"
+   "source": "notes/m-overfitting-signature.md",
+   "target": "notes/m-limitations.md"
   },
   {
-   "source": "notes/positioning-vs-deterministic-assignment.md",
-   "target": "analysis/final-model.md"
+   "source": "notes/m-overfitting-signature.md",
+   "target": "notes/m-research-questions.md"
   },
   {
-   "source": "notes/positioning-vs-deterministic-assignment.md",
-   "target": "analysis/ml-ceiling-row-level.md"
+   "source": "notes/m-overfitting-signature.md",
+   "target": "threads/m-complexity-and-transfer.md"
   },
   {
-   "source": "notes/positioning-vs-deterministic-assignment.md",
-   "target": "threads/problem-and-positioning.md"
+   "source": "notes/m-positioning-vs-deterministic-assignment.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "notes/research-questions.md",
-   "target": "analysis/confusion-matrix.md"
+   "source": "notes/m-positioning-vs-deterministic-assignment.md",
+   "target": "analysis/m-ml-ceiling-row-level.md"
   },
   {
-   "source": "notes/research-questions.md",
-   "target": "analysis/ml-ceiling-row-level.md"
+   "source": "notes/m-positioning-vs-deterministic-assignment.md",
+   "target": "threads/m-problem-and-positioning.md"
   },
   {
-   "source": "notes/research-questions.md",
-   "target": "notes/framework-overview.md"
+   "source": "notes/m-research-questions.md",
+   "target": "analysis/m-confusion-matrix.md"
   },
   {
-   "source": "notes/research-questions.md",
-   "target": "notes/overfitting-signature.md"
+   "source": "notes/m-research-questions.md",
+   "target": "analysis/m-ml-ceiling-row-level.md"
   },
   {
-   "source": "notes/research-questions.md",
-   "target": "threads/calibration.md"
+   "source": "notes/m-research-questions.md",
+   "target": "notes/m-framework-overview.md"
   },
   {
-   "source": "notes/research-questions.md",
-   "target": "threads/problem-and-positioning.md"
+   "source": "notes/m-research-questions.md",
+   "target": "notes/m-overfitting-signature.md"
   },
   {
-   "source": "notes/self-report-form.md",
-   "target": "notes/experiment-design.md"
+   "source": "notes/m-research-questions.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "notes/self-report-form.md",
-   "target": "notes/limitations.md"
+   "source": "notes/m-research-questions.md",
+   "target": "threads/m-problem-and-positioning.md"
   },
   {
-   "source": "notes/share-type.md",
-   "target": "analysis/candidate-density-bias.md"
+   "source": "notes/m-self-report-form.md",
+   "target": "notes/m-experiment-design.md"
   },
   {
-   "source": "notes/share-type.md",
-   "target": "analysis/model-2-share-type-sigma.md"
+   "source": "notes/m-self-report-form.md",
+   "target": "notes/m-limitations.md"
   },
   {
-   "source": "notes/share-type.md",
-   "target": "threads/assignment-framework.md"
+   "source": "notes/m-share-type.md",
+   "target": "analysis/m-candidate-density-bias.md"
   },
   {
-   "source": "notes/sigma.md",
-   "target": "analysis/final-model.md"
+   "source": "notes/m-share-type.md",
+   "target": "analysis/m-model-2-share-type-sigma.md"
   },
   {
-   "source": "notes/sigma.md",
-   "target": "analysis/model-2-share-type-sigma.md"
+   "source": "notes/m-share-type.md",
+   "target": "threads/m-assignment-framework.md"
   },
   {
-   "source": "notes/sigma.md",
-   "target": "analysis/sigma-tree-importance.md"
+   "source": "notes/m-sigma.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "notes/sigma.md",
-   "target": "notes/f-distance.md"
+   "source": "notes/m-sigma.md",
+   "target": "analysis/m-model-2-share-type-sigma.md"
   },
   {
-   "source": "notes/sigma.md",
-   "target": "threads/assignment-framework.md"
+   "source": "notes/m-sigma.md",
+   "target": "analysis/m-sigma-tree-importance.md"
   },
   {
-   "source": "notes/spatial-entity-layers.md",
-   "target": "analysis/candidate-density-bias.md"
+   "source": "notes/m-sigma.md",
+   "target": "notes/m-f-distance.md"
   },
   {
-   "source": "notes/spatial-entity-layers.md",
-   "target": "analysis/drop-list.md"
+   "source": "notes/m-sigma.md",
+   "target": "threads/m-assignment-framework.md"
   },
   {
-   "source": "notes/spatial-entity-layers.md",
-   "target": "threads/ground-truth-data.md"
+   "source": "notes/m-spatial-entity-layers.md",
+   "target": "analysis/m-candidate-density-bias.md"
   },
   {
-   "source": "notes/street-space-tension.md",
-   "target": "analysis/candidate-density-bias.md"
+   "source": "notes/m-spatial-entity-layers.md",
+   "target": "analysis/m-drop-list.md"
   },
   {
-   "source": "notes/street-space-tension.md",
-   "target": "analysis/confusion-matrix.md"
+   "source": "notes/m-spatial-entity-layers.md",
+   "target": "threads/m-ground-truth-data.md"
   },
   {
-   "source": "notes/street-space-tension.md",
-   "target": "notes/discussion-citation-checks.md"
+   "source": "notes/m-street-space-tension.md",
+   "target": "analysis/m-candidate-density-bias.md"
   },
   {
-   "source": "notes/street-space-tension.md",
-   "target": "notes/future-work.md"
+   "source": "notes/m-street-space-tension.md",
+   "target": "analysis/m-confusion-matrix.md"
   },
   {
-   "source": "notes/street-space-tension.md",
-   "target": "threads/error-analysis.md"
+   "source": "notes/m-street-space-tension.md",
+   "target": "notes/m-discussion-citation-checks.md"
   },
   {
-   "source": "notes/study-area.md",
-   "target": "notes/ground-truth-dataset.md"
+   "source": "notes/m-street-space-tension.md",
+   "target": "notes/m-future-work.md"
   },
   {
-   "source": "notes/study-area.md",
-   "target": "notes/limitations.md"
+   "source": "notes/m-street-space-tension.md",
+   "target": "threads/m-error-analysis.md"
   },
   {
-   "source": "notes/study-area.md",
-   "target": "notes/spatial-entity-layers.md"
+   "source": "notes/m-study-area.md",
+   "target": "notes/m-ground-truth-dataset.md"
   },
   {
-   "source": "notes/study-area.md",
-   "target": "threads/ground-truth-data.md"
+   "source": "notes/m-study-area.md",
+   "target": "notes/m-limitations.md"
   },
   {
-   "source": "progress/phd-interview-slides.md",
-   "target": "notes/future-work.md"
+   "source": "notes/m-study-area.md",
+   "target": "notes/m-spatial-entity-layers.md"
   },
   {
-   "source": "progress/phd-interview-slides.md",
-   "target": "notes/limitations.md"
+   "source": "notes/m-study-area.md",
+   "target": "threads/m-ground-truth-data.md"
   },
   {
-   "source": "progress/phd-interview-slides.md",
-   "target": "threads/outlook.md"
+   "source": "progress/m-phd-interview-slides.md",
+   "target": "notes/m-future-work.md"
   },
   {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/alpha-calibration.md"
+   "source": "progress/m-phd-interview-slides.md",
+   "target": "notes/m-limitations.md"
   },
   {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/directional-scope-ablation.md"
+   "source": "progress/m-phd-interview-slides.md",
+   "target": "threads/m-outlook.md"
   },
   {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/f-distance-squared-artifact.md"
+   "source": "progress/m-progress-19-07-2026.md",
+   "target": "analysis/m-alpha-calibration.md"
   },
   {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/interaction-term-screen.md"
+   "source": "progress/m-progress-19-07-2026.md",
+   "target": "analysis/m-directional-scope-ablation.md"
   },
   {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/model-1-base.md"
+   "source": "progress/m-progress-19-07-2026.md",
+   "target": "analysis/m-f-distance-squared-artifact.md"
   },
   {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/model-2-share-type-sigma.md"
+   "source": "progress/m-progress-19-07-2026.md",
+   "target": "analysis/m-interaction-term-screen.md"
   },
   {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/model-4a-alternative-specific.md"
+   "source": "progress/m-progress-19-07-2026.md",
+   "target": "analysis/m-model-1-base.md"
   },
   {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/model-5-asc-rejected.md"
+   "source": "progress/m-progress-19-07-2026.md",
+   "target": "analysis/m-model-2-share-type-sigma.md"
   },
   {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "analysis/r-buffer-10m-vs-15m.md"
+   "source": "progress/m-progress-19-07-2026.md",
+   "target": "analysis/m-model-4a-alternative-specific.md"
   },
   {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "notes/multicollinearity-is-structural.md"
+   "source": "progress/m-progress-19-07-2026.md",
+   "target": "analysis/m-model-5-asc-rejected.md"
   },
   {
-   "source": "progress/progress-19-07-2026.md",
-   "target": "progress/progress-21-07-2026.md"
+   "source": "progress/m-progress-19-07-2026.md",
+   "target": "analysis/m-r-buffer-10m-vs-15m.md"
   },
   {
-   "source": "progress/progress-20-07-2026.md",
-   "target": "analysis/ml-baseline-stay-level.md"
+   "source": "progress/m-progress-19-07-2026.md",
+   "target": "notes/glossary.md"
   },
   {
-   "source": "progress/progress-20-07-2026.md",
-   "target": "analysis/sigma-tree-importance.md"
+   "source": "progress/m-progress-19-07-2026.md",
+   "target": "notes/m-multicollinearity-is-structural.md"
   },
   {
-   "source": "progress/progress-20-07-2026.md",
-   "target": "progress/progress-23-07-2026.md"
+   "source": "progress/m-progress-19-07-2026.md",
+   "target": "progress/m-progress-21-07-2026.md"
   },
   {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/alpha-calibration.md"
+   "source": "progress/m-progress-20-07-2026.md",
+   "target": "analysis/m-ml-baseline-stay-level.md"
   },
   {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/f-directional-shared-vs-split.md"
+   "source": "progress/m-progress-20-07-2026.md",
+   "target": "analysis/m-sigma-tree-importance.md"
   },
   {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/f-distance-squared-artifact.md"
+   "source": "progress/m-progress-20-07-2026.md",
+   "target": "progress/m-progress-23-07-2026.md"
   },
   {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/final-model.md"
+   "source": "progress/m-progress-21-07-2026.md",
+   "target": "analysis/m-alpha-calibration.md"
   },
   {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/model-5-asc-rejected.md"
+   "source": "progress/m-progress-21-07-2026.md",
+   "target": "analysis/m-f-directional-shared-vs-split.md"
   },
   {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/model-progression-table.md"
+   "source": "progress/m-progress-21-07-2026.md",
+   "target": "analysis/m-f-distance-squared-artifact.md"
   },
   {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "analysis/stepwise-vif-elimination.md"
+   "source": "progress/m-progress-21-07-2026.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "progress/progress-21-07-2026.md",
-   "target": "notes/grouped-cross-validation.md"
+   "source": "progress/m-progress-21-07-2026.md",
+   "target": "analysis/m-model-5-asc-rejected.md"
   },
   {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/candidate-density-bias.md"
+   "source": "progress/m-progress-21-07-2026.md",
+   "target": "analysis/m-model-progression-table.md"
   },
   {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/confusion-matrix.md"
+   "source": "progress/m-progress-21-07-2026.md",
+   "target": "analysis/m-stepwise-vif-elimination.md"
   },
   {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/drop-list.md"
+   "source": "progress/m-progress-21-07-2026.md",
+   "target": "notes/m-grouped-cross-validation.md"
   },
   {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/final-model-correlation-matrix.md"
+   "source": "progress/m-progress-23-07-2026.md",
+   "target": "analysis/m-candidate-density-bias.md"
   },
   {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/final-model.md"
+   "source": "progress/m-progress-23-07-2026.md",
+   "target": "analysis/m-confusion-matrix.md"
   },
   {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/fold-difficulty.md"
+   "source": "progress/m-progress-23-07-2026.md",
+   "target": "analysis/m-drop-list.md"
   },
   {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "analysis/ml-ceiling-row-level.md"
+   "source": "progress/m-progress-23-07-2026.md",
+   "target": "analysis/m-final-model-correlation-matrix.md"
   },
   {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "notes/ground-truth-cleaning.md"
+   "source": "progress/m-progress-23-07-2026.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "notes/self-report-form.md"
+   "source": "progress/m-progress-23-07-2026.md",
+   "target": "analysis/m-fold-difficulty.md"
   },
   {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "progress/progress-20-07-2026.md"
+   "source": "progress/m-progress-23-07-2026.md",
+   "target": "analysis/m-ml-ceiling-row-level.md"
   },
   {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "threads/error-analysis.md"
+   "source": "progress/m-progress-23-07-2026.md",
+   "target": "notes/m-ground-truth-cleaning.md"
   },
   {
-   "source": "progress/progress-23-07-2026.md",
-   "target": "threads/problem-and-positioning.md"
+   "source": "progress/m-progress-23-07-2026.md",
+   "target": "notes/m-self-report-form.md"
   },
   {
-   "source": "progress/progress-29-07-2026.md",
-   "target": "analysis/candidate-search-area.md"
+   "source": "progress/m-progress-23-07-2026.md",
+   "target": "progress/m-progress-20-07-2026.md"
   },
   {
-   "source": "progress/progress-29-07-2026.md",
-   "target": "analysis/final-model.md"
+   "source": "progress/m-progress-23-07-2026.md",
+   "target": "threads/m-error-analysis.md"
   },
   {
-   "source": "progress/progress-29-07-2026.md",
-   "target": "analysis/raw-density-alpha-profile.md"
+   "source": "progress/m-progress-23-07-2026.md",
+   "target": "threads/m-problem-and-positioning.md"
   },
   {
-   "source": "progress/progress-29-07-2026.md",
-   "target": "analysis/raw-density-refit.md"
+   "source": "progress/m-progress-29-07-2026.md",
+   "target": "analysis/m-candidate-search-area.md"
   },
   {
-   "source": "threads/assignment-framework.md",
-   "target": "notes/candidate-selection.md"
+   "source": "progress/m-progress-29-07-2026.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "threads/assignment-framework.md",
-   "target": "notes/f-directional.md"
+   "source": "progress/m-progress-29-07-2026.md",
+   "target": "analysis/m-raw-density-alpha-profile.md"
   },
   {
-   "source": "threads/assignment-framework.md",
-   "target": "notes/f-distance.md"
+   "source": "progress/m-progress-29-07-2026.md",
+   "target": "analysis/m-raw-density-refit.md"
   },
   {
-   "source": "threads/assignment-framework.md",
-   "target": "notes/f-distribution.md"
+   "source": "threads/m-assignment-framework.md",
+   "target": "notes/m-candidate-selection.md"
   },
   {
-   "source": "threads/assignment-framework.md",
-   "target": "notes/f-temporal.md"
+   "source": "threads/m-assignment-framework.md",
+   "target": "notes/m-f-directional.md"
   },
   {
-   "source": "threads/assignment-framework.md",
-   "target": "notes/framework-overview.md"
+   "source": "threads/m-assignment-framework.md",
+   "target": "notes/m-f-distance.md"
   },
   {
-   "source": "threads/assignment-framework.md",
-   "target": "notes/share-type.md"
+   "source": "threads/m-assignment-framework.md",
+   "target": "notes/m-f-distribution.md"
   },
   {
-   "source": "threads/assignment-framework.md",
-   "target": "notes/sigma.md"
+   "source": "threads/m-assignment-framework.md",
+   "target": "notes/m-f-temporal.md"
   },
   {
-   "source": "threads/assignment-framework.md",
-   "target": "progress/progress-19-07-2026.md"
+   "source": "threads/m-assignment-framework.md",
+   "target": "notes/m-framework-overview.md"
   },
   {
-   "source": "threads/assignment-framework.md",
-   "target": "progress/progress-21-07-2026.md"
+   "source": "threads/m-assignment-framework.md",
+   "target": "notes/m-share-type.md"
   },
   {
-   "source": "threads/assignment-framework.md",
-   "target": "threads/calibration.md"
+   "source": "threads/m-assignment-framework.md",
+   "target": "notes/m-sigma.md"
   },
   {
-   "source": "threads/assignment-framework.md",
-   "target": "threads/thesis-summary.md"
+   "source": "threads/m-assignment-framework.md",
+   "target": "progress/m-progress-19-07-2026.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/alpha-calibration.md"
+   "source": "threads/m-assignment-framework.md",
+   "target": "progress/m-progress-21-07-2026.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/directional-scope-ablation.md"
+   "source": "threads/m-assignment-framework.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/f-directional-shared-vs-split.md"
+   "source": "threads/m-assignment-framework.md",
+   "target": "threads/m-thesis-summary.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/f-distance-squared-artifact.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-alpha-calibration.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/final-model-correlation-matrix.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-directional-scope-ablation.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/final-model.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-f-directional-shared-vs-split.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/interaction-term-screen.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-f-distance-squared-artifact.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/model-1-base.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-final-model-correlation-matrix.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/model-2-share-type-sigma.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/model-4a-alternative-specific.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-interaction-term-screen.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/model-5-asc-rejected.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-model-1-base.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/model-6-rederived.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-model-2-share-type-sigma.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/model-progression-table.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-model-4a-alternative-specific.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/r-buffer-10m-vs-15m.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-model-5-asc-rejected.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "analysis/stepwise-vif-elimination.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-model-6-rederived.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "notes/grouped-cross-validation.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-model-progression-table.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "notes/model-evaluation-metrics.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-r-buffer-10m-vs-15m.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "notes/multicollinearity-is-structural.md"
+   "source": "threads/m-calibration.md",
+   "target": "analysis/m-stepwise-vif-elimination.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "progress/progress-19-07-2026.md"
+   "source": "threads/m-calibration.md",
+   "target": "notes/m-grouped-cross-validation.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "progress/progress-21-07-2026.md"
+   "source": "threads/m-calibration.md",
+   "target": "notes/m-model-evaluation-metrics.md"
   },
   {
-   "source": "threads/calibration.md",
-   "target": "threads/thesis-summary.md"
+   "source": "threads/m-calibration.md",
+   "target": "notes/m-multicollinearity-is-structural.md"
   },
   {
-   "source": "threads/complexity-and-transfer.md",
-   "target": "analysis/candidate-search-area.md"
+   "source": "threads/m-calibration.md",
+   "target": "progress/m-progress-19-07-2026.md"
   },
   {
-   "source": "threads/complexity-and-transfer.md",
-   "target": "analysis/ml-baseline-stay-level.md"
+   "source": "threads/m-calibration.md",
+   "target": "progress/m-progress-21-07-2026.md"
   },
   {
-   "source": "threads/complexity-and-transfer.md",
-   "target": "analysis/ml-ceiling-row-level.md"
+   "source": "threads/m-calibration.md",
+   "target": "threads/m-thesis-summary.md"
   },
   {
-   "source": "threads/complexity-and-transfer.md",
-   "target": "analysis/raw-density-alpha-profile.md"
+   "source": "threads/m-complexity-and-transfer.md",
+   "target": "analysis/m-candidate-search-area.md"
   },
   {
-   "source": "threads/complexity-and-transfer.md",
-   "target": "analysis/raw-density-refit.md"
+   "source": "threads/m-complexity-and-transfer.md",
+   "target": "analysis/m-ml-baseline-stay-level.md"
   },
   {
-   "source": "threads/complexity-and-transfer.md",
-   "target": "analysis/sigma-tree-importance.md"
+   "source": "threads/m-complexity-and-transfer.md",
+   "target": "analysis/m-ml-ceiling-row-level.md"
   },
   {
-   "source": "threads/complexity-and-transfer.md",
-   "target": "notes/overfitting-signature.md"
+   "source": "threads/m-complexity-and-transfer.md",
+   "target": "analysis/m-raw-density-alpha-profile.md"
   },
   {
-   "source": "threads/complexity-and-transfer.md",
-   "target": "progress/progress-20-07-2026.md"
+   "source": "threads/m-complexity-and-transfer.md",
+   "target": "analysis/m-raw-density-refit.md"
   },
   {
-   "source": "threads/complexity-and-transfer.md",
-   "target": "progress/progress-23-07-2026.md"
+   "source": "threads/m-complexity-and-transfer.md",
+   "target": "analysis/m-sigma-tree-importance.md"
   },
   {
-   "source": "threads/complexity-and-transfer.md",
-   "target": "progress/progress-29-07-2026.md"
+   "source": "threads/m-complexity-and-transfer.md",
+   "target": "notes/m-overfitting-signature.md"
   },
   {
-   "source": "threads/complexity-and-transfer.md",
-   "target": "threads/thesis-summary.md"
+   "source": "threads/m-complexity-and-transfer.md",
+   "target": "progress/m-progress-20-07-2026.md"
   },
   {
-   "source": "threads/error-analysis.md",
-   "target": "analysis/candidate-density-bias.md"
+   "source": "threads/m-complexity-and-transfer.md",
+   "target": "progress/m-progress-23-07-2026.md"
   },
   {
-   "source": "threads/error-analysis.md",
-   "target": "analysis/confusion-matrix.md"
+   "source": "threads/m-complexity-and-transfer.md",
+   "target": "progress/m-progress-29-07-2026.md"
   },
   {
-   "source": "threads/error-analysis.md",
-   "target": "analysis/fold-difficulty.md"
+   "source": "threads/m-complexity-and-transfer.md",
+   "target": "threads/m-thesis-summary.md"
   },
   {
-   "source": "threads/error-analysis.md",
-   "target": "notes/boundary-matching-analogy.md"
+   "source": "threads/m-error-analysis.md",
+   "target": "analysis/m-candidate-density-bias.md"
   },
   {
-   "source": "threads/error-analysis.md",
-   "target": "notes/street-space-tension.md"
+   "source": "threads/m-error-analysis.md",
+   "target": "analysis/m-confusion-matrix.md"
   },
   {
-   "source": "threads/error-analysis.md",
-   "target": "progress/progress-23-07-2026.md"
+   "source": "threads/m-error-analysis.md",
+   "target": "analysis/m-fold-difficulty.md"
   },
   {
-   "source": "threads/error-analysis.md",
-   "target": "threads/thesis-summary.md"
+   "source": "threads/m-error-analysis.md",
+   "target": "notes/m-boundary-matching-analogy.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "analysis/drop-list.md"
+   "source": "threads/m-error-analysis.md",
+   "target": "notes/m-street-space-tension.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "notes/downsampling-to-miles-density.md"
+   "source": "threads/m-error-analysis.md",
+   "target": "progress/m-progress-23-07-2026.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "notes/experiment-design.md"
+   "source": "threads/m-error-analysis.md",
+   "target": "threads/m-thesis-summary.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "notes/experiment-group-a.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "analysis/m-drop-list.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "notes/experiment-group-b.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "notes/m-downsampling-to-miles-density.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "notes/experiment-group-c.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "notes/m-experiment-design.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "notes/experiment-group-d.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "notes/m-experiment-group-a.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "notes/experiment-group-e.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "notes/m-experiment-group-b.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "notes/ground-truth-cleaning.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "notes/m-experiment-group-c.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "notes/ground-truth-dataset.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "notes/m-experiment-group-d.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "notes/self-report-form.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "notes/m-experiment-group-e.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "notes/spatial-entity-layers.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "notes/m-ground-truth-cleaning.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "notes/study-area.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "notes/m-ground-truth-dataset.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "progress/progress-23-07-2026.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "notes/m-self-report-form.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "progress/progress-29-07-2026.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "notes/m-spatial-entity-layers.md"
   },
   {
-   "source": "threads/ground-truth-data.md",
-   "target": "threads/thesis-summary.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "notes/m-study-area.md"
   },
   {
-   "source": "threads/outlook.md",
-   "target": "notes/contributions.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "progress/m-progress-23-07-2026.md"
   },
   {
-   "source": "threads/outlook.md",
-   "target": "notes/future-work.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "progress/m-progress-29-07-2026.md"
   },
   {
-   "source": "threads/outlook.md",
-   "target": "notes/limitations.md"
+   "source": "threads/m-ground-truth-data.md",
+   "target": "threads/m-thesis-summary.md"
   },
   {
-   "source": "threads/outlook.md",
-   "target": "progress/phd-interview-slides.md"
+   "source": "threads/m-outlook.md",
+   "target": "notes/m-contributions.md"
   },
   {
-   "source": "threads/outlook.md",
-   "target": "threads/thesis-summary.md"
+   "source": "threads/m-outlook.md",
+   "target": "notes/m-future-work.md"
   },
   {
-   "source": "threads/problem-and-positioning.md",
-   "target": "notes/discussion-citation-checks.md"
+   "source": "threads/m-outlook.md",
+   "target": "notes/m-limitations.md"
   },
   {
-   "source": "threads/problem-and-positioning.md",
-   "target": "notes/map-matching-extension.md"
+   "source": "threads/m-outlook.md",
+   "target": "progress/m-phd-interview-slides.md"
   },
   {
-   "source": "threads/problem-and-positioning.md",
-   "target": "notes/motivation.md"
+   "source": "threads/m-outlook.md",
+   "target": "threads/m-thesis-summary.md"
   },
   {
-   "source": "threads/problem-and-positioning.md",
-   "target": "notes/positioning-vs-deterministic-assignment.md"
+   "source": "threads/m-problem-and-positioning.md",
+   "target": "notes/m-discussion-citation-checks.md"
   },
   {
-   "source": "threads/problem-and-positioning.md",
-   "target": "notes/research-questions.md"
+   "source": "threads/m-problem-and-positioning.md",
+   "target": "notes/m-map-matching-extension.md"
   },
   {
-   "source": "threads/problem-and-positioning.md",
-   "target": "progress/progress-23-07-2026.md"
+   "source": "threads/m-problem-and-positioning.md",
+   "target": "notes/m-motivation.md"
   },
   {
-   "source": "threads/problem-and-positioning.md",
-   "target": "threads/thesis-summary.md"
+   "source": "threads/m-problem-and-positioning.md",
+   "target": "notes/m-positioning-vs-deterministic-assignment.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "analysis/candidate-density-bias.md"
+   "source": "threads/m-problem-and-positioning.md",
+   "target": "notes/m-research-questions.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "analysis/confusion-matrix.md"
+   "source": "threads/m-problem-and-positioning.md",
+   "target": "progress/m-progress-23-07-2026.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "analysis/final-model.md"
+   "source": "threads/m-problem-and-positioning.md",
+   "target": "threads/m-thesis-summary.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "analysis/ml-ceiling-row-level.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "analysis/m-candidate-density-bias.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "notes/ground-truth-cleaning.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "analysis/m-confusion-matrix.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "notes/motivation.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "analysis/m-final-model.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "notes/research-questions.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "analysis/m-ml-ceiling-row-level.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "notes/street-space-tension.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "notes/glossary.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "progress/progress-19-07-2026.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "notes/m-ground-truth-cleaning.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "progress/progress-20-07-2026.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "notes/m-motivation.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "progress/progress-21-07-2026.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "notes/m-research-questions.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "progress/progress-23-07-2026.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "notes/m-street-space-tension.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "progress/progress-29-07-2026.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "progress/m-progress-19-07-2026.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "threads/assignment-framework.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "progress/m-progress-20-07-2026.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "threads/calibration.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "progress/m-progress-21-07-2026.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "threads/complexity-and-transfer.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "progress/m-progress-23-07-2026.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "threads/error-analysis.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "progress/m-progress-29-07-2026.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "threads/ground-truth-data.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "threads/m-assignment-framework.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "threads/outlook.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "threads/m-calibration.md"
   },
   {
-   "source": "threads/thesis-summary.md",
-   "target": "threads/problem-and-positioning.md"
+   "source": "threads/m-thesis-summary.md",
+   "target": "threads/m-complexity-and-transfer.md"
+  },
+  {
+   "source": "threads/m-thesis-summary.md",
+   "target": "threads/m-error-analysis.md"
+  },
+  {
+   "source": "threads/m-thesis-summary.md",
+   "target": "threads/m-ground-truth-data.md"
+  },
+  {
+   "source": "threads/m-thesis-summary.md",
+   "target": "threads/m-outlook.md"
+  },
+  {
+   "source": "threads/m-thesis-summary.md",
+   "target": "threads/m-problem-and-positioning.md"
   }
  ]
 }

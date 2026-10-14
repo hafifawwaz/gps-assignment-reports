@@ -237,6 +237,18 @@ def source_dates() -> dict[str, str]:
     return out
 
 
+def redirects() -> dict[str, str]:
+    """site/redirects.txt: 'old<TAB>new' content paths of pages that moved."""
+    out = {}
+    path = SITE / "redirects.txt"
+    if path.exists():
+        for line in path.read_text(encoding="utf-8").splitlines():
+            old, tab, new = line.partition("\t")
+            if tab and not old.startswith("#"):
+                out[old.strip()] = new.strip()
+    return out
+
+
 def read_title(path: Path) -> str:
     override = short_titles().get(path.relative_to(REPO).as_posix())
     if override:
@@ -490,8 +502,26 @@ def obsidian_to_site(text: str) -> str:
 STATUS_LABEL = {"thread": "Thread", "note": "Note", "progress": "Progress", "inbox": "Inbox", "analysis": "Analysis", "hero": "Catch-up"}
 
 
-def chips(status: str, date: str | None, pdf: bool = False) -> str:
+# `project:` in a note's front matter -> a chip, so thesis and dissertation notes stay apart on the site
+PROJECT_LABEL = {"m": "Master", "d": "Doctoral"}
+FRONT_PROJECT_RE = re.compile(r"^project:\s*['\"]?([\w-]+)", re.M)
+
+
+def front_matter_project(path: Path) -> str | None:
+    """`project: <name>` from a note's front matter (Obsidian property), if present."""
+    text = read_text(path)
+    if text.startswith("---\n"):
+        end = text.find("\n---", 4)
+        m = FRONT_PROJECT_RE.search(text[4:end if end != -1 else 0])
+        if m:
+            return m.group(1)
+    return None
+
+
+def chips(status: str, date: str | None, pdf: bool = False, project: str | None = None) -> str:
     out = [f'<span class="chip chip-{status}">{STATUS_LABEL[status]}</span>']
+    if project:
+        out.append(f'<span class="chip chip-project">{html.escape(PROJECT_LABEL.get(project, project))}</span>')
     if pdf:
         out.append('<span class="chip chip-pdf">PDF</span>')
     if date:
@@ -506,7 +536,7 @@ def page(src: Source, renderer: Renderer, titles: dict[str, str] | None = None, 
         lines.insert(0, f"# {pretty(src.path.stem)}")
         h1 = 0
     lines[h1] = "# " + (short_titles().get(src.key) or clean_title(lines[h1][2:].strip()))
-    extra = ["", f'<p class="doc-meta">{chips(src.status, src.date, pdf=pdf)}</p>']
+    extra = ["", f'<p class="doc-meta">{chips(src.status, src.date, pdf=pdf, project=front_matter_project(src.path))}</p>']
     if src.status == "inbox":
         extra += ["", '!!! question "For discussion"', "    Rough draft and open questions. Not yet reviewed."]
     lines[h1 + 1 : h1 + 1] = extra
@@ -709,6 +739,21 @@ def build(mode: str, pdfs: list[str]) -> dict:
     # Figures referenced by a published page (copied; there is no gallery page)
     for name in sorted(r.figures):
         files[f"figures/{name}"] = r.figures[name].read_bytes()
+
+    # Redirect pages at addresses that moved (site/redirects.txt), so links shared earlier keep working
+    for old, new in redirects().items():
+        if old in files or new not in files:
+            continue  # the old page still exists, or the target is not published in this run
+        old_dir, new_dir = old[:-3], new[:-3]
+        href = posixpath.relpath(new_dir, old_dir) + "/"
+        title = html.escape(titles.get(new, new))
+        files[f"{old_dir}/index.html"] = "\n".join([
+            "<!doctype html>", '<html lang="en">', "<head>", '<meta charset="utf-8">',
+            '<meta name="viewport" content="width=device-width, initial-scale=1">',
+            f"<title>{title} (moved)</title>", '<meta name="robots" content="noindex">',
+            f'<link rel="canonical" href="{href}">', f'<meta http-equiv="refresh" content="0; url={href}">',
+            "</head>", "<body>", f'<p>This page moved to <a href="{href}">{title}</a>.</p>', "</body>", "</html>", "",
+        ]).encode("utf-8")
 
     # Hand-written static assets (css/js) that mkdocs expects inside docs_dir
     static = SITE / "static"

@@ -1,0 +1,36 @@
+---
+source: report/analysis/m-r-buffer-10m-vs-15m.md
+date: 19-07-2026
+kind: analysis
+comments: true
+generated: 2026-10-14T14:44:07
+---
+
+# R_buffer: 10 m vs 15 m
+
+<p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-project">Master</span> <span class="chip chip-date">19-07-2026</span></p>
+
+Which search distance (`R_buffer`) is better for finding candidates around a stay? **10 m beats 15 m for every model tested**, in accuracy, in fit (log-likelihood) and in stability. The gap grows as the models get larger:
+
+| Model | Accuracy R=10 m | Accuracy R=15 m | Δ |
+|---|---:|---:|---:|
+| 1 Base | 0.518 | 0.509 | +0.9 pp |
+| 2 Share-type + σ | 0.668 | 0.654 | +1.4 pp |
+| 4a Alternative-specific | 0.717 | 0.698 | +1.9 pp |
+| 5 + ASC | 0.728 | 0.709 | +1.9 pp |
+| 6 + interactions | 0.724 | 0.699 | +2.5 pp |
+
+(pp = percentage points.) The result held again with [Grouped cross-validation](../notes/m-grouped-cross-validation.md) on 21-07-2026. From the directional test onward, only 10 m was used.
+
+Two cautions. First, ρ² cannot be compared between the two distances, because its baseline changes when the candidates change ([Model evaluation metrics](../notes/m-model-evaluation-metrics.md)). Second, at 15 m, the model with ASC terms failed completely in cross-validation ([Model 5: alternative-specific constants (rejected)](m-model-5-asc-rejected.md)).
+
+A wider search distance brings in more street pieces that are not really relevant. Street accuracy suffers most at 15 m ([Model 1: base](m-model-1-base.md)).
+
+Part of [Calibration](../threads/m-calibration.md). How candidates are found: [Candidate selection](../notes/m-candidate-selection.md).
+
+
+<div class="backlinks" markdown>
+
+**Linked from** [Calibration](../threads/m-calibration.md) · [Candidate selection](../notes/m-candidate-selection.md) · [Downsampling shrinks the candidate search area](m-candidate-search-area.md) · [MNL model development](../progress/m-progress-19-07-2026.md) · [Model evaluation metrics](../notes/m-model-evaluation-metrics.md)
+
+</div>

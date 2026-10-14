@@ -139,6 +139,7 @@
 .chip-inbox { background: var(--c-red); color: var(--c-on-fill); }
 .chip-note { background: transparent; color: var(--c-text); border-color: rgba(64, 64, 64, 0.45); }
 .chip-analysis { background: var(--c-chip-analysis); color: var(--c-on-fill); }
+.chip-project { background: transparent; color: var(--c-muted); border-color: var(--c-line); }
 .chip-pdf { background: transparent; color: var(--c-red); border-color: var(--c-red); }
 .chip-date { background: var(--c-soft); color: var(--c-text); font-variant-numeric: tabular-nums; }
 
@@ -278,3 +279,18 @@
 .md-typeset .kmap-key::before { content: ""; width: .6rem; height: .6rem; border-radius: 50%; background: var(--dot); }
 .md-typeset .kmap-key.hub::before { background: var(--c-surface); box-shadow: inset 0 0 0 2px var(--c-green); }
 .kmap .kmap-node circle { stroke-width: unset; }
+
+/* "Back to <page>" button, added by javascripts/backlink.js when a page was opened from another one.
+   The label is quiet; the destination is the part that stands out (link colour, bold, underlined). */
+.md-typeset a.backlink-button {
+  display: inline-flex; align-items: baseline; gap: .35rem; margin: 0 0 .6rem; padding: .25rem .8rem;
+  border-radius: 999px; border: 1px solid var(--c-line); background: var(--c-surface);
+  font-size: .68rem; text-decoration: none;
+}
+.md-typeset a.backlink-button .backlink-label { color: var(--c-muted); font-weight: 400; }
+.md-typeset a.backlink-button .backlink-target {
+  color: var(--c-link); font-weight: 600; text-decoration: underline;
+  text-decoration-color: var(--c-link-line); text-underline-offset: 2px;
+}
+.md-typeset a.backlink-button:hover { border-color: var(--c-link); text-decoration: none; }
+.md-typeset a.backlink-button:hover .backlink-target { color: var(--c-link-hover); text-decoration-color: currentColor; }

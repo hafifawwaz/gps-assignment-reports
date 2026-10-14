@@ -7,91 +7,93 @@ nav:
   - threads/index.md
   - '2026':
     - August:
-      - thesis summary: threads/thesis-summary.md
-      - problem and positioning: threads/problem-and-positioning.md
-      - outlook: threads/outlook.md
-      - ground truth data: threads/ground-truth-data.md
-      - error analysis: threads/error-analysis.md
-      - complexity and transfer: threads/complexity-and-transfer.md
-      - calibration: threads/calibration.md
-      - assignment framework: threads/assignment-framework.md
+      - thesis summary: threads/m-thesis-summary.md
+      - problem and positioning: threads/m-problem-and-positioning.md
+      - outlook: threads/m-outlook.md
+      - ground truth data: threads/m-ground-truth-data.md
+      - error analysis: threads/m-error-analysis.md
+      - complexity and transfer: threads/m-complexity-and-transfer.md
+      - calibration: threads/m-calibration.md
+      - assignment framework: threads/m-assignment-framework.md
 - Progress:
   - progress/index.md
   - '2026':
     - August:
-      - phd interview slides (pdf): progress/phd-interview-slides.md
+      - phd interview slides (pdf): progress/m-phd-interview-slides.md
     - July:
-      - does downsampling matter?: progress/progress-29-07-2026.md
-      - rq2 diagnostics and rq3 ceiling check: progress/progress-23-07-2026.md
-      - rq1 rebuilt with grouped cv: progress/progress-21-07-2026.md
-      - ml baseline: progress/progress-20-07-2026.md
-      - mnl model development: progress/progress-19-07-2026.md
+      - does downsampling matter?: progress/m-progress-29-07-2026.md
+      - rq2 diagnostics and rq3 ceiling check: progress/m-progress-23-07-2026.md
+      - rq1 rebuilt with grouped cv: progress/m-progress-21-07-2026.md
+      - ml baseline: progress/m-progress-20-07-2026.md
+      - mnl model development: progress/m-progress-19-07-2026.md
 - Notes:
   - notes/index.md
   - '2026':
+    - August:
+      - glossary: notes/glossary.md
     - July:
-      - study area: notes/study-area.md
-      - spatial entity layers: notes/spatial-entity-layers.md
-      - research questions: notes/research-questions.md
-      - overfitting signature: notes/overfitting-signature.md
-      - motivation: notes/motivation.md
-      - limitations: notes/limitations.md
-      - ground truth dataset: notes/ground-truth-dataset.md
-      - future work: notes/future-work.md
-      - framework overview: notes/framework-overview.md
-      - f_temporal: notes/f-temporal.md
-      - f_distribution: notes/f-distribution.md
-      - f_distance: notes/f-distance.md
-      - f_directional: notes/f-directional.md
-      - experiment design: notes/experiment-design.md
-      - downsampling to miles density: notes/downsampling-to-miles-density.md
-      - contributions: notes/contributions.md
-      - candidate selection: notes/candidate-selection.md
-      - tension with the street-space argument: notes/street-space-tension.md
-      - self-report form: notes/self-report-form.md
-      - positioning against deterministic assignment: notes/positioning-vs-deterministic-assignment.md
-      - extending map matching to stationary stays: notes/map-matching-extension.md
-      - ground truth cleaning: notes/ground-truth-cleaning.md
-      - 'group e: ambiguous edge cases': notes/experiment-group-e.md
-      - 'group d: movement type': notes/experiment-group-d.md
-      - 'group c: indoor position': notes/experiment-group-c.md
-      - 'group b: sky view obstruction': notes/experiment-group-b.md
-      - 'group a: vertical position': notes/experiment-group-a.md
-      - discussion citation checks: notes/discussion-citation-checks.md
-      - candidate density as boundary-matching difficulty: notes/boundary-matching-analogy.md
-      - grouped cross-validation: notes/grouped-cross-validation.md
-      - sigma: notes/sigma.md
-      - share_type: notes/share-type.md
-      - multicollinearity is structural: notes/multicollinearity-is-structural.md
-      - model evaluation metrics: notes/model-evaluation-metrics.md
+      - study area: notes/m-study-area.md
+      - spatial entity layers: notes/m-spatial-entity-layers.md
+      - research questions: notes/m-research-questions.md
+      - overfitting signature: notes/m-overfitting-signature.md
+      - motivation: notes/m-motivation.md
+      - limitations: notes/m-limitations.md
+      - ground truth dataset: notes/m-ground-truth-dataset.md
+      - future work: notes/m-future-work.md
+      - framework overview: notes/m-framework-overview.md
+      - f_temporal: notes/m-f-temporal.md
+      - f_distribution: notes/m-f-distribution.md
+      - f_distance: notes/m-f-distance.md
+      - f_directional: notes/m-f-directional.md
+      - experiment design: notes/m-experiment-design.md
+      - downsampling to miles density: notes/m-downsampling-to-miles-density.md
+      - contributions: notes/m-contributions.md
+      - candidate selection: notes/m-candidate-selection.md
+      - tension with the street-space argument: notes/m-street-space-tension.md
+      - self-report form: notes/m-self-report-form.md
+      - positioning against deterministic assignment: notes/m-positioning-vs-deterministic-assignment.md
+      - extending map matching to stationary stays: notes/m-map-matching-extension.md
+      - ground truth cleaning: notes/m-ground-truth-cleaning.md
+      - 'group e: ambiguous edge cases': notes/m-experiment-group-e.md
+      - 'group d: movement type': notes/m-experiment-group-d.md
+      - 'group c: indoor position': notes/m-experiment-group-c.md
+      - 'group b: sky view obstruction': notes/m-experiment-group-b.md
+      - 'group a: vertical position': notes/m-experiment-group-a.md
+      - discussion citation checks: notes/m-discussion-citation-checks.md
+      - candidate density as boundary-matching difficulty: notes/m-boundary-matching-analogy.md
+      - grouped cross-validation: notes/m-grouped-cross-validation.md
+      - sigma: notes/m-sigma.md
+      - share_type: notes/m-share-type.md
+      - multicollinearity is structural: notes/m-multicollinearity-is-structural.md
+      - model evaluation metrics: notes/m-model-evaluation-metrics.md
 - Analysis:
   - analysis/index.md
   - '2026':
     - July:
-      - raw-density refit: analysis/raw-density-refit.md
-      - raw-density alpha profile: analysis/raw-density-alpha-profile.md
-      - downsampling shrinks the candidate search area: analysis/candidate-search-area.md
-      - sigma in tree importance: analysis/sigma-tree-importance.md
-      - ml ceiling check, row level: analysis/ml-ceiling-row-level.md
-      - fold difficulty: analysis/fold-difficulty.md
-      - ground truth drop list: analysis/drop-list.md
-      - confusion matrix: analysis/confusion-matrix.md
-      - candidate density bias toward building: analysis/candidate-density-bias.md
-      - stepwise vif elimination: analysis/stepwise-vif-elimination.md
-      - model progression: analysis/model-progression-table.md
-      - model 6, re-derived at calibrated alpha: analysis/model-6-rederived.md
-      - 'model 5: alternative-specific constants (rejected)': analysis/model-5-asc-rejected.md
-      - 'model 4a: alternative-specific parameters': analysis/model-4a-alternative-specific.md
-      - 'model 2: share-type and sigma': analysis/model-2-share-type-sigma.md
-      - 'model 1: base': analysis/model-1-base.md
-      - interaction term screen (α = 1): analysis/interaction-term-screen.md
-      - final model: analysis/final-model.md
-      - final model correlation matrix: analysis/final-model-correlation-matrix.md
-      - the f_distance² artifact: analysis/f-distance-squared-artifact.md
-      - 'f_directional: shared vs split': analysis/f-directional-shared-vs-split.md
-      - directional scope ablation (3a vs 3b): analysis/directional-scope-ablation.md
-      - alpha calibration: analysis/alpha-calibration.md
-      - ml baseline, stay level (superseded): analysis/ml-baseline-stay-level.md
-      - 'r_buffer: 10 m vs 15 m': analysis/r-buffer-10m-vs-15m.md
+      - raw-density refit: analysis/m-raw-density-refit.md
+      - raw-density alpha profile: analysis/m-raw-density-alpha-profile.md
+      - downsampling shrinks the candidate search area: analysis/m-candidate-search-area.md
+      - sigma in tree importance: analysis/m-sigma-tree-importance.md
+      - ml ceiling check, row level: analysis/m-ml-ceiling-row-level.md
+      - fold difficulty: analysis/m-fold-difficulty.md
+      - ground truth drop list: analysis/m-drop-list.md
+      - confusion matrix: analysis/m-confusion-matrix.md
+      - candidate density bias toward building: analysis/m-candidate-density-bias.md
+      - stepwise vif elimination: analysis/m-stepwise-vif-elimination.md
+      - model progression: analysis/m-model-progression-table.md
+      - model 6, re-derived at calibrated alpha: analysis/m-model-6-rederived.md
+      - 'model 5: alternative-specific constants (rejected)': analysis/m-model-5-asc-rejected.md
+      - 'model 4a: alternative-specific parameters': analysis/m-model-4a-alternative-specific.md
+      - 'model 2: share-type and sigma': analysis/m-model-2-share-type-sigma.md
+      - 'model 1: base': analysis/m-model-1-base.md
+      - interaction term screen (α = 1): analysis/m-interaction-term-screen.md
+      - final model: analysis/m-final-model.md
+      - final model correlation matrix: analysis/m-final-model-correlation-matrix.md
+      - the f_distance² artifact: analysis/m-f-distance-squared-artifact.md
+      - 'f_directional: shared vs split': analysis/m-f-directional-shared-vs-split.md
+      - directional scope ablation (3a vs 3b): analysis/m-directional-scope-ablation.md
+      - alpha calibration: analysis/m-alpha-calibration.md
+      - ml baseline, stay level (superseded): analysis/m-ml-baseline-stay-level.md
+      - 'r_buffer: 10 m vs 15 m': analysis/m-r-buffer-10m-vs-15m.md
 - Inbox:
   - inbox/index.md

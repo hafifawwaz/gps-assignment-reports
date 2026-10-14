@@ -10,7 +10,7 @@ hide:
 
 The master's thesis is complete. Two things are in progress now:
 
-- **A methodological paper for *Computers, Environment and Urban Systems* (CEUS)**, in drafting. It presents the probabilistic framework for assigning GPS stay clusters to buildings, streets and open spaces under positional uncertainty, calibrated and validated on the 907-stay Hiroshima ground truth: the final twelve-parameter model reaches grouped CV accuracy 0.716 ± 0.076, beats Random Forest and XGBoost out of sample, and traces its street and open-space weakness to street segmentation density rather than to the GPS evidence. Start from [Thesis summary](threads/thesis-summary.md).
+- **A paper for the journal *Computers, Environment and Urban Systems* (CEUS)**, in drafting. It presents the method from the thesis: for each GPS stay, it gives a probability that the person was in a building, on a street, or in an open space, instead of picking one place. The model learns from 907 stays with known answers from a field survey in Hiroshima. On data it has not seen, it picks the correct type for 71.6% of stays (grouped CV accuracy 0.716 ± 0.076), and it does better there than Random Forest and XGBoost. Its main weakness, mistaking streets and open spaces for buildings, comes from how the street map is cut into many short pieces, not from the GPS data itself. Start from [Thesis summary](threads/m-thesis-summary.md).
 - **A poster and a presentation for CSIS DAYS 2026**, in drafting.
 
 
@@ -24,11 +24,11 @@ The master's thesis is complete. Two things are in progress now:
 
 <p class="section-blurb">Hubs by theme: the thesis summary, then one list of notes per theme.</p>
 
-- [Thesis summary](threads/thesis-summary.md)
-- [Problem and positioning](threads/problem-and-positioning.md)
-- [Outlook](threads/outlook.md)
-- [Ground truth data](threads/ground-truth-data.md)
-- [Error analysis](threads/error-analysis.md)
+- [Thesis summary](threads/m-thesis-summary.md)
+- [Problem and positioning](threads/m-problem-and-positioning.md)
+- [Outlook](threads/m-outlook.md)
+- [Ground truth data](threads/m-ground-truth-data.md)
+- [Error analysis](threads/m-error-analysis.md)
 
 [All 8](threads/index.md){ .more }
 
@@ -40,11 +40,11 @@ The master's thesis is complete. Two things are in progress now:
 
 <p class="section-blurb">Dated updates for sensei, and slide exports.</p>
 
-- [PhD interview slides](progress/phd-interview-slides.md) <span class="chip chip-pdf">PDF</span>
-- [Does downsampling matter?](progress/progress-29-07-2026.md)
-- [RQ2 diagnostics and RQ3 ceiling check](progress/progress-23-07-2026.md)
-- [RQ1 rebuilt with grouped CV](progress/progress-21-07-2026.md)
-- [ML baseline](progress/progress-20-07-2026.md)
+- [PhD interview slides](progress/m-phd-interview-slides.md) <span class="chip chip-pdf">PDF</span>
+- [Does downsampling matter?](progress/m-progress-29-07-2026.md)
+- [RQ2 diagnostics and RQ3 ceiling check](progress/m-progress-23-07-2026.md)
+- [RQ1 rebuilt with grouped CV](progress/m-progress-21-07-2026.md)
+- [ML baseline](progress/m-progress-20-07-2026.md)
 
 [All 6](progress/index.md){ .more }
 
@@ -56,13 +56,13 @@ The master's thesis is complete. Two things are in progress now:
 
 <p class="section-blurb">Small pieces of progress: method, data, interpretation, discussion.</p>
 
-- [Study area](notes/study-area.md)
-- [Spatial entity layers](notes/spatial-entity-layers.md)
-- [Research questions](notes/research-questions.md)
-- [Overfitting signature](notes/overfitting-signature.md)
-- [Motivation](notes/motivation.md)
+- [Glossary](notes/glossary.md)
+- [Study area](notes/m-study-area.md)
+- [Spatial entity layers](notes/m-spatial-entity-layers.md)
+- [Research questions](notes/m-research-questions.md)
+- [Overfitting signature](notes/m-overfitting-signature.md)
 
-[All 34](notes/index.md){ .more }
+[All 35](notes/index.md){ .more }
 
 </div>
 
@@ -72,11 +72,11 @@ The master's thesis is complete. Two things are in progress now:
 
 <p class="section-blurb">Raw analysis output: tables, numbers and diagnostics.</p>
 
-- [Raw-density refit](analysis/raw-density-refit.md)
-- [Raw-density alpha profile](analysis/raw-density-alpha-profile.md)
-- [Downsampling shrinks the candidate search area](analysis/candidate-search-area.md)
-- [Sigma in tree importance](analysis/sigma-tree-importance.md)
-- [ML ceiling check, row level](analysis/ml-ceiling-row-level.md)
+- [Raw-density refit](analysis/m-raw-density-refit.md)
+- [Raw-density alpha profile](analysis/m-raw-density-alpha-profile.md)
+- [Downsampling shrinks the candidate search area](analysis/m-candidate-search-area.md)
+- [Sigma in tree importance](analysis/m-sigma-tree-importance.md)
+- [ML ceiling check, row level](analysis/m-ml-ceiling-row-level.md)
 
 [All 25](analysis/index.md){ .more }
 

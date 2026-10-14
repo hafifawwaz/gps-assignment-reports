@@ -4,144 +4,154 @@ Small pieces of progress: method, data, interpretation, discussion.
 
 ## 2026
 
+### August
+
+<div class="grid cards" markdown>
+
+-   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
+
+    **[Glossary](glossary.md)**
+
+</div>
+
 ### July
 
 <div class="grid cards" markdown>
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Study area](study-area.md)**
+    **[Study area](m-study-area.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Spatial entity layers](spatial-entity-layers.md)**
+    **[Spatial entity layers](m-spatial-entity-layers.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Research questions](research-questions.md)**
+    **[Research questions](m-research-questions.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Overfitting signature](overfitting-signature.md)**
+    **[Overfitting signature](m-overfitting-signature.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Motivation](motivation.md)**
+    **[Motivation](m-motivation.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Limitations](limitations.md)**
+    **[Limitations](m-limitations.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Ground truth dataset](ground-truth-dataset.md)**
+    **[Ground truth dataset](m-ground-truth-dataset.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Future work](future-work.md)**
+    **[Future work](m-future-work.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Framework overview](framework-overview.md)**
+    **[Framework overview](m-framework-overview.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[f_temporal](f-temporal.md)**
+    **[f_temporal](m-f-temporal.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[f_distribution](f-distribution.md)**
+    **[f_distribution](m-f-distribution.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[f_distance](f-distance.md)**
+    **[f_distance](m-f-distance.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[f_directional](f-directional.md)**
+    **[f_directional](m-f-directional.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Experiment design](experiment-design.md)**
+    **[Experiment design](m-experiment-design.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Downsampling to MILES density](downsampling-to-miles-density.md)**
+    **[Downsampling to MILES density](m-downsampling-to-miles-density.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Contributions](contributions.md)**
+    **[Contributions](m-contributions.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Candidate selection](candidate-selection.md)**
+    **[Candidate selection](m-candidate-selection.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Tension with the street-space argument](street-space-tension.md)**
+    **[Tension with the street-space argument](m-street-space-tension.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Self-report form](self-report-form.md)**
+    **[Self-report form](m-self-report-form.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Positioning against deterministic assignment](positioning-vs-deterministic-assignment.md)**
+    **[Positioning against deterministic assignment](m-positioning-vs-deterministic-assignment.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Extending map matching to stationary stays](map-matching-extension.md)**
+    **[Extending map matching to stationary stays](m-map-matching-extension.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Ground truth cleaning](ground-truth-cleaning.md)**
+    **[Ground truth cleaning](m-ground-truth-cleaning.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Group E: ambiguous edge cases](experiment-group-e.md)**
+    **[Group E: ambiguous edge cases](m-experiment-group-e.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Group D: movement type](experiment-group-d.md)**
+    **[Group D: movement type](m-experiment-group-d.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Group C: indoor position](experiment-group-c.md)**
+    **[Group C: indoor position](m-experiment-group-c.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Group B: sky view obstruction](experiment-group-b.md)**
+    **[Group B: sky view obstruction](m-experiment-group-b.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Group A: vertical position](experiment-group-a.md)**
+    **[Group A: vertical position](m-experiment-group-a.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Discussion citation checks](discussion-citation-checks.md)**
+    **[Discussion citation checks](m-discussion-citation-checks.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Candidate density as boundary-matching difficulty](boundary-matching-analogy.md)**
+    **[Candidate density as boundary-matching difficulty](m-boundary-matching-analogy.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Grouped cross-validation](grouped-cross-validation.md)**
+    **[Grouped cross-validation](m-grouped-cross-validation.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[sigma](sigma.md)**
+    **[sigma](m-sigma.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[share_type](share-type.md)**
+    **[share_type](m-share-type.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Multicollinearity is structural](multicollinearity-is-structural.md)**
+    **[Multicollinearity is structural](m-multicollinearity-is-structural.md)**
 
 -   <p class="doc-meta"><span class="chip chip-note">Note</span></p>
 
-    **[Model evaluation metrics](model-evaluation-metrics.md)**
+    **[Model evaluation metrics](m-model-evaluation-metrics.md)**
 
 </div>

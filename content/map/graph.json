@@ -57,6 +57,13 @@
    "url": "../threads/m-thesis-summary/"
   },
   {
+   "id": "progress/d-progress-20-10-2026.md",
+   "title": "Publications and doctoral plan",
+   "kind": "progress",
+   "date": "20-10-2026",
+   "url": "../progress/d-progress-20-10-2026/"
+  },
+  {
    "id": "progress/m-phd-interview-slides.md",
    "title": "PhD interview slides",
    "kind": "progress",
@@ -510,6 +517,77 @@
    "kind": "analysis",
    "date": "21-07-2026",
    "url": "../analysis/m-stepwise-vif-elimination/"
+  },
+  {
+   "id": "inbox/d-comprehensive-litrev.md",
+   "title": "Comprehensive literature review",
+   "kind": "inbox",
+   "date": "16-10-2026",
+   "url": "../inbox/d-comprehensive-litrev/"
+  },
+  {
+   "id": "inbox/d-sequence-aware.md",
+   "title": "Sequence-aware assignment",
+   "kind": "inbox",
+   "date": "16-10-2026",
+   "url": "../inbox/d-sequence-aware/"
+  },
+  {
+   "id": "inbox/d-street-segmentation.md",
+   "title": "Street segmentation",
+   "kind": "inbox",
+   "date": "16-10-2026",
+   "url": "../inbox/d-street-segmentation/"
+  },
+  {
+   "id": "inbox/d-toy-data-consensus.md",
+   "title": "Consensus Report",
+   "kind": "inbox",
+   "date": "",
+   "url": "../inbox/d-toy-data-consensus/"
+  },
+  {
+   "id": "inbox/d-toy-data.md",
+   "title": "GPS toy data",
+   "kind": "inbox",
+   "date": "16-10-2026",
+   "url": "../inbox/d-toy-data/"
+  },
+  {
+   "id": "inbox/d-transferability.md",
+   "title": "Transferability",
+   "kind": "inbox",
+   "date": "16-10-2026",
+   "url": "../inbox/d-transferability/"
+  },
+  {
+   "id": "inbox/plan.md",
+   "title": "plan",
+   "kind": "inbox",
+   "date": "",
+   "url": "../inbox/plan/"
+  },
+  {
+   "id": "inbox/thesis-bug-fix.md",
+   "title": "Thesis bug fixes and adopted rerun",
+   "kind": "inbox",
+   "date": "19-10-2026",
+   "url": "../inbox/thesis-bug-fix/"
+  },
+  {
+   "id": "inbox/thesis-publication.md",
+   "title": "thesis publication",
+   "kind": "inbox",
+   "date": "",
+   "url": "../inbox/thesis-publication/"
+  },
+  {
+   "id": "progress/poster-a0.md",
+   "title": "poster a0",
+   "kind": "progress",
+   "date": "",
+   "url": "../progress/poster-a0/",
+   "pdf": true
   }
  ],
  "links": [
@@ -520,6 +598,10 @@
   {
    "source": "analysis/m-alpha-calibration.md",
    "target": "analysis/m-model-1-base.md"
+  },
+  {
+   "source": "analysis/m-alpha-calibration.md",
+   "target": "analysis/m-model-5-asc-rejected.md"
   },
   {
    "source": "analysis/m-alpha-calibration.md",
@@ -783,6 +865,10 @@
   },
   {
    "source": "analysis/m-model-1-base.md",
+   "target": "notes/m-f-directional.md"
+  },
+  {
+   "source": "analysis/m-model-1-base.md",
    "target": "notes/m-f-distance.md"
   },
   {
@@ -935,7 +1021,7 @@
   },
   {
    "source": "analysis/m-r-buffer-10m-vs-15m.md",
-   "target": "analysis/m-model-5-asc-rejected.md"
+   "target": "analysis/m-model-2-share-type-sigma.md"
   },
   {
    "source": "analysis/m-r-buffer-10m-vs-15m.md",
@@ -1020,6 +1106,170 @@
   {
    "source": "analysis/m-stepwise-vif-elimination.md",
    "target": "threads/m-calibration.md"
+  },
+  {
+   "source": "inbox/d-comprehensive-litrev.md",
+   "target": "inbox/d-sequence-aware.md"
+  },
+  {
+   "source": "inbox/d-sequence-aware.md",
+   "target": "inbox/d-comprehensive-litrev.md"
+  },
+  {
+   "source": "inbox/d-sequence-aware.md",
+   "target": "inbox/d-street-segmentation.md"
+  },
+  {
+   "source": "inbox/d-sequence-aware.md",
+   "target": "inbox/d-toy-data.md"
+  },
+  {
+   "source": "inbox/d-sequence-aware.md",
+   "target": "inbox/d-transferability.md"
+  },
+  {
+   "source": "inbox/d-sequence-aware.md",
+   "target": "inbox/plan.md"
+  },
+  {
+   "source": "inbox/d-sequence-aware.md",
+   "target": "threads/m-assignment-framework.md"
+  },
+  {
+   "source": "inbox/d-street-segmentation.md",
+   "target": "inbox/d-sequence-aware.md"
+  },
+  {
+   "source": "inbox/d-street-segmentation.md",
+   "target": "notes/m-limitations.md"
+  },
+  {
+   "source": "inbox/d-toy-data-consensus.md",
+   "target": "inbox/d-toy-data.md"
+  },
+  {
+   "source": "inbox/d-toy-data.md",
+   "target": "inbox/d-sequence-aware.md"
+  },
+  {
+   "source": "inbox/d-toy-data.md",
+   "target": "inbox/d-toy-data-consensus.md"
+  },
+  {
+   "source": "inbox/d-transferability.md",
+   "target": "inbox/d-sequence-aware.md"
+  },
+  {
+   "source": "inbox/d-transferability.md",
+   "target": "threads/m-complexity-and-transfer.md"
+  },
+  {
+   "source": "inbox/plan.md",
+   "target": "inbox/d-comprehensive-litrev.md"
+  },
+  {
+   "source": "inbox/plan.md",
+   "target": "inbox/d-sequence-aware.md"
+  },
+  {
+   "source": "inbox/plan.md",
+   "target": "inbox/d-street-segmentation.md"
+  },
+  {
+   "source": "inbox/plan.md",
+   "target": "inbox/d-toy-data.md"
+  },
+  {
+   "source": "inbox/plan.md",
+   "target": "inbox/d-transferability.md"
+  },
+  {
+   "source": "inbox/plan.md",
+   "target": "inbox/thesis-publication.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "analysis/m-alpha-calibration.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "analysis/m-candidate-density-bias.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "analysis/m-confusion-matrix.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "analysis/m-f-directional-shared-vs-split.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "analysis/m-final-model.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "analysis/m-fold-difficulty.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "analysis/m-interaction-term-screen.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "analysis/m-ml-ceiling-row-level.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "analysis/m-model-5-asc-rejected.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "analysis/m-r-buffer-10m-vs-15m.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "analysis/m-raw-density-refit.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "analysis/m-stepwise-vif-elimination.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "inbox/d-street-segmentation.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "notes/glossary.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "notes/m-downsampling-to-miles-density.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "notes/m-f-directional.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "notes/m-f-temporal.md"
+  },
+  {
+   "source": "inbox/thesis-bug-fix.md",
+   "target": "notes/m-ground-truth-cleaning.md"
+  },
+  {
+   "source": "index.md",
+   "target": "inbox/d-sequence-aware.md"
+  },
+  {
+   "source": "index.md",
+   "target": "inbox/thesis-bug-fix.md"
+  },
+  {
+   "source": "index.md",
+   "target": "progress/d-progress-20-10-2026.md"
   },
   {
    "source": "index.md",
@@ -1192,6 +1442,10 @@
   {
    "source": "notes/m-f-distribution.md",
    "target": "analysis/m-model-1-base.md"
+  },
+  {
+   "source": "notes/m-f-distribution.md",
+   "target": "analysis/m-stepwise-vif-elimination.md"
   },
   {
    "source": "notes/m-f-distribution.md",
@@ -1423,6 +1677,10 @@
   },
   {
    "source": "notes/m-overfitting-signature.md",
+   "target": "analysis/m-stepwise-vif-elimination.md"
+  },
+  {
+   "source": "notes/m-overfitting-signature.md",
    "target": "notes/m-ground-truth-dataset.md"
   },
   {
@@ -1484,6 +1742,10 @@
   {
    "source": "notes/m-share-type.md",
    "target": "analysis/m-candidate-density-bias.md"
+  },
+  {
+   "source": "notes/m-share-type.md",
+   "target": "analysis/m-final-model.md"
   },
   {
    "source": "notes/m-share-type.md",
@@ -1558,6 +1820,50 @@
    "target": "threads/m-ground-truth-data.md"
   },
   {
+   "source": "progress/d-progress-20-10-2026.md",
+   "target": "analysis/m-final-model.md"
+  },
+  {
+   "source": "progress/d-progress-20-10-2026.md",
+   "target": "analysis/m-model-5-asc-rejected.md"
+  },
+  {
+   "source": "progress/d-progress-20-10-2026.md",
+   "target": "inbox/d-comprehensive-litrev.md"
+  },
+  {
+   "source": "progress/d-progress-20-10-2026.md",
+   "target": "inbox/d-sequence-aware.md"
+  },
+  {
+   "source": "progress/d-progress-20-10-2026.md",
+   "target": "inbox/d-street-segmentation.md"
+  },
+  {
+   "source": "progress/d-progress-20-10-2026.md",
+   "target": "inbox/d-toy-data-consensus.md"
+  },
+  {
+   "source": "progress/d-progress-20-10-2026.md",
+   "target": "inbox/d-toy-data.md"
+  },
+  {
+   "source": "progress/d-progress-20-10-2026.md",
+   "target": "inbox/d-transferability.md"
+  },
+  {
+   "source": "progress/d-progress-20-10-2026.md",
+   "target": "inbox/plan.md"
+  },
+  {
+   "source": "progress/d-progress-20-10-2026.md",
+   "target": "inbox/thesis-bug-fix.md"
+  },
+  {
+   "source": "progress/d-progress-20-10-2026.md",
+   "target": "inbox/thesis-publication.md"
+  },
+  {
    "source": "progress/m-phd-interview-slides.md",
    "target": "notes/m-future-work.md"
   },
@@ -1604,6 +1910,10 @@
   {
    "source": "progress/m-progress-19-07-2026.md",
    "target": "analysis/m-r-buffer-10m-vs-15m.md"
+  },
+  {
+   "source": "progress/m-progress-19-07-2026.md",
+   "target": "analysis/m-stepwise-vif-elimination.md"
   },
   {
    "source": "progress/m-progress-19-07-2026.md",

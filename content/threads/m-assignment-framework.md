@@ -3,7 +3,7 @@ source: report/threads/m-assignment-framework.md
 date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # Assignment framework
@@ -24,6 +24,6 @@ Meetings: [MNL model development](../progress/m-progress-19-07-2026.md) (first l
 
 <div class="backlinks" markdown>
 
-**Linked from** [Framework overview](../notes/m-framework-overview.md) · [Thesis summary](m-thesis-summary.md) · [share_type](../notes/m-share-type.md) · [sigma](../notes/m-sigma.md)
+**Linked from** [Framework overview](../notes/m-framework-overview.md) · [Sequence-aware assignment](../inbox/d-sequence-aware.md) · [Thesis summary](m-thesis-summary.md) · [share_type](../notes/m-share-type.md) · [sigma](../notes/m-sigma.md)
 
 </div>

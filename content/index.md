@@ -8,10 +8,13 @@ hide:
 
 # Catch-up summary
 
-The master's thesis is complete. Two things are in progress now:
+The master's thesis is complete. Work now runs on three lines:
 
-- **A paper for the journal *Computers, Environment and Urban Systems* (CEUS)**, in drafting. It presents the method from the thesis: for each GPS stay, it gives a probability that the person was in a building, on a street, or in an open space, instead of picking one place. The model learns from 907 stays with known answers from a field survey in Hiroshima. On data it has not seen, it picks the correct type for 71.6% of stays (grouped CV accuracy 0.716 ± 0.076), and it does better there than Random Forest and XGBoost. Its main weakness, mistaking streets and open spaces for buildings, comes from how the street map is cut into many short pieces, not from the GPS data itself. Start from [Thesis summary](threads/m-thesis-summary.md).
-- **A poster and a presentation for CSIS DAYS 2026**, in drafting.
+- **A paper for the journal *Computers, Environment and Urban Systems* (CEUS)**, in drafting. It presents the method from the thesis: for each GPS stay, it gives a probability that the person was in a building, on a street, or in an open space, instead of picking one place. The model learns from 907 stays with known answers from a field survey in Hiroshima. On data it has not seen, it picks the correct type for 71.9% of stays (grouped CV accuracy 0.719 ± 0.032), and it does better there than Random Forest and XGBoost. Its main weakness is mistaking streets and open spaces for buildings. For streets, this comes from how the street map is cut into many short pieces, not from the GPS data itself; for open space, the cause is still open. Start from [Thesis summary](threads/m-thesis-summary.md).
+- **A poster for CSIS DAYS 2026**, fairly complete.
+- **The doctoral plan.** The goal is an assignment that also knows which stays came before ([Sequence-aware assignment](inbox/d-sequence-aware.md)). The steps: a new review of the key literature, a test in another city, a better way to cut streets into pieces, and toy GPS data with a known true place for every stay. Latest update: [Publications and doctoral plan](progress/d-progress-20-10-2026.md).
+
+The thesis code was checked against the text on 19-10-2026, and every number on this site comes from the checked pipeline ([Thesis bug fixes and adopted rerun](inbox/thesis-bug-fix.md)).
 
 
 </div>
@@ -40,13 +43,13 @@ The master's thesis is complete. Two things are in progress now:
 
 <p class="section-blurb">Dated updates for sensei, and slide exports.</p>
 
+- [Publications and doctoral plan](progress/d-progress-20-10-2026.md)
 - [PhD interview slides](progress/m-phd-interview-slides.md) <span class="chip chip-pdf">PDF</span>
 - [Does downsampling matter?](progress/m-progress-29-07-2026.md)
 - [RQ2 diagnostics and RQ3 ceiling check](progress/m-progress-23-07-2026.md)
 - [RQ1 rebuilt with grouped CV](progress/m-progress-21-07-2026.md)
-- [ML baseline](progress/m-progress-20-07-2026.md)
 
-[All 6](progress/index.md){ .more }
+[All 8](progress/index.md){ .more }
 
 </div>
 
@@ -90,7 +93,13 @@ The master's thesis is complete. Two things are in progress now:
 
 <p class="section-blurb">Open items not yet settled with sensei.</p>
 
-<p class="empty">Nothing yet.</p>
+- [Thesis bug fixes and adopted rerun](inbox/thesis-bug-fix.md)
+- [Transferability](inbox/d-transferability.md)
+- [GPS toy data](inbox/d-toy-data.md)
+- [Street segmentation](inbox/d-street-segmentation.md)
+- [Sequence-aware assignment](inbox/d-sequence-aware.md)
+
+[All 9](inbox/index.md){ .more }
 
 </div>
 

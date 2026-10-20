@@ -3,7 +3,7 @@ source: report/threads/m-ground-truth-data.md
 date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # Ground truth data
@@ -18,7 +18,7 @@ Part of [Thesis summary](m-thesis-summary.md). The study area, the map layers, a
   - the five groups of stops: [Group A: vertical position](../notes/m-experiment-group-a.md), [Group B: sky view obstruction](../notes/m-experiment-group-b.md), [Group C: indoor position](../notes/m-experiment-group-c.md), [Group D: movement type](../notes/m-experiment-group-d.md), [Group E: ambiguous edge cases](../notes/m-experiment-group-e.md)
   - [Self-report form](../notes/m-self-report-form.md): the form participants filled in at each stop
 - [Downsampling to MILES density](../notes/m-downsampling-to-miles-density.md): removing survey points so the data looks like MILES
-- [Ground truth cleaning](../notes/m-ground-truth-cleaning.md): from 1,029 records to 975, then to 907
+- [Ground truth cleaning](../notes/m-ground-truth-cleaning.md): from 1,017 records to 975, then to 907
 - [Ground truth drop list](../analysis/m-drop-list.md): what was removed in the last cleaning step
 - [Ground truth dataset](../notes/m-ground-truth-dataset.md): the final 907 stays
 

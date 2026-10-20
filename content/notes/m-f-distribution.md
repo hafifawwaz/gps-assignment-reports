@@ -3,7 +3,7 @@ source: report/notes/m-f-distribution.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # f_distribution
@@ -22,7 +22,9 @@ $\mathbf{1}\{\dots\}$ is 1 when point $p$ is close enough to the candidate and 0
 $$W_1 = \frac{t_1 + t_2}{2}, \qquad W_n = 1 - \frac{t_{n-1} + t_n}{2}$$
 
 
-**In the models:** this score was significant from the very first model ([Model 1: base](../analysis/m-model-1-base.md)), and it is the strongest open-space term in the [Final model](../analysis/m-final-model.md). Its product with [share_type](m-share-type.md) is the only combined term that the final model kept ([Interaction term screen (α = 1)](../analysis/m-interaction-term-screen.md)).
+Here the times of one stay are rescaled to run from 0 to 1 ($t_1 = 0$, $t_n = 1$), so the weights of a stay add up to 1. A stay with a single point gives that point the weight 1.
+
+**In the models:** this score was significant from the very first model ([Model 1: base](../analysis/m-model-1-base.md)), and it is the strongest open-space term in the [Final model](../analysis/m-final-model.md). Its product with [share_type](m-share-type.md) passed the screen of combined terms ([Interaction term screen (α = 1)](../analysis/m-interaction-term-screen.md)), but the overlap check removed it, so the final model has no combined term ([Stepwise VIF elimination](../analysis/m-stepwise-vif-elimination.md)).
 
 Part of [Framework overview](m-framework-overview.md).
 

@@ -3,7 +3,7 @@ source: report/threads/m-error-analysis.md
 date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # Error analysis
@@ -14,7 +14,7 @@ Part of [Thesis summary](m-thesis-summary.md). Research question 2: where the fi
 
 - [Confusion matrix](../analysis/m-confusion-matrix.md): the model finds building stays about twice as often as street or open-space stays
 - [Candidate density bias toward building](../analysis/m-candidate-density-bias.md): street stays have the most street candidates around them, and the model punishes that
-- [Fold difficulty](../analysis/m-fold-difficulty.md): the hard test sets are hard for every type, not only for streets
+- [Fold difficulty](../analysis/m-fold-difficulty.md): street accuracy follows how hard each test set is; open space is low in every test set
 - [Tension with the street-space argument](../notes/m-street-space-tension.md): what this means for the idea that streets are real places of activity
 - [Candidate density as boundary-matching difficulty](../notes/m-boundary-matching-analogy.md): a similar problem known from GPS research on roads and sidewalks
 

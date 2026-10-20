@@ -3,7 +3,7 @@ source: report/analysis/m-model-1-base.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # Model 1: base
@@ -20,23 +20,24 @@ Tested with two search distances, 10 m and 15 m:
 
 | | R=10 m | R=15 m |
 |---|---:|---:|
-| LL(C) / LL(b) | -0.9362 / -0.9745 | -0.9985 / -1.0360 |
-| ρ² vs LL(C) | **-0.041** | **-0.038** |
-| Accuracy | 0.518 | 0.509 |
-| Building / street / open space | 0.576 / 0.378 / 0.492 | 0.589 / 0.346 / 0.445 |
-| CV accuracy (grouped) | 0.514 ± 0.089 | 0.512 ± 0.098 |
-| Condition number | 36 | 26 |
+| LL(C) / LL(b) | -0.9359 / -0.9513 | -0.9992 / -1.0078 |
+| ρ² vs LL(C) | **-0.016** | **-0.009** |
+| Accuracy | 0.540 | 0.538 |
+| Building / street / open space | 0.631 / 0.130 / 0.686 | 0.638 / 0.076 / 0.707 |
+| CV accuracy (grouped) | 0.539 ± 0.051 | 0.533 ± 0.033 |
+| Condition number | 84 | 76 |
 
 | Term (R=10 m) | w | t | VIF |
 |---|---:|---:|---:|
-| f_distribution | +3.331 | 5.34 | 7.14 |
-| f_distance | -0.467 | -1.14 | 3.73 |
-| f_temporal | +0.179 | 0.29 | 7.49 |
-| f_directional | -0.080 | -0.41 | 2.78 |
+| f_distribution | +4.258 | 4.90 | 21.92 |
+| f_distance | -0.491 | -1.24 | 3.22 |
+| f_temporal | -1.303 | -1.56 | 21.72 |
+| f_directional | -1.176 | -4.29 | 2.20 |
 
-- **Worse than a simple baseline.** ρ² is negative, so this model does worse than just knowing how common each type is. No value of α fixes this ([Alpha calibration](m-alpha-calibration.md)).
-- Only [f_distribution](../notes/m-f-distribution.md) is significant at both distances. [f_temporal](../notes/m-f-temporal.md) moves almost the same way as f_distribution (r ≈ 0.88), so it was removed.
-- [f_distance](../notes/m-f-distance.md) has a negative weight at 10 m (-0.47) and a positive one at 15 m (+0.95). This had to wait until α was tuned.
+- **Worse than a simple baseline.** ρ² is negative, so this model does worse than just knowing how common each type is. No value of α fixes this: for every α from 0.2 to 6, LL(b) stays between -0.952 and -0.948, below LL(C) ([Alpha calibration](m-alpha-calibration.md)).
+- [f_distribution](../notes/m-f-distribution.md) is significant at both distances. [f_temporal](../notes/m-f-temporal.md) is not, and it moves almost the same way as f_distribution (r ≈ 0.96), so it was removed.
+- [f_directional](../notes/m-f-directional.md) is significant at both distances, but with a negative weight. It turns positive once share_type and σ are added ([Model 2: share-type and sigma](m-model-2-share-type-sigma.md)).
+- [f_distance](../notes/m-f-distance.md) has a negative weight at 10 m (-0.49) and a positive one at 15 m (+0.73). This had to wait until α was tuned.
 - The condition number is low, so the fit itself is stable. The problem is which inputs the model has, not the fitting.
 
 Next: [Model 2: share-type and sigma](m-model-2-share-type-sigma.md). Part of [Calibration](../threads/m-calibration.md).

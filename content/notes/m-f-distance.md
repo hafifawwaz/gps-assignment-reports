@@ -3,7 +3,7 @@ source: report/notes/m-f-distance.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # f_distance
@@ -16,9 +16,9 @@ How close the candidate is to the center of the stay. The score is 1 when the ca
 $$f_{\text{distance}}(E_k, C_i) = \exp\left(-\frac{d_{ki}^2}{2(\alpha \cdot \sigma_i)^2}\right)$$
 
 
-$d_{ki}$ is the distance from the stay's medoid to the nearest edge of candidate $E_k$. The medoid is the GPS point closest to the average position of the stay. $\sigma_i$ is the spread of the stay's points ([sigma](m-sigma.md)), with a minimum of 5 m. When the points are widely spread, the GPS position is less certain, so the score falls more slowly and farther places still get some credit.
+$d_{ki}$ is the distance from the stay's medoid to candidate $E_k$, and 0 when the medoid lies inside it. The medoid is the GPS point closest to the average position of the stay. $\sigma_i$ is the spread of the stay's points ([sigma](m-sigma.md)), with a minimum of 5 m. When the points are widely spread, the GPS position is less certain, so the score falls more slowly and farther places still get some credit.
 
-**In the models:** $\alpha$ was 1.0 (not tuned) until [Alpha calibration](../analysis/m-alpha-calibration.md) set it to **2.4297**. Before that, its weight changed sign between the 10 m and 15 m search distances ([Model 1: base](../analysis/m-model-1-base.md), [Model 2: share-type and sigma](../analysis/m-model-2-share-type-sigma.md)). A squared version of this score also looked useful, but only because α was wrong ([The f_distance² artifact](../analysis/m-f-distance-squared-artifact.md)).
+**In the models:** $\alpha$ was 1.0 (not tuned) until [Alpha calibration](../analysis/m-alpha-calibration.md) set it to **2.764**. Before that, its weight changed sign between the 10 m and 15 m search distances ([Model 1: base](../analysis/m-model-1-base.md), [Model 2: share-type and sigma](../analysis/m-model-2-share-type-sigma.md)). A squared version of this score also looked useful, but only because α was wrong ([The f_distance² artifact](../analysis/m-f-distance-squared-artifact.md)).
 
 Part of [Framework overview](m-framework-overview.md).
 

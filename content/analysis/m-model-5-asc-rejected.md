@@ -3,7 +3,7 @@ source: report/analysis/m-model-5-asc-rejected.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:44:29
 ---
 
 # Model 5: alternative-specific constants (rejected)
@@ -18,21 +18,21 @@ $$V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_{3,t} f_\t
 
 | | 4a | 5 (+ ASC) |
 |---|---:|---:|
-| Accuracy | 0.717 | 0.728 |
-| CV accuracy (grouped) | 0.707 ± 0.069 | 0.717 ± 0.068 |
-| LR vs 4a (df=2) | | 29.6, p < 0.0001 |
-| Max VIF | 10.69 | **39.76** |
-| Condition number | 775 | **37,583** |
+| Accuracy | 0.722 | 0.728 |
+| CV accuracy (grouped) | 0.700 ± 0.036 | 0.719 ± 0.033 |
+| LR vs 4a (df=2) | | 35.6, p < 0.0001 |
+| Max VIF | 8.83 | **30.57** |
+| Condition number | 737 | **2,027** |
 
-On paper, the constants are significant. But the gain on unseen data is smaller than the normal spread between test sets. And **`asc_street` and `f_directional_street` move almost together (r = 0.96)**. The reason: [f_directional](../notes/m-f-directional.md) hardly changes between street candidates, so it acts almost like a constant for streets. The model is asked to measure the same "street-ness" twice. As a result, the direction weights and `asc_street` get standard errors of about 4.5 and are no longer significant, and their values change by 60-65% between test sets.
+On paper, the constants are significant, and accuracy on unseen data also goes up (by less than the normal spread between test sets). But **`asc_street` and `f_directional_street` move almost together (r = 0.94)**. The reason: [f_directional](../notes/m-f-directional.md) hardly changes between street candidates, so it acts almost like a constant for streets. The model is asked to measure the same "street-ness" twice. As a result, the weight of the street direction score **changes sign**, from +3.46 in Model 4a to -5.30, so the two weights can no longer be read on their own.
 
-With a 15 m search distance it gets worse: the condition number reaches 92,891, and in some test sets the weights run off to values in the thousands. Tuning α adds two more pairs that move almost together (`asc_t` and `f_distance_t`, r = 0.98).
+With the tuned α it gets worse: each constant also moves almost together with its own f_distance score (`asc_t` and `f_distance_t`, r = 0.99), and the highest VIF rises to 95. With a 15 m search distance the model behaves about the same as at 10 m (accuracy on unseen data 0.714 ± 0.019, condition number 1,827).
 
-**Rejected, because its weights cannot be trusted.** One case of [Overfitting signature](../notes/m-overfitting-signature.md). Part of [Calibration](../threads/m-calibration.md).
+**Rejected, because its weights cannot be trusted.** It is not a case of overfitting: the gain on unseen data is real, but it comes from a near-copy of another input ([Overfitting signature](../notes/m-overfitting-signature.md)). Part of [Calibration](../threads/m-calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Calibration](../threads/m-calibration.md) · [MNL model development](../progress/m-progress-19-07-2026.md) · [Model 4a: alternative-specific parameters](m-model-4a-alternative-specific.md) · [Model progression](m-model-progression-table.md) · [Multicollinearity is structural](../notes/m-multicollinearity-is-structural.md) · [Overfitting signature](../notes/m-overfitting-signature.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md) · [R_buffer: 10 m vs 15 m](m-r-buffer-10m-vs-15m.md) · [f_directional](../notes/m-f-directional.md)
+**Linked from** [Alpha calibration](m-alpha-calibration.md) · [Calibration](../threads/m-calibration.md) · [MNL model development](../progress/m-progress-19-07-2026.md) · [Model 4a: alternative-specific parameters](m-model-4a-alternative-specific.md) · [Model progression](m-model-progression-table.md) · [Multicollinearity is structural](../notes/m-multicollinearity-is-structural.md) · [Overfitting signature](../notes/m-overfitting-signature.md) · [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md) · [Thesis bug fixes and adopted rerun](../inbox/thesis-bug-fix.md) · [f_directional](../notes/m-f-directional.md)
 
 </div>

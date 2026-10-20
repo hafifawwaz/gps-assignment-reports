@@ -3,7 +3,7 @@ source: report/threads/m-thesis-summary.md
 date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # Thesis summary
@@ -30,15 +30,15 @@ The notes are grouped by theme, not by thesis chapter:
 1. [Problem and positioning](m-problem-and-positioning.md): the problem, the research questions, and how this work compares with earlier methods
 2. [Ground truth data](m-ground-truth-data.md): the Hiroshima map layers and the 907 stays with known answers
 3. [Assignment framework](m-assignment-framework.md): how the method works: candidates, four scores, and a model that turns scores into probabilities
-4. [Calibration](m-calibration.md): research question 1, how the final 12-parameter model was built step by step
+4. [Calibration](m-calibration.md): research question 1, how the final 11-parameter model was built step by step
 5. [Error analysis](m-error-analysis.md): research question 2, where the model makes mistakes and why streets are often mistaken for buildings
 6. [Complexity and transfer](m-complexity-and-transfer.md): research question 3, whether more complex models help, and whether the model will work on new data
 7. [Outlook](m-outlook.md): what the thesis contributes, its limits, and next steps
 
 ## Where it stands
 
-- The final model has 12 parameters. On data it had not seen, it picks the correct type for **71.6% of stays (± 7.6%)**, written as grouped CV accuracy 0.716 ± 0.076 ([Final model](../analysis/m-final-model.md)).
-- It finds 89.6% of building stays, but only 42.7% of street stays and 49.2% of open-space stays. When it gets streets or open spaces wrong, it usually says "building" ([Confusion matrix](../analysis/m-confusion-matrix.md), [Candidate density bias toward building](../analysis/m-candidate-density-bias.md)).
+- The final model has 11 parameters. On data it had not seen, it picks the correct type for **71.9% of stays (± 3.2%)**, written as grouped CV accuracy 0.719 ± 0.032 ([Final model](../analysis/m-final-model.md)).
+- It finds 90.0% of building stays, but only 48.6% of street stays and 44.0% of open-space stays. When it gets streets or open spaces wrong, it usually says "building". For streets, the reason is how the street map is cut into pieces; for open space, the reason is still open ([Confusion matrix](../analysis/m-confusion-matrix.md), [Candidate density bias toward building](../analysis/m-candidate-density-bias.md)).
 - Random Forest and XGBoost fit the training data better, but on unseen data this simpler model does better ([ML ceiling check, row level](../analysis/m-ml-ceiling-row-level.md)).
 - The thesis is complete. The questions that were still open in these notes are answered in the final text ([Final model](../analysis/m-final-model.md), [Ground truth cleaning](../notes/m-ground-truth-cleaning.md), [Tension with the street-space argument](../notes/m-street-space-tension.md)).
 

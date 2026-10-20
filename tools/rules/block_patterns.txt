@@ -36,5 +36,6 @@ generic-secret	(?i)\b(?:api[_-]?key|secret|password|passwd|token)\s*[=:]\s*["'][
 env-file	(?:^|[\s/\\"'`(])\.env(?![\w-])
 local-settings	settings\.local\.json
 # Participant codes from the field survey (two digits + group letter A-E, e.g. 01C). Added 13-10-2026:
-# an earlier drop-list table carried them unnoticed.
-participant-code	(?<![\w.#/-])(?:0[1-9]|1[0-9])[A-E](?![\w-])
+# an earlier drop-list table carried them unnoticed. Widened 20-10-2026 to also catch code-stop
+# forms like 03A-11 (a hyphen followed by a digit), which an inbox note carried past the scanner.
+participant-code	(?<![\w.#/-])(?:0[1-9]|1[0-9])[A-E](?!\w|-[^\d])

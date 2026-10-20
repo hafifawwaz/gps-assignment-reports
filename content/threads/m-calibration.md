@@ -3,14 +3,14 @@ source: report/threads/m-calibration.md
 date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # Calibration
 
 <p class="doc-meta"><span class="chip chip-thread">Thread</span> <span class="chip chip-project">Master</span> <span class="chip chip-date">05-08-2026</span></p>
 
-Part of [Thesis summary](m-thesis-summary.md). Research question 1: how the model was built step by step, from a simple first model to the final 12-parameter model.
+Part of [Thesis summary](m-thesis-summary.md). Research question 1: how the model was built step by step, from a simple first model to the final 11-parameter model.
 
 How the models are compared: [Model evaluation metrics](../notes/m-model-evaluation-metrics.md), [Grouped cross-validation](../notes/m-grouped-cross-validation.md).
 

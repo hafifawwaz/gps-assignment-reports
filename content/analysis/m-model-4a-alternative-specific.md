@@ -3,7 +3,7 @@ source: report/analysis/m-model-4a-alternative-specific.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # Model 4a: alternative-specific parameters
@@ -18,18 +18,18 @@ $$V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_{3,t} f_\t
 
 | | Model 4a (R=10 m, α=1) |
 |---|---:|
-| ρ² vs LL(C) | 0.265 |
-| LR vs 3a (df=6) | 114.15, p < 1e-16 |
-| Accuracy | 0.717 |
-| Building / street / open space | 0.902 / 0.443 / 0.466 |
-| CV accuracy (grouped) | 0.707 ± 0.069 |
-| Condition number | 775 |
+| ρ² vs LL(C) | 0.283 |
+| LR vs 3a (df=6) | 117.67, p < 1e-16 |
+| Accuracy | 0.722 |
+| Building / street / open space | 0.889 / 0.519 / 0.455 |
+| CV accuracy (grouped) | 0.700 ± 0.036 |
+| Condition number | 737 |
 
 The LR test compares this model with model 3a, which has shared weights. The result is very clear (p < 1e-16): separate weights per type fit much better.
 
-For the first time, **all three types improve together** (building +3 percentage points, street +8.1, open space +6.8). The highest VIF is 10.69, for `f_directional_street`. The strong overlap between inputs of the same type is explained in [Multicollinearity is structural](../notes/m-multicollinearity-is-structural.md).
+For the first time, **all three types improve together** (building +3.8 percentage points, street +5.9, open space +7.3). The highest VIF is 8.83, for `f_directional_street`. The strong overlap between inputs of the same type is explained in [Multicollinearity is structural](../notes/m-multicollinearity-is-structural.md).
 
-`f_distance_bldg` and `f_distance_street` are not significant on their own (t = 0.29 and 0.34). Once weights are split by type, part of the distance information is picked up by share and sigma.
+`f_distance_bldg` and `f_distance_street` are not significant on their own (t = 1.43 and -0.56). Once weights are split by type, part of the distance information is picked up by share and sigma.
 
 All later models build on this one. Next: [Model 5: alternative-specific constants (rejected)](m-model-5-asc-rejected.md), [Interaction term screen (α = 1)](m-interaction-term-screen.md). α was tuned on this model: [Alpha calibration](m-alpha-calibration.md). Part of [Calibration](../threads/m-calibration.md).
 

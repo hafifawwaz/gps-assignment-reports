@@ -3,7 +3,7 @@ source: report/notes/m-share-type.md
 date: 19-07-2026
 kind: note
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # share_type
@@ -18,7 +18,7 @@ $$\text{share}_t(C_i) = \frac{n_{t,i}}{N_i}$$
 
 Each type gets its own weight (`share_bldg`, `share_street`, `share_os`). Each column holds the share for rows of that type and 0 for the other rows.
 
-**In the models:** adding this term fixed the biggest problem of the first model ([Model 2: share-type and sigma](../analysis/m-model-2-share-type-sigma.md)). But its weights for street and open space are large and negative. So a candidate with many neighbours of the same type gets a lower value. That is the cause of [Candidate density bias toward building](../analysis/m-candidate-density-bias.md).
+**In the models:** adding this term fixed the biggest problem of the first model ([Model 2: share-type and sigma](../analysis/m-model-2-share-type-sigma.md)). But its weight for street is large and negative (-5.16 in the [Final model](../analysis/m-final-model.md); for open space it is -0.80 and not significant). So a street candidate with many neighbouring street pieces gets a lower value. That is the cause of the street errors in [Candidate density bias toward building](../analysis/m-candidate-density-bias.md).
 
 Part of [Assignment framework](../threads/m-assignment-framework.md).
 

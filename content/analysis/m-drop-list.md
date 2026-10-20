@@ -3,7 +3,7 @@ source: report/analysis/m-drop-list.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # Ground truth drop list
@@ -14,7 +14,7 @@ The last cleaning step removed stops that had no matching place on the map: **21
 
 | Category | Stops | Rule |
 |---|---:|---|
-| Underground | 10 | Location in the Shareo or Kamiyacho underground arcades, which ZTOWN does not capture ([Spatial entity layers](../notes/m-spatial-entity-layers.md)) |
+| Underground | 10 | Location in the Shareo or Kamiyacho underground arcades, which Zmap TOWN does not capture ([Spatial entity layers](../notes/m-spatial-entity-layers.md)) |
 | Manual verification | 11 | Checked one by one against the self-report record |
 
 The 11 stops removed after checking by hand (place names as the participants wrote them; participant codes are left out on purpose):

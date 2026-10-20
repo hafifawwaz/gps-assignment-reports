@@ -3,7 +3,7 @@ source: report/analysis/m-directional-scope-ablation.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # Directional scope ablation (3a vs 3b)
@@ -20,15 +20,15 @@ Both versions have 7 parameters, so they can be compared directly.
 
 | R=10 m | 3a: shared | 3b: street only |
 |---|---:|---:|
-| LL(b) | **-0.7510** | -0.7520 |
-| Accuracy | **0.668** | 0.666 |
-| Building / street / open space | 0.872 / **0.362** / 0.398 | 0.872 / 0.335 / **0.414** |
-| CV accuracy (grouped) | **0.664 ± 0.046** | 0.658 ± 0.040 |
-| Condition number | **117** | 135 |
+| LL(b) | **-0.7359** | -0.7503 |
+| Accuracy | **0.673** | 0.671 |
+| Building / street / open space | 0.851 / **0.459** / 0.382 | **0.861** / 0.422 / **0.387** |
+| CV accuracy (grouped) | **0.666 ± 0.035** | 0.655 ± 0.027 |
+| Condition number | **115** | 216 |
 
-- Keeping the score only for streets does not help. The fit is a little worse and the model is less stable (the direction score's VIF is 9.26 instead of 7.11).
-- It only **moves** accuracy from street to open space.
-- In 3b, `share_bldg` becomes significant (t goes from 0.76 to 2.54). So whether `share_bldg` matters depends on how the direction score is set up.
+- Keeping the score only for streets does not help. The fit is worse and the model is less stable (the direction score's VIF is 7.87 instead of 7.12, and the condition number almost doubles).
+- It mainly **moves** accuracy from street to building.
+- In 3b, `share_bldg` gets stronger (t goes from 2.82 to 3.59). So how the direction score is set up changes what `share_bldg` picks up.
 
 3a was kept. The same result came back later with the tuned α, in [f_directional: shared vs split](m-f-directional-shared-vs-split.md). Next: [Model 4a: alternative-specific parameters](m-model-4a-alternative-specific.md). Part of [Calibration](../threads/m-calibration.md).
 

@@ -3,7 +3,7 @@ source: report/notes/glossary.md
 date: 05-08-2026
 kind: note
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # Glossary
@@ -34,7 +34,7 @@ Plain explanations of the words that come back in many notes. Each note also exp
 
 **Weight (coefficient, w).** How much one score counts in the model. The model learns the weights from the ground truth.
 
-**Parameter.** A number the model learns. "12 parameters" means the model learns 12 weights.
+**Parameter.** A number the model learns. "11 parameters" means the model learns 11 weights.
 
 **Generic vs alternative-specific.** A generic weight is the same for all three types. An alternative-specific weight is different for building, street and open space.
 
@@ -50,7 +50,7 @@ Plain explanations of the words that come back in many notes. Each note also exp
 
 ## How results are measured
 
-**Accuracy.** The share of stays where the model's top answer is the correct type. 0.716 means 71.6% correct.
+**Accuracy.** The share of stays where the model's top answer is the correct type. 0.719 means 71.9% correct.
 
 **Recall (per type).** Of all stays that really were, for example, street, the share the model called street.
 
@@ -58,9 +58,9 @@ Plain explanations of the words that come back in many notes. Each note also exp
 
 **Cross-validation (CV).** The data is split into 5 parts (folds). The model learns from 4 parts and is tested on the 5th, five times. This shows how well the model works on data it has not seen.
 
-**Grouped CV.** CV where all recordings of the same stop stay in the same part. This study needs it because three phones recorded each stop at the same time.
+**Grouped CV.** CV where all recordings of the same stop stay in the same part. This study needs it because several phones (three for most stops) recorded each stop at the same time.
 
-**± value.** How much the result changes from fold to fold (one standard deviation). In 0.716 ± 0.076, the 0.076 shows that some folds are clearly easier than others.
+**± value.** How much the result changes from fold to fold (one standard deviation). In 0.719 ± 0.032, the 0.032 shows that some folds are easier than others.
 
 **Log-likelihood (LL).** A number that shows how well the model's probabilities fit the correct answers. Closer to 0 is better.
 
@@ -91,6 +91,6 @@ Part of [Thesis summary](../threads/m-thesis-summary.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [MNL model development](../progress/m-progress-19-07-2026.md) · [Model evaluation metrics](m-model-evaluation-metrics.md) · [Thesis summary](../threads/m-thesis-summary.md)
+**Linked from** [MNL model development](../progress/m-progress-19-07-2026.md) · [Model evaluation metrics](m-model-evaluation-metrics.md) · [Thesis bug fixes and adopted rerun](../inbox/thesis-bug-fix.md) · [Thesis summary](../threads/m-thesis-summary.md)
 
 </div>

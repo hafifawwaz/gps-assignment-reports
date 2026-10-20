@@ -3,7 +3,7 @@ source: report/analysis/m-confusion-matrix.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # Confusion matrix
@@ -14,23 +14,23 @@ A table of the [Final model](m-final-model.md)'s answers against the correct ans
 
 | actual \ predicted | building | street | open space | recall |
 |---|---:|---:|---:|---:|
-| building | 476 | 22 | 33 | **89.6%** |
-| street | 86 | 79 | 20 | **42.7%** |
-| open space | 86 | 11 | 94 | **49.2%** |
+| building | 478 | 26 | 27 | **90.0%** |
+| street | 76 | 90 | 19 | **48.6%** |
+| open space | 97 | 10 | 84 | **44.0%** |
 
-Recall is the share of stays of one type that the model found. For example, 79 of 185 street stays were called street: 42.7%.
+Recall is the share of stays of one type that the model found. For example, 90 of 185 street stays were called street: 48.6%.
 
 - The model finds building stays about **twice** as often as the other two types.
-- When it gets a street or open-space stay wrong, it mostly says **building** (46.5% and 45.0% of those stays). It rarely mixes up street and open space (10.8% and 5.8%).
-- More street stays were called building (86) than street (79).
+- When it gets a street or open-space stay wrong, it mostly says **building** (41.1% and 50.8% of those stays). It rarely mixes up street and open space (10.3% and 5.2%).
+- More open-space stays were called building (97) than open space (84).
 
-On the training data the table looks almost the same (building 89.8%, street 44.3%, open space 49.7%). So overfitting does not explain this pattern.
+On the training data the table looks much the same (building 90.8%, street 52.4%, open space 44.0%). So overfitting does not explain this pattern.
 
-Why it happens: [Candidate density bias toward building](m-candidate-density-bias.md). How it changes from test set to test set: [Fold difficulty](m-fold-difficulty.md). Answers RQ2 of [Research questions](../notes/m-research-questions.md). Part of [Error analysis](../threads/m-error-analysis.md).
+Why it happens for streets: [Candidate density bias toward building](m-candidate-density-bias.md). How it changes from test set to test set: [Fold difficulty](m-fold-difficulty.md). Answers RQ2 of [Research questions](../notes/m-research-questions.md). Part of [Error analysis](../threads/m-error-analysis.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate density bias toward building](m-candidate-density-bias.md) · [Error analysis](../threads/m-error-analysis.md) · [Final model](m-final-model.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) · [Research questions](../notes/m-research-questions.md) · [Tension with the street-space argument](../notes/m-street-space-tension.md) · [Thesis summary](../threads/m-thesis-summary.md)
+**Linked from** [Candidate density bias toward building](m-candidate-density-bias.md) · [Error analysis](../threads/m-error-analysis.md) · [Final model](m-final-model.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) · [Research questions](../notes/m-research-questions.md) · [Tension with the street-space argument](../notes/m-street-space-tension.md) · [Thesis bug fixes and adopted rerun](../inbox/thesis-bug-fix.md) · [Thesis summary](../threads/m-thesis-summary.md)
 
 </div>

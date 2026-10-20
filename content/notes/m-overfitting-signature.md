@@ -3,7 +3,7 @@ source: report/notes/m-overfitting-signature.md
 date: 25-07-2026
 kind: note
 comments: true
-generated: 2026-10-14T14:44:07
+generated: 2026-10-20T15:22:17
 ---
 
 # Overfitting signature
@@ -12,9 +12,11 @@ generated: 2026-10-14T14:44:07
 
 Again and again, a more complex model fit the training data better **without doing better on unseen data**. That is the sign of overfitting: the model learns details of this sample that do not carry over. Three cases:
 
-1. Adding an ASC term (a fixed extra value per type): [Model 5: alternative-specific constants (rejected)](../analysis/m-model-5-asc-rejected.md)
+1. Adding σ² and f_distribution × share_type at the tuned α: [Stepwise VIF elimination](../analysis/m-stepwise-vif-elimination.md)
 2. Giving `f_directional` a separate weight per type: [f_directional: shared vs split](../analysis/m-f-directional-shared-vs-split.md)
 3. The squared distance term, before α was tuned: [The f_distance² artifact](../analysis/m-f-distance-squared-artifact.md)
+
+One step does not fit this pattern. The ASC terms (a fixed extra value per type) also raised accuracy on unseen data. They were rejected because they copy another input, not because of overfitting ([Model 5: alternative-specific constants (rejected)](../analysis/m-model-5-asc-rejected.md)).
 
 The tree models show the same thing on a bigger scale. Both beat the simple model on the training data and lose to it on unseen data ([ML ceiling check, row level](../analysis/m-ml-ceiling-row-level.md)).
 

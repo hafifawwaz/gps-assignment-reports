@@ -57,6 +57,10 @@ EMAIL_NEAR_MISSES = {
     "w.md": "write to hafifawwaz2@hiroshima-u.ac.jp\n",
     "x.md": "write to someone@hiroshima-u.ac.jp\n",
 }
+# Participant codes written as code-stop (e.g. 07C-11) must still be blocked (added 20-10-2026).
+CODE_NEAR_MISSES = {
+    "y.md": "three windows moved (07C-11, 08D-4)\n",
+}
 
 
 def main() -> int:
@@ -67,7 +71,7 @@ def main() -> int:
         for name, content in list(BLOCK_CASES.values()) + list(WARN_CASES.values()):
             (root / name).write_text(content, encoding="utf-8")
         (root / "clean.md").write_text(CLEAN, encoding="utf-8")
-        for name, content in EMAIL_NEAR_MISSES.items():
+        for name, content in {**EMAIL_NEAR_MISSES, **CODE_NEAR_MISSES}.items():
             (root / name).write_text(content, encoding="utf-8")
         findings = scanner.scan(root)
 
@@ -82,6 +86,11 @@ def main() -> int:
         print(f"  {'ok  ' if hit else 'MISS'} BLOCK email-address (near miss) {name}")
         if not hit:
             failures.append(f"email-address near miss {name}")
+    for name in CODE_NEAR_MISSES:
+        hit = any(f.level == "BLOCK" and f.rule == "participant-code" and f.path == name for f in findings)
+        print(f"  {'ok  ' if hit else 'MISS'} BLOCK participant-code (code-stop) {name}")
+        if not hit:
+            failures.append(f"participant-code code-stop {name}")
     false_pos = [f for f in findings if f.path == "clean.md" and f.level == "BLOCK"]
     print(f"  {'ok  ' if not false_pos else 'FAIL'} clean prose raises no blocking finding")
     for f in false_pos:

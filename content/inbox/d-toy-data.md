@@ -3,7 +3,7 @@ source: report/inbox/d-toy-data.md
 date: 16-10-2026
 kind: inbox
 comments: true
-generated: 2026-10-20T15:44:29
+generated: 2026-10-20T16:29:09
 ---
 
 # GPS toy data
@@ -213,6 +213,6 @@ Described below.
 
 <div class="backlinks" markdown>
 
-**Linked from** [Consensus Report](d-toy-data-consensus.md) · [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [Sequence-aware assignment](d-sequence-aware.md) · [plan](plan.md)
+**Linked from** [Consensus Report](d-toy-data-consensus.md) · [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [Sequence-aware assignment](d-sequence-aware.md) · [d plan](d-plan.md)
 
 </div>

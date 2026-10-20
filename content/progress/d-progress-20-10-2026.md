@@ -3,14 +3,14 @@ source: report/progress/d-progress-20-10-2026.md
 date: 20-10-2026
 kind: progress
 comments: true
-generated: 2026-10-20T15:44:29
+generated: 2026-10-20T16:29:09
 ---
 
 # Publications and doctoral plan
 
 <p class="doc-meta"><span class="chip chip-progress">Progress</span> <span class="chip chip-project">Doctoral</span> <span class="chip chip-date">20-10-2026</span></p>
 
-The update for the meeting with sensei on 20-10-2026. It gathers the open items in the inbox, listed in [plan](../inbox/plan.md): the two outputs from the master's thesis, a code check of the thesis, and the steps toward the doctoral goal.
+The update for the meeting with sensei on 20-10-2026. It gathers the open items in the inbox, listed in [d plan](../inbox/d-plan.md): the two outputs from the master's thesis, a code check of the thesis, and the steps toward the doctoral goal.
 
 ## Outputs from the master's thesis
 
@@ -35,7 +35,6 @@ Points for sensei:
 2. Two tests close to their limits decide the model shape: VIF 10.4 against 10, and p = 0.054 against 0.05.
 3. The ASC raises accuracy on unseen data, so the case against it rests on its copy of the street direction score (r = 0.94) and the sign flip that follows ([Model 5: alternative-specific constants (rejected)](../analysis/m-model-5-asc-rejected.md)).
 4. Crowded street candidates explain the street errors. The open-space errors still have no cause.
-5. Sensei's review of the adoption itself.
 
 ## Doctoral direction
 

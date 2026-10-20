@@ -3,7 +3,7 @@ source: report/inbox/d-comprehensive-litrev.md
 date: 16-10-2026
 kind: inbox
 comments: true
-generated: 2026-10-20T15:44:29
+generated: 2026-10-20T16:29:09
 ---
 
 # Comprehensive literature review
@@ -23,6 +23,6 @@ Both supporting work and a milestone for [Sequence-aware assignment](d-sequence-
 
 <div class="backlinks" markdown>
 
-**Linked from** [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [Sequence-aware assignment](d-sequence-aware.md) · [plan](plan.md)
+**Linked from** [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [Sequence-aware assignment](d-sequence-aware.md) · [d plan](d-plan.md)
 
 </div>

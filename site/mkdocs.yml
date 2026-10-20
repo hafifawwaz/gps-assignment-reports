@@ -20,6 +20,7 @@ nav:
   - '2026':
     - October:
       - publications and doctoral plan: progress/d-progress-20-10-2026.md
+      - poster csis days (pdf): progress/poster-a0.md
     - August:
       - phd interview slides (pdf): progress/m-phd-interview-slides.md
     - July:
@@ -28,8 +29,6 @@ nav:
       - rq1 rebuilt with grouped cv: progress/m-progress-21-07-2026.md
       - ml baseline: progress/m-progress-20-07-2026.md
       - mnl model development: progress/m-progress-19-07-2026.md
-  - Undated:
-    - poster a0 (pdf): progress/poster-a0.md
 - Notes:
   - notes/index.md
   - '2026':
@@ -103,12 +102,11 @@ nav:
   - '2026':
     - October:
       - thesis bug fixes and adopted rerun: inbox/thesis-bug-fix.md
+      - thesis publication: inbox/thesis-publication.md
       - transferability: inbox/d-transferability.md
       - gps toy data: inbox/d-toy-data.md
+      - consensus report: inbox/d-toy-data-consensus.md
       - street segmentation: inbox/d-street-segmentation.md
       - sequence-aware assignment: inbox/d-sequence-aware.md
       - comprehensive literature review: inbox/d-comprehensive-litrev.md
-  - Undated:
-    - thesis publication: inbox/thesis-publication.md
-    - plan: inbox/plan.md
-    - consensus report: inbox/d-toy-data-consensus.md
+      - d plan: inbox/d-plan.md

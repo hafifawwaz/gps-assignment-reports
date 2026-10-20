@@ -2,3 +2,4 @@
 # The source files keep their original titles; only the published copy uses these.
 # New thesis-centred notes already have short titles, so this list is mostly for PDFs.
 manuscript/slides/phd-interview-slide/slides-export.pdf	PhD interview slides
+manuscript/poster/csisdays-2026/out/poster-a0.pdf	Poster CSIS Days

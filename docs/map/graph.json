@@ -526,6 +526,13 @@
    "url": "../inbox/d-comprehensive-litrev/"
   },
   {
+   "id": "inbox/d-plan.md",
+   "title": "d plan",
+   "kind": "inbox",
+   "date": "15-10-2026",
+   "url": "../inbox/d-plan/"
+  },
+  {
    "id": "inbox/d-sequence-aware.md",
    "title": "Sequence-aware assignment",
    "kind": "inbox",
@@ -543,7 +550,7 @@
    "id": "inbox/d-toy-data-consensus.md",
    "title": "Consensus Report",
    "kind": "inbox",
-   "date": "",
+   "date": "16-10-2026",
    "url": "../inbox/d-toy-data-consensus/"
   },
   {
@@ -561,13 +568,6 @@
    "url": "../inbox/d-transferability/"
   },
   {
-   "id": "inbox/plan.md",
-   "title": "plan",
-   "kind": "inbox",
-   "date": "",
-   "url": "../inbox/plan/"
-  },
-  {
    "id": "inbox/thesis-bug-fix.md",
    "title": "Thesis bug fixes and adopted rerun",
    "kind": "inbox",
@@ -578,14 +578,14 @@
    "id": "inbox/thesis-publication.md",
    "title": "thesis publication",
    "kind": "inbox",
-   "date": "",
+   "date": "16-10-2026",
    "url": "../inbox/thesis-publication/"
   },
   {
    "id": "progress/poster-a0.md",
-   "title": "poster a0",
+   "title": "Poster CSIS Days",
    "kind": "progress",
-   "date": "",
+   "date": "14-10-2026",
    "url": "../progress/poster-a0/",
    "pdf": true
   }
@@ -1112,8 +1112,36 @@
    "target": "inbox/d-sequence-aware.md"
   },
   {
+   "source": "inbox/d-plan.md",
+   "target": "inbox/d-comprehensive-litrev.md"
+  },
+  {
+   "source": "inbox/d-plan.md",
+   "target": "inbox/d-sequence-aware.md"
+  },
+  {
+   "source": "inbox/d-plan.md",
+   "target": "inbox/d-street-segmentation.md"
+  },
+  {
+   "source": "inbox/d-plan.md",
+   "target": "inbox/d-toy-data.md"
+  },
+  {
+   "source": "inbox/d-plan.md",
+   "target": "inbox/d-transferability.md"
+  },
+  {
+   "source": "inbox/d-plan.md",
+   "target": "inbox/thesis-publication.md"
+  },
+  {
    "source": "inbox/d-sequence-aware.md",
    "target": "inbox/d-comprehensive-litrev.md"
+  },
+  {
+   "source": "inbox/d-sequence-aware.md",
+   "target": "inbox/d-plan.md"
   },
   {
    "source": "inbox/d-sequence-aware.md",
@@ -1126,10 +1154,6 @@
   {
    "source": "inbox/d-sequence-aware.md",
    "target": "inbox/d-transferability.md"
-  },
-  {
-   "source": "inbox/d-sequence-aware.md",
-   "target": "inbox/plan.md"
   },
   {
    "source": "inbox/d-sequence-aware.md",
@@ -1162,30 +1186,6 @@
   {
    "source": "inbox/d-transferability.md",
    "target": "threads/m-complexity-and-transfer.md"
-  },
-  {
-   "source": "inbox/plan.md",
-   "target": "inbox/d-comprehensive-litrev.md"
-  },
-  {
-   "source": "inbox/plan.md",
-   "target": "inbox/d-sequence-aware.md"
-  },
-  {
-   "source": "inbox/plan.md",
-   "target": "inbox/d-street-segmentation.md"
-  },
-  {
-   "source": "inbox/plan.md",
-   "target": "inbox/d-toy-data.md"
-  },
-  {
-   "source": "inbox/plan.md",
-   "target": "inbox/d-transferability.md"
-  },
-  {
-   "source": "inbox/plan.md",
-   "target": "inbox/thesis-publication.md"
   },
   {
    "source": "inbox/thesis-bug-fix.md",
@@ -1833,6 +1833,10 @@
   },
   {
    "source": "progress/d-progress-20-10-2026.md",
+   "target": "inbox/d-plan.md"
+  },
+  {
+   "source": "progress/d-progress-20-10-2026.md",
    "target": "inbox/d-sequence-aware.md"
   },
   {
@@ -1850,10 +1854,6 @@
   {
    "source": "progress/d-progress-20-10-2026.md",
    "target": "inbox/d-transferability.md"
-  },
-  {
-   "source": "progress/d-progress-20-10-2026.md",
-   "target": "inbox/plan.md"
   },
   {
    "source": "progress/d-progress-20-10-2026.md",

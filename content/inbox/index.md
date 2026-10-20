@@ -14,11 +14,19 @@ Open items not yet settled with sensei.
 
 -   <p class="doc-meta"><span class="chip chip-inbox">Inbox</span></p>
 
+    **[thesis publication](thesis-publication.md)**
+
+-   <p class="doc-meta"><span class="chip chip-inbox">Inbox</span></p>
+
     **[Transferability](d-transferability.md)**
 
 -   <p class="doc-meta"><span class="chip chip-inbox">Inbox</span></p>
 
     **[GPS toy data](d-toy-data.md)**
+
+-   <p class="doc-meta"><span class="chip chip-inbox">Inbox</span></p>
+
+    **[Consensus Report](d-toy-data-consensus.md)**
 
 -   <p class="doc-meta"><span class="chip chip-inbox">Inbox</span></p>
 
@@ -32,22 +40,8 @@ Open items not yet settled with sensei.
 
     **[Comprehensive literature review](d-comprehensive-litrev.md)**
 
-</div>
-
-## Undated
-
-<div class="grid cards" markdown>
-
 -   <p class="doc-meta"><span class="chip chip-inbox">Inbox</span></p>
 
-    **[thesis publication](thesis-publication.md)**
-
--   <p class="doc-meta"><span class="chip chip-inbox">Inbox</span></p>
-
-    **[plan](plan.md)**
-
--   <p class="doc-meta"><span class="chip chip-inbox">Inbox</span></p>
-
-    **[Consensus Report](d-toy-data-consensus.md)**
+    **[d plan](d-plan.md)**
 
 </div>

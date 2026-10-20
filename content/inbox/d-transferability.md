@@ -3,7 +3,7 @@ source: report/inbox/d-transferability.md
 date: 16-10-2026
 kind: inbox
 comments: true
-generated: 2026-10-20T15:44:29
+generated: 2026-10-20T16:29:09
 ---
 
 # Transferability
@@ -24,6 +24,6 @@ A main milestone (not supporting work) toward [Sequence-aware assignment](d-sequ
 
 <div class="backlinks" markdown>
 
-**Linked from** [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [Sequence-aware assignment](d-sequence-aware.md) · [plan](plan.md)
+**Linked from** [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [Sequence-aware assignment](d-sequence-aware.md) · [d plan](d-plan.md)
 
 </div>

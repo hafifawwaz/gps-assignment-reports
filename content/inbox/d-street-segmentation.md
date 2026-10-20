@@ -3,7 +3,7 @@ source: report/inbox/d-street-segmentation.md
 date: 16-10-2026
 kind: inbox
 comments: true
-generated: 2026-10-20T15:44:29
+generated: 2026-10-20T16:29:09
 ---
 
 # Street segmentation
@@ -35,6 +35,6 @@ First result with the real direction (experimental rerun, 19-10-2026): the small
 
 <div class="backlinks" markdown>
 
-**Linked from** [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [Sequence-aware assignment](d-sequence-aware.md) · [Thesis bug fixes and adopted rerun](thesis-bug-fix.md) · [plan](plan.md)
+**Linked from** [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [Sequence-aware assignment](d-sequence-aware.md) · [Thesis bug fixes and adopted rerun](thesis-bug-fix.md) · [d plan](d-plan.md)
 
 </div>

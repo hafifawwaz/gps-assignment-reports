@@ -1,14 +1,14 @@
 ---
 source: report/inbox/thesis-publication.md
-date: ''
+date: 16-10-2026
 kind: inbox
 comments: true
-generated: 2026-10-20T15:44:29
+generated: 2026-10-20T16:29:09
 ---
 
 # thesis publication
 
-<p class="doc-meta"><span class="chip chip-inbox">Inbox</span></p>
+<p class="doc-meta"><span class="chip chip-inbox">Inbox</span> <span class="chip chip-date">16-10-2026</span></p>
 
 !!! question "For discussion"
     Rough draft and open questions. Not yet reviewed.
@@ -26,6 +26,6 @@ Status (16-10-2026):
 
 <div class="backlinks" markdown>
 
-**Linked from** [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [plan](plan.md)
+**Linked from** [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [d plan](d-plan.md)
 
 </div>

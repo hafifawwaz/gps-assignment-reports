@@ -3,7 +3,7 @@ source: report/inbox/d-sequence-aware.md
 date: 16-10-2026
 kind: inbox
 comments: true
-generated: 2026-10-20T15:44:29
+generated: 2026-10-20T16:29:09
 ---
 
 # Sequence-aware assignment
@@ -17,7 +17,7 @@ The end goal of the doctoral work: extend the probabilistic assignment framework
 
 Builds on [Assignment framework](../threads/m-assignment-framework.md).
 
-The four items below are the steps toward this goal. See [plan](plan.md).
+The four items below are the steps toward this goal. See [d plan](d-plan.md).
 
 - Supporting work: [Comprehensive literature review](d-comprehensive-litrev.md) (re-read and update the key literature)
 - Supporting work: [Street segmentation](d-street-segmentation.md) (find the most robust way to segment streets)
@@ -27,6 +27,6 @@ The four items below are the steps toward this goal. See [plan](plan.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Comprehensive literature review](d-comprehensive-litrev.md) · [GPS toy data](d-toy-data.md) · [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [Street segmentation](d-street-segmentation.md) · [Transferability](d-transferability.md) · [plan](plan.md)
+**Linked from** [Comprehensive literature review](d-comprehensive-litrev.md) · [GPS toy data](d-toy-data.md) · [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [Street segmentation](d-street-segmentation.md) · [Transferability](d-transferability.md) · [d plan](d-plan.md)
 
 </div>

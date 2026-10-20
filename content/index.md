@@ -44,10 +44,10 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 <p class="section-blurb">Dated updates for sensei, and slide exports.</p>
 
 - [Publications and doctoral plan](progress/d-progress-20-10-2026.md)
+- [Poster CSIS Days](progress/poster-a0.md) <span class="chip chip-pdf">PDF</span>
 - [PhD interview slides](progress/m-phd-interview-slides.md) <span class="chip chip-pdf">PDF</span>
 - [Does downsampling matter?](progress/m-progress-29-07-2026.md)
 - [RQ2 diagnostics and RQ3 ceiling check](progress/m-progress-23-07-2026.md)
-- [RQ1 rebuilt with grouped CV](progress/m-progress-21-07-2026.md)
 
 [All 8](progress/index.md){ .more }
 
@@ -94,10 +94,10 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 <p class="section-blurb">Open items not yet settled with sensei.</p>
 
 - [Thesis bug fixes and adopted rerun](inbox/thesis-bug-fix.md)
+- [thesis publication](inbox/thesis-publication.md)
 - [Transferability](inbox/d-transferability.md)
 - [GPS toy data](inbox/d-toy-data.md)
-- [Street segmentation](inbox/d-street-segmentation.md)
-- [Sequence-aware assignment](inbox/d-sequence-aware.md)
+- [Consensus Report](inbox/d-toy-data-consensus.md)
 
 [All 9](inbox/index.md){ .more }
 

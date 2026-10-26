@@ -3,7 +3,7 @@ source: report/analysis/m-interaction-term-screen.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:22:17
+generated: 2026-10-26T20:52:49
 ---
 
 # Interaction term screen (α = 1)
@@ -42,6 +42,6 @@ The same test with the tuned α: [Model 6, re-derived at calibrated alpha](m-mod
 
 <div class="backlinks" markdown>
 
-**Linked from** [Calibration](../threads/m-calibration.md) · [MNL model development](../progress/m-progress-19-07-2026.md) · [Model 4a: alternative-specific parameters](m-model-4a-alternative-specific.md) · [Model progression](m-model-progression-table.md) · [The f_distance² artifact](m-f-distance-squared-artifact.md) · [Thesis bug fixes and adopted rerun](../inbox/thesis-bug-fix.md) · [f_distribution](../notes/m-f-distribution.md)
+**Linked from** [Calibration](../threads/m-calibration.md) · [MNL model development](../progress/m-progress-19-07-2026.md) · [Model 4a: alternative-specific parameters](m-model-4a-alternative-specific.md) · [Model progression](m-model-progression-table.md) · [The f_distance² artifact](m-f-distance-squared-artifact.md) · [f_distribution](../concepts/m-f-distribution.md)
 
 </div>

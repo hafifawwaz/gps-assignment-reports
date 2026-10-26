@@ -3,14 +3,14 @@ source: report/analysis/m-model-progression-table.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:22:17
+generated: 2026-10-26T20:41:14
 ---
 
 # Model progression
 
 <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-project">Master</span> <span class="chip chip-date">21-07-2026</span></p>
 
-All models in one table, in the order they were built. Every model was tested with [Grouped cross-validation](../notes/m-grouped-cross-validation.md), with a 10 m search distance unless the row says 15 m.
+All models in one table, in the order they were built. Every model was tested with [Grouped cross-validation](../concepts/m-grouped-cross-validation.md), with a 10 m search distance unless the row says 15 m.
 
 How to read it: **Accuracy** is measured on the training data. **CV accuracy** is measured on unseen data and is the fairer number. **Condition number** shows how stable the model is: higher means less stable.
 
@@ -36,6 +36,6 @@ Part of [Calibration](../threads/m-calibration.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Calibration](../threads/m-calibration.md) · [Final model](m-final-model.md) · [Grouped cross-validation](../notes/m-grouped-cross-validation.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md)
+**Linked from** [Calibration](../threads/m-calibration.md) · [Final model](m-final-model.md) · [Grouped cross-validation](../concepts/m-grouped-cross-validation.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md)
 
 </div>

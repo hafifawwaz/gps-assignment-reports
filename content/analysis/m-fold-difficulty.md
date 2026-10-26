@@ -3,7 +3,7 @@ source: report/analysis/m-fold-difficulty.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:22:17
+generated: 2026-10-26T20:52:49
 ---
 
 # Fold difficulty
@@ -31,6 +31,6 @@ Part of [Error analysis](../threads/m-error-analysis.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Confusion matrix](m-confusion-matrix.md) · [Error analysis](../threads/m-error-analysis.md) · [ML ceiling check, row level](m-ml-ceiling-row-level.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) · [Thesis bug fixes and adopted rerun](../inbox/thesis-bug-fix.md)
+**Linked from** [Confusion matrix](m-confusion-matrix.md) · [Error analysis](../threads/m-error-analysis.md) · [ML ceiling check, row level](m-ml-ceiling-row-level.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md)
 
 </div>

@@ -110,10 +110,9 @@
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+        <div class="md-header__topic"><a href="../.." class="md-ellipsis header-home" title="Home">
             GPS Staypoint Assignment
-          </span>
+          </a>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
@@ -154,7 +153,9 @@
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
-    
+    <a href="../../map/" class="md-header__button header-map" title="Knowledge map" aria-label="Knowledge map">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.14 0-.26 0-.39.04L17.5 13.8c.45-.45.75-1.09.75-1.8a2.5 2.5 0 0 0-2.5-2.5c-.14 0-.25 0-.4.04L13.74 6.3c.47-.46.76-1.09.76-1.8a2.5 2.5 0 0 0-5 0c0 .7.29 1.34.76 1.79L8.65 9.54c-.15-.04-.26-.04-.4-.04a2.5 2.5 0 0 0-2.5 2.5c0 .71.29 1.34.75 1.79l-1.61 3.25C4.76 17 4.64 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .38-.04l1.63 3.25c-.47.45-.76 1.09-.76 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.8c.45-.45.75-1.09.75-1.8 0-.7-.29-1.33-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21a2.5 2.5 0 0 0 1.75 4.29c.13 0 .25 0 .38-.04l1.63 3.25c-.47.45-.76 1.09-.76 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5m-15 3.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m8.5-1c0 .55-.45 1-1 1s-1-.45-1-1 .45-1 1-1 1 .45 1 1M7.25 12c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1M11 4.5c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1m3.75 7.5c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1m4.75 8.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1"/></svg><span class="header-map__label">Map</span>
+    </a>
     
       
       
@@ -249,25 +250,6 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../../map/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Map
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
     
     
       <li class="md-tabs__item">
@@ -317,13 +299,35 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../notes/" class="md-tabs__link">
+        <a href="../../plans/" class="md-tabs__link">
           
   
   
     
   
-  Notes
+  Plans
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../concepts/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Concepts
 
         </a>
       </li>
@@ -346,6 +350,28 @@
     
   
   Analysis
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../notes/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Notes
 
         </a>
       </li>
@@ -453,33 +479,6 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../map/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Map
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     
     
       
@@ -500,7 +499,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -522,14 +521,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -552,6 +551,8 @@
       
         
       
+        
+      
     
     
     
@@ -563,10 +564,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
   
@@ -584,8 +585,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -594,6 +595,96 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    October
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    October
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../threads/d-doctoral-plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    doctoral plan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
             
               
                 
@@ -631,10 +722,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
             
   
   
@@ -652,8 +743,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -941,7 +1032,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -963,14 +1054,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1010,10 +1101,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
             
   
   
@@ -1031,8 +1122,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1053,8 +1144,6 @@
       
         
       
-        
-      
     
     
     
@@ -1066,10 +1155,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
         
           
-          <label class="md-nav__link" for="__nav_4_2_1" id="__nav_4_2_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
             
   
   
@@ -1087,8 +1176,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_1">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1113,34 +1202,6 @@
     
   
     publications and doctoral plan
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../poster-a0/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    poster csis days (pdf)
   
 
     
@@ -1184,10 +1245,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
             
   
   
@@ -1205,8 +1266,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1284,10 +1345,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_4_2_3" id="__nav_4_2_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2_3" id="__nav_3_2_3_label" tabindex="0">
             
   
   
@@ -1305,8 +1366,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_2_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1515,18 +1576,484 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../notes/" class="md-nav__link ">
+            <a href="../../plans/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
     
   
-    Notes
+    Plans
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plans
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2026
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_1" id="__nav_4_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    October
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    October
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/m-ceus-paper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ceus paper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/d-seasonal-variance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    seasonal variance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/d-nested-probabilities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nested probabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/d-gt-open-space/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    open space in the ground truth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/d-transferability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    transferability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/d-street-segmentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    street segmentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/d-sequence-aware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sequence-aware assignment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/d-comprehensive-litrev/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    comprehensive literature review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/m-csis-poster/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    csis days 2026 poster (pdf)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../concepts/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
   
 
     
@@ -1548,7 +2075,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Notes
+    Concepts
   
 
           </label>
@@ -1673,7 +2200,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/glossary/" class="md-nav__link">
+      <a href="../../concepts/glossary/" class="md-nav__link">
         
   
   
@@ -1827,7 +2354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-study-area/" class="md-nav__link">
+      <a href="../../concepts/m-study-area/" class="md-nav__link">
         
   
   
@@ -1855,7 +2382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-spatial-entity-layers/" class="md-nav__link">
+      <a href="../../concepts/m-spatial-entity-layers/" class="md-nav__link">
         
   
   
@@ -1883,7 +2410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-research-questions/" class="md-nav__link">
+      <a href="../../concepts/m-research-questions/" class="md-nav__link">
         
   
   
@@ -1911,7 +2438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-overfitting-signature/" class="md-nav__link">
+      <a href="../../concepts/m-overfitting-signature/" class="md-nav__link">
         
   
   
@@ -1939,7 +2466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-motivation/" class="md-nav__link">
+      <a href="../../concepts/m-motivation/" class="md-nav__link">
         
   
   
@@ -1967,7 +2494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-limitations/" class="md-nav__link">
+      <a href="../../concepts/m-limitations/" class="md-nav__link">
         
   
   
@@ -1995,7 +2522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-ground-truth-dataset/" class="md-nav__link">
+      <a href="../../concepts/m-ground-truth-dataset/" class="md-nav__link">
         
   
   
@@ -2023,7 +2550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-future-work/" class="md-nav__link">
+      <a href="../../concepts/m-future-work/" class="md-nav__link">
         
   
   
@@ -2051,7 +2578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-framework-overview/" class="md-nav__link">
+      <a href="../../concepts/m-framework-overview/" class="md-nav__link">
         
   
   
@@ -2079,7 +2606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-f-temporal/" class="md-nav__link">
+      <a href="../../concepts/m-f-temporal/" class="md-nav__link">
         
   
   
@@ -2107,7 +2634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-f-distribution/" class="md-nav__link">
+      <a href="../../concepts/m-f-distribution/" class="md-nav__link">
         
   
   
@@ -2135,7 +2662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-f-distance/" class="md-nav__link">
+      <a href="../../concepts/m-f-distance/" class="md-nav__link">
         
   
   
@@ -2163,7 +2690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-f-directional/" class="md-nav__link">
+      <a href="../../concepts/m-f-directional/" class="md-nav__link">
         
   
   
@@ -2191,7 +2718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-experiment-design/" class="md-nav__link">
+      <a href="../../concepts/m-experiment-design/" class="md-nav__link">
         
   
   
@@ -2219,7 +2746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-downsampling-to-miles-density/" class="md-nav__link">
+      <a href="../../concepts/m-downsampling-to-miles-density/" class="md-nav__link">
         
   
   
@@ -2247,7 +2774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-contributions/" class="md-nav__link">
+      <a href="../../concepts/m-contributions/" class="md-nav__link">
         
   
   
@@ -2275,7 +2802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-candidate-selection/" class="md-nav__link">
+      <a href="../../concepts/m-candidate-selection/" class="md-nav__link">
         
   
   
@@ -2303,7 +2830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-street-space-tension/" class="md-nav__link">
+      <a href="../../concepts/m-street-space-tension/" class="md-nav__link">
         
   
   
@@ -2331,7 +2858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-self-report-form/" class="md-nav__link">
+      <a href="../../concepts/m-self-report-form/" class="md-nav__link">
         
   
   
@@ -2359,7 +2886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-positioning-vs-deterministic-assignment/" class="md-nav__link">
+      <a href="../../concepts/m-positioning-vs-deterministic-assignment/" class="md-nav__link">
         
   
   
@@ -2387,7 +2914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-map-matching-extension/" class="md-nav__link">
+      <a href="../../concepts/m-map-matching-extension/" class="md-nav__link">
         
   
   
@@ -2415,7 +2942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-ground-truth-cleaning/" class="md-nav__link">
+      <a href="../../concepts/m-ground-truth-cleaning/" class="md-nav__link">
         
   
   
@@ -2443,7 +2970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-experiment-group-e/" class="md-nav__link">
+      <a href="../../concepts/m-experiment-group-e/" class="md-nav__link">
         
   
   
@@ -2471,7 +2998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-experiment-group-d/" class="md-nav__link">
+      <a href="../../concepts/m-experiment-group-d/" class="md-nav__link">
         
   
   
@@ -2499,7 +3026,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-experiment-group-c/" class="md-nav__link">
+      <a href="../../concepts/m-experiment-group-c/" class="md-nav__link">
         
   
   
@@ -2527,7 +3054,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-experiment-group-b/" class="md-nav__link">
+      <a href="../../concepts/m-experiment-group-b/" class="md-nav__link">
         
   
   
@@ -2555,7 +3082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-experiment-group-a/" class="md-nav__link">
+      <a href="../../concepts/m-experiment-group-a/" class="md-nav__link">
         
   
   
@@ -2583,7 +3110,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-boundary-matching-analogy/" class="md-nav__link">
+      <a href="../../concepts/m-boundary-matching-analogy/" class="md-nav__link">
         
   
   
@@ -2611,7 +3138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-grouped-cross-validation/" class="md-nav__link">
+      <a href="../../concepts/m-grouped-cross-validation/" class="md-nav__link">
         
   
   
@@ -2639,7 +3166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-sigma/" class="md-nav__link">
+      <a href="../../concepts/m-sigma/" class="md-nav__link">
         
   
   
@@ -2667,7 +3194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-share-type/" class="md-nav__link">
+      <a href="../../concepts/m-share-type/" class="md-nav__link">
         
   
   
@@ -2695,7 +3222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-multicollinearity-is-structural/" class="md-nav__link">
+      <a href="../../concepts/m-multicollinearity-is-structural/" class="md-nav__link">
         
   
   
@@ -2723,7 +3250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../notes/m-model-evaluation-metrics/" class="md-nav__link">
+      <a href="../../concepts/m-model-evaluation-metrics/" class="md-nav__link">
         
   
   
@@ -3743,14 +4270,14 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../inbox/" class="md-nav__link ">
+            <a href="../../notes/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
     
   
-    Inbox
+    Notes
   
 
     
@@ -3772,7 +4299,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Inbox
+    Notes
   
 
           </label>
@@ -3812,7 +4339,7 @@
   <span class="md-ellipsis">
     
   
-    2026
+    Undated
   
 
     
@@ -3828,7 +4355,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    2026
+    Undated
   
 
           </label>
@@ -3840,25 +4367,54 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../notes/fast-marching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    fast marching method
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
       
         
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
+          
         
       
     
@@ -3872,17 +4428,18 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_7_2_1" id="__nav_7_2_1_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../inbox/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
     
   
-    October
+    Inbox
   
 
     
@@ -3890,286 +4447,21 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_2_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_2_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
-    October
+    Inbox
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../inbox/thesis-bug-fix/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    thesis bug fixes and adopted rerun
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../inbox/thesis-publication/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    thesis publication
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../inbox/d-transferability/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    transferability
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../inbox/d-toy-data/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    gps toy data
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../inbox/d-toy-data-consensus/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    consensus report
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../inbox/d-street-segmentation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    street segmentation
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../inbox/d-sequence-aware/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    sequence-aware assignment
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../inbox/d-comprehensive-litrev/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    comprehensive literature review
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../inbox/d-plan/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    d plan
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
               
             
           </ul>
@@ -4219,7 +4511,7 @@
 
 <p>All models were tested again with a fairer method.</p>
 <ul>
-<li><strong>The problem.</strong> Three phones recorded each stop at the same time. In the old cross-validation (CV), one phone's recording of a stop could be in the training data and another phone's recording of the same stop in the test data. That made results look better than they really are. All models were fitted again with <a href="../../notes/m-grouped-cross-validation/">Grouped cross-validation</a>, which keeps all recordings of one stop together (<a href="../../analysis/m-model-progression-table/">Model progression</a>).</li>
+<li><strong>The problem.</strong> Three phones recorded each stop at the same time. In the old cross-validation (CV), one phone's recording of a stop could be in the training data and another phone's recording of the same stop in the test data. That made results look better than they really are. All models were fitted again with <a href="../../concepts/m-grouped-cross-validation/">Grouped cross-validation</a>, which keeps all recordings of one stop together (<a href="../../analysis/m-model-progression-table/">Model progression</a>).</li>
 <li><strong>What changed.</strong> The best model kept the same form and the same accuracy on its training data (0.733). On unseen data it scored <strong>0.712 ± 0.038</strong>. This is the fairer number.</li>
 <li><strong>What stayed the same.</strong> <a href="../../analysis/m-alpha-calibration/">Alpha calibration</a> found α = 2.764 again. The model with ASC terms was rejected again (<a href="../../analysis/m-model-5-asc-rejected/">Model 5: alternative-specific constants (rejected)</a>), and f_distance² was again shown to be a side effect of the wrong α (<a href="../../analysis/m-f-distance-squared-artifact/">The f_distance² artifact</a>). Removing weak terms (<a href="../../analysis/m-stepwise-vif-elimination/">Stepwise VIF elimination</a>) gave the 13-parameter model, the core of Model 4a.</li>
 <li><strong>Follow-up.</strong> <code>f_directional</code> does not need a separate weight for each place type (p = 0.054, not significant). The <strong>11-parameter version with one shared weight</strong> does better on unseen data (0.719 ± 0.032) and is more stable: <a href="../../analysis/m-f-directional-shared-vs-split/">f_directional: shared vs split</a> → <a href="../../analysis/m-final-model/">Final model</a>.</li>

@@ -10,6 +10,8 @@
     progress: css("--c-chip-progress"),
     inbox: css("--c-red"),
     analysis: css("--c-chip-analysis"),
+    plan: css("--c-node-plan"),
+    note: css("--c-node-scratch"),
   }[n.kind] || css("--c-node-note"));
 
   fetch("graph.json").then((r) => r.json()).then((graph) => {

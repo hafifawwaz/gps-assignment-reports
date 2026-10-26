@@ -3,7 +3,7 @@ source: report/analysis/m-final-model-correlation-matrix.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:22:17
+generated: 2026-10-26T20:41:14
 ---
 
 # Final model correlation matrix
@@ -28,13 +28,13 @@ How closely each pair of the [Final model](m-final-model.md)'s 11 inputs move to
 
 (dist = f_distribution, dec = f_distance, dir = f_directional, shr = share; _b/_s/_o = building/street/open space.)
 
-The strongest pairs are always inputs of the same type: f_distance and share for open space (.92), street (.91) and building (.88). [Multicollinearity is structural](../notes/m-multicollinearity-is-structural.md) explains why. f_directional has one shared weight, but it still moves with the street distance score and the street share (.82, .77). This fits the idea that the direction score matters most for streets.
+The strongest pairs are always inputs of the same type: f_distance and share for open space (.92), street (.91) and building (.88). [Multicollinearity is structural](../concepts/m-multicollinearity-is-structural.md) explains why. f_directional has one shared weight, but it still moves with the street distance score and the street share (.82, .77). This fits the idea that the direction score matters most for streets.
 
 Part of [Calibration](../threads/m-calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Calibration](../threads/m-calibration.md) · [Final model](m-final-model.md) · [Multicollinearity is structural](../notes/m-multicollinearity-is-structural.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md)
+**Linked from** [Calibration](../threads/m-calibration.md) · [Final model](m-final-model.md) · [Multicollinearity is structural](../concepts/m-multicollinearity-is-structural.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md)
 
 </div>

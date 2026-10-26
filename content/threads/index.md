@@ -1,8 +1,18 @@
 # Threads
 
-Hubs by theme: the thesis summary, then one list of notes per theme.
+Hubs by theme: the thesis summary and the doctoral plan, then one list of notes per theme.
 
 ## 2026
+
+### October
+
+<div class="grid cards" markdown>
+
+-   <p class="doc-meta"><span class="chip chip-thread">Thread</span></p>
+
+    **[Doctoral plan](d-doctoral-plan.md)**
+
+</div>
 
 ### August
 

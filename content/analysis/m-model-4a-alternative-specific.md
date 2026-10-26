@@ -3,14 +3,14 @@ source: report/analysis/m-model-4a-alternative-specific.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:22:17
+generated: 2026-10-26T20:41:14
 ---
 
 # Model 4a: alternative-specific parameters
 
 <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-project">Master</span> <span class="chip chip-date">21-07-2026</span></p>
 
-In this model, every score gets **its own weight for each place type** (building, street, open space). This is called "alternative-specific". [sigma](../notes/m-sigma.md) keeps one shared weight. In total, 13 parameters:
+In this model, every score gets **its own weight for each place type** (building, street, open space). This is called "alternative-specific". [sigma](../concepts/m-sigma.md) keeps one shared weight. In total, 13 parameters:
 
 
 $$V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_{3,t} f_\text{directional} + w_{4,t}\,share_t + w_5\,\sigma$$
@@ -27,7 +27,7 @@ $$V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_{3,t} f_\t
 
 The LR test compares this model with model 3a, which has shared weights. The result is very clear (p < 1e-16): separate weights per type fit much better.
 
-For the first time, **all three types improve together** (building +3.8 percentage points, street +5.9, open space +7.3). The highest VIF is 8.83, for `f_directional_street`. The strong overlap between inputs of the same type is explained in [Multicollinearity is structural](../notes/m-multicollinearity-is-structural.md).
+For the first time, **all three types improve together** (building +3.8 percentage points, street +5.9, open space +7.3). The highest VIF is 8.83, for `f_directional_street`. The strong overlap between inputs of the same type is explained in [Multicollinearity is structural](../concepts/m-multicollinearity-is-structural.md).
 
 `f_distance_bldg` and `f_distance_street` are not significant on their own (t = 1.43 and -0.56). Once weights are split by type, part of the distance information is picked up by share and sigma.
 
@@ -36,6 +36,6 @@ All later models build on this one. Next: [Model 5: alternative-specific constan
 
 <div class="backlinks" markdown>
 
-**Linked from** [Calibration](../threads/m-calibration.md) · [Directional scope ablation (3a vs 3b)](m-directional-scope-ablation.md) · [Interaction term screen (α = 1)](m-interaction-term-screen.md) · [MNL model development](../progress/m-progress-19-07-2026.md) · [Model 5: alternative-specific constants (rejected)](m-model-5-asc-rejected.md) · [Model 6, re-derived at calibrated alpha](m-model-6-rederived.md) · [Model progression](m-model-progression-table.md) · [Multicollinearity is structural](../notes/m-multicollinearity-is-structural.md)
+**Linked from** [Calibration](../threads/m-calibration.md) · [Directional scope ablation (3a vs 3b)](m-directional-scope-ablation.md) · [Interaction term screen (α = 1)](m-interaction-term-screen.md) · [MNL model development](../progress/m-progress-19-07-2026.md) · [Model 5: alternative-specific constants (rejected)](m-model-5-asc-rejected.md) · [Model 6, re-derived at calibrated alpha](m-model-6-rederived.md) · [Model progression](m-model-progression-table.md) · [Multicollinearity is structural](../concepts/m-multicollinearity-is-structural.md)
 
 </div>

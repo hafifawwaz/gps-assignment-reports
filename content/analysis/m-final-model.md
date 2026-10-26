@@ -3,7 +3,7 @@ source: report/analysis/m-final-model.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:44:29
+generated: 2026-10-26T20:52:49
 ---
 
 # Final model
@@ -29,7 +29,7 @@ A small $t$ means the weight is different for each place type (building, street,
 | CV building / street / open space | 0.900 / 0.486 / 0.439 |
 | Condition number | 1,681 |
 
-**The weights.** w is the learned weight: positive raises the probability, negative lowers it. t shows how clearly the weight differs from zero (about 2 or more is significant). VIF shows overlap with other inputs (above 10 is the usual warning line; see [Multicollinearity is structural](../notes/m-multicollinearity-is-structural.md)).
+**The weights.** w is the learned weight: positive raises the probability, negative lowers it. t shows how clearly the weight differs from zero (about 2 or more is significant). VIF shows overlap with other inputs (above 10 is the usual warning line; see [Multicollinearity is structural](../concepts/m-multicollinearity-is-structural.md)).
 
 | Term | w | t | VIF |
 |---|---:|---:|---:|
@@ -52,6 +52,6 @@ Part of [Calibration](../threads/m-calibration.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Calibration](../threads/m-calibration.md) · [Candidate density bias toward building](m-candidate-density-bias.md) · [Confusion matrix](m-confusion-matrix.md) · [Contributions](../notes/m-contributions.md) · [Does downsampling matter?](../progress/m-progress-29-07-2026.md) · [Final model correlation matrix](m-final-model-correlation-matrix.md) · [Fold difficulty](m-fold-difficulty.md) · [ML ceiling check, row level](m-ml-ceiling-row-level.md) · [Model progression](m-model-progression-table.md) · [Positioning against deterministic assignment](../notes/m-positioning-vs-deterministic-assignment.md) · [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) · [Raw-density refit](m-raw-density-refit.md) · [Sigma in tree importance](m-sigma-tree-importance.md) · [Thesis bug fixes and adopted rerun](../inbox/thesis-bug-fix.md) · [Thesis summary](../threads/m-thesis-summary.md) · [f_directional: shared vs split](m-f-directional-shared-vs-split.md) · [f_distribution](../notes/m-f-distribution.md) · [share_type](../notes/m-share-type.md) · [sigma](../notes/m-sigma.md)
+**Linked from** [CEUS paper](../plans/m-ceus-paper.md) · [CSIS DAYS 2026 poster](../plans/m-csis-poster.md) · [Calibration](../threads/m-calibration.md) · [Candidate density bias toward building](m-candidate-density-bias.md) · [Confusion matrix](m-confusion-matrix.md) · [Contributions](../concepts/m-contributions.md) · [Does downsampling matter?](../progress/m-progress-29-07-2026.md) · [Final model correlation matrix](m-final-model-correlation-matrix.md) · [Fold difficulty](m-fold-difficulty.md) · [ML ceiling check, row level](m-ml-ceiling-row-level.md) · [Model progression](m-model-progression-table.md) · [Positioning against deterministic assignment](../concepts/m-positioning-vs-deterministic-assignment.md) · [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) · [Raw-density refit](m-raw-density-refit.md) · [Seasonal variance](../plans/d-seasonal-variance.md) · [Sigma in tree importance](m-sigma-tree-importance.md) · [Thesis summary](../threads/m-thesis-summary.md) · [f_directional: shared vs split](m-f-directional-shared-vs-split.md) · [f_distribution](../concepts/m-f-distribution.md) · [share_type](../concepts/m-share-type.md) · [sigma](../concepts/m-sigma.md)
 
 </div>

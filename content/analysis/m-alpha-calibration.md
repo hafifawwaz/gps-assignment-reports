@@ -3,14 +3,14 @@ source: report/analysis/m-alpha-calibration.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:44:29
+generated: 2026-10-26T20:52:49
 ---
 
 # Alpha calibration
 
 <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-project">Master</span> <span class="chip chip-date">21-07-2026</span></p>
 
-How the setting α was chosen. α controls how fast the [f_distance](../notes/m-f-distance.md) score falls as a candidate gets farther from the stay.
+How the setting α was chosen. α controls how fast the [f_distance](../concepts/m-f-distance.md) score falls as a candidate gets farther from the stay.
 
 The method is called profile likelihood, and it uses Model 4a. Take one value of α, fit all the other weights again, and record how well the model fits (LL(b), closer to 0 is better). Repeat for many values of α and keep the best one. Because $f_\text{distance}(\alpha) = f_\text{distance}(1)^{1/\alpha^2}$, the scores do not need to be computed again for each α.
 
@@ -36,6 +36,6 @@ The main result of this step: [The f_distance² artifact](m-f-distance-squared-a
 
 <div class="backlinks" markdown>
 
-**Linked from** [Calibration](../threads/m-calibration.md) · [MNL model development](../progress/m-progress-19-07-2026.md) · [Model 1: base](m-model-1-base.md) · [Model 4a: alternative-specific parameters](m-model-4a-alternative-specific.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md) · [Raw-density alpha profile](m-raw-density-alpha-profile.md) · [The f_distance² artifact](m-f-distance-squared-artifact.md) · [Thesis bug fixes and adopted rerun](../inbox/thesis-bug-fix.md) · [f_distance](../notes/m-f-distance.md)
+**Linked from** [Calibration](../threads/m-calibration.md) · [MNL model development](../progress/m-progress-19-07-2026.md) · [Model 1: base](m-model-1-base.md) · [Model 4a: alternative-specific parameters](m-model-4a-alternative-specific.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md) · [Raw-density alpha profile](m-raw-density-alpha-profile.md) · [The f_distance² artifact](m-f-distance-squared-artifact.md) · [f_distance](../concepts/m-f-distance.md)
 
 </div>

@@ -10,11 +10,11 @@ hide:
 
 The master's thesis is complete. Work now runs on three lines:
 
-- **A paper for the journal *Computers, Environment and Urban Systems* (CEUS)**, in drafting. It presents the method from the thesis: for each GPS stay, it gives a probability that the person was in a building, on a street, or in an open space, instead of picking one place. The model learns from 907 stays with known answers from a field survey in Hiroshima. On data it has not seen, it picks the correct type for 71.9% of stays (grouped CV accuracy 0.719 ± 0.032), and it does better there than Random Forest and XGBoost. Its main weakness is mistaking streets and open spaces for buildings. For streets, this comes from how the street map is cut into many short pieces, not from the GPS data itself; for open space, the cause is still open. Start from [Thesis summary](threads/m-thesis-summary.md).
-- **A poster for CSIS DAYS 2026**, fairly complete.
-- **The doctoral plan.** The goal is an assignment that also knows which stays came before ([Sequence-aware assignment](inbox/d-sequence-aware.md)). The steps: a new review of the key literature, a test in another city, a better way to cut streets into pieces, and toy GPS data with a known true place for every stay. Latest update: [Publications and doctoral plan](progress/d-progress-20-10-2026.md).
+- **A paper for the journal *Computers, Environment and Urban Systems* (CEUS)**, in drafting. It presents the method from the thesis: for each GPS stay, it gives a probability that the person was in a building, on a street, or in an open space, instead of picking one place. The model learns from 907 stays with known answers from a field survey in Hiroshima. On data it has not seen, it picks the correct type for 71.9% of stays (grouped CV accuracy 0.719 ± 0.032), and it does better there than Random Forest and XGBoost. Its main weakness is mistaking streets and open spaces for buildings. For streets, this comes from how the street map is cut into many short pieces, not from the GPS data itself; for open space, the cause is still open. Start from [Thesis summary](threads/m-thesis-summary.md). After the meeting on 20-10-2026 the paper changes to one column and gets map examples: an outdoor and an indoor cluster, and one stay shown through every step ([CEUS paper](plans/m-ceus-paper.md)).
+- **A poster for CSIS DAYS 2026**, fairly complete ([CSIS DAYS 2026 poster](plans/m-csis-poster.md)).
+- **The doctoral plan** ([Doctoral plan](threads/d-doctoral-plan.md)). The goal is an assignment that also knows which stays came before ([Sequence-aware assignment](plans/d-sequence-aware.md)). Next in line: the indoor and outdoor split across the four seasons, a second level of probability that picks which building, street or open space, and real open spaces in the ground truth. A new review of the key literature, a test in another city and a better way to cut streets into pieces are on hold. The toy GPS data idea was dropped. Every item and its status is on the [plans board](plans/index.md). Latest update: [Publications and doctoral plan](progress/d-progress-20-10-2026.md).
 
-The thesis code was checked against the text on 19-10-2026, and every number on this site comes from the checked pipeline ([Thesis bug fixes and adopted rerun](inbox/thesis-bug-fix.md)).
+The thesis code was checked against the text on 19-10-2026, and every number on this site comes from the checked pipeline (Thesis bug fixes and adopted rerun).
 
 
 </div>
@@ -25,15 +25,15 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 
 ## [Threads](threads/index.md) { .home-section }
 
-<p class="section-blurb">Hubs by theme: the thesis summary, then one list of notes per theme.</p>
+<p class="section-blurb">Hubs by theme: the thesis summary and the doctoral plan, then one list of notes per theme.</p>
 
+- [Doctoral plan](threads/d-doctoral-plan.md)
 - [Thesis summary](threads/m-thesis-summary.md)
 - [Problem and positioning](threads/m-problem-and-positioning.md)
 - [Outlook](threads/m-outlook.md)
 - [Ground truth data](threads/m-ground-truth-data.md)
-- [Error analysis](threads/m-error-analysis.md)
 
-[All 8](threads/index.md){ .more }
+[All 9](threads/index.md){ .more }
 
 </div>
 
@@ -44,28 +44,28 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 <p class="section-blurb">Dated updates for sensei, and slide exports.</p>
 
 - [Publications and doctoral plan](progress/d-progress-20-10-2026.md)
-- [Poster CSIS Days](progress/poster-a0.md) <span class="chip chip-pdf">PDF</span>
 - [PhD interview slides](progress/m-phd-interview-slides.md) <span class="chip chip-pdf">PDF</span>
 - [Does downsampling matter?](progress/m-progress-29-07-2026.md)
 - [RQ2 diagnostics and RQ3 ceiling check](progress/m-progress-23-07-2026.md)
+- [RQ1 rebuilt with grouped CV](progress/m-progress-21-07-2026.md)
 
-[All 8](progress/index.md){ .more }
+[All 7](progress/index.md){ .more }
 
 </div>
 
 <div class="home-col" markdown>
 
-## [Notes](notes/index.md) { .home-section }
+## [Concepts](concepts/index.md) { .home-section }
 
-<p class="section-blurb">Small pieces of progress: method, data, interpretation, discussion.</p>
+<p class="section-blurb">Settled pieces of the work: method, data, interpretation, discussion.</p>
 
-- [Glossary](notes/glossary.md)
-- [Study area](notes/m-study-area.md)
-- [Spatial entity layers](notes/m-spatial-entity-layers.md)
-- [Research questions](notes/m-research-questions.md)
-- [Overfitting signature](notes/m-overfitting-signature.md)
+- [Glossary](concepts/glossary.md)
+- [Study area](concepts/m-study-area.md)
+- [Spatial entity layers](concepts/m-spatial-entity-layers.md)
+- [Research questions](concepts/m-research-questions.md)
+- [Overfitting signature](concepts/m-overfitting-signature.md)
 
-[All 34](notes/index.md){ .more }
+[All 34](concepts/index.md){ .more }
 
 </div>
 
@@ -89,17 +89,25 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 
 <div class="home-col home-below" markdown>
 
+## [Plans](plans/index.md) { .home-section }
+
+<p class="section-blurb">Work items by status: on-going, planned, on hold, done.</p>
+
+- **On-going**: [CEUS paper](plans/m-ceus-paper.md) · [CSIS DAYS 2026 poster](plans/m-csis-poster.md)
+- **Plan**: [Seasonal variance](plans/d-seasonal-variance.md) · [Nested probabilities](plans/d-nested-probabilities.md) · [Open space in the ground truth](plans/d-gt-open-space.md) · [Sequence-aware assignment](plans/d-sequence-aware.md)
+- **On-hold**: [Comprehensive literature review](plans/d-comprehensive-litrev.md) · [Transferability](plans/d-transferability.md) · [Street segmentation](plans/d-street-segmentation.md)
+
+[The board](plans/index.md){ .more }
+
+</div>
+
+<div class="home-col home-below" markdown>
+
 ## [Inbox](inbox/index.md) { .home-section }
 
 <p class="section-blurb">Open items not yet settled with sensei.</p>
 
-- [Thesis bug fixes and adopted rerun](inbox/thesis-bug-fix.md)
-- [thesis publication](inbox/thesis-publication.md)
-- [Transferability](inbox/d-transferability.md)
-- [GPS toy data](inbox/d-toy-data.md)
-- [Consensus Report](inbox/d-toy-data-consensus.md)
-
-[All 9](inbox/index.md){ .more }
+<p class="empty">Nothing yet.</p>
 
 </div>
 

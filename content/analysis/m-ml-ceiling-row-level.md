@@ -3,7 +3,7 @@ source: report/analysis/m-ml-ceiling-row-level.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:22:17
+generated: 2026-10-26T20:52:49
 ---
 
 # ML ceiling check, row level
@@ -22,11 +22,11 @@ Both tree models win on the training data (in-sample), and **both lose on unseen
 
 Settings: Random Forest with 400 trees, depth 8, at least 5 rows per leaf. XGBoost with 300 rounds, depth 4, learning rate 0.1. Neither was tuned. The three models agree only in part on which test sets are hard: fold 1 is the hardest for all three ([Fold difficulty](m-fold-difficulty.md)).
 
-The clearest case of [Overfitting signature](../notes/m-overfitting-signature.md). Which inputs the trees use: [Sigma in tree importance](m-sigma-tree-importance.md). Part of [Complexity and transfer](../threads/m-complexity-and-transfer.md).
+The clearest case of [Overfitting signature](../concepts/m-overfitting-signature.md). Which inputs the trees use: [Sigma in tree importance](m-sigma-tree-importance.md). Part of [Complexity and transfer](../threads/m-complexity-and-transfer.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Complexity and transfer](../threads/m-complexity-and-transfer.md) · [Fold difficulty](m-fold-difficulty.md) · [ML baseline, stay level (superseded)](m-ml-baseline-stay-level.md) · [Overfitting signature](../notes/m-overfitting-signature.md) · [Positioning against deterministic assignment](../notes/m-positioning-vs-deterministic-assignment.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) · [Research questions](../notes/m-research-questions.md) · [Sigma in tree importance](m-sigma-tree-importance.md) · [Thesis bug fixes and adopted rerun](../inbox/thesis-bug-fix.md) · [Thesis summary](../threads/m-thesis-summary.md)
+**Linked from** [Complexity and transfer](../threads/m-complexity-and-transfer.md) · [Fold difficulty](m-fold-difficulty.md) · [ML baseline, stay level (superseded)](m-ml-baseline-stay-level.md) · [Overfitting signature](../concepts/m-overfitting-signature.md) · [Positioning against deterministic assignment](../concepts/m-positioning-vs-deterministic-assignment.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) · [Research questions](../concepts/m-research-questions.md) · [Sigma in tree importance](m-sigma-tree-importance.md) · [Thesis summary](../threads/m-thesis-summary.md)
 
 </div>

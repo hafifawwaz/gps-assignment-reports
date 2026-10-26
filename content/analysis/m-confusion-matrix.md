@@ -3,7 +3,7 @@ source: report/analysis/m-confusion-matrix.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:22:17
+generated: 2026-10-26T20:52:49
 ---
 
 # Confusion matrix
@@ -26,11 +26,11 @@ Recall is the share of stays of one type that the model found. For example, 90 o
 
 On the training data the table looks much the same (building 90.8%, street 52.4%, open space 44.0%). So overfitting does not explain this pattern.
 
-Why it happens for streets: [Candidate density bias toward building](m-candidate-density-bias.md). How it changes from test set to test set: [Fold difficulty](m-fold-difficulty.md). Answers RQ2 of [Research questions](../notes/m-research-questions.md). Part of [Error analysis](../threads/m-error-analysis.md).
+Why it happens for streets: [Candidate density bias toward building](m-candidate-density-bias.md). How it changes from test set to test set: [Fold difficulty](m-fold-difficulty.md). Answers RQ2 of [Research questions](../concepts/m-research-questions.md). Part of [Error analysis](../threads/m-error-analysis.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Candidate density bias toward building](m-candidate-density-bias.md) · [Error analysis](../threads/m-error-analysis.md) · [Final model](m-final-model.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) · [Research questions](../notes/m-research-questions.md) · [Tension with the street-space argument](../notes/m-street-space-tension.md) · [Thesis bug fixes and adopted rerun](../inbox/thesis-bug-fix.md) · [Thesis summary](../threads/m-thesis-summary.md)
+**Linked from** [Candidate density bias toward building](m-candidate-density-bias.md) · [Error analysis](../threads/m-error-analysis.md) · [Final model](m-final-model.md) · [Open space in the ground truth](../plans/d-gt-open-space.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) · [Research questions](../concepts/m-research-questions.md) · [Tension with the street-space argument](../concepts/m-street-space-tension.md) · [Thesis summary](../threads/m-thesis-summary.md)
 
 </div>

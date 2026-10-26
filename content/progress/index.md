@@ -12,10 +12,6 @@ Dated updates for sensei, and slide exports.
 
     **[Publications and doctoral plan](d-progress-20-10-2026.md)**
 
--   <p class="doc-meta"><span class="chip chip-progress">Progress</span> <span class="chip chip-pdf">PDF</span></p>
-
-    **[Poster CSIS Days](poster-a0.md)**
-
 </div>
 
 ### August

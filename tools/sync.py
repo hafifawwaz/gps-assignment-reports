@@ -38,19 +38,25 @@ from paths import (
 )
 
 # report subfolder -> (site folder, page status, nav label, one-line description)
-# report/_archive-v*.zip (old structures) are not listed, so they are never published.
-SECTIONS = {  # also the tab order (after Home and Map)
+# Only these folders are read. report/group/, zemi/, archives/, _processed/ and the
+# _archive-v*.zip files (old structures) are not listed, so they are never published.
+SECTIONS = {  # also the tab order (Home and Map are in the header, not tabs)
     "threads": ("threads", "thread", "Threads",
-                "Hubs by theme: the thesis summary, then one list of notes per theme."),
+                "Hubs by theme: the thesis summary and the doctoral plan, then one list of notes per theme."),
     "progress": ("progress", "progress", "Progress",
                  "Dated updates for sensei, and slide exports."),
-    "notes": ("notes", "note", "Notes", "Small pieces of progress: method, data, interpretation, discussion."),
+    "plans": ("plans", "plan", "Plans", "Work items by status: on-going, planned, on hold, done."),
+    "concepts": ("concepts", "concept", "Concepts",
+                 "Settled pieces of the work: method, data, interpretation, discussion."),
     "analysis": ("analysis", "analysis", "Analysis", "Raw analysis output: tables, numbers and diagnostics."),
+    "notes": ("notes", "note", "Notes", "Loose notes and sketches, not part of the main line yet."),
     "inbox": ("inbox", "inbox", "Inbox", "Open items not yet settled with sensei."),
 }
 CATCHUP = "catchup.md"  # report/catchup.md: the hand-written hero text on the home page
+BOARD = "plans/board.md"  # an Obsidian Kanban board: its lanes (## headings) are the plans' statuses
 HOME_CARDS = 5  # newest items shown per section on the home page
-HOME_BELOW = "inbox"  # shown as a full-width row under the home columns
+HOME_COLUMNS = ("threads", "progress", "concepts", "analysis")  # the four home columns
+HOME_BELOW = ("plans", "inbox")  # full-width rows under the home columns
 GENERIC_PDF_NAMES = {"slides-export", "slides", "main", "export"}
 IMAGE_EXT = {".png", ".jpg", ".jpeg", ".svg", ".gif", ".webp"}
 # Never offered for publishing, whatever the user picks.
@@ -122,6 +128,8 @@ def discover() -> list[Source]:
         for p in sorted(base.rglob("*.md")):
             if p.name.lower() == "readme.md":
                 continue  # navigation notes, never published
+            if p == REPORT / BOARD:
+                continue  # the plans board becomes the Plans index page (below)
             rel = p.relative_to(base)
             dest = PurePosixPath(folder, *[slug(part) for part in rel.parts]).as_posix()
             key = p.relative_to(REPO).as_posix()
@@ -136,16 +144,35 @@ def discover() -> list[Source]:
                 src.state = entry["decision"]
             src.title = read_title(p)
             out.append(src)
-    hero = REPORT / CATCHUP
-    if hero.is_file():
-        src = Source(hero, hero.relative_to(REPO).as_posix(), "index.md", "hero", "hero", None)
-        src.sha256 = sha256_file(hero)
-        entry = approvals.get(src.key)
-        if entry and entry.get("sha256") == src.sha256:
-            src.state = entry["decision"]
-        src.title = read_title(hero)
-        out.append(src)
+    for path, dest, section in ((REPORT / CATCHUP, "index.md", "hero"), (REPORT / BOARD, "plans/index.md", "board")):
+        if path.is_file():
+            src = Source(path, path.relative_to(REPO).as_posix(), dest, section, section, None)
+            src.sha256 = sha256_file(path)
+            entry = approvals.get(src.key)
+            if entry and entry.get("sha256") == src.sha256:
+                src.state = entry["decision"]
+            src.title = "Plans" if section == "board" else read_title(path)
+            out.append(src)
     return out
+
+
+BOARD_LANE_RE = re.compile(r"^##\s+(.+?)\s*$")
+BOARD_CARD_RE = re.compile(r"^\s*- \[[ xX]\]\s+(.+?)\s*$")
+
+
+def board_lanes(path: Path) -> list[tuple[str, list[str]]]:
+    """[(lane, [card text])] from an Obsidian Kanban board; the %% settings %% block is dropped."""
+    lanes: list[tuple[str, list[str]]] = []
+    text = OBS_COMMENT_RE.sub("", strip_front_matter(source_text(path)))
+    for line in text.split("\n"):
+        m = BOARD_LANE_RE.match(line)
+        if m:
+            lanes.append((m.group(1), []))
+            continue
+        m = BOARD_CARD_RE.match(line)
+        if m and lanes:
+            lanes[-1][1].append(m.group(1))
+    return lanes
 
 
 def read_text(path: Path) -> str:
@@ -288,6 +315,8 @@ class Renderer:
         # embeds one (![[...pdf]]) becomes its page; otherwise it gets a page of its own.
         self.pdfs: dict[Path, dict] = {}
         self.pdf_embedders: dict[Path, str] = {}  # PDF -> dest of the first page embedding it
+        # every note under report/ by file name, so a link to an unpublished one still shows its title
+        self.unpublished = {p.stem.lower(): p for p in sorted(REPORT.rglob("*.md")) if p.name.lower() != "readme.md"}
 
     # -- target resolution ------------------------------------------------
     def _find(self, src: Source, target: str) -> Path | None:
@@ -407,6 +436,9 @@ class Renderer:
             if not alias and path in self.pdfs:
                 label = self.pdfs[path]["title"]
             new = self._link(path, dest)
+            if not new and not alias:  # a note that is not published (e.g. in archives/): its title, as text
+                other = self.unpublished.get(Path(name.strip()).stem.lower())
+                label = read_title(other) if other else Path(name.strip()).stem
             return f"[{label}]({new}{anchor})" if new else label
 
         text = IMG_RE.sub(img, text)
@@ -499,7 +531,8 @@ def obsidian_to_site(text: str) -> str:
     return "\n".join(out)
 
 
-STATUS_LABEL = {"thread": "Thread", "note": "Note", "progress": "Progress", "inbox": "Inbox", "analysis": "Analysis", "hero": "Catch-up"}
+STATUS_LABEL = {"thread": "Thread", "concept": "Concept", "note": "Note", "plan": "Plan", "progress": "Progress",
+                "inbox": "Inbox", "analysis": "Analysis", "hero": "Catch-up", "board": "Plans"}
 
 
 # `project:` in a note's front matter -> a chip, so thesis and dissertation notes stay apart on the site
@@ -518,8 +551,11 @@ def front_matter_project(path: Path) -> str | None:
     return None
 
 
-def chips(status: str, date: str | None, pdf: bool = False, project: str | None = None) -> str:
+def chips(status: str, date: str | None, pdf: bool = False, project: str | None = None,
+          lane: str | None = None) -> str:
     out = [f'<span class="chip chip-{status}">{STATUS_LABEL[status]}</span>']
+    if lane:  # a plan's status: the board lane it sits in
+        out.append(f'<span class="chip chip-lane">{html.escape(lane)}</span>')
     if project:
         out.append(f'<span class="chip chip-project">{html.escape(PROJECT_LABEL.get(project, project))}</span>')
     if pdf:
@@ -529,14 +565,15 @@ def chips(status: str, date: str | None, pdf: bool = False, project: str | None 
     return " ".join(out)
 
 
-def page(src: Source, renderer: Renderer, titles: dict[str, str] | None = None, pdf: bool = False) -> str:
+def page(src: Source, renderer: Renderer, titles: dict[str, str] | None = None, pdf: bool = False,
+         lane: str | None = None) -> str:
     lines = renderer.body(src, src.dest).split("\n")
     h1 = next((i for i, line in enumerate(lines) if line.startswith("# ")), None)
     if h1 is None:
         lines.insert(0, f"# {pretty(src.path.stem)}")
         h1 = 0
     lines[h1] = "# " + (short_titles().get(src.key) or clean_title(lines[h1][2:].strip()))
-    extra = ["", f'<p class="doc-meta">{chips(src.status, src.date, pdf=pdf, project=front_matter_project(src.path))}</p>']
+    extra = ["", f'<p class="doc-meta">{chips(src.status, src.date, pdf=pdf, project=front_matter_project(src.path), lane=lane)}</p>']
     if src.status == "inbox":
         extra += ["", '!!! question "For discussion"', "    Rough draft and open questions. Not yet reviewed."]
     lines[h1 + 1 : h1 + 1] = extra
@@ -609,8 +646,9 @@ def build(mode: str, pdfs: list[str]) -> dict:
     files: dict[str, bytes | str] = {}  # content-relative path -> text (with {generated}) or bytes
 
     hero = next((s for s in selected if s.section == "hero"), None)
+    board = next((s for s in selected if s.section == "board"), None)
     listing: dict[str, list[Item]] = {name: [] for name in SECTIONS}
-    pages = [s for s in selected if s.section != "hero"]
+    pages = [s for s in selected if s.section not in ("hero", "board")]
 
     # PDFs picked in this run. Each is shown under Progress: on the page of the note that embeds it
     # (![[...pdf]]), or else on a page of its own.
@@ -635,11 +673,21 @@ def build(mode: str, pdfs: list[str]) -> dict:
     pdf_pages = set(r.pdf_embedders.values())
     r.edges.clear()
 
+    # The plans board: each lane is a status, each card links to a plan
+    lanes = board_lanes(board.path) if board else []
+    lane_of: dict[str, str] = {}  # plan dest -> lane
+    for lane, lane_cards in lanes:
+        for card in lane_cards:
+            for m in WIKI_RE.finditer(card):
+                hit = r.by_path.get(r._find_wiki(board, m.group(1)))
+                if hit:
+                    lane_of.setdefault(hit.dest, lane)
+
     for s in pages:  # first pass: collect the link graph so every page can list what links to it
         r.body(s, s.dest)
     titles = {s.dest: s.title for s in pages}
     for s in pages:
-        files[s.dest] = page(s, r, titles, pdf=s.dest in pdf_pages)
+        files[s.dest] = page(s, r, titles, pdf=s.dest in pdf_pages, lane=lane_of.get(s.dest))
         listing[s.section].append(Item(s.title, s.dest, s.status, s.date, pdf=s.dest in pdf_pages))
 
     for path, item, date in picked:
@@ -667,7 +715,17 @@ def build(mode: str, pdfs: list[str]) -> dict:
         base = f"{folder}/index.md"
         lines = [f"# {heading}", "", blurb, ""]
         items = listing[section]
-        if not items:
+        if section == "plans" and lanes:  # the board, one column per lane
+            lines += ['<div class="plan-board" markdown>', ""]
+            for lane, lane_cards in lanes:
+                lines += ['<div class="plan-lane" markdown>', "", f"### {lane}", ""]
+                lines += [f"- {r._text(card, board, base)}" for card in lane_cards] or ['<p class="empty">Nothing here.</p>']
+                lines += ["", "</div>", ""]
+            lines += ["</div>", ""]
+            loose = [it for it in items if it.dest not in lane_of]
+            if loose:
+                lines += ["## Not on the board", ""] + cards(loose, base, rel)
+        elif not items:
             lines.append("*Nothing published here yet.*")
         else:  # grouped by year, then month (each card keeps its own date chip)
             for year, months in by_year_month(items):
@@ -693,7 +751,12 @@ def build(mode: str, pdfs: list[str]) -> dict:
         items = listing[section]
         out = [f'<div class="{cls}" markdown>', "", f"## [{heading}]({folder}/index.md) {{ .home-section }}", "",
                f'<p class="section-blurb">{blurb}</p>', ""]
-        if items:
+        if section == "plans" and lanes:  # one line per lane of the board
+            for lane, lane_cards in lanes:
+                if lane_cards:
+                    out += [f"- **{lane}**: " + " · ".join(r._text(c, board, "index.md") for c in lane_cards)]
+            out += ["", f"[The board]({folder}/index.md){{ .more }}", ""]
+        elif items:
             for it in items[:HOME_CARDS]:
                 pdf = ' <span class="chip chip-pdf">PDF</span>' if it.pdf else ""
                 out += [f"- [{it.title}]({rel('index.md', it.dest)}){pdf}"]
@@ -703,11 +766,11 @@ def build(mode: str, pdfs: list[str]) -> dict:
         return out + ["</div>", ""]
 
     home += ['<div class="home-columns" markdown>', ""]
-    for section in SECTIONS:
-        if section != HOME_BELOW:
-            home += home_col(section, "home-col")
+    for section in HOME_COLUMNS:
+        home += home_col(section, "home-col")
     home += ["</div>", ""]
-    home += home_col(HOME_BELOW, "home-col home-below")
+    for section in HOME_BELOW:
+        home += home_col(section, "home-col home-below")
     home += [read_text(SITE / "about.md").strip(), ""]
     files["index.md"] = "\n".join(home)
 
@@ -728,9 +791,11 @@ def build(mode: str, pdfs: list[str]) -> dict:
         '<div class="kmap-legend">'
         '<span class="kmap-key hub">Thread</span>'
         '<span class="kmap-key" style="--dot: var(--c-chip-progress)">Progress</span>'
-        '<span class="kmap-key" style="--dot: var(--c-node-note)">Note</span>'
-        '<span class="kmap-key" style="--dot: var(--c-red)">Inbox</span>'
-        '<span class="kmap-key" style="--dot: var(--c-chip-analysis)">Analysis</span></div>', "",
+        '<span class="kmap-key" style="--dot: var(--c-node-plan)">Plan</span>'
+        '<span class="kmap-key" style="--dot: var(--c-node-note)">Concept</span>'
+        '<span class="kmap-key" style="--dot: var(--c-chip-analysis)">Analysis</span>'
+        '<span class="kmap-key" style="--dot: var(--c-node-scratch)">Note</span>'
+        '<span class="kmap-key" style="--dot: var(--c-red)">Inbox</span></div>', "",
         '<div id="kmap" class="kmap"></div>', "",
         '<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>',
         '<script src="../javascripts/kmap.js"></script>', "",
@@ -835,7 +900,9 @@ def nav_label(it) -> str:
 
 def write_nav(listing: dict) -> None:
     """site/mkdocs.yml = the hand-edited mkdocs.base.yml + a nav generated from what is published."""
-    nav: list = [{"Home": "index.md"}, {"Map": "map/index.md"}]
+    # Home stays first so the theme knows the home page, but its tab is hidden (the header title and
+    # logo link home); the map has a header button (site/overrides/partials/header.html), not a tab.
+    nav: list = [{"Home": "index.md"}]
     for section, (folder, _, heading, _blurb) in SECTIONS.items():
         entries: list = [f"{folder}/index.md"]
         items = listing[section]

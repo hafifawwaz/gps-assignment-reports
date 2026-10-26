@@ -3,14 +3,14 @@ source: report/analysis/m-stepwise-vif-elimination.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:44:29
+generated: 2026-10-26T20:52:49
 ---
 
 # Stepwise VIF elimination
 
 <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-project">Master</span> <span class="chip chip-date">21-07-2026</span></p>
 
-Removing weak terms one at a time from [Model 6, re-derived at calibrated alpha](m-model-6-rederived.md). At each step, find the extra term (not one of the core terms) with the highest VIF, remove it, and fit the model again. Stop when every extra term has a VIF of 10 or less. The 13 core terms from Model 4a are never removed ([Multicollinearity is structural](../notes/m-multicollinearity-is-structural.md)).
+Removing weak terms one at a time from [Model 6, re-derived at calibrated alpha](m-model-6-rederived.md). At each step, find the extra term (not one of the core terms) with the highest VIF, remove it, and fit the model again. Stop when every extra term has a VIF of 10 or less. The 13 core terms from Model 4a are never removed ([Multicollinearity is structural](../concepts/m-multicollinearity-is-structural.md)).
 
 | Step | Worst droppable | VIF | Action |
 |---:|---|---:|---|
@@ -33,6 +33,6 @@ Later it was made smaller, to 11 parameters: [f_directional: shared vs split](m-
 
 <div class="backlinks" markdown>
 
-**Linked from** [Calibration](../threads/m-calibration.md) · [MNL model development](../progress/m-progress-19-07-2026.md) · [Model 6, re-derived at calibrated alpha](m-model-6-rederived.md) · [Model progression](m-model-progression-table.md) · [Multicollinearity is structural](../notes/m-multicollinearity-is-structural.md) · [Overfitting signature](../notes/m-overfitting-signature.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md) · [Sigma in tree importance](m-sigma-tree-importance.md) · [Thesis bug fixes and adopted rerun](../inbox/thesis-bug-fix.md) · [f_distribution](../notes/m-f-distribution.md)
+**Linked from** [Calibration](../threads/m-calibration.md) · [MNL model development](../progress/m-progress-19-07-2026.md) · [Model 6, re-derived at calibrated alpha](m-model-6-rederived.md) · [Model progression](m-model-progression-table.md) · [Multicollinearity is structural](../concepts/m-multicollinearity-is-structural.md) · [Overfitting signature](../concepts/m-overfitting-signature.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md) · [Sigma in tree importance](m-sigma-tree-importance.md) · [f_distribution](../concepts/m-f-distribution.md)
 
 </div>

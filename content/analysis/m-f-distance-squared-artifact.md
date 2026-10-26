@@ -3,7 +3,7 @@ source: report/analysis/m-f-distance-squared-artifact.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:22:17
+generated: 2026-10-26T20:41:14
 ---
 
 # The f_distance² artifact
@@ -24,11 +24,11 @@ So the squared term was not finding a real curve in the data. It was making up f
 
 Lesson: after changing α, choose the extra terms again from the start. Keeping the old terms and only changing α made the model far less stable (condition number from 13,198 to 142,550; highest VIF from 45 to 180, on f_distance²).
 
-One case of [Overfitting signature](../notes/m-overfitting-signature.md). Next: [Model 6, re-derived at calibrated alpha](m-model-6-rederived.md). Part of [Calibration](../threads/m-calibration.md).
+One case of [Overfitting signature](../concepts/m-overfitting-signature.md). Next: [Model 6, re-derived at calibrated alpha](m-model-6-rederived.md). Part of [Calibration](../threads/m-calibration.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Alpha calibration](m-alpha-calibration.md) · [Calibration](../threads/m-calibration.md) · [Interaction term screen (α = 1)](m-interaction-term-screen.md) · [MNL model development](../progress/m-progress-19-07-2026.md) · [Overfitting signature](../notes/m-overfitting-signature.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md) · [f_distance](../notes/m-f-distance.md)
+**Linked from** [Alpha calibration](m-alpha-calibration.md) · [Calibration](../threads/m-calibration.md) · [Interaction term screen (α = 1)](m-interaction-term-screen.md) · [MNL model development](../progress/m-progress-19-07-2026.md) · [Overfitting signature](../concepts/m-overfitting-signature.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md) · [f_distance](../concepts/m-f-distance.md)
 
 </div>

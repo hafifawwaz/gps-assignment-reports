@@ -3,3 +3,5 @@
 # New thesis-centred notes already have short titles, so this list is mostly for PDFs.
 manuscript/slides/phd-interview-slide/slides-export.pdf	PhD interview slides
 manuscript/poster/csisdays-2026/out/poster-a0.pdf	Poster CSIS Days
+manuscript/abstract/csisdays-2026/FawwazHafiyyan.pdf	Abstract CSIS Days
+report/notes/fast-marching.md	Fast marching method

@@ -3,7 +3,7 @@ source: report/threads/m-thesis-summary.md
 date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-20T15:22:17
+generated: 2026-10-26T20:41:14
 ---
 
 # Thesis summary
@@ -16,12 +16,12 @@ When a phone records GPS points while someone stays in one place, the points do 
 
 Most studies solve this by picking the nearest building. This thesis does something different. For each stay, it gives a **probability for building, street and open space**, so the uncertainty stays visible. The model learns how to do this from a field survey in Hiroshima, where participants recorded where they really were.
 
-New to the terms? Start with the [Glossary](../notes/glossary.md).
+New to the terms? Start with the [Glossary](../concepts/glossary.md).
 
 ## Why and what
 
-- Why "nearest building" is not good enough: [Motivation](../notes/m-motivation.md)
-- The three research questions: [Research questions](../notes/m-research-questions.md)
+- Why "nearest building" is not good enough: [Motivation](../concepts/m-motivation.md)
+- The three research questions: [Research questions](../concepts/m-research-questions.md)
 
 ## Threads
 
@@ -40,7 +40,7 @@ The notes are grouped by theme, not by thesis chapter:
 - The final model has 11 parameters. On data it had not seen, it picks the correct type for **71.9% of stays (± 3.2%)**, written as grouped CV accuracy 0.719 ± 0.032 ([Final model](../analysis/m-final-model.md)).
 - It finds 90.0% of building stays, but only 48.6% of street stays and 44.0% of open-space stays. When it gets streets or open spaces wrong, it usually says "building". For streets, the reason is how the street map is cut into pieces; for open space, the reason is still open ([Confusion matrix](../analysis/m-confusion-matrix.md), [Candidate density bias toward building](../analysis/m-candidate-density-bias.md)).
 - Random Forest and XGBoost fit the training data better, but on unseen data this simpler model does better ([ML ceiling check, row level](../analysis/m-ml-ceiling-row-level.md)).
-- The thesis is complete. The questions that were still open in these notes are answered in the final text ([Final model](../analysis/m-final-model.md), [Ground truth cleaning](../notes/m-ground-truth-cleaning.md), [Tension with the street-space argument](../notes/m-street-space-tension.md)).
+- The thesis is complete. The questions that were still open in these notes are answered in the final text ([Final model](../analysis/m-final-model.md), [Ground truth cleaning](../concepts/m-ground-truth-cleaning.md), [Tension with the street-space argument](../concepts/m-street-space-tension.md)).
 
 ## Dated updates
 
@@ -49,6 +49,6 @@ The notes are grouped by theme, not by thesis chapter:
 
 <div class="backlinks" markdown>
 
-**Linked from** [Assignment framework](m-assignment-framework.md) · [Calibration](m-calibration.md) · [Complexity and transfer](m-complexity-and-transfer.md) · [Error analysis](m-error-analysis.md) · [Glossary](../notes/glossary.md) · [Ground truth data](m-ground-truth-data.md) · [Outlook](m-outlook.md) · [Problem and positioning](m-problem-and-positioning.md)
+**Linked from** [Assignment framework](m-assignment-framework.md) · [Calibration](m-calibration.md) · [Complexity and transfer](m-complexity-and-transfer.md) · [Doctoral plan](d-doctoral-plan.md) · [Error analysis](m-error-analysis.md) · [Glossary](../concepts/glossary.md) · [Ground truth data](m-ground-truth-data.md) · [Outlook](m-outlook.md) · [Problem and positioning](m-problem-and-positioning.md)
 
 </div>

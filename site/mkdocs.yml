@@ -2,10 +2,11 @@
 INHERIT: mkdocs.base.yml
 nav:
 - Home: index.md
-- Map: map/index.md
 - Threads:
   - threads/index.md
   - '2026':
+    - October:
+      - doctoral plan: threads/d-doctoral-plan.md
     - August:
       - thesis summary: threads/m-thesis-summary.md
       - problem and positioning: threads/m-problem-and-positioning.md
@@ -20,7 +21,6 @@ nav:
   - '2026':
     - October:
       - publications and doctoral plan: progress/d-progress-20-10-2026.md
-      - poster csis days (pdf): progress/poster-a0.md
     - August:
       - phd interview slides (pdf): progress/m-phd-interview-slides.md
     - July:
@@ -29,45 +29,58 @@ nav:
       - rq1 rebuilt with grouped cv: progress/m-progress-21-07-2026.md
       - ml baseline: progress/m-progress-20-07-2026.md
       - mnl model development: progress/m-progress-19-07-2026.md
-- Notes:
-  - notes/index.md
+- Plans:
+  - plans/index.md
+  - '2026':
+    - October:
+      - ceus paper: plans/m-ceus-paper.md
+      - seasonal variance: plans/d-seasonal-variance.md
+      - nested probabilities: plans/d-nested-probabilities.md
+      - open space in the ground truth: plans/d-gt-open-space.md
+      - transferability: plans/d-transferability.md
+      - street segmentation: plans/d-street-segmentation.md
+      - sequence-aware assignment: plans/d-sequence-aware.md
+      - comprehensive literature review: plans/d-comprehensive-litrev.md
+      - csis days 2026 poster (pdf): plans/m-csis-poster.md
+- Concepts:
+  - concepts/index.md
   - '2026':
     - August:
-      - glossary: notes/glossary.md
+      - glossary: concepts/glossary.md
     - July:
-      - study area: notes/m-study-area.md
-      - spatial entity layers: notes/m-spatial-entity-layers.md
-      - research questions: notes/m-research-questions.md
-      - overfitting signature: notes/m-overfitting-signature.md
-      - motivation: notes/m-motivation.md
-      - limitations: notes/m-limitations.md
-      - ground truth dataset: notes/m-ground-truth-dataset.md
-      - future work: notes/m-future-work.md
-      - framework overview: notes/m-framework-overview.md
-      - f_temporal: notes/m-f-temporal.md
-      - f_distribution: notes/m-f-distribution.md
-      - f_distance: notes/m-f-distance.md
-      - f_directional: notes/m-f-directional.md
-      - experiment design: notes/m-experiment-design.md
-      - downsampling to miles density: notes/m-downsampling-to-miles-density.md
-      - contributions: notes/m-contributions.md
-      - candidate selection: notes/m-candidate-selection.md
-      - tension with the street-space argument: notes/m-street-space-tension.md
-      - self-report form: notes/m-self-report-form.md
-      - positioning against deterministic assignment: notes/m-positioning-vs-deterministic-assignment.md
-      - extending map matching to stationary stays: notes/m-map-matching-extension.md
-      - ground truth cleaning: notes/m-ground-truth-cleaning.md
-      - 'group e: ambiguous edge cases': notes/m-experiment-group-e.md
-      - 'group d: movement type': notes/m-experiment-group-d.md
-      - 'group c: indoor position': notes/m-experiment-group-c.md
-      - 'group b: sky view obstruction': notes/m-experiment-group-b.md
-      - 'group a: vertical position': notes/m-experiment-group-a.md
-      - candidate density as boundary-matching difficulty: notes/m-boundary-matching-analogy.md
-      - grouped cross-validation: notes/m-grouped-cross-validation.md
-      - sigma: notes/m-sigma.md
-      - share_type: notes/m-share-type.md
-      - multicollinearity is structural: notes/m-multicollinearity-is-structural.md
-      - model evaluation metrics: notes/m-model-evaluation-metrics.md
+      - study area: concepts/m-study-area.md
+      - spatial entity layers: concepts/m-spatial-entity-layers.md
+      - research questions: concepts/m-research-questions.md
+      - overfitting signature: concepts/m-overfitting-signature.md
+      - motivation: concepts/m-motivation.md
+      - limitations: concepts/m-limitations.md
+      - ground truth dataset: concepts/m-ground-truth-dataset.md
+      - future work: concepts/m-future-work.md
+      - framework overview: concepts/m-framework-overview.md
+      - f_temporal: concepts/m-f-temporal.md
+      - f_distribution: concepts/m-f-distribution.md
+      - f_distance: concepts/m-f-distance.md
+      - f_directional: concepts/m-f-directional.md
+      - experiment design: concepts/m-experiment-design.md
+      - downsampling to miles density: concepts/m-downsampling-to-miles-density.md
+      - contributions: concepts/m-contributions.md
+      - candidate selection: concepts/m-candidate-selection.md
+      - tension with the street-space argument: concepts/m-street-space-tension.md
+      - self-report form: concepts/m-self-report-form.md
+      - positioning against deterministic assignment: concepts/m-positioning-vs-deterministic-assignment.md
+      - extending map matching to stationary stays: concepts/m-map-matching-extension.md
+      - ground truth cleaning: concepts/m-ground-truth-cleaning.md
+      - 'group e: ambiguous edge cases': concepts/m-experiment-group-e.md
+      - 'group d: movement type': concepts/m-experiment-group-d.md
+      - 'group c: indoor position': concepts/m-experiment-group-c.md
+      - 'group b: sky view obstruction': concepts/m-experiment-group-b.md
+      - 'group a: vertical position': concepts/m-experiment-group-a.md
+      - candidate density as boundary-matching difficulty: concepts/m-boundary-matching-analogy.md
+      - grouped cross-validation: concepts/m-grouped-cross-validation.md
+      - sigma: concepts/m-sigma.md
+      - share_type: concepts/m-share-type.md
+      - multicollinearity is structural: concepts/m-multicollinearity-is-structural.md
+      - model evaluation metrics: concepts/m-model-evaluation-metrics.md
 - Analysis:
   - analysis/index.md
   - '2026':
@@ -97,16 +110,9 @@ nav:
       - alpha calibration: analysis/m-alpha-calibration.md
       - ml baseline, stay level (superseded): analysis/m-ml-baseline-stay-level.md
       - 'r_buffer: 10 m vs 15 m': analysis/m-r-buffer-10m-vs-15m.md
+- Notes:
+  - notes/index.md
+  - Undated:
+    - fast marching method: notes/fast-marching.md
 - Inbox:
   - inbox/index.md
-  - '2026':
-    - October:
-      - thesis bug fixes and adopted rerun: inbox/thesis-bug-fix.md
-      - thesis publication: inbox/thesis-publication.md
-      - transferability: inbox/d-transferability.md
-      - gps toy data: inbox/d-toy-data.md
-      - consensus report: inbox/d-toy-data-consensus.md
-      - street segmentation: inbox/d-street-segmentation.md
-      - sequence-aware assignment: inbox/d-sequence-aware.md
-      - comprehensive literature review: inbox/d-comprehensive-litrev.md
-      - d plan: inbox/d-plan.md

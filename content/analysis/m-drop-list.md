@@ -3,7 +3,7 @@ source: report/analysis/m-drop-list.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:22:17
+generated: 2026-10-26T20:41:14
 ---
 
 # Ground truth drop list
@@ -14,7 +14,7 @@ The last cleaning step removed stops that had no matching place on the map: **21
 
 | Category | Stops | Rule |
 |---|---:|---|
-| Underground | 10 | Location in the Shareo or Kamiyacho underground arcades, which Zmap TOWN does not capture ([Spatial entity layers](../notes/m-spatial-entity-layers.md)) |
+| Underground | 10 | Location in the Shareo or Kamiyacho underground arcades, which Zmap TOWN does not capture ([Spatial entity layers](../concepts/m-spatial-entity-layers.md)) |
 | Manual verification | 11 | Checked one by one against the self-report record |
 
 The 11 stops removed after checking by hand (place names as the participants wrote them; participant codes are left out on purpose):
@@ -33,13 +33,13 @@ The 11 stops removed after checking by hand (place names as the participants wro
 
 All 21 names were checked against the raw self-report data, and all of them matched.
 
-Where this step fits in the whole cleaning process: [Ground truth cleaning](../notes/m-ground-truth-cleaning.md).
+Where this step fits in the whole cleaning process: [Ground truth cleaning](../concepts/m-ground-truth-cleaning.md).
 
 Part of [Ground truth data](../threads/m-ground-truth-data.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [Ground truth cleaning](../notes/m-ground-truth-cleaning.md) · [Ground truth data](../threads/m-ground-truth-data.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) · [Spatial entity layers](../notes/m-spatial-entity-layers.md)
+**Linked from** [Ground truth cleaning](../concepts/m-ground-truth-cleaning.md) · [Ground truth data](../threads/m-ground-truth-data.md) · [RQ2 diagnostics and RQ3 ceiling check](../progress/m-progress-23-07-2026.md) · [Spatial entity layers](../concepts/m-spatial-entity-layers.md)
 
 </div>

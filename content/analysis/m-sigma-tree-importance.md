@@ -3,14 +3,14 @@ source: report/analysis/m-sigma-tree-importance.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:22:17
+generated: 2026-10-26T20:41:14
 ---
 
 # Sigma in tree importance
 
 <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-project">Master</span> <span class="chip chip-date">23-07-2026</span></p>
 
-[sigma](../notes/m-sigma.md) (how spread out a stay's GPS points are) has a moderate weight in the simple model (+1.02 in the [Final model](m-final-model.md)). But the tree models rank it as one of their most important inputs:
+[sigma](../concepts/m-sigma.md) (how spread out a stay's GPS points are) has a moderate weight in the simple model (+1.02 in the [Final model](m-final-model.md)). But the tree models rank it as one of their most important inputs:
 
 | Run | σ rank |
 |---|---|
@@ -35,6 +35,6 @@ Sources: [ML baseline, stay level (superseded)](m-ml-baseline-stay-level.md), [M
 
 <div class="backlinks" markdown>
 
-**Linked from** [Complexity and transfer](../threads/m-complexity-and-transfer.md) · [ML baseline](../progress/m-progress-20-07-2026.md) · [ML baseline, stay level (superseded)](m-ml-baseline-stay-level.md) · [ML ceiling check, row level](m-ml-ceiling-row-level.md) · [sigma](../notes/m-sigma.md)
+**Linked from** [Complexity and transfer](../threads/m-complexity-and-transfer.md) · [ML baseline](../progress/m-progress-20-07-2026.md) · [ML baseline, stay level (superseded)](m-ml-baseline-stay-level.md) · [ML ceiling check, row level](m-ml-ceiling-row-level.md) · [sigma](../concepts/m-sigma.md)
 
 </div>

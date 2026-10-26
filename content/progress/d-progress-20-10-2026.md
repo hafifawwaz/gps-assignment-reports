@@ -3,18 +3,18 @@ source: report/progress/d-progress-20-10-2026.md
 date: 20-10-2026
 kind: progress
 comments: true
-generated: 2026-10-20T16:29:09
+generated: 2026-10-26T20:52:49
 ---
 
 # Publications and doctoral plan
 
 <p class="doc-meta"><span class="chip chip-progress">Progress</span> <span class="chip chip-project">Doctoral</span> <span class="chip chip-date">20-10-2026</span></p>
 
-The update for the meeting with sensei on 20-10-2026. It gathers the open items in the inbox, listed in [d plan](../inbox/d-plan.md): the two outputs from the master's thesis, a code check of the thesis, and the steps toward the doctoral goal.
+The update for the meeting with sensei on 20-10-2026. It gathers the open items in the inbox, listed in [Doctoral plan](../threads/d-doctoral-plan.md): the two outputs from the master's thesis, a code check of the thesis, and the steps toward the doctoral goal.
 
 ## Outputs from the master's thesis
 
-[thesis publication](../inbox/thesis-publication.md). Both outputs use only the thesis content, so all the material already exists.
+[CSIS DAYS 2026 poster](../plans/m-csis-poster.md) and [CEUS paper](../plans/m-ceus-paper.md). Both outputs use only the thesis content, so all the material already exists.
 
 - **CSIS Days 2026 poster.** Fairly complete. Sensei has not seen it yet.
 - **CEUS paper** (*Computers, Environment and Urban Systems*). A methodological paper, written from the thesis content.
@@ -22,7 +22,7 @@ The update for the meeting with sensei on 20-10-2026. It gathers the open items 
 
 ## Code check and adopted rerun
 
-[Thesis bug fixes and adopted rerun](../inbox/thesis-bug-fix.md). A check of the code against the thesis on 19-10-2026 found six problems: two in the scores and four in the ground truth cleaning. The fixed pipeline (run C) is now the official one, and the thesis, paper, poster, abstract and slides use its numbers. The old versions are archived.
+Thesis bug fixes and adopted rerun. A check of the code against the thesis on 19-10-2026 found six problems: two in the scores and four in the ground truth cleaning. The fixed pipeline (run C) is now the official one, and the thesis, paper, poster, abstract and slides use its numbers. The old versions are archived.
 
 - Accuracy on unseen data does not change significantly (0.716 → 0.719; McNemar p = 0.67 on the 895 shared stays).
 - Recall moves from open space (0.492 → 0.440) to street (0.427 → 0.486). Building barely moves (0.896 → 0.900).
@@ -38,19 +38,36 @@ Points for sensei:
 
 ## Doctoral direction
 
-The end goal is [Sequence-aware assignment](../inbox/d-sequence-aware.md): an assignment that knows which stays came before.
+The end goal is [Sequence-aware assignment](../plans/d-sequence-aware.md): an assignment that knows which stays came before.
 
 **Milestones**
 
-- [Comprehensive literature review](../inbox/d-comprehensive-litrev.md). Re-read the key papers the research is built on, some of them old, and search for newer work on the same ideas.
-- [Transferability](../inbox/d-transferability.md). Show that the framework works on other data. Sensei prefers another city before MILES. The open question is ground truth for that city; the most likely source is data from the University of Tokyo.
+- [Comprehensive literature review](../plans/d-comprehensive-litrev.md). Re-read the key papers the research is built on, some of them old, and search for newer work on the same ideas. **On-holds**
+- [Transferability](../plans/d-transferability.md). Show that the framework works on other data. Sensei prefers another city before MILES. The open question is ground truth for that city; the most likely source is data from the University of Tokyo. **On-holds**
 
 **Supporting work**
 
-- [Street segmentation](../inbox/d-street-segmentation.md). Find the most robust way to cut streets into pieces. In the current map the road surface for cars counts as open space, so a person on a sidewalk often lands in open space: for street stays, the GPS point closest to the stay's centre lies in open space 46% of the time and in a street piece 28% of the time. With real street directions, movement inside a stay follows the street about as much as random movement would.
-- [GPS toy data](../inbox/d-toy-data.md). A GPS generator with a known true place for every stay, so each source of error can be switched on alone. Two programs: one makes people and their activity chains, the other turns them into GPS points in the MILES format. The literature search ([Consensus Report](../inbox/d-toy-data-consensus.md)) supports the design. Its weakest part is the stay-level offset in the error model, so the offset stays a setting with a wide range.
+- [Street segmentation](../plans/d-street-segmentation.md). Find the most robust way to cut streets into pieces. In the current map the road surface for cars counts as open space, so a person on a sidewalk often lands in open space: for street stays, the GPS point closest to the stay's centre lies in open space 46% of the time and in a street piece 28% of the time. With real street directions, movement inside a stay follows the street about as much as random movement would. **On-holds**
+- GPS toy data. A GPS generator with a known true place for every stay, so each source of error can be switched on alone. Two programs: one makes people and their activity chains, the other turns them into GPS points in the MILES format. The literature search (Consensus Report) supports the design. Its weakest part is the stay-level offset in the error model, so the offset stays a setting with a wide range. ***Rejected***
+
+## Feedback from sensei
+
+What the meeting decided. Each item is now a plan on the [plans board](../plans/index.md).
+
+- **CEUS paper** ([CEUS paper](../plans/m-ceus-paper.md)): show an outdoor and an indoor cluster from the GT on a map; give an example for every step, with one stay going through the framework; change the format to one column.
+- **Seasonal variance in Hiroshima** ([Seasonal variance](../plans/d-seasonal-variance.md)). A small area is enough.
+- **Two levels of nested probabilities** ([Nested probabilities](../plans/d-nested-probabilities.md)): first how likely the person is in a building, on a street, or in an open space; second which building, which street, which open space, separately.
+- **Change the GT to reduce wrong guesses** ([Open space in the ground truth](../plans/d-gt-open-space.md)): give the open-space stays a real open space, such as a stadium or a park.
+- **Delete the toy data idea.** The notes moved out of the report.
 
 ## Other topics
 
 - Group meeting proposal.
 - Seat arrangement.
+
+
+<div class="backlinks" markdown>
+
+**Linked from** [CEUS paper](../plans/m-ceus-paper.md) · [Doctoral plan](../threads/d-doctoral-plan.md) · [Nested probabilities](../plans/d-nested-probabilities.md) · [Open space in the ground truth](../plans/d-gt-open-space.md) · [Seasonal variance](../plans/d-seasonal-variance.md)
+
+</div>

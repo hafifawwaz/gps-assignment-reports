@@ -25,7 +25,9 @@
   --c-soft: rgba(64, 64, 64, 0.07);
   --c-chip-analysis: #555555;
   --c-chip-progress: #085930;
-  --c-node-note: #8DB09B;     /* knowledge map: plain notes */
+  --c-node-note: #8DB09B;     /* knowledge map: concepts */
+  --c-node-scratch: #B5B5B5;  /* knowledge map: loose notes */
+  --c-node-plan: #D99A9A;     /* knowledge map: plans (soft red) */
   --c-footer: #C05656;
   --c-on-fill: #ffffff;      /* text on filled chips/buttons */
   --c-shadow: rgba(0, 0, 0, 0.08);
@@ -53,6 +55,8 @@
   --c-chip-analysis: #5D6478;
   --c-chip-progress: #2E4385;   /* Ravenclaw blue, lifted */
   --c-node-note: #8E9CC9;
+  --c-node-scratch: #4E556B;
+  --c-node-plan: #D8BE94;     /* soft bronze */
   --c-footer: #946B2D;         /* original bronze: white text stays readable */
   --c-on-fill: #ffffff;
   --c-shadow: rgba(0, 0, 0, 0.35);
@@ -137,7 +141,10 @@
 .chip-thread { background: transparent; color: var(--c-green); border-color: var(--c-green); }
 .chip-progress { background: var(--c-chip-progress); color: var(--c-on-fill); }
 .chip-inbox { background: var(--c-red); color: var(--c-on-fill); }
-.chip-note { background: transparent; color: var(--c-text); border-color: rgba(64, 64, 64, 0.45); }
+.chip-concept { background: transparent; color: var(--c-text); border-color: rgba(64, 64, 64, 0.45); }
+.chip-note { background: transparent; color: var(--c-muted); border-color: var(--c-line); border-style: dashed; }
+.chip-plan { background: var(--c-red-tint); color: var(--c-red); border-color: transparent; }
+.chip-lane { background: transparent; color: var(--c-red); border-color: var(--c-red); }
 .chip-analysis { background: var(--c-chip-analysis); color: var(--c-on-fill); }
 .chip-project { background: transparent; color: var(--c-muted); border-color: var(--c-line); }
 .chip-pdf { background: transparent; color: var(--c-red); border-color: var(--c-red); }
@@ -252,6 +259,13 @@
 .md-typeset .home-col ul li a:hover { color: var(--c-green-dark); text-decoration: underline; }
 .md-typeset .home-col .more { display: inline-block; margin-top: .4rem; }
 .md-typeset .home-col .empty { font-size: .7rem; }
+/* Plans: the board, one column per lane */
+.md-typeset .plan-board { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 1rem; margin: 1rem 0 1.6rem; }
+.md-typeset .plan-lane { background: var(--c-surface); border: 1px solid var(--c-line); border-radius: .4rem; padding: .2rem .8rem .6rem; }
+.md-typeset .plan-lane h3 { margin: .5rem 0 .4rem; font-size: .8rem; color: var(--c-red); text-transform: uppercase; letter-spacing: .04em; }
+.md-typeset .plan-lane ul { list-style: none; margin: 0; padding: 0; }
+.md-typeset .plan-lane ul li { margin: 0; padding: .4rem 0; border-top: 1px solid var(--c-line); font-size: .72rem; line-height: 1.4; }
+.md-typeset .plan-lane .empty { font-size: .7rem; }
 @media screen and (max-width: 76.1875em) { .md-typeset .home-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media screen and (max-width: 44.9375em) { .md-typeset .home-columns { grid-template-columns: minmax(0, 1fr); } }
 
@@ -289,3 +303,12 @@
 }
 .md-typeset a.backlink-button:hover { border-color: var(--c-heading); color: var(--c-heading); text-decoration: none; }
 .md-typeset a.backlink-button .backlink-target { color: var(--c-link); font-weight: 700; }
+
+/* Home and Map live in the header, not in the tabs (site/overrides/partials/header.html) */
+.md-tabs__item:first-child { display: none; }
+.md-header__topic a.header-home { color: inherit; text-decoration: none; }
+.md-header__topic a.header-home:hover { opacity: .8; }
+.md-header__button.header-map { display: inline-flex; align-items: center; gap: .3rem; color: inherit; font-size: .7rem; font-weight: 500; }
+.md-header__button.header-map svg { width: 1.2rem; height: 1.2rem; fill: currentColor; }
+.md-header__button.header-map:hover { opacity: .8; }
+@media screen and (max-width: 44.9375em) { .header-map__label { display: none; } }

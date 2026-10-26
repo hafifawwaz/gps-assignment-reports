@@ -3,14 +3,14 @@ source: report/analysis/m-raw-density-refit.md
 date: 29-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-20T15:22:17
+generated: 2026-10-26T20:52:49
 ---
 
 # Raw-density refit
 
 <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-project">Master</span> <span class="chip chip-date">29-07-2026</span></p>
 
-Sensei asked whether downsampling the survey data ([Downsampling to MILES density](../notes/m-downsampling-to-miles-density.md)) changes the result. To check, the [Final model](m-final-model.md) was fitted again on the same 907 stays, using the **full** data (152,602 points instead of 15,687). The search distance, the score formulas, the 11-parameter form and the test sets stayed the same. α and `sigma_scale` were tuned again for the full data.
+Sensei asked whether downsampling the survey data ([Downsampling to MILES density](../concepts/m-downsampling-to-miles-density.md)) changes the result. To check, the [Final model](m-final-model.md) was fitted again on the same 907 stays, using the **full** data (152,602 points instead of 15,687). The search distance, the score formulas, the 11-parameter form and the test sets stayed the same. α and `sigma_scale` were tuned again for the full data.
 
 | | Downsampled | Raw density |
 |---|---:|---:|
@@ -27,6 +27,6 @@ More results from this test: [Raw-density alpha profile](m-raw-density-alpha-pro
 
 <div class="backlinks" markdown>
 
-**Linked from** [Complexity and transfer](../threads/m-complexity-and-transfer.md) · [Does downsampling matter?](../progress/m-progress-29-07-2026.md) · [Downsampling shrinks the candidate search area](m-candidate-search-area.md) · [Downsampling to MILES density](../notes/m-downsampling-to-miles-density.md) · [Final model](m-final-model.md) · [Raw-density alpha profile](m-raw-density-alpha-profile.md) · [Thesis bug fixes and adopted rerun](../inbox/thesis-bug-fix.md)
+**Linked from** [Complexity and transfer](../threads/m-complexity-and-transfer.md) · [Does downsampling matter?](../progress/m-progress-29-07-2026.md) · [Downsampling shrinks the candidate search area](m-candidate-search-area.md) · [Downsampling to MILES density](../concepts/m-downsampling-to-miles-density.md) · [Final model](m-final-model.md) · [Raw-density alpha profile](m-raw-density-alpha-profile.md)
 
 </div>

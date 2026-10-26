@@ -3,12 +3,12 @@ source: report/plans/d-sequence-aware.md
 date: 16-10-2026
 kind: plan
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-10-26T21:08:08
 ---
 
 # Sequence-aware assignment
 
-<p class="doc-meta"><span class="chip chip-plan">Plan</span> <span class="chip chip-lane">Plan</span> <span class="chip chip-project">Doctoral</span> <span class="chip chip-date">16-10-2026</span></p>
+<p class="doc-meta"><span class="chip chip-plan">Plan</span> <span class="chip chip-lane">Inbox</span> <span class="chip chip-project">Doctoral</span> <span class="chip chip-date">16-10-2026</span></p>
 
 The end goal of the doctoral work: extend the probabilistic assignment framework so that it is aware of the sequence, meaning the stays that came before.
 

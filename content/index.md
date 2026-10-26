@@ -19,6 +19,46 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 
 </div>
 
+<div class="home-board" markdown>
+
+## [Plans](plans/index.md) { .home-section }
+
+<div class="plan-board" markdown>
+
+<div class="plan-lane" markdown>
+
+### Inbox
+
+- [Seasonal variance](plans/d-seasonal-variance.md)
+- [Nested probabilities](plans/d-nested-probabilities.md)
+- [Open space in the ground truth](plans/d-gt-open-space.md)
+- [Sequence-aware assignment](plans/d-sequence-aware.md)
+
+</div>
+
+<div class="plan-lane" markdown>
+
+### On-going
+
+- [CEUS paper](plans/m-ceus-paper.md)
+- [CSIS DAYS 2026 poster](plans/m-csis-poster.md)
+
+</div>
+
+<div class="plan-lane" markdown>
+
+### On-hold
+
+- [Comprehensive literature review](plans/d-comprehensive-litrev.md)
+- [Transferability](plans/d-transferability.md)
+- [Street segmentation](plans/d-street-segmentation.md)
+
+</div>
+
+</div>
+
+</div>
+
 <div class="home-columns" markdown>
 
 <div class="home-col" markdown>
@@ -84,30 +124,6 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 [All 25](analysis/index.md){ .more }
 
 </div>
-
-</div>
-
-<div class="home-col home-below" markdown>
-
-## [Plans](plans/index.md) { .home-section }
-
-<p class="section-blurb">Work items by status: on-going, planned, on hold, done.</p>
-
-- **On-going**: [CEUS paper](plans/m-ceus-paper.md) · [CSIS DAYS 2026 poster](plans/m-csis-poster.md)
-- **Plan**: [Seasonal variance](plans/d-seasonal-variance.md) · [Nested probabilities](plans/d-nested-probabilities.md) · [Open space in the ground truth](plans/d-gt-open-space.md) · [Sequence-aware assignment](plans/d-sequence-aware.md)
-- **On-hold**: [Comprehensive literature review](plans/d-comprehensive-litrev.md) · [Transferability](plans/d-transferability.md) · [Street segmentation](plans/d-street-segmentation.md)
-
-[The board](plans/index.md){ .more }
-
-</div>
-
-<div class="home-col home-below" markdown>
-
-## [Inbox](inbox/index.md) { .home-section }
-
-<p class="section-blurb">Open items not yet settled with sensei.</p>
-
-<p class="empty">Nothing yet.</p>
 
 </div>
 

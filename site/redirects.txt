@@ -124,3 +124,4 @@ inbox/d-toy-data.md	threads/d-doctoral-plan.md
 inbox/d-toy-data-consensus.md	threads/d-doctoral-plan.md
 inbox/thesis-publication.md	plans/m-ceus-paper.md
 progress/poster-a0.md	plans/m-csis-poster.md
+inbox/index.md	plans/index.md

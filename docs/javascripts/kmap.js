@@ -8,7 +8,6 @@
   const isHub = (n) => n.kind === "thread";  // threads are the hubs (report/ workflow)
   const nodeColor = (n) => (isHub(n) ? css("--c-surface") : {
     progress: css("--c-chip-progress"),
-    inbox: css("--c-red"),
     analysis: css("--c-chip-analysis"),
     plan: css("--c-node-plan"),
     note: css("--c-node-scratch"),

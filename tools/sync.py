@@ -45,18 +45,16 @@ SECTIONS = {  # also the tab order (Home and Map are in the header, not tabs)
                 "Hubs by theme: the thesis summary and the doctoral plan, then one list of notes per theme."),
     "progress": ("progress", "progress", "Progress",
                  "Dated updates for sensei, and slide exports."),
-    "plans": ("plans", "plan", "Plans", "Work items by status: on-going, planned, on hold, done."),
+    "plans": ("plans", "plan", "Plans", "Work items by status: inbox (to start or discuss with sensei), on-going, on hold."),
     "concepts": ("concepts", "concept", "Concepts",
                  "Settled pieces of the work: method, data, interpretation, discussion."),
     "analysis": ("analysis", "analysis", "Analysis", "Raw analysis output: tables, numbers and diagnostics."),
     "notes": ("notes", "note", "Notes", "Loose notes and sketches, not part of the main line yet."),
-    "inbox": ("inbox", "inbox", "Inbox", "Open items not yet settled with sensei."),
 }
 CATCHUP = "catchup.md"  # report/catchup.md: the hand-written hero text on the home page
 BOARD = "plans/board.md"  # an Obsidian Kanban board: its lanes (## headings) are the plans' statuses
 HOME_CARDS = 5  # newest items shown per section on the home page
-HOME_COLUMNS = ("threads", "progress", "concepts", "analysis")  # the four home columns
-HOME_BELOW = ("plans", "inbox")  # full-width rows under the home columns
+HOME_COLUMNS = ("threads", "progress", "concepts", "analysis")  # the four home columns, under the board
 GENERIC_PDF_NAMES = {"slides-export", "slides", "main", "export"}
 IMAGE_EXT = {".png", ".jpg", ".jpeg", ".svg", ".gif", ".webp"}
 # Never offered for publishing, whatever the user picks.
@@ -83,8 +81,8 @@ class Source:
     path: Path  # absolute source file
     key: str  # repo-relative posix path, e.g. report/analysis/final-model.md
     dest: str  # content-relative posix path, e.g. timeline/19-07-2026.md
-    section: str  # notes / progress / inbox / analysis / hero
-    status: str  # summary / detail / inbox / note
+    section: str  # a SECTIONS key, or hero / board
+    status: str  # thread / progress / plan / concept / analysis / note / hero / board
     date: str | None  # DD-MM-YYYY if one appears in the path
     sha256: str = ""
     state: str = "ask"  # include / skip / ask
@@ -532,7 +530,7 @@ def obsidian_to_site(text: str) -> str:
 
 
 STATUS_LABEL = {"thread": "Thread", "concept": "Concept", "note": "Note", "plan": "Plan", "progress": "Progress",
-                "inbox": "Inbox", "analysis": "Analysis", "hero": "Catch-up", "board": "Plans"}
+                "analysis": "Analysis", "hero": "Catch-up", "board": "Plans"}
 
 
 # `project:` in a note's front matter -> a chip, so thesis and dissertation notes stay apart on the site
@@ -574,8 +572,6 @@ def page(src: Source, renderer: Renderer, titles: dict[str, str] | None = None, 
         h1 = 0
     lines[h1] = "# " + (short_titles().get(src.key) or clean_title(lines[h1][2:].strip()))
     extra = ["", f'<p class="doc-meta">{chips(src.status, src.date, pdf=pdf, project=front_matter_project(src.path), lane=lane)}</p>']
-    if src.status == "inbox":
-        extra += ["", '!!! question "For discussion"', "    Rough draft and open questions. Not yet reviewed."]
     lines[h1 + 1 : h1 + 1] = extra
     incoming = sorted({a for a, b in renderer.edges if b == src.dest}, key=lambda d: (titles or {}).get(d, d))
     if incoming:
@@ -710,18 +706,22 @@ def build(mode: str, pdfs: list[str]) -> dict:
     for items in listing.values():
         items.sort(key=lambda it: (date_key(it.date), it.dest), reverse=True)
 
+    def board_html(base: str) -> list[str]:
+        """The plans board as columns, one per lane, with links relative to the page at `base`."""
+        out = ['<div class="plan-board" markdown>', ""]
+        for lane, lane_cards in lanes:
+            out += ['<div class="plan-lane" markdown>', "", f"### {lane}", ""]
+            out += [f"- {r._text(card, board, base)}" for card in lane_cards] or ['<p class="empty">Nothing here.</p>']
+            out += ["", "</div>", ""]
+        return out + ["</div>", ""]
+
     # Section index pages
     for section, (folder, _, heading, blurb) in SECTIONS.items():
         base = f"{folder}/index.md"
         lines = [f"# {heading}", "", blurb, ""]
         items = listing[section]
         if section == "plans" and lanes:  # the board, one column per lane
-            lines += ['<div class="plan-board" markdown>', ""]
-            for lane, lane_cards in lanes:
-                lines += ['<div class="plan-lane" markdown>', "", f"### {lane}", ""]
-                lines += [f"- {r._text(card, board, base)}" for card in lane_cards] or ['<p class="empty">Nothing here.</p>']
-                lines += ["", "</div>", ""]
-            lines += ["</div>", ""]
+            lines += board_html(base)
             loose = [it for it in items if it.dest not in lane_of]
             if loose:
                 lines += ["## Not on the board", ""] + cards(loose, base, rel)
@@ -751,12 +751,7 @@ def build(mode: str, pdfs: list[str]) -> dict:
         items = listing[section]
         out = [f'<div class="{cls}" markdown>', "", f"## [{heading}]({folder}/index.md) {{ .home-section }}", "",
                f'<p class="section-blurb">{blurb}</p>', ""]
-        if section == "plans" and lanes:  # one line per lane of the board
-            for lane, lane_cards in lanes:
-                if lane_cards:
-                    out += [f"- **{lane}**: " + " · ".join(r._text(c, board, "index.md") for c in lane_cards)]
-            out += ["", f"[The board]({folder}/index.md){{ .more }}", ""]
-        elif items:
+        if items:
             for it in items[:HOME_CARDS]:
                 pdf = ' <span class="chip chip-pdf">PDF</span>' if it.pdf else ""
                 out += [f"- [{it.title}]({rel('index.md', it.dest)}){pdf}"]
@@ -765,12 +760,13 @@ def build(mode: str, pdfs: list[str]) -> dict:
             out += ['<p class="empty">Nothing yet.</p>', ""]
         return out + ["</div>", ""]
 
+    if lanes:  # the plans board right under the catch-up
+        home += ['<div class="home-board" markdown>', "", "## [Plans](plans/index.md) { .home-section }", ""]
+        home += board_html("index.md") + ["</div>", ""]
     home += ['<div class="home-columns" markdown>', ""]
     for section in HOME_COLUMNS:
         home += home_col(section, "home-col")
     home += ["</div>", ""]
-    for section in HOME_BELOW:
-        home += home_col(section, "home-col home-below")
     home += [read_text(SITE / "about.md").strip(), ""]
     files["index.md"] = "\n".join(home)
 
@@ -794,8 +790,7 @@ def build(mode: str, pdfs: list[str]) -> dict:
         '<span class="kmap-key" style="--dot: var(--c-node-plan)">Plan</span>'
         '<span class="kmap-key" style="--dot: var(--c-node-note)">Concept</span>'
         '<span class="kmap-key" style="--dot: var(--c-chip-analysis)">Analysis</span>'
-        '<span class="kmap-key" style="--dot: var(--c-node-scratch)">Note</span>'
-        '<span class="kmap-key" style="--dot: var(--c-red)">Inbox</span></div>', "",
+        '<span class="kmap-key" style="--dot: var(--c-node-scratch)">Note</span></div>', "",
         '<div id="kmap" class="kmap"></div>', "",
         '<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>',
         '<script src="../javascripts/kmap.js"></script>', "",
@@ -809,9 +804,10 @@ def build(mode: str, pdfs: list[str]) -> dict:
     for old, new in redirects().items():
         if old in files or new not in files:
             continue  # the old page still exists, or the target is not published in this run
-        old_dir, new_dir = old[:-3], new[:-3]
+        # a page x.md is served at x/, a section index x/index.md at x/
+        old_dir, new_dir = (path[: -len("/index.md")] if path.endswith("/index.md") else path[:-3] for path in (old, new))
         href = posixpath.relpath(new_dir, old_dir) + "/"
-        title = html.escape(titles.get(new, new))
+        title = html.escape(titles.get(new) or SECTIONS.get(new.split("/")[0], (None, None, new))[2])
         files[f"{old_dir}/index.html"] = "\n".join([
             "<!doctype html>", '<html lang="en">', "<head>", '<meta charset="utf-8">',
             '<meta name="viewport" content="width=device-width, initial-scale=1">',

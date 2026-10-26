@@ -140,7 +140,6 @@
 }
 .chip-thread { background: transparent; color: var(--c-green); border-color: var(--c-green); }
 .chip-progress { background: var(--c-chip-progress); color: var(--c-on-fill); }
-.chip-inbox { background: var(--c-red); color: var(--c-on-fill); }
 .chip-concept { background: transparent; color: var(--c-text); border-color: rgba(64, 64, 64, 0.45); }
 .chip-note { background: transparent; color: var(--c-muted); border-color: var(--c-line); border-style: dashed; }
 .chip-plan { background: var(--c-red-tint); color: var(--c-red); border-color: transparent; }
@@ -207,7 +206,7 @@
    the bottom that widen the tab into the page (a bigger --flare = a wider skirt). */
 .md-tabs { --flare: .5rem; }
 .md-tabs__item { margin-right: .45rem; }
-.md-tabs__item:first-child { margin-left: var(--flare); }
+.md-tabs__item:nth-child(2) { margin-left: var(--flare); }  /* first visible tab (Home's tab is hidden) */
 .md-tabs__item--active .md-tabs__link { position: relative; border-radius: .55rem .55rem 0 0; }
 .md-tabs__item--active .md-tabs__link::before,
 .md-tabs__item--active .md-tabs__link::after {
@@ -245,7 +244,6 @@
 
 /* home: the four sections side by side */
 .md-typeset .home-columns { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin-top: 1.4rem; }
-.md-typeset .home-below { margin-top: 1.4rem; }
 .md-typeset .home-col {
   background: var(--c-surface); border: 1px solid var(--c-line); border-radius: .6rem; padding: .2rem 1rem .9rem;
 }
@@ -260,9 +258,11 @@
 .md-typeset .home-col .more { display: inline-block; margin-top: .4rem; }
 .md-typeset .home-col .empty { font-size: .7rem; }
 /* Plans: the board, one column per lane */
+.md-typeset .home-board { margin-top: 1.4rem; }
+.md-typeset .home-board .plan-board { margin-top: .4rem; }
 .md-typeset .plan-board { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 1rem; margin: 1rem 0 1.6rem; }
 .md-typeset .plan-lane { background: var(--c-surface); border: 1px solid var(--c-line); border-radius: .4rem; padding: .2rem .8rem .6rem; }
-.md-typeset .plan-lane h3 { margin: .5rem 0 .4rem; font-size: .8rem; color: var(--c-red); text-transform: uppercase; letter-spacing: .04em; }
+.md-typeset .plan-lane h3 { margin: .6rem 0 .4rem; font-family: inherit; font-size: .6rem; font-weight: 700; color: var(--c-green); text-transform: uppercase; letter-spacing: .1em; }  /* like "Linked from", in the primary colour */
 .md-typeset .plan-lane ul { list-style: none; margin: 0; padding: 0; }
 .md-typeset .plan-lane ul li { margin: 0; padding: .4rem 0; border-top: 1px solid var(--c-line); font-size: .72rem; line-height: 1.4; }
 .md-typeset .plan-lane .empty { font-size: .7rem; }

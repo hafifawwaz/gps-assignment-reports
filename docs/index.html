@@ -491,18 +491,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#plans" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Plans
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Plans">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#inbox" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -512,8 +500,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#on-going" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -523,8 +511,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#on-hold" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -532,11 +520,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -4544,18 +4527,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#plans" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Plans
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Plans">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#inbox" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4565,8 +4536,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#on-going" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4576,8 +4547,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#on-hold" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4585,11 +4556,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -4673,15 +4639,14 @@
 <ul>
 <li><strong>A paper for the journal <em>Computers, Environment and Urban Systems</em> (CEUS)</strong>, in drafting. It presents the method from the thesis: for each GPS stay, it gives a probability that the person was in a building, on a street, or in an open space, instead of picking one place. The model learns from 907 stays with known answers from a field survey in Hiroshima. On data it has not seen, it picks the correct type for 71.9% of stays (grouped CV accuracy 0.719 ± 0.032), and it does better there than Random Forest and XGBoost. Its main weakness is mistaking streets and open spaces for buildings. For streets, this comes from how the street map is cut into many short pieces, not from the GPS data itself; for open space, the cause is still open. Start from <a href="threads/m-thesis-summary/">Thesis summary</a>. After the meeting on 20-10-2026 the paper changes to one column and gets map examples: an outdoor and an indoor cluster, and one stay shown through every step (<a href="plans/m-ceus-paper/">CEUS paper</a>).</li>
 <li><strong>A poster for CSIS DAYS 2026</strong>, fairly complete (<a href="plans/m-csis-poster/">CSIS DAYS 2026 poster</a>).</li>
-<li><strong>The doctoral plan</strong> (<a href="threads/d-doctoral-plan/">Doctoral plan</a>). The goal is an assignment that also knows which stays came before (<a href="plans/d-sequence-aware/">Sequence-aware assignment</a>). Next in line: the indoor and outdoor split across the four seasons, a second level of probability that picks which building, street or open space, and real open spaces in the ground truth. A new review of the key literature, a test in another city and a better way to cut streets into pieces are on hold. The toy GPS data idea was dropped. Every item and its status is on the <a href="plans/">plans board</a>. Latest update: <a href="progress/d-progress-20-10-2026/">Publications and doctoral plan</a>.</li>
+<li><strong>The doctoral plan</strong> (<a href="threads/d-doctoral-plan/">Doctoral plan</a>). The goal is an assignment that also knows which stays came before (<a href="plans/d-sequence-aware/">Sequence-aware assignment</a>). The meeting on 20-10-2026 added three new items, now in the inbox: the indoor and outdoor split across the four seasons, a second level of probability that picks which building, street or open space, and real open spaces in the ground truth. A new review of the key literature, a test in another city and a better way to cut streets into pieces are on hold. The toy GPS data idea was dropped. Latest update: <a href="progress/d-progress-20-10-2026/">Publications and doctoral plan</a>.</li>
 </ul>
-<p>The thesis code was checked against the text on 19-10-2026, and every number on this site comes from the checked pipeline (Thesis bug fixes and adopted rerun).</p>
+<p>The board below shows every work item by status: <strong>Inbox</strong> (not started, or still to discuss with sensei), <strong>On-going</strong> and <strong>On-hold</strong>. A finished item leaves the board, and its results move into the notes.</p>
+<p>The thesis code was checked against the text on 19-10-2026, and every number on this site comes from the checked pipeline. The check is settled and its notes are archived.</p>
 </div>
 <div class="home-board">
-<h2 class="home-section" id="plans"><a href="plans/">Plans</a></h2>
-<div class="plan-board">
-<div class="plan-lane">
-<h3 id="inbox">Inbox</h3>
+<div class="home-col">
+<h2 class="home-section" id="inbox"><a href="plans/">Inbox</a></h2>
 <ul>
 <li><a href="plans/d-seasonal-variance/">Seasonal variance</a></li>
 <li><a href="plans/d-nested-probabilities/">Nested probabilities</a></li>
@@ -4689,21 +4654,20 @@
 <li><a href="plans/d-sequence-aware/">Sequence-aware assignment</a></li>
 </ul>
 </div>
-<div class="plan-lane">
-<h3 id="on-going">On-going</h3>
+<div class="home-col">
+<h2 class="home-section" id="on-going"><a href="plans/">On-going</a></h2>
 <ul>
 <li><a href="plans/m-ceus-paper/">CEUS paper</a></li>
 <li><a href="plans/m-csis-poster/">CSIS DAYS 2026 poster</a></li>
 </ul>
 </div>
-<div class="plan-lane">
-<h3 id="on-hold">On-hold</h3>
+<div class="home-col">
+<h2 class="home-section" id="on-hold"><a href="plans/">On-hold</a></h2>
 <ul>
 <li><a href="plans/d-comprehensive-litrev/">Comprehensive literature review</a></li>
 <li><a href="plans/d-transferability/">Transferability</a></li>
 <li><a href="plans/d-street-segmentation/">Street segmentation</a></li>
 </ul>
-</div>
 </div>
 </div>
 <div class="home-columns">

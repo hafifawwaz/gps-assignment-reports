@@ -761,8 +761,13 @@ def build(mode: str, pdfs: list[str]) -> dict:
         return out + ["</div>", ""]
 
     if lanes:  # the plans board right under the catch-up
-        home += ['<div class="home-board" markdown>', "", "## [Plans](plans/index.md) { .home-section }", ""]
-        home += board_html("index.md") + ["</div>", ""]
+        # one box per lane, titled like the section columns below; each plan is a small card
+        home += ['<div class="home-board" markdown>', ""]
+        for lane, lane_cards in lanes:
+            home += ['<div class="home-col" markdown>', "", f"## [{lane}](plans/index.md) {{ .home-section }}", ""]
+            home += [f"- {r._text(card, board, 'index.md')}" for card in lane_cards] or ['<p class="empty">Nothing yet.</p>']
+            home += ["", "</div>", ""]
+        home += ["</div>", ""]
     home += ['<div class="home-columns" markdown>', ""]
     for section in HOME_COLUMNS:
         home += home_col(section, "home-col")

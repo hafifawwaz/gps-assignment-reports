@@ -258,11 +258,17 @@
 .md-typeset .home-col .more { display: inline-block; margin-top: .4rem; }
 .md-typeset .home-col .empty { font-size: .7rem; }
 /* Plans: the board, one column per lane */
-.md-typeset .home-board { margin-top: 1.4rem; }
-.md-typeset .home-board .plan-board { margin-top: .4rem; }
+/* home: the board right under the catch-up, one box per lane, each plan a card */
+.md-typeset .home-board { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.4rem; }
+.md-typeset .home-board .home-col ul li {
+  margin: 0 0 .5rem; padding: .55rem .75rem; border: 1px solid var(--c-line); border-radius: .45rem;
+  background: var(--c-bg); box-shadow: 0 1px 3px var(--c-shadow);
+}
+.md-typeset .home-board .home-col ul { margin-top: .5rem; }
+@media screen and (max-width: 44.9375em) { .md-typeset .home-board { grid-template-columns: minmax(0, 1fr); } }
 .md-typeset .plan-board { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: 1rem; margin: 1rem 0 1.6rem; }
 .md-typeset .plan-lane { background: var(--c-surface); border: 1px solid var(--c-line); border-radius: .4rem; padding: .2rem .8rem .6rem; }
-.md-typeset .plan-lane h3 { margin: .6rem 0 .4rem; font-family: inherit; font-size: .6rem; font-weight: 700; color: var(--c-green); text-transform: uppercase; letter-spacing: .1em; }  /* like "Linked from", in the primary colour */
+.md-typeset .plan-lane h3 { margin: .6rem 0 .4rem; font-family: inherit; font-size: .74rem; font-weight: 700; color: var(--c-green); text-transform: uppercase; letter-spacing: .1em; }  /* like "Linked from", in the primary colour */
 .md-typeset .plan-lane ul { list-style: none; margin: 0; padding: 0; }
 .md-typeset .plan-lane ul li { margin: 0; padding: .4rem 0; border-top: 1px solid var(--c-line); font-size: .72rem; line-height: 1.4; }
 .md-typeset .plan-lane .empty { font-size: .7rem; }

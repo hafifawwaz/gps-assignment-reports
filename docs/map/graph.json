@@ -1687,10 +1687,6 @@
   },
   {
    "source": "index.md",
-   "target": "plans/index.md"
-  },
-  {
-   "source": "index.md",
    "target": "plans/m-ceus-paper.md"
   },
   {

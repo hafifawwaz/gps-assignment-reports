@@ -3,7 +3,7 @@ source: report/progress/d-progress-20-10-2026.md
 date: 20-10-2026
 kind: progress
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-10-27T16:44:39
 ---
 
 # Publications and doctoral plan
@@ -14,7 +14,7 @@ The update for the meeting with sensei on 20-10-2026. It gathers the open items 
 
 ## Outputs from the master's thesis
 
-[CSIS DAYS 2026 poster](../plans/m-csis-poster.md) and [CEUS paper](../plans/m-ceus-paper.md). Both outputs use only the thesis content, so all the material already exists.
+[CSIS DAYS 2026 poster](../analysis/m-csis-poster.md) and [CEUS paper](../plans/m-ceus-paper.md). Both outputs use only the thesis content, so all the material already exists.
 
 - **CSIS Days 2026 poster.** Fairly complete. Sensei has not seen it yet.
 - **CEUS paper** (*Computers, Environment and Urban Systems*). A methodological paper, written from the thesis content.

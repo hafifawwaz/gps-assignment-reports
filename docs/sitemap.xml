@@ -2,374 +2,382 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-alpha-calibration/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-candidate-density-bias/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-candidate-search-area/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-confusion-matrix/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
+    </url>
+    <url>
+         <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-csis-poster/</loc>
+         <lastmod>2026-10-27</lastmod>
+    </url>
+    <url>
+         <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-csis-slide/</loc>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-directional-scope-ablation/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-drop-list/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-f-directional-shared-vs-split/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-f-distance-squared-artifact/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-final-model-correlation-matrix/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-final-model/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-fold-difficulty/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-interaction-term-screen/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-ml-baseline-stay-level/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-ml-ceiling-row-level/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-model-1-base/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-model-2-share-type-sigma/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-model-4a-alternative-specific/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-model-5-asc-rejected/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-model-6-rederived/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-model-progression-table/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-r-buffer-10m-vs-15m/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-raw-density-alpha-profile/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-raw-density-refit/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-sigma-tree-importance/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/analysis/m-stepwise-vif-elimination/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/glossary/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-boundary-matching-analogy/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-candidate-selection/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-contributions/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-downsampling-to-miles-density/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-experiment-design/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-experiment-group-a/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-experiment-group-b/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-experiment-group-c/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-experiment-group-d/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-experiment-group-e/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-f-directional/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-f-distance/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-f-distribution/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-f-temporal/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-framework-overview/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-future-work/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-ground-truth-cleaning/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-ground-truth-dataset/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-grouped-cross-validation/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-limitations/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-map-matching-extension/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-model-evaluation-metrics/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-motivation/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-multicollinearity-is-structural/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-overfitting-signature/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-positioning-vs-deterministic-assignment/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-research-questions/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-self-report-form/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-share-type/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-sigma/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-spatial-entity-layers/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-street-space-tension/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/concepts/m-study-area/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/map/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/notes/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/notes/fast-marching/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/plans/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
+    </url>
+    <url>
+         <loc>https://hafifawwaz.github.io/gps-assignment-reports/plans/csisdays-2026/</loc>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/plans/d-comprehensive-litrev/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/plans/d-gt-open-space/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/plans/d-nested-probabilities/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/plans/d-seasonal-variance/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/plans/d-sequence-aware/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/plans/d-street-segmentation/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/plans/d-transferability/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/plans/m-ceus-paper/</loc>
-         <lastmod>2026-10-26</lastmod>
-    </url>
-    <url>
-         <loc>https://hafifawwaz.github.io/gps-assignment-reports/plans/m-csis-poster/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/progress/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/progress/d-progress-20-10-2026/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/progress/m-phd-interview-slides/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/progress/m-progress-19-07-2026/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/progress/m-progress-20-07-2026/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/progress/m-progress-21-07-2026/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/progress/m-progress-23-07-2026/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/progress/m-progress-29-07-2026/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/threads/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/threads/d-doctoral-plan/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/threads/m-assignment-framework/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/threads/m-calibration/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/threads/m-complexity-and-transfer/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/threads/m-error-analysis/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/threads/m-ground-truth-data/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/threads/m-outlook/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/threads/m-problem-and-positioning/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://hafifawwaz.github.io/gps-assignment-reports/threads/m-thesis-summary/</loc>
-         <lastmod>2026-10-26</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
 </urlset>

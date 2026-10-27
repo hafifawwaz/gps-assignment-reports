@@ -1,0 +1,1 @@
+var e=`/gps-assignment-reports/talks/csis-2026/logo/hu_logo.webp`;export{e as t};

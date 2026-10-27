@@ -113,6 +113,13 @@
    "url": "../progress/m-progress-29-07-2026/"
   },
   {
+   "id": "plans/csisdays-2026.md",
+   "title": "CSIS DAYS 2026",
+   "kind": "plan",
+   "date": "27-10-2026",
+   "url": "../plans/csisdays-2026/"
+  },
+  {
    "id": "plans/d-comprehensive-litrev.md",
    "title": "Comprehensive literature review",
    "kind": "plan",
@@ -167,13 +174,6 @@
    "kind": "plan",
    "date": "26-10-2026",
    "url": "../plans/m-ceus-paper/"
-  },
-  {
-   "id": "plans/m-csis-poster.md",
-   "title": "CSIS DAYS 2026 poster",
-   "kind": "plan",
-   "date": "14-10-2026",
-   "url": "../plans/m-csis-poster/"
   },
   {
    "id": "concepts/glossary.md",
@@ -442,6 +442,20 @@
    "url": "../analysis/m-confusion-matrix/"
   },
   {
+   "id": "analysis/m-csis-poster.md",
+   "title": "CSIS DAYS 2026 poster",
+   "kind": "analysis",
+   "date": "14-10-2026",
+   "url": "../analysis/m-csis-poster/"
+  },
+  {
+   "id": "analysis/m-csis-slide.md",
+   "title": "CSIS DAYS 2026 slides",
+   "kind": "analysis",
+   "date": "27-10-2026",
+   "url": "../analysis/m-csis-slide/"
+  },
+  {
    "id": "analysis/m-directional-scope-ablation.md",
    "title": "Directional scope ablation (3a vs 3b)",
    "kind": "analysis",
@@ -684,6 +698,46 @@
   {
    "source": "analysis/m-confusion-matrix.md",
    "target": "threads/m-error-analysis.md"
+  },
+  {
+   "source": "analysis/m-csis-poster.md",
+   "target": "analysis/m-csis-slide.md"
+  },
+  {
+   "source": "analysis/m-csis-poster.md",
+   "target": "analysis/m-final-model.md"
+  },
+  {
+   "source": "analysis/m-csis-poster.md",
+   "target": "plans/csisdays-2026.md"
+  },
+  {
+   "source": "analysis/m-csis-poster.md",
+   "target": "plans/m-ceus-paper.md"
+  },
+  {
+   "source": "analysis/m-csis-poster.md",
+   "target": "threads/m-outlook.md"
+  },
+  {
+   "source": "analysis/m-csis-slide.md",
+   "target": "analysis/m-csis-poster.md"
+  },
+  {
+   "source": "analysis/m-csis-slide.md",
+   "target": "analysis/m-final-model.md"
+  },
+  {
+   "source": "analysis/m-csis-slide.md",
+   "target": "plans/csisdays-2026.md"
+  },
+  {
+   "source": "analysis/m-csis-slide.md",
+   "target": "plans/m-ceus-paper.md"
+  },
+  {
+   "source": "analysis/m-csis-slide.md",
+   "target": "threads/m-outlook.md"
   },
   {
    "source": "analysis/m-directional-scope-ablation.md",
@@ -1659,6 +1713,10 @@
   },
   {
    "source": "index.md",
+   "target": "analysis/m-csis-poster.md"
+  },
+  {
+   "source": "index.md",
    "target": "plans/d-comprehensive-litrev.md"
   },
   {
@@ -1691,10 +1749,6 @@
   },
   {
    "source": "index.md",
-   "target": "plans/m-csis-poster.md"
-  },
-  {
-   "source": "index.md",
    "target": "progress/d-progress-20-10-2026.md"
   },
   {
@@ -1704,6 +1758,26 @@
   {
    "source": "index.md",
    "target": "threads/m-thesis-summary.md"
+  },
+  {
+   "source": "plans/csisdays-2026.md",
+   "target": "analysis/m-csis-poster.md"
+  },
+  {
+   "source": "plans/csisdays-2026.md",
+   "target": "analysis/m-csis-slide.md"
+  },
+  {
+   "source": "plans/csisdays-2026.md",
+   "target": "analysis/m-final-model.md"
+  },
+  {
+   "source": "plans/csisdays-2026.md",
+   "target": "plans/m-ceus-paper.md"
+  },
+  {
+   "source": "plans/csisdays-2026.md",
+   "target": "threads/m-outlook.md"
   },
   {
    "source": "plans/d-comprehensive-litrev.md",
@@ -1795,6 +1869,10 @@
   },
   {
    "source": "plans/index.md",
+   "target": "plans/csisdays-2026.md"
+  },
+  {
+   "source": "plans/index.md",
    "target": "plans/d-comprehensive-litrev.md"
   },
   {
@@ -1826,8 +1904,8 @@
    "target": "plans/m-ceus-paper.md"
   },
   {
-   "source": "plans/index.md",
-   "target": "plans/m-csis-poster.md"
+   "source": "plans/m-ceus-paper.md",
+   "target": "analysis/m-csis-poster.md"
   },
   {
    "source": "plans/m-ceus-paper.md",
@@ -1839,10 +1917,6 @@
   },
   {
    "source": "plans/m-ceus-paper.md",
-   "target": "plans/m-csis-poster.md"
-  },
-  {
-   "source": "plans/m-ceus-paper.md",
    "target": "progress/d-progress-20-10-2026.md"
   },
   {
@@ -1850,16 +1924,8 @@
    "target": "threads/m-outlook.md"
   },
   {
-   "source": "plans/m-csis-poster.md",
-   "target": "analysis/m-final-model.md"
-  },
-  {
-   "source": "plans/m-csis-poster.md",
-   "target": "plans/m-ceus-paper.md"
-  },
-  {
-   "source": "plans/m-csis-poster.md",
-   "target": "threads/m-outlook.md"
+   "source": "progress/d-progress-20-10-2026.md",
+   "target": "analysis/m-csis-poster.md"
   },
   {
    "source": "progress/d-progress-20-10-2026.md",
@@ -1904,10 +1970,6 @@
   {
    "source": "progress/d-progress-20-10-2026.md",
    "target": "plans/m-ceus-paper.md"
-  },
-  {
-   "source": "progress/d-progress-20-10-2026.md",
-   "target": "plans/m-csis-poster.md"
   },
   {
    "source": "progress/d-progress-20-10-2026.md",
@@ -2087,6 +2149,10 @@
   },
   {
    "source": "threads/d-doctoral-plan.md",
+   "target": "analysis/m-csis-poster.md"
+  },
+  {
+   "source": "threads/d-doctoral-plan.md",
    "target": "plans/d-comprehensive-litrev.md"
   },
   {
@@ -2120,10 +2186,6 @@
   {
    "source": "threads/d-doctoral-plan.md",
    "target": "plans/m-ceus-paper.md"
-  },
-  {
-   "source": "threads/d-doctoral-plan.md",
-   "target": "plans/m-csis-poster.md"
   },
   {
    "source": "threads/d-doctoral-plan.md",

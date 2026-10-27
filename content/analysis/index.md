@@ -4,6 +4,20 @@ Raw analysis output: tables, numbers and diagnostics.
 
 ## 2026
 
+### October
+
+<div class="grid cards" markdown>
+
+-   <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-pdf">PDF</span></p>
+
+    **[CSIS DAYS 2026 slides](m-csis-slide.md)**
+
+-   <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-pdf">PDF</span></p>
+
+    **[CSIS DAYS 2026 poster](m-csis-poster.md)**
+
+</div>
+
 ### July
 
 <div class="grid cards" markdown>

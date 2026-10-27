@@ -33,6 +33,7 @@ nav:
   - plans/index.md
   - '2026':
     - October:
+      - csis days 2026: plans/csisdays-2026.md
       - ceus paper: plans/m-ceus-paper.md
       - seasonal variance: plans/d-seasonal-variance.md
       - nested probabilities: plans/d-nested-probabilities.md
@@ -41,7 +42,6 @@ nav:
       - street segmentation: plans/d-street-segmentation.md
       - sequence-aware assignment: plans/d-sequence-aware.md
       - comprehensive literature review: plans/d-comprehensive-litrev.md
-      - csis days 2026 poster (pdf): plans/m-csis-poster.md
 - Concepts:
   - concepts/index.md
   - '2026':
@@ -84,6 +84,9 @@ nav:
 - Analysis:
   - analysis/index.md
   - '2026':
+    - October:
+      - csis days 2026 slides (pdf): analysis/m-csis-slide.md
+      - csis days 2026 poster (pdf): analysis/m-csis-poster.md
     - July:
       - raw-density refit: analysis/m-raw-density-refit.md
       - raw-density alpha profile: analysis/m-raw-density-alpha-profile.md

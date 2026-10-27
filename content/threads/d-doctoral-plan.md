@@ -3,7 +3,7 @@ source: report/threads/d-doctoral-plan.md
 date: 26-10-2026
 kind: thread
 comments: true
-generated: 2026-10-26T20:43:47
+generated: 2026-10-27T16:44:39
 ---
 
 # Doctoral plan
@@ -18,7 +18,7 @@ The root of the doctoral work. It builds on the master's thesis ([Thesis summary
 
 ## Milestones
 
-- The two outputs from the master's thesis: [CEUS paper](../plans/m-ceus-paper.md) and [CSIS DAYS 2026 poster](../plans/m-csis-poster.md).
+- The two outputs from the master's thesis: [CEUS paper](../plans/m-ceus-paper.md) and [CSIS DAYS 2026 poster](../analysis/m-csis-poster.md).
 - [Comprehensive literature review](../plans/d-comprehensive-litrev.md): re-read the key papers and search for newer work.
 - [Transferability](../plans/d-transferability.md): show that the framework works on data from another city.
 

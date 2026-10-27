@@ -11,7 +11,7 @@ hide:
 The master's thesis is complete. Work now runs on three lines:
 
 - **A paper for the journal *Computers, Environment and Urban Systems* (CEUS)**, in drafting. It presents the method from the thesis: for each GPS stay, it gives a probability that the person was in a building, on a street, or in an open space, instead of picking one place. The model learns from 907 stays with known answers from a field survey in Hiroshima. On data it has not seen, it picks the correct type for 71.9% of stays (grouped CV accuracy 0.719 ± 0.032), and it does better there than Random Forest and XGBoost. Its main weakness is mistaking streets and open spaces for buildings. For streets, this comes from how the street map is cut into many short pieces, not from the GPS data itself; for open space, the cause is still open. Start from [Thesis summary](threads/m-thesis-summary.md). After the meeting on 20-10-2026 the paper changes to one column and gets map examples: an outdoor and an indoor cluster, and one stay shown through every step ([CEUS paper](plans/m-ceus-paper.md)).
-- **A poster for CSIS DAYS 2026**, fairly complete ([CSIS DAYS 2026 poster](plans/m-csis-poster.md)).
+- **A poster for CSIS DAYS 2026**, fairly complete ([CSIS DAYS 2026 poster](analysis/m-csis-poster.md)).
 - **The doctoral plan** ([Doctoral plan](threads/d-doctoral-plan.md)). The goal is an assignment that also knows which stays came before ([Sequence-aware assignment](plans/d-sequence-aware.md)). The meeting on 20-10-2026 added three new items, now in the inbox: the indoor and outdoor split across the four seasons, a second level of probability that picks which building, street or open space, and real open spaces in the ground truth. A new review of the key literature, a test in another city and a better way to cut streets into pieces are on hold. The toy GPS data idea was dropped. Latest update: [Publications and doctoral plan](progress/d-progress-20-10-2026.md).
 
 The board below shows every work item by status: **Inbox** (not started, or still to discuss with sensei), **On-going** and **On-hold**. A finished item leaves the board, and its results move into the notes.
@@ -27,10 +27,7 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 
 ## [Inbox](plans/index.md) { .home-section }
 
-- [Seasonal variance](plans/d-seasonal-variance.md)
-- [Nested probabilities](plans/d-nested-probabilities.md)
-- [Open space in the ground truth](plans/d-gt-open-space.md)
-- [Sequence-aware assignment](plans/d-sequence-aware.md)
+<p class="empty">Nothing yet.</p>
 
 </div>
 
@@ -39,7 +36,7 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 ## [On-going](plans/index.md) { .home-section }
 
 - [CEUS paper](plans/m-ceus-paper.md)
-- [CSIS DAYS 2026 poster](plans/m-csis-poster.md)
+- [Open space in the ground truth](plans/d-gt-open-space.md)
 
 </div>
 
@@ -50,6 +47,9 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 - [Comprehensive literature review](plans/d-comprehensive-litrev.md)
 - [Transferability](plans/d-transferability.md)
 - [Street segmentation](plans/d-street-segmentation.md)
+- [Seasonal variance](plans/d-seasonal-variance.md)
+- [Sequence-aware assignment](plans/d-sequence-aware.md)
+- [Nested probabilities](plans/d-nested-probabilities.md)
 
 </div>
 
@@ -111,13 +111,13 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 
 <p class="section-blurb">Raw analysis output: tables, numbers and diagnostics.</p>
 
+- [CSIS DAYS 2026 slides](analysis/m-csis-slide.md) <span class="chip chip-pdf">PDF</span>
+- [CSIS DAYS 2026 poster](analysis/m-csis-poster.md) <span class="chip chip-pdf">PDF</span>
 - [Raw-density refit](analysis/m-raw-density-refit.md)
 - [Raw-density alpha profile](analysis/m-raw-density-alpha-profile.md)
 - [Downsampling shrinks the candidate search area](analysis/m-candidate-search-area.md)
-- [Sigma in tree importance](analysis/m-sigma-tree-importance.md)
-- [ML ceiling check, row level](analysis/m-ml-ceiling-row-level.md)
 
-[All 25](analysis/index.md){ .more }
+[All 27](analysis/index.md){ .more }
 
 </div>
 

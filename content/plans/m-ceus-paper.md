@@ -3,7 +3,7 @@ source: report/plans/m-ceus-paper.md
 date: 26-10-2026
 kind: plan
 comments: true
-generated: 2026-10-26T20:41:14
+generated: 2026-10-27T16:44:39
 ---
 
 # CEUS paper
@@ -20,13 +20,13 @@ All the material already exists in the thesis. The paper uses the final numbers:
 2. **An example for every step.** Take one stay and illustrate how the framework works on it, step by step ([Framework overview](../concepts/m-framework-overview.md)).
 3. **One column.** Change the format to a single column. Two columns is the old format.
 
-Meeting: [Publications and doctoral plan](../progress/d-progress-20-10-2026.md). The poster for CSIS DAYS 2026 comes from the same content ([CSIS DAYS 2026 poster](m-csis-poster.md)).
+Meeting: [Publications and doctoral plan](../progress/d-progress-20-10-2026.md). The poster for CSIS DAYS 2026 comes from the same content ([CSIS DAYS 2026 poster](../analysis/m-csis-poster.md)).
 
 Part of [Outlook](../threads/m-outlook.md).
 
 
 <div class="backlinks" markdown>
 
-**Linked from** [CSIS DAYS 2026 poster](m-csis-poster.md) · [Doctoral plan](../threads/d-doctoral-plan.md) · [Publications and doctoral plan](../progress/d-progress-20-10-2026.md)
+**Linked from** [CSIS DAYS 2026](csisdays-2026.md) · [CSIS DAYS 2026 poster](../analysis/m-csis-poster.md) · [CSIS DAYS 2026 slides](../analysis/m-csis-slide.md) · [Doctoral plan](../threads/d-doctoral-plan.md) · [Publications and doctoral plan](../progress/d-progress-20-10-2026.md)
 
 </div>

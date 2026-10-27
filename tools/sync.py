@@ -54,6 +54,7 @@ SECTIONS = {  # also the tab order (Home and Map are in the header, not tabs)
 CATCHUP = "catchup.md"  # report/catchup.md: the hand-written hero text on the home page
 BOARD = "plans/board.md"  # an Obsidian Kanban board: its lanes (## headings) are the plans' statuses
 HOME_CARDS = 5  # newest items shown per section on the home page
+HOME_HIDDEN_LANES = {"Done"}  # board lanes the home page leaves out (the Plans page shows every lane)
 HOME_COLUMNS = ("threads", "progress", "concepts", "analysis")  # the four home columns, under the board
 GENERIC_PDF_NAMES = {"slides-export", "slides", "main", "export"}
 IMAGE_EXT = {".png", ".jpg", ".jpeg", ".svg", ".gif", ".webp"}
@@ -764,6 +765,8 @@ def build(mode: str, pdfs: list[str]) -> dict:
         # one box per lane, titled like the section columns below; each plan is a small card
         home += ['<div class="home-board" markdown>', ""]
         for lane, lane_cards in lanes:
+            if lane in HOME_HIDDEN_LANES:
+                continue  # finished plans show on the Plans page only
             home += ['<div class="home-col" markdown>', "", f"## [{lane}](plans/index.md) {{ .home-section }}", ""]
             home += [f"- {r._text(card, board, 'index.md')}" for card in lane_cards] or ['<p class="empty">Nothing yet.</p>']
             home += ["", "</div>", ""]

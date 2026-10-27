@@ -3,7 +3,7 @@ source: report/threads/m-outlook.md
 date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-26T20:41:14
+generated: 2026-10-27T16:44:39
 ---
 
 # Outlook
@@ -21,6 +21,6 @@ Meetings and talks: [PhD interview slides](../progress/m-phd-interview-slides.md
 
 <div class="backlinks" markdown>
 
-**Linked from** [CEUS paper](../plans/m-ceus-paper.md) · [CSIS DAYS 2026 poster](../plans/m-csis-poster.md) · [Contributions](../concepts/m-contributions.md) · [Future work](../concepts/m-future-work.md) · [Limitations](../concepts/m-limitations.md) · [PhD interview slides](../progress/m-phd-interview-slides.md) · [Thesis summary](m-thesis-summary.md)
+**Linked from** [CEUS paper](../plans/m-ceus-paper.md) · [CSIS DAYS 2026](../plans/csisdays-2026.md) · [CSIS DAYS 2026 poster](../analysis/m-csis-poster.md) · [CSIS DAYS 2026 slides](../analysis/m-csis-slide.md) · [Contributions](../concepts/m-contributions.md) · [Future work](../concepts/m-future-work.md) · [Limitations](../concepts/m-limitations.md) · [PhD interview slides](../progress/m-phd-interview-slides.md) · [Thesis summary](m-thesis-summary.md)
 
 </div>

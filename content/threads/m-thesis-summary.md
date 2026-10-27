@@ -3,7 +3,7 @@ source: report/threads/m-thesis-summary.md
 date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-26T20:41:14
+generated: 2026-10-27T18:04:09
 ---
 
 # Thesis summary
@@ -49,6 +49,6 @@ The notes are grouped by theme, not by thesis chapter:
 
 <div class="backlinks" markdown>
 
-**Linked from** [Assignment framework](m-assignment-framework.md) · [Calibration](m-calibration.md) · [Complexity and transfer](m-complexity-and-transfer.md) · [Doctoral plan](d-doctoral-plan.md) · [Error analysis](m-error-analysis.md) · [Glossary](../concepts/glossary.md) · [Ground truth data](m-ground-truth-data.md) · [Outlook](m-outlook.md) · [Problem and positioning](m-problem-and-positioning.md)
+**Linked from** [Assignment framework](m-assignment-framework.md) · [CEUS paper](../plans/m-ceus-paper.md) · [CSIS DAYS 2026](../plans/csisdays-2026.md) · [CSIS DAYS 2026 poster](../analysis/m-csis-poster.md) · [Calibration](m-calibration.md) · [Complexity and transfer](m-complexity-and-transfer.md) · [Doctoral plan](d-doctoral-plan.md) · [Error analysis](m-error-analysis.md) · [Glossary](../concepts/glossary.md) · [Ground truth data](m-ground-truth-data.md) · [Outlook](m-outlook.md) · [Problem and positioning](m-problem-and-positioning.md) · [Publications and doctoral plan](../progress/d-progress-20-10-2026.md)
 
 </div>

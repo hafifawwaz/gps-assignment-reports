@@ -3,7 +3,7 @@ source: report/progress/d-progress-20-10-2026.md
 date: 20-10-2026
 kind: progress
 comments: true
-generated: 2026-10-27T16:44:39
+generated: 2026-10-27T18:04:09
 ---
 
 # Publications and doctoral plan
@@ -14,11 +14,11 @@ The update for the meeting with sensei on 20-10-2026. It gathers the open items 
 
 ## Outputs from the master's thesis
 
-[CSIS DAYS 2026 poster](../analysis/m-csis-poster.md) and [CEUS paper](../plans/m-ceus-paper.md). Both outputs use only the thesis content, so all the material already exists.
+Two separate outputs, an event and a journal. Each uses only the thesis content ([Thesis summary](../threads/m-thesis-summary.md)), so all the material already exists.
 
-- **CSIS Days 2026 poster.** Fairly complete. Sensei has not seen it yet.
-- **CEUS paper** (*Computers, Environment and Urban Systems*). A methodological paper, written from the thesis content.
-- Both use the final numbers: 11 parameters, α = 2.764, grouped CV accuracy 0.719 ± 0.032 ([Final model](../analysis/m-final-model.md)).
+- **CSIS Days 2026 poster** ([CSIS DAYS 2026 poster](../analysis/m-csis-poster.md)). Fairly complete. Sensei approved it in this meeting.
+- **CEUS paper** (*Computers, Environment and Urban Systems*) ([CEUS paper](../plans/m-ceus-paper.md)). A methodological paper, written from the thesis content.
+- Each uses the final numbers: 11 parameters, α = 2.764, grouped CV accuracy 0.719 ± 0.032 ([Final model](../analysis/m-final-model.md)).
 
 ## Code check and adopted rerun
 

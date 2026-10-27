@@ -3,7 +3,7 @@ source: report/threads/m-assignment-framework.md
 date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-26T20:41:14
+generated: 2026-10-27T18:04:09
 ---
 
 # Assignment framework
@@ -24,6 +24,6 @@ Meetings: [MNL model development](../progress/m-progress-19-07-2026.md) (first l
 
 <div class="backlinks" markdown>
 
-**Linked from** [Framework overview](../concepts/m-framework-overview.md) · [Nested probabilities](../plans/d-nested-probabilities.md) · [Sequence-aware assignment](../plans/d-sequence-aware.md) · [Thesis summary](m-thesis-summary.md) · [share_type](../concepts/m-share-type.md) · [sigma](../concepts/m-sigma.md)
+**Linked from** [CSIS DAYS 2026 slides](../analysis/m-csis-slide.md) · [Framework overview](../concepts/m-framework-overview.md) · [Nested probabilities](../plans/d-nested-probabilities.md) · [Sequence-aware assignment](../plans/d-sequence-aware.md) · [Thesis summary](m-thesis-summary.md) · [share_type](../concepts/m-share-type.md) · [sigma](../concepts/m-sigma.md)
 
 </div>

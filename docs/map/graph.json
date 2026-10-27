@@ -713,11 +713,11 @@
   },
   {
    "source": "analysis/m-csis-poster.md",
-   "target": "plans/m-ceus-paper.md"
+   "target": "threads/m-outlook.md"
   },
   {
    "source": "analysis/m-csis-poster.md",
-   "target": "threads/m-outlook.md"
+   "target": "threads/m-thesis-summary.md"
   },
   {
    "source": "analysis/m-csis-slide.md",
@@ -733,7 +733,7 @@
   },
   {
    "source": "analysis/m-csis-slide.md",
-   "target": "plans/m-ceus-paper.md"
+   "target": "threads/m-assignment-framework.md"
   },
   {
    "source": "analysis/m-csis-slide.md",
@@ -1713,7 +1713,7 @@
   },
   {
    "source": "index.md",
-   "target": "analysis/m-csis-poster.md"
+   "target": "plans/csisdays-2026.md"
   },
   {
    "source": "index.md",
@@ -1773,11 +1773,11 @@
   },
   {
    "source": "plans/csisdays-2026.md",
-   "target": "plans/m-ceus-paper.md"
+   "target": "threads/m-outlook.md"
   },
   {
    "source": "plans/csisdays-2026.md",
-   "target": "threads/m-outlook.md"
+   "target": "threads/m-thesis-summary.md"
   },
   {
    "source": "plans/d-comprehensive-litrev.md",
@@ -1905,10 +1905,6 @@
   },
   {
    "source": "plans/m-ceus-paper.md",
-   "target": "analysis/m-csis-poster.md"
-  },
-  {
-   "source": "plans/m-ceus-paper.md",
    "target": "analysis/m-final-model.md"
   },
   {
@@ -1922,6 +1918,10 @@
   {
    "source": "plans/m-ceus-paper.md",
    "target": "threads/m-outlook.md"
+  },
+  {
+   "source": "plans/m-ceus-paper.md",
+   "target": "threads/m-thesis-summary.md"
   },
   {
    "source": "progress/d-progress-20-10-2026.md",
@@ -1974,6 +1974,10 @@
   {
    "source": "progress/d-progress-20-10-2026.md",
    "target": "threads/d-doctoral-plan.md"
+  },
+  {
+   "source": "progress/d-progress-20-10-2026.md",
+   "target": "threads/m-thesis-summary.md"
   },
   {
    "source": "progress/m-phd-interview-slides.md",
@@ -2149,7 +2153,7 @@
   },
   {
    "source": "threads/d-doctoral-plan.md",
-   "target": "analysis/m-csis-poster.md"
+   "target": "plans/csisdays-2026.md"
   },
   {
    "source": "threads/d-doctoral-plan.md",

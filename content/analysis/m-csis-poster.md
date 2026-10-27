@@ -3,7 +3,7 @@ source: report/analysis/m-csis-poster.md
 date: 14-10-2026
 kind: analysis
 comments: true
-generated: 2026-10-27T16:47:09
+generated: 2026-10-27T16:58:58
 ---
 
 # CSIS DAYS 2026 poster

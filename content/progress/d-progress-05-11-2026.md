@@ -3,14 +3,14 @@ source: report/progress/d-progress-05-11-2026.md
 date: 05-11-2026
 kind: progress
 comments: true
-generated: 2026-11-04T17:27:11
+generated: 2026-11-04T17:56:45
 ---
 
 # CEUS paper revisions
 
 <p class="doc-meta"><span class="chip chip-progress">Progress</span> <span class="chip chip-project">Doctoral</span> <span class="chip chip-date">05-11-2026</span></p>
 
-The update for the meeting with sensei on 05-11-2026. The meeting on 20-10-2026 asked for three changes to the CEUS paper ([CEUS paper](../plans/m-ceus-paper.md), [Publications and doctoral plan](d-progress-20-10-2026.md)). All three are now in the draft, with a light comparison with nearest-entity assignment, as sensei suggested. Everything comes from the official data and the [Final model](../analysis/m-final-model.md). No model was fitted again.
+The update for the meeting with sensei on 05-11-2026. The meeting on 20-10-2026 asked for three changes to the CEUS paper ([CEUS paper](../plans/m-ceus-paper.md), [Publications and doctoral plan](d-progress-20-10-2026.md)). All three are now in the draft, with a light comparison with nearest-entity assignment, as suggested. Everything comes from the official data and the [Final model](../analysis/m-final-model.md). 
 
 ## 1. One column
 
@@ -37,7 +37,15 @@ Four stays from the ground truth: two inside buildings, one on a street and one 
 | Nearest-entity rule | 0.479 | 0.501 | 0.281 | 0.607 |
 | Framework (out of sample) | 0.719 | 0.900 | 0.486 | 0.440 |
 
-- The framework is correct on 305 stays where the rule is wrong. The rule is correct on 87 stays where the framework is wrong.
+**Where the two methods agree and disagree** (number of stays, out of 907):
+
+| | Rule correct | Rule wrong | Total |
+|---|---:|---:|---:|
+| **Framework correct** | 347 (both right) | **305** (only the framework) | 652 |
+| **Framework wrong** | **87** (only the rule) | 168 (both wrong) | 255 |
+| **Total** | 434 | 473 | 907 |
+
+- The bold cells are where the two methods disagree. When they disagree, the framework is right more than three times as often (305 against 87).
 - In 9 stays the medoid lies inside a building and a street at the same time (the two map layers overlap). The rule then picks building.
 
 ## 3. One stay through every step
@@ -95,7 +103,13 @@ The framework picks street, which is correct. It still gives almost a third to b
 - **Definitions that were missing**: the medoid, share_t (the share of the stay's candidates that have the candidate's type) and the σ input.
 - **share_t wording.** Section 4.2 now speaks of a share, not a count of competing segments, which matches [share_type](../concepts/m-share-type.md).
 
-## Points for sensei
+## Question
 
-1. **Margins.** The submission layout has wide margins. Elsevier's `3p` layout in one column looks like the printed journal page and is shorter.
-2. **Nearest-entity in the abstract?** The comparison (0.479 against 0.719) is now in Section 4.2 only. The abstract and the conclusion are unchanged.
+1. **Nearest-entity in the abstract?** The comparison (0.479 against 0.719) is now in Section 4.2 only. The abstract and the conclusion are unchanged.
+
+
+<div class="backlinks" markdown>
+
+**Linked from** [CEUS paper](../plans/m-ceus-paper.md)
+
+</div>

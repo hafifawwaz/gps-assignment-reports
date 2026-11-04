@@ -3,7 +3,7 @@ source: report/plans/m-ceus-paper.md
 date: 26-10-2026
 kind: plan
 comments: true
-generated: 2026-11-04T17:19:19
+generated: 2026-11-04T17:56:45
 ---
 
 # CEUS paper
@@ -15,6 +15,7 @@ A methodological paper for the journal *Computers, Environment and Urban Systems
 All the material already exists in the thesis. The paper uses the final numbers: 11 parameters, α = 2.764, grouped CV accuracy 0.719 ± 0.032 ([Final model](../analysis/m-final-model.md)).
 
 ## Revisions from the meeting on 20-10-2026
+Revised [d-progress-05-11-2026](../progress/d-progress-05-11-2026.md)
 
 1. **Show an outdoor and an indoor cluster on a map.** Take examples from the GT and show visually, on a map, how a stay outdoors and a stay indoors look. Add a light comparison with nearest-entity assignment: the place nearest the stay, picked with no probabilities.
 2. **An example for every step.** Take one stay and illustrate how the framework works on it, step by step ([Framework overview](../concepts/m-framework-overview.md)).

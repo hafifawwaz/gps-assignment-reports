@@ -1282,10 +1282,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#points-for-sensei" class="md-nav__link">
+  <a href="#question" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Points for sensei
+        Question
       
     </span>
   </a>
@@ -5035,10 +5035,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#points-for-sensei" class="md-nav__link">
+  <a href="#question" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Points for sensei
+        Question
       
     </span>
   </a>
@@ -5065,7 +5065,7 @@
 <h1 id="ceus-paper-revisions">CEUS paper revisions</h1>
 <p class="doc-meta"><span class="chip chip-progress">Progress</span> <span class="chip chip-project">Doctoral</span> <span class="chip chip-date">05-11-2026</span></p>
 
-<p>The update for the meeting with sensei on 05-11-2026. The meeting on 20-10-2026 asked for three changes to the CEUS paper (<a href="../../plans/m-ceus-paper/">CEUS paper</a>, <a href="../d-progress-20-10-2026/">Publications and doctoral plan</a>). All three are now in the draft, with a light comparison with nearest-entity assignment, as sensei suggested. Everything comes from the official data and the <a href="../../analysis/m-final-model/">Final model</a>. No model was fitted again.</p>
+<p>The update for the meeting with sensei on 05-11-2026. The meeting on 20-10-2026 asked for three changes to the CEUS paper (<a href="../../plans/m-ceus-paper/">CEUS paper</a>, <a href="../d-progress-20-10-2026/">Publications and doctoral plan</a>). All three are now in the draft, with a light comparison with nearest-entity assignment, as suggested. Everything comes from the official data and the <a href="../../analysis/m-final-model/">Final model</a>. </p>
 <h2 id="1-one-column">1. One column</h2>
 <ul>
 <li>The paper now uses Elsevier's one-column layout for submission (<code>preprint</code>, 12 pt). It has 27 pages.</li>
@@ -5110,8 +5110,39 @@
 </tr>
 </tbody>
 </table>
+<p><strong>Where the two methods agree and disagree</strong> (number of stays, out of 907):</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Rule correct</th>
+<th style="text-align: right;">Rule wrong</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Framework correct</strong></td>
+<td style="text-align: right;">347 (both right)</td>
+<td style="text-align: right;"><strong>305</strong> (only the framework)</td>
+<td style="text-align: right;">652</td>
+</tr>
+<tr>
+<td><strong>Framework wrong</strong></td>
+<td style="text-align: right;"><strong>87</strong> (only the rule)</td>
+<td style="text-align: right;">168 (both wrong)</td>
+<td style="text-align: right;">255</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;">434</td>
+<td style="text-align: right;">473</td>
+<td style="text-align: right;">907</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li>The framework is correct on 305 stays where the rule is wrong. The rule is correct on 87 stays where the framework is wrong.</li>
+<li>The bold cells are where the two methods disagree. When they disagree, the framework is right more than three times as often (305 against 87).</li>
 <li>In 9 stays the medoid lies inside a building and a street at the same time (the two map layers overlap). The rule then picks building.</li>
 </ul>
 <h2 id="3-one-stay-through-every-step">3. One stay through every step</h2>
@@ -5294,11 +5325,13 @@ Two more inputs enter.
 <li><strong>Definitions that were missing</strong>: the medoid, share_t (the share of the stay's candidates that have the candidate's type) and the σ input.</li>
 <li><strong>share_t wording.</strong> Section 4.2 now speaks of a share, not a count of competing segments, which matches <a href="../../concepts/m-share-type/">share_type</a>.</li>
 </ul>
-<h2 id="points-for-sensei">Points for sensei</h2>
+<h2 id="question">Question</h2>
 <ol>
-<li><strong>Margins.</strong> The submission layout has wide margins. Elsevier's <code>3p</code> layout in one column looks like the printed journal page and is shorter.</li>
 <li><strong>Nearest-entity in the abstract?</strong> The comparison (0.479 against 0.719) is now in Section 4.2 only. The abstract and the conclusion are unchanged.</li>
 </ol>
+<div class="backlinks">
+<p><strong>Linked from</strong> <a href="../../plans/m-ceus-paper/">CEUS paper</a></p>
+</div>
 
 
 

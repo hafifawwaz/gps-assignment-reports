@@ -35,7 +35,8 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 
 ## [On-going](plans/index.md) { .home-section }
 
-<p class="empty">Nothing yet.</p>
+- [Nested probabilities](plans/d-nested-probabilities.md)
+- [Seasonal variance](plans/d-seasonal-variance.md)
 
 </div>
 
@@ -46,9 +47,7 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 - [Comprehensive literature review](plans/d-comprehensive-litrev.md)
 - [Transferability](plans/d-transferability.md)
 - [Street segmentation](plans/d-street-segmentation.md)
-- [Seasonal variance](plans/d-seasonal-variance.md)
 - [Sequence-aware assignment](plans/d-sequence-aware.md)
-- [Nested probabilities](plans/d-nested-probabilities.md)
 - [Open space in the ground truth](plans/d-gt-open-space.md)
 
 </div>

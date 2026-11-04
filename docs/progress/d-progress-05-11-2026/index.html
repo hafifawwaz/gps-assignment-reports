@@ -5252,7 +5252,10 @@
 <li><a href="../../concepts/m-f-temporal/">f_temporal</a>: close to f_distribution for most candidates. This overlap is why the final model drops it.</li>
 <li><a href="../../concepts/m-f-directional/">f_directional</a>: the steps between points follow the road. S1 and S2 (the two segments of Fukutomachi Road) score 0.92 to 0.93, the cross streets 0.27, every building and open space below 0.08.</li>
 </ul>
-<p><strong>Step 3: utility</strong> (a second table, Section 3.3). The final weights turn the scores into a value <span class="arithmatex">\(V_k\)</span> for each candidate. Two more inputs enter. <a href="../../concepts/m-share-type/">share_type</a>: 5 of the 14 candidates are streets, so every street loses 5.163 × 5/14 = 1.84. <a href="../../concepts/m-sigma/">sigma</a>: the points are spread out, so every street and open-space candidate gains 1.016 × 1.332 = 1.35. S1 has the highest value, 2.09.</p>
+<p><strong>Step 3: utility</strong> (a second table, Section 3.3). The final weights turn the scores into a value <span class="arithmatex">\(V_k\)</span> for each candidate. 
+Two more inputs enter. 
+- <a href="../../concepts/m-share-type/">share_type</a>: 5 of the 14 candidates are streets, so every street loses 5.163 × 5/14 = 1.84. 
+- <a href="../../concepts/m-sigma/">sigma</a>: the points are spread out, so every street and open-space candidate gains 1.016 × 1.332 = 1.35. S1 has the highest value, 2.09.</p>
 <p><strong>Step 4: probability.</strong></p>
 <table>
 <thead>

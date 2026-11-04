@@ -3,7 +3,7 @@ source: report/progress/d-progress-05-11-2026.md
 date: 05-11-2026
 kind: progress
 comments: true
-generated: 2026-11-04T17:19:19
+generated: 2026-11-04T17:27:11
 ---
 
 # CEUS paper revisions
@@ -51,21 +51,21 @@ The street stay of map (c) goes through the method in Sections 3.1 to 3.3 ([Fram
 **Step 2: scores** (the same table is in the paper, Section 3.2).
 
 | Candidate | Distance to medoid (m) | f_distribution | f_distance | f_temporal | f_directional |
-|---|---:|---:|---:|---:|---:|
-| B1 | 0.0 | 0.55 | 1.00 | 0.93 | 0.07 |
-| B2 | 42.3 | 0.38 | 0.95 | 0.38 | 0.08 |
-| B3 | 3.8 | 0.27 | 1.00 | 0.27 | 0.08 |
-| B4 | 13.5 | 0.24 | 0.99 | 0.29 | 0.07 |
-| B5 | 32.4 | 0.16 | 0.97 | 0.16 | 0.08 |
-| S1 | 2.8 | **0.93** | 1.00 | 0.93 | **0.92** |
-| S2 | 32.3 | 0.29 | 0.97 | 0.29 | **0.93** |
-| S3 | 26.5 | 0.23 | 0.98 | 0.23 | 0.27 |
-| S4 | 27.2 | 0.23 | 0.98 | 0.23 | 0.27 |
-| S5 | 31.9 | 0.03 | 0.97 | 0.03 | 0.27 |
-| O1 | 1.8 | **0.93** | 1.00 | 0.93 | 0.07 |
-| O2 | 10.8 | 0.37 | 1.00 | 0.29 | 0.07 |
-| O3 | 28.4 | 0.27 | 0.98 | 0.27 | 0.07 |
-| O4 | 34.7 | 0.07 | 0.96 | 0.07 | 0.07 |
+| --------- | ---------------------: | -------------: | ---------: | ---------: | ------------: |
+| B1        |                    0.0 |           0.55 |       1.00 |       0.93 |          0.07 |
+| B2        |                   42.3 |           0.38 |       0.95 |       0.38 |          0.08 |
+| B3        |                    3.8 |           0.27 |       1.00 |       0.27 |          0.08 |
+| B4        |                   13.5 |           0.24 |       0.99 |       0.29 |          0.07 |
+| B5        |                   32.4 |           0.16 |       0.97 |       0.16 |          0.08 |
+| S1        |                    2.8 |       **0.93** |       1.00 |       0.93 |      **0.92** |
+| S2        |                   32.3 |           0.29 |       0.97 |       0.29 |      **0.93** |
+| S3        |                   26.5 |           0.23 |       0.98 |       0.23 |          0.27 |
+| S4        |                   27.2 |           0.23 |       0.98 |       0.23 |          0.27 |
+| S5        |                   31.9 |           0.03 |       0.97 |       0.03 |          0.27 |
+| O1        |                    1.8 |       **0.93** |       1.00 |       0.93 |          0.07 |
+| O2        |                   10.8 |           0.37 |       1.00 |       0.29 |          0.07 |
+| O3        |                   28.4 |           0.27 |       0.98 |       0.27 |          0.07 |
+| O4        |                   34.7 |           0.07 |       0.96 |       0.07 |          0.07 |
 
 How to read it:
 
@@ -74,7 +74,10 @@ How to read it:
 - [f_temporal](../concepts/m-f-temporal.md): close to f_distribution for most candidates. This overlap is why the final model drops it.
 - [f_directional](../concepts/m-f-directional.md): the steps between points follow the road. S1 and S2 (the two segments of Fukutomachi Road) score 0.92 to 0.93, the cross streets 0.27, every building and open space below 0.08.
 
-**Step 3: utility** (a second table, Section 3.3). The final weights turn the scores into a value $V_k$ for each candidate. Two more inputs enter. [share_type](../concepts/m-share-type.md): 5 of the 14 candidates are streets, so every street loses 5.163 × 5/14 = 1.84. [sigma](../concepts/m-sigma.md): the points are spread out, so every street and open-space candidate gains 1.016 × 1.332 = 1.35. S1 has the highest value, 2.09.
+**Step 3: utility** (a second table, Section 3.3). The final weights turn the scores into a value $V_k$ for each candidate. 
+Two more inputs enter. 
+- [share_type](../concepts/m-share-type.md): 5 of the 14 candidates are streets, so every street loses 5.163 × 5/14 = 1.84. 
+- [sigma](../concepts/m-sigma.md): the points are spread out, so every street and open-space candidate gains 1.016 × 1.332 = 1.35. S1 has the highest value, 2.09.
 
 **Step 4: probability.**
 

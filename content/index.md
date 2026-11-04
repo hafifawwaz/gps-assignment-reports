@@ -10,8 +10,8 @@ hide:
 
 The master's thesis is complete. Work now runs on three lines:
 
-- **A paper for the journal *Computers, Environment and Urban Systems* (CEUS)**, in drafting. It presents the method from the thesis: for each GPS stay, it gives a probability that the person was in a building, on a street, or in an open space, instead of picking one place. The model learns from 907 stays with known answers from a field survey in Hiroshima. On data it has not seen, it picks the correct type for 71.9% of stays (grouped CV accuracy 0.719 ± 0.032), and it does better there than Random Forest and XGBoost. Its main weakness is mistaking streets and open spaces for buildings. For streets, this comes from how the street map is cut into many short pieces, not from the GPS data itself; for open space, the cause is still open. Start from [Thesis summary](threads/m-thesis-summary.md). After the meeting on 20-10-2026 the paper changes to one column and gets map examples: an outdoor and an indoor cluster, and one stay shown through every step ([CEUS paper](plans/m-ceus-paper.md)).
-- **CSIS DAYS 2026**: a poster, approved by sensei on 20-10-2026, and slides for the talk. The QR code on the poster opens the slides ([CSIS DAYS 2026](plans/csisdays-2026.md)).
+- **A paper for the journal *Computers, Environment and Urban Systems* (CEUS)**, in drafting. It presents the method from the thesis: for each GPS stay, it gives a probability that the person was in a building, on a street, or in an open space, instead of picking one place. The model learns from 907 stays with known answers from a field survey in Hiroshima. On data it has not seen, it picks the correct type for 71.9% of stays (grouped CV accuracy 0.719 ± 0.032), and it does better there than Random Forest and XGBoost. Its main weakness is mistaking streets and open spaces for buildings. For streets, this comes from how the street map is cut into many short pieces, not from the GPS data itself; for open space, the cause is still open. Start from [Thesis summary](threads/m-thesis-summary.md). The three changes from the meeting on 20-10-2026 are now in the draft ([CEUS paper](plans/m-ceus-paper.md)): one column; a map of four stays (two indoor, two outdoor) that compares the framework with the usual nearest-place rule, which picks the correct type for only 47.9% of stays; and one street stay shown through every step of the method. Latest update: [CEUS paper revisions](progress/d-progress-05-11-2026.md).
+- **CSIS DAYS 2026**: everything is ready, the poster (approved by sensei on 20-10-2026) and the slides for the talk; the QR code on the poster opens the slides. Only printing the poster is left ([CSIS DAYS 2026](plans/csisdays-2026.md)).
 - **The doctoral plan** ([Doctoral plan](threads/d-doctoral-plan.md)). The goal is an assignment that also knows which stays came before ([Sequence-aware assignment](plans/d-sequence-aware.md)). The meeting on 20-10-2026 added three new items, now in the inbox: the indoor and outdoor split across the four seasons, a second level of probability that picks which building, street or open space, and real open spaces in the ground truth. A new review of the key literature, a test in another city and a better way to cut streets into pieces are on hold. The toy GPS data idea was dropped. Latest update: [Publications and doctoral plan](progress/d-progress-20-10-2026.md).
 
 The board below shows every work item by status: **Inbox** (not started, or still to discuss with sensei), **On-going** and **On-hold**. A finished item moves to **Done** (shown on the Plans page), and its results move into the notes.
@@ -35,8 +35,7 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 
 ## [On-going](plans/index.md) { .home-section }
 
-- [CEUS paper](plans/m-ceus-paper.md)
-- [Open space in the ground truth](plans/d-gt-open-space.md)
+<p class="empty">Nothing yet.</p>
 
 </div>
 
@@ -50,6 +49,7 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 - [Seasonal variance](plans/d-seasonal-variance.md)
 - [Sequence-aware assignment](plans/d-sequence-aware.md)
 - [Nested probabilities](plans/d-nested-probabilities.md)
+- [Open space in the ground truth](plans/d-gt-open-space.md)
 
 </div>
 
@@ -79,13 +79,13 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 
 <p class="section-blurb">Dated updates for sensei, and slide exports.</p>
 
+- [CEUS paper revisions](progress/d-progress-05-11-2026.md)
 - [Publications and doctoral plan](progress/d-progress-20-10-2026.md)
 - [PhD interview slides](progress/m-phd-interview-slides.md) <span class="chip chip-pdf">PDF</span>
 - [Does downsampling matter?](progress/m-progress-29-07-2026.md)
 - [RQ2 diagnostics and RQ3 ceiling check](progress/m-progress-23-07-2026.md)
-- [RQ1 rebuilt with grouped CV](progress/m-progress-21-07-2026.md)
 
-[All 7](progress/index.md){ .more }
+[All 9](progress/index.md){ .more }
 
 </div>
 
@@ -112,7 +112,7 @@ The thesis code was checked against the text on 19-10-2026, and every number on 
 <p class="section-blurb">Raw analysis output: tables, numbers and diagnostics.</p>
 
 - [CSIS DAYS 2026 slides](analysis/m-csis-slide.md) <span class="chip chip-pdf">PDF</span>
-- [CSIS DAYS 2026 poster](analysis/m-csis-poster.md) <span class="chip chip-pdf">PDF</span>
+- [CSIS DAYS 2026 poster](analysis/m-csis-poster.md)
 - [Raw-density refit](analysis/m-raw-density-refit.md)
 - [Raw-density alpha profile](analysis/m-raw-density-alpha-profile.md)
 - [Downsampling shrinks the candidate search area](analysis/m-candidate-search-area.md)

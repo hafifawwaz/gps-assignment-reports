@@ -4,6 +4,16 @@ Dated updates for sensei, and slide exports.
 
 ## 2026
 
+### November
+
+<div class="grid cards" markdown>
+
+-   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
+
+    **[CEUS paper revisions](d-progress-05-11-2026.md)**
+
+</div>
+
 ### October
 
 <div class="grid cards" markdown>
@@ -47,5 +57,15 @@ Dated updates for sensei, and slide exports.
 -   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
 
     **[MNL model development](m-progress-19-07-2026.md)**
+
+</div>
+
+## Undated
+
+<div class="grid cards" markdown>
+
+-   <p class="doc-meta"><span class="chip chip-progress">Progress</span> <span class="chip chip-pdf">PDF</span></p>
+
+    **[poster a0 print](poster-a0-print.md)**
 
 </div>

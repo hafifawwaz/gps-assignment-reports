@@ -3,7 +3,7 @@ source: report/progress/d-progress-20-10-2026.md
 date: 20-10-2026
 kind: progress
 comments: true
-generated: 2026-10-27T18:04:09
+generated: 2026-11-04T17:19:19
 ---
 
 # Publications and doctoral plan
@@ -68,6 +68,6 @@ What the meeting decided. Each item is now a plan on the [plans board](../plans/
 
 <div class="backlinks" markdown>
 
-**Linked from** [CEUS paper](../plans/m-ceus-paper.md) · [Doctoral plan](../threads/d-doctoral-plan.md) · [Nested probabilities](../plans/d-nested-probabilities.md) · [Open space in the ground truth](../plans/d-gt-open-space.md) · [Seasonal variance](../plans/d-seasonal-variance.md)
+**Linked from** [CEUS paper](../plans/m-ceus-paper.md) · [CEUS paper revisions](d-progress-05-11-2026.md) · [Doctoral plan](../threads/d-doctoral-plan.md) · [Nested probabilities](../plans/d-nested-probabilities.md) · [Open space in the ground truth](../plans/d-gt-open-space.md) · [Seasonal variance](../plans/d-seasonal-variance.md)
 
 </div>

@@ -3,7 +3,7 @@ source: report/concepts/m-share-type.md
 date: 19-07-2026
 kind: concept
 comments: true
-generated: 2026-10-26T20:41:14
+generated: 2026-11-04T17:19:19
 ---
 
 # share_type
@@ -25,6 +25,6 @@ Part of [Assignment framework](../threads/m-assignment-framework.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Assignment framework](../threads/m-assignment-framework.md) · [Candidate density bias toward building](../analysis/m-candidate-density-bias.md) · [Framework overview](m-framework-overview.md) · [Model 2: share-type and sigma](../analysis/m-model-2-share-type-sigma.md) · [f_distribution](m-f-distribution.md)
+**Linked from** [Assignment framework](../threads/m-assignment-framework.md) · [CEUS paper revisions](../progress/d-progress-05-11-2026.md) · [Candidate density bias toward building](../analysis/m-candidate-density-bias.md) · [Framework overview](m-framework-overview.md) · [Model 2: share-type and sigma](../analysis/m-model-2-share-type-sigma.md) · [f_distribution](m-f-distribution.md)
 
 </div>

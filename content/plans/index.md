@@ -16,8 +16,7 @@ Work items by status: inbox (to start or discuss with sensei), on-going, on hold
 
 ### On-going
 
-- [CEUS paper](m-ceus-paper.md)
-- [Open space in the ground truth](d-gt-open-space.md)
+<p class="empty">Nothing here.</p>
 
 </div>
 
@@ -31,6 +30,7 @@ Work items by status: inbox (to start or discuss with sensei), on-going, on hold
 - [Seasonal variance](d-seasonal-variance.md)
 - [Sequence-aware assignment](d-sequence-aware.md)
 - [Nested probabilities](d-nested-probabilities.md)
+- [Open space in the ground truth](d-gt-open-space.md)
 
 </div>
 
@@ -39,6 +39,7 @@ Work items by status: inbox (to start or discuss with sensei), on-going, on hold
 ### Done
 
 - [CSIS DAYS 2026](csisdays-2026.md)
+- [CEUS paper](m-ceus-paper.md)
 
 </div>
 

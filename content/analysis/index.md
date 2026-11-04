@@ -12,7 +12,7 @@ Raw analysis output: tables, numbers and diagnostics.
 
     **[CSIS DAYS 2026 slides](m-csis-slide.md)**
 
--   <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-pdf">PDF</span></p>
+-   <p class="doc-meta"><span class="chip chip-analysis">Analysis</span></p>
 
     **[CSIS DAYS 2026 poster](m-csis-poster.md)**
 

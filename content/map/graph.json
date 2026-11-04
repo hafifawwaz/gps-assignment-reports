@@ -64,6 +64,13 @@
    "url": "../threads/m-thesis-summary/"
   },
   {
+   "id": "progress/d-progress-05-11-2026.md",
+   "title": "CEUS paper revisions",
+   "kind": "progress",
+   "date": "05-11-2026",
+   "url": "../progress/d-progress-05-11-2026/"
+  },
+  {
    "id": "progress/d-progress-20-10-2026.md",
    "title": "Publications and doctoral plan",
    "kind": "progress",
@@ -608,6 +615,28 @@
    "kind": "note",
    "date": "",
    "url": "../notes/fast-marching/"
+  },
+  {
+   "id": "notes/new-gt-experiment-en.md",
+   "title": "New GT experiment",
+   "kind": "note",
+   "date": "29-10-2026",
+   "url": "../notes/new-gt-experiment-en/"
+  },
+  {
+   "id": "notes/new-gt-experiment-ja.md",
+   "title": "新GT実験の概要",
+   "kind": "note",
+   "date": "29-10-2026",
+   "url": "../notes/new-gt-experiment-ja/"
+  },
+  {
+   "id": "progress/poster-a0-print.md",
+   "title": "poster a0 print",
+   "kind": "progress",
+   "date": "",
+   "url": "../progress/poster-a0-print/",
+   "pdf": true
   }
  ],
  "links": [
@@ -1749,6 +1778,10 @@
   },
   {
    "source": "index.md",
+   "target": "progress/d-progress-05-11-2026.md"
+  },
+  {
+   "source": "index.md",
    "target": "progress/d-progress-20-10-2026.md"
   },
   {
@@ -1758,6 +1791,14 @@
   {
    "source": "index.md",
    "target": "threads/m-thesis-summary.md"
+  },
+  {
+   "source": "notes/new-gt-experiment-en.md",
+   "target": "notes/new-gt-experiment-ja.md"
+  },
+  {
+   "source": "notes/new-gt-experiment-ja.md",
+   "target": "notes/new-gt-experiment-en.md"
   },
   {
    "source": "plans/csisdays-2026.md",
@@ -1922,6 +1963,58 @@
   {
    "source": "plans/m-ceus-paper.md",
    "target": "threads/m-thesis-summary.md"
+  },
+  {
+   "source": "progress/d-progress-05-11-2026.md",
+   "target": "analysis/m-final-model.md"
+  },
+  {
+   "source": "progress/d-progress-05-11-2026.md",
+   "target": "concepts/m-candidate-selection.md"
+  },
+  {
+   "source": "progress/d-progress-05-11-2026.md",
+   "target": "concepts/m-f-directional.md"
+  },
+  {
+   "source": "progress/d-progress-05-11-2026.md",
+   "target": "concepts/m-f-distance.md"
+  },
+  {
+   "source": "progress/d-progress-05-11-2026.md",
+   "target": "concepts/m-f-distribution.md"
+  },
+  {
+   "source": "progress/d-progress-05-11-2026.md",
+   "target": "concepts/m-f-temporal.md"
+  },
+  {
+   "source": "progress/d-progress-05-11-2026.md",
+   "target": "concepts/m-framework-overview.md"
+  },
+  {
+   "source": "progress/d-progress-05-11-2026.md",
+   "target": "concepts/m-grouped-cross-validation.md"
+  },
+  {
+   "source": "progress/d-progress-05-11-2026.md",
+   "target": "concepts/m-share-type.md"
+  },
+  {
+   "source": "progress/d-progress-05-11-2026.md",
+   "target": "concepts/m-sigma.md"
+  },
+  {
+   "source": "progress/d-progress-05-11-2026.md",
+   "target": "plans/d-street-segmentation.md"
+  },
+  {
+   "source": "progress/d-progress-05-11-2026.md",
+   "target": "plans/m-ceus-paper.md"
+  },
+  {
+   "source": "progress/d-progress-05-11-2026.md",
+   "target": "progress/d-progress-20-10-2026.md"
   },
   {
    "source": "progress/d-progress-20-10-2026.md",

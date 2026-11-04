@@ -3,7 +3,7 @@ source: report/concepts/m-grouped-cross-validation.md
 date: 21-07-2026
 kind: concept
 comments: true
-generated: 2026-10-26T20:41:14
+generated: 2026-11-04T17:19:19
 ---
 
 # Grouped cross-validation
@@ -23,6 +23,6 @@ Part of [Calibration](../threads/m-calibration.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Calibration](../threads/m-calibration.md) · [Experiment design](m-experiment-design.md) · [Limitations](m-limitations.md) · [ML baseline, stay level (superseded)](../analysis/m-ml-baseline-stay-level.md) · [Model evaluation metrics](m-model-evaluation-metrics.md) · [Model progression](../analysis/m-model-progression-table.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md) · [R_buffer: 10 m vs 15 m](../analysis/m-r-buffer-10m-vs-15m.md)
+**Linked from** [CEUS paper revisions](../progress/d-progress-05-11-2026.md) · [Calibration](../threads/m-calibration.md) · [Experiment design](m-experiment-design.md) · [Limitations](m-limitations.md) · [ML baseline, stay level (superseded)](../analysis/m-ml-baseline-stay-level.md) · [Model evaluation metrics](m-model-evaluation-metrics.md) · [Model progression](../analysis/m-model-progression-table.md) · [RQ1 rebuilt with grouped CV](../progress/m-progress-21-07-2026.md) · [R_buffer: 10 m vs 15 m](../analysis/m-r-buffer-10m-vs-15m.md)
 
 </div>

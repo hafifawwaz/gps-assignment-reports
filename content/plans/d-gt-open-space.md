@@ -3,12 +3,12 @@ source: report/plans/d-gt-open-space.md
 date: 26-10-2026
 kind: plan
 comments: true
-generated: 2026-10-27T16:44:39
+generated: 2026-11-04T17:19:19
 ---
 
 # Open space in the ground truth
 
-<p class="doc-meta"><span class="chip chip-plan">Plan</span> <span class="chip chip-lane">On-going</span> <span class="chip chip-project">Doctoral</span> <span class="chip chip-date">26-10-2026</span></p>
+<p class="doc-meta"><span class="chip chip-plan">Plan</span> <span class="chip chip-lane">On-hold</span> <span class="chip chip-project">Doctoral</span> <span class="chip chip-date">26-10-2026</span></p>
 
 New work from the meeting on 20-10-2026 ([Publications and doctoral plan](../progress/d-progress-20-10-2026.md)).
 

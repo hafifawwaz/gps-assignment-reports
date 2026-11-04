@@ -3,7 +3,7 @@ source: report/concepts/m-framework-overview.md
 date: 25-07-2026
 kind: concept
 comments: true
-generated: 2026-10-26T20:41:14
+generated: 2026-11-04T17:19:19
 ---
 
 # Framework overview
@@ -34,6 +34,6 @@ Part of [Assignment framework](../threads/m-assignment-framework.md). Answers th
 
 <div class="backlinks" markdown>
 
-**Linked from** [Assignment framework](../threads/m-assignment-framework.md) · [CEUS paper](../plans/m-ceus-paper.md) · [Candidate selection](m-candidate-selection.md) · [Contributions](m-contributions.md) · [Extending map matching to stationary stays](m-map-matching-extension.md) · [Research questions](m-research-questions.md) · [f_directional](m-f-directional.md) · [f_distance](m-f-distance.md) · [f_distribution](m-f-distribution.md) · [f_temporal](m-f-temporal.md)
+**Linked from** [Assignment framework](../threads/m-assignment-framework.md) · [CEUS paper](../plans/m-ceus-paper.md) · [CEUS paper revisions](../progress/d-progress-05-11-2026.md) · [Candidate selection](m-candidate-selection.md) · [Contributions](m-contributions.md) · [Extending map matching to stationary stays](m-map-matching-extension.md) · [Research questions](m-research-questions.md) · [f_directional](m-f-directional.md) · [f_distance](m-f-distance.md) · [f_distribution](m-f-distribution.md) · [f_temporal](m-f-temporal.md)
 
 </div>

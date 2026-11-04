@@ -3,7 +3,7 @@ source: report/concepts/m-f-temporal.md
 date: 25-07-2026
 kind: concept
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-11-04T17:19:19
 ---
 
 # f_temporal
@@ -29,6 +29,6 @@ Part of [Framework overview](m-framework-overview.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Assignment framework](../threads/m-assignment-framework.md) · [Framework overview](m-framework-overview.md) · [Model 1: base](../analysis/m-model-1-base.md) · [Model 2: share-type and sigma](../analysis/m-model-2-share-type-sigma.md)
+**Linked from** [Assignment framework](../threads/m-assignment-framework.md) · [CEUS paper revisions](../progress/d-progress-05-11-2026.md) · [Framework overview](m-framework-overview.md) · [Model 1: base](../analysis/m-model-1-base.md) · [Model 2: share-type and sigma](../analysis/m-model-2-share-type-sigma.md)
 
 </div>

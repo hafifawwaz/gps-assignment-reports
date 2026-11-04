@@ -3,7 +3,7 @@ source: report/plans/d-street-segmentation.md
 date: 16-10-2026
 kind: plan
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-11-04T17:19:19
 ---
 
 # Street segmentation
@@ -34,6 +34,6 @@ Part of [Doctoral plan](../threads/d-doctoral-plan.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Doctoral plan](../threads/d-doctoral-plan.md) · [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [Sequence-aware assignment](d-sequence-aware.md)
+**Linked from** [CEUS paper revisions](../progress/d-progress-05-11-2026.md) · [Doctoral plan](../threads/d-doctoral-plan.md) · [Publications and doctoral plan](../progress/d-progress-20-10-2026.md) · [Sequence-aware assignment](d-sequence-aware.md)
 
 </div>

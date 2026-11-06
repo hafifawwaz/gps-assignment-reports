@@ -4910,45 +4910,45 @@
 <h1 id="the-f_distance2-artifact">The f_distance² artifact</h1>
 <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-project">Master</span> <span class="chip chip-date">21-07-2026</span></p>
 
-<p>With α = 1, a squared distance term (f_distance²) looked clearly significant (t = 3.78) in the <a href="../m-interaction-term-screen/">Interaction term screen (α = 1)</a>. After <a href="../m-alpha-calibration/">Alpha calibration</a> set α to 2.764, the same test, run again from the start, gives only <strong>t = 0.11</strong>.</p>
-<p>So the squared term was not finding a real curve in the data. It was making up for a distance score that fell too fast because α was too small. It also caused much of the instability of Model 6, where it had the highest VIF (44.7).</p>
+<p>With α = 1, a squared distance term (f_distance²) looked clearly significant (t = 3.79) in the <a href="../m-interaction-term-screen/">Interaction term screen (α = 1)</a>. After <a href="../m-alpha-calibration/">Alpha calibration</a> set α to 2.979, the same test, run again from the start, gives only <strong>t = -0.10</strong>.</p>
+<p>So the squared term was not finding a real curve in the data. It was making up for a distance score that fell too fast because α was too small. It also caused much of the instability of Model 6, where it had the highest VIF (44.5).</p>
 <table>
 <thead>
 <tr>
 <th>Screen term</th>
 <th style="text-align: right;">t at α = 1</th>
-<th style="text-align: right;">t at α = 2.764</th>
+<th style="text-align: right;">t at α = 2.979</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>f_distance²</td>
-<td style="text-align: right;">3.78</td>
-<td style="text-align: right;"><strong>0.11</strong></td>
+<td style="text-align: right;">3.79</td>
+<td style="text-align: right;"><strong>-0.10</strong></td>
 </tr>
 <tr>
 <td>σ²</td>
-<td style="text-align: right;">4.31</td>
-<td style="text-align: right;">4.49</td>
+<td style="text-align: right;">4.53</td>
+<td style="text-align: right;">4.76</td>
 </tr>
 <tr>
 <td>f_distribution × σ</td>
-<td style="text-align: right;">1.55</td>
-<td style="text-align: right;">1.67</td>
+<td style="text-align: right;">1.14</td>
+<td style="text-align: right;">1.37</td>
 </tr>
 <tr>
 <td>f_distance × f_directional</td>
-<td style="text-align: right;">0.88</td>
-<td style="text-align: right;">1.88</td>
+<td style="text-align: right;">0.55</td>
+<td style="text-align: right;">1.59</td>
 </tr>
 <tr>
 <td>f_distribution × share_type</td>
-<td style="text-align: right;">4.12</td>
-<td style="text-align: right;">3.71</td>
+<td style="text-align: right;">4.72</td>
+<td style="text-align: right;">4.22</td>
 </tr>
 </tbody>
 </table>
-<p>Lesson: after changing α, choose the extra terms again from the start. Keeping the old terms and only changing α made the model far less stable (condition number from 13,198 to 142,550; highest VIF from 45 to 180, on f_distance²).</p>
+<p>Lesson: after changing α, choose the extra terms again from the start. Keeping the old terms and only changing α made the model far less stable (condition number from 13,815 to 378,776; highest VIF from 44 to 211, on f_distance²).</p>
 <p>One case of <a href="../../concepts/m-overfitting-signature/">Overfitting signature</a>. Next: <a href="../m-model-6-rederived/">Model 6, re-derived at calibrated alpha</a>. Part of <a href="../../threads/m-calibration/">Calibration</a>.</p>
 <div class="backlinks">
 <p><strong>Linked from</strong> <a href="../m-alpha-calibration/">Alpha calibration</a> · <a href="../../threads/m-calibration/">Calibration</a> · <a href="../m-interaction-term-screen/">Interaction term screen (α = 1)</a> · <a href="../../progress/m-progress-19-07-2026/">MNL model development</a> · <a href="../../concepts/m-overfitting-signature/">Overfitting signature</a> · <a href="../../progress/m-progress-21-07-2026/">RQ1 rebuilt with grouped CV</a> · <a href="../../concepts/m-f-distance/">f_distance</a></p>

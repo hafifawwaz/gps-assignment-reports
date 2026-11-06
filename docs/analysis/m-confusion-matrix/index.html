@@ -4924,34 +4924,34 @@
 <tbody>
 <tr>
 <td>building</td>
-<td style="text-align: right;">478</td>
-<td style="text-align: right;">26</td>
-<td style="text-align: right;">27</td>
-<td style="text-align: right;"><strong>90.0%</strong></td>
+<td style="text-align: right;">474</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;"><strong>89.3%</strong></td>
 </tr>
 <tr>
 <td>street</td>
-<td style="text-align: right;">76</td>
-<td style="text-align: right;">90</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;"><strong>48.6%</strong></td>
+<td style="text-align: right;">77</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;"><strong>49.2%</strong></td>
 </tr>
 <tr>
 <td>open space</td>
-<td style="text-align: right;">97</td>
+<td style="text-align: right;">95</td>
 <td style="text-align: right;">10</td>
-<td style="text-align: right;">84</td>
-<td style="text-align: right;"><strong>44.0%</strong></td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;"><strong>45.0%</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Recall is the share of stays of one type that the model found. For example, 90 of 185 street stays were called street: 48.6%.</p>
+<p>Recall is the share of stays of one type that the model found. For example, 91 of 185 street stays were called street: 49.2%.</p>
 <ul>
 <li>The model finds building stays about <strong>twice</strong> as often as the other two types.</li>
-<li>When it gets a street or open-space stay wrong, it mostly says <strong>building</strong> (41.1% and 50.8% of those stays). It rarely mixes up street and open space (10.3% and 5.2%).</li>
-<li>More open-space stays were called building (97) than open space (84).</li>
+<li>When it gets a street or open-space stay wrong, it mostly says <strong>building</strong> (41.6% and 49.7% of those stays). It rarely mixes up street and open space (9.2% and 5.2%).</li>
+<li>More open-space stays were called building (95) than open space (86).</li>
 </ul>
-<p>On the training data the table looks much the same (building 90.8%, street 52.4%, open space 44.0%). So overfitting does not explain this pattern.</p>
+<p>On the training data the table looks much the same (building 90.4%, street 51.9%, open space 44.5%). So overfitting does not explain this pattern.</p>
 <p>Why it happens for streets: <a href="../m-candidate-density-bias/">Candidate density bias toward building</a>. How it changes from test set to test set: <a href="../m-fold-difficulty/">Fold difficulty</a>. Answers RQ2 of <a href="../../concepts/m-research-questions/">Research questions</a>. Part of <a href="../../threads/m-error-analysis/">Error analysis</a>.</p>
 <div class="backlinks">
 <p><strong>Linked from</strong> <a href="../m-candidate-density-bias/">Candidate density bias toward building</a> · <a href="../../threads/m-error-analysis/">Error analysis</a> · <a href="../m-final-model/">Final model</a> · <a href="../../plans/d-gt-open-space/">Open space in the ground truth</a> · <a href="../../progress/m-progress-23-07-2026/">RQ2 diagnostics and RQ3 ceiling check</a> · <a href="../../concepts/m-research-questions/">Research questions</a> · <a href="../../concepts/m-street-space-tension/">Tension with the street-space argument</a> · <a href="../../threads/m-thesis-summary/">Thesis summary</a></p>

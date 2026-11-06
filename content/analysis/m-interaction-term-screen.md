@@ -3,7 +3,7 @@ source: report/analysis/m-interaction-term-screen.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-11-06T11:37:20
 ---
 
 # Interaction term screen (α = 1)
@@ -14,11 +14,11 @@ Could combined or squared terms help the model? Five such terms were tested toge
 
 | Term | w | t | |
 |---|---:|---:|---|
-| f_distance² | +4.702 | 3.78 | significant |
-| σ² | +0.407 | 4.31 | significant |
-| f_distribution × σ | +0.557 | 1.55 | |
-| f_distance × f_directional | +1.133 | 0.88 | |
-| **f_distribution × share_type** | **+4.422** | **4.12** | significant |
+| f_distance² | +4.573 | 3.79 | significant |
+| σ² | +0.440 | 4.53 | significant |
+| f_distribution × σ | +0.414 | 1.14 | |
+| f_distance × f_directional | +0.722 | 0.55 | |
+| **f_distribution × share_type** | **+4.915** | **4.72** | significant |
 
 The three significant terms were added to [Model 4a: alternative-specific parameters](m-model-4a-alternative-specific.md). This gives Model 6, with 16 parameters:
 
@@ -28,14 +28,14 @@ $$V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_{3,t} f_\t
 
 | | 4a | Model 6 (α = 1) |
 |---|---:|---:|
-| Accuracy | 0.722 | 0.728 |
-| Building / street / open space | 0.889 / 0.519 / 0.455 | 0.883 / 0.519 / **0.497** |
-| CV accuracy (grouped) | 0.700 ± 0.036 | 0.710 ± 0.031 |
-| Condition number | 737 | 13,198 |
+| Accuracy | 0.714 | 0.716 |
+| Building / street / open space | 0.872 / 0.514 / 0.471 | 0.868 / 0.508 / **0.492** |
+| CV accuracy (grouped) | 0.697 ± 0.026 | 0.709 ± 0.037 |
+| Condition number | 739 | 13,815 |
 
-Model 6 raises **open space** further (to 0.497), keeps street the same, and lowers building a little. Inside the larger model, σ² is no longer significant (t falls to 1.56). And f_distance² turns out to make up for an α that was not yet tuned: [The f_distance² artifact](m-f-distance-squared-artifact.md).
+Model 6 raises **open space** further (to 0.492) and lowers building and street a little. Inside the larger model, σ² is no longer significant (t falls to 1.78). And f_distance² turns out to make up for an α that was not yet tuned: [The f_distance² artifact](m-f-distance-squared-artifact.md).
 
-The two terms that were not significant are built from inputs that overlap strongly (VIF up to 71). So "not significant" is weak evidence for them.
+The two terms that were not significant are built from inputs that overlap strongly (VIF up to 72). So "not significant" is weak evidence for them.
 
 The same test with the tuned α: [Model 6, re-derived at calibrated alpha](m-model-6-rederived.md). Part of [Calibration](../threads/m-calibration.md).
 

@@ -4923,28 +4923,28 @@
 <tbody>
 <tr>
 <td>ρ² vs LL(C)</td>
-<td style="text-align: right;"><strong>0.214</strong></td>
-<td style="text-align: right;">0.213</td>
+<td style="text-align: right;">0.216</td>
+<td style="text-align: right;"><strong>0.219</strong></td>
 </tr>
 <tr>
 <td>Accuracy</td>
-<td style="text-align: right;"><strong>0.673</strong></td>
-<td style="text-align: right;">0.649</td>
+<td style="text-align: right;"><strong>0.663</strong></td>
+<td style="text-align: right;">0.639</td>
 </tr>
 <tr>
 <td>Building / street / open space</td>
-<td style="text-align: right;">0.851 / 0.459 / 0.382</td>
-<td style="text-align: right;">0.857 / 0.405 / 0.309</td>
+<td style="text-align: right;">0.838 / 0.438 / 0.393</td>
+<td style="text-align: right;">0.838 / 0.405 / 0.314</td>
 </tr>
 <tr>
 <td>CV accuracy (grouped)</td>
-<td style="text-align: right;">0.666 ± 0.035</td>
-<td style="text-align: right;">0.645 ± 0.046</td>
+<td style="text-align: right;">0.655 ± 0.029</td>
+<td style="text-align: right;">0.642 ± 0.031</td>
 </tr>
 <tr>
 <td>Condition number</td>
-<td style="text-align: right;">115</td>
-<td style="text-align: right;">103</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">106</td>
 </tr>
 </tbody>
 </table>
@@ -4959,44 +4959,44 @@
 <tbody>
 <tr>
 <td>f_distribution</td>
-<td style="text-align: right;">+3.586</td>
-<td style="text-align: right;">8.79</td>
+<td style="text-align: right;">+3.546</td>
+<td style="text-align: right;">8.83</td>
 </tr>
 <tr>
 <td>f_distance</td>
-<td style="text-align: right;">-1.071</td>
-<td style="text-align: right;">-2.34</td>
+<td style="text-align: right;">-1.072</td>
+<td style="text-align: right;">-2.36</td>
 </tr>
 <tr>
 <td>f_directional</td>
-<td style="text-align: right;">+3.240</td>
-<td style="text-align: right;">8.39</td>
+<td style="text-align: right;">+3.296</td>
+<td style="text-align: right;">8.42</td>
 </tr>
 <tr>
 <td>share_bldg</td>
-<td style="text-align: right;">+0.907</td>
-<td style="text-align: right;">2.82</td>
+<td style="text-align: right;">+0.936</td>
+<td style="text-align: right;">2.79</td>
 </tr>
 <tr>
 <td>share_street</td>
-<td style="text-align: right;"><strong>-7.077</strong></td>
-<td style="text-align: right;">-15.35</td>
+<td style="text-align: right;"><strong>-7.292</strong></td>
+<td style="text-align: right;">-16.35</td>
 </tr>
 <tr>
 <td>share_os</td>
-<td style="text-align: right;"><strong>-5.031</strong></td>
-<td style="text-align: right;">-10.30</td>
+<td style="text-align: right;"><strong>-5.408</strong></td>
+<td style="text-align: right;">-11.59</td>
 </tr>
 <tr>
 <td>sigma</td>
-<td style="text-align: right;">+0.499</td>
-<td style="text-align: right;">6.04</td>
+<td style="text-align: right;">+0.481</td>
+<td style="text-align: right;">5.92</td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li>The model now beats the simple baseline, and accuracy is 13 percentage points higher than <a href="../m-model-1-base/">Model 1: base</a>.</li>
-<li><strong>The gain is for buildings and streets.</strong> Building accuracy rises from 0.63 to 0.85 and street from 0.13 to 0.46, but open space falls from 0.69 to 0.38. The large negative weights <code>share_street</code> and <code>share_os</code> push the probability toward buildings. This is an early sign of <a href="../m-candidate-density-bias/">Candidate density bias toward building</a>.</li>
+<li>The model now beats the simple baseline, and accuracy is 14 percentage points higher than <a href="../m-model-1-base/">Model 1: base</a>.</li>
+<li><strong>The gain is for buildings and streets.</strong> Building accuracy rises from 0.57 to 0.84 and street from 0.10 to 0.44, but open space falls from 0.77 to 0.39. The large negative weights <code>share_street</code> and <code>share_os</code> push the probability toward buildings. This is an early sign of <a href="../m-candidate-density-bias/">Candidate density bias toward building</a>.</li>
 <li><a href="../../concepts/m-sigma/">sigma</a> has a clear positive effect. <a href="../../concepts/m-f-directional/">f_directional</a> turns positive and strongly significant once <code>f_temporal</code> is removed.</li>
 <li>The weight of <a href="../../concepts/m-f-distance/">f_distance</a> now changes sign between 10 m and 15 m (-1.07 and +1.06), and both values are significant.</li>
 </ul>

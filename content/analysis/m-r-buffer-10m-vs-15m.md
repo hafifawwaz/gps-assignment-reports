@@ -3,7 +3,7 @@ source: report/analysis/m-r-buffer-10m-vs-15m.md
 date: 19-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-11-06T11:37:20
 ---
 
 # R_buffer: 10 m vs 15 m
@@ -14,11 +14,11 @@ Which search distance (`R_buffer`) is better for finding candidates around a sta
 
 | Model | Accuracy R=10 m | Accuracy R=15 m | Δ |
 |---|---:|---:|---:|
-| 1 Base | 0.540 | 0.538 | +0.2 pp |
-| 2 Share-type + σ | 0.673 | 0.649 | +2.3 pp |
-| 4a Alternative-specific | 0.722 | 0.703 | +1.9 pp |
-| 5 + ASC | 0.728 | 0.727 | +0.1 pp |
-| 6 + interactions | 0.728 | 0.700 | +2.8 pp |
+| 1 Base | 0.519 | 0.512 | +0.8 pp |
+| 2 Share-type + σ | 0.663 | 0.639 | +2.3 pp |
+| 4a Alternative-specific | 0.714 | 0.691 | +2.3 pp |
+| 5 + ASC | 0.728 | 0.726 | +0.2 pp |
+| 6 + interactions | 0.716 | 0.699 | +1.7 pp |
 
 (pp = percentage points.) The result held again with [Grouped cross-validation](../concepts/m-grouped-cross-validation.md) on 21-07-2026. From the directional test onward, only 10 m was used.
 

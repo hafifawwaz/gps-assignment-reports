@@ -5103,10 +5103,10 @@
 </tr>
 <tr>
 <td>Framework (out of sample)</td>
-<td style="text-align: right;">0.719</td>
-<td style="text-align: right;">0.900</td>
-<td style="text-align: right;">0.486</td>
-<td style="text-align: right;">0.440</td>
+<td style="text-align: right;">0.718</td>
+<td style="text-align: right;">0.893</td>
+<td style="text-align: right;">0.492</td>
+<td style="text-align: right;">0.450</td>
 </tr>
 </tbody>
 </table>
@@ -5123,15 +5123,15 @@
 <tbody>
 <tr>
 <td><strong>Framework correct</strong></td>
-<td style="text-align: right;">347 (both right)</td>
-<td style="text-align: right;"><strong>305</strong> (only the framework)</td>
-<td style="text-align: right;">652</td>
+<td style="text-align: right;">351 (both right)</td>
+<td style="text-align: right;"><strong>300</strong> (only the framework)</td>
+<td style="text-align: right;">651</td>
 </tr>
 <tr>
 <td><strong>Framework wrong</strong></td>
-<td style="text-align: right;"><strong>87</strong> (only the rule)</td>
-<td style="text-align: right;">168 (both wrong)</td>
-<td style="text-align: right;">255</td>
+<td style="text-align: right;"><strong>83</strong> (only the rule)</td>
+<td style="text-align: right;">173 (both wrong)</td>
+<td style="text-align: right;">256</td>
 </tr>
 <tr>
 <td><strong>Total</strong></td>
@@ -5142,7 +5142,7 @@
 </tbody>
 </table>
 <ul>
-<li>The bold cells are where the two methods disagree. When they disagree, the framework is right more than three times as often (305 against 87).</li>
+<li>The bold cells are where the two methods disagree. When they disagree, the framework is right more than three times as often (300 against 83).</li>
 <li>In 9 stays the medoid lies inside a building and a street at the same time (the two map layers overlap). The rule then picks building.</li>
 </ul>
 <h2 id="3-one-stay-through-every-step">3. One stay through every step</h2>
@@ -5270,7 +5270,7 @@
 <td>O4</td>
 <td style="text-align: right;">34.7</td>
 <td style="text-align: right;">0.07</td>
-<td style="text-align: right;">0.96</td>
+<td style="text-align: right;">0.97</td>
 <td style="text-align: right;">0.07</td>
 <td style="text-align: right;">0.07</td>
 </tr>
@@ -5279,14 +5279,14 @@
 <p>How to read it:</p>
 <ul>
 <li><a href="../../concepts/m-f-distribution/">f_distribution</a>: S1 (the sidewalk) and the open space O1 next to it are near the points for 93% of the time. Building B1, which contains the medoid, gets 55%.</li>
-<li><a href="../../concepts/m-f-distance/">f_distance</a>: above 0.94 for every candidate. The points are so spread out that distance does not separate the candidates for this stay.</li>
+<li><a href="../../concepts/m-f-distance/">f_distance</a>: above 0.95 for every candidate. The points are so spread out that distance does not separate the candidates for this stay.</li>
 <li><a href="../../concepts/m-f-temporal/">f_temporal</a>: close to f_distribution for most candidates. This overlap is why the final model drops it.</li>
 <li><a href="../../concepts/m-f-directional/">f_directional</a>: the steps between points follow the road. S1 and S2 (the two segments of Fukutomachi Road) score 0.92 to 0.93, the cross streets 0.27, every building and open space below 0.08.</li>
 </ul>
 <p><strong>Step 3: utility</strong> (a second table, Section 3.3). The final weights turn the scores into a value <span class="arithmatex">\(V_k\)</span> for each candidate. 
 Two more inputs enter. 
-- <a href="../../concepts/m-share-type/">share_type</a>: 5 of the 14 candidates are streets, so every street loses 5.163 × 5/14 = 1.84. 
-- <a href="../../concepts/m-sigma/">sigma</a>: the points are spread out, so every street and open-space candidate gains 1.016 × 1.332 = 1.35. S1 has the highest value, 2.09.</p>
+- <a href="../../concepts/m-share-type/">share_type</a>: 5 of the 14 candidates are streets, so every street loses 5.156 × 5/14 = 1.84. 
+- <a href="../../concepts/m-sigma/">sigma</a>: the points are spread out, so every street and open-space candidate gains 1.045 × 1.332 = 1.39. S1 has the highest value, 1.89.</p>
 <p><strong>Step 4: probability.</strong></p>
 <table>
 <thead>
@@ -5300,15 +5300,15 @@ Two more inputs enter.
 <tbody>
 <tr>
 <td>Final model (fitted on all 907 stays)</td>
-<td style="text-align: right;">0.31</td>
+<td style="text-align: right;">0.32</td>
 <td style="text-align: right;"><strong>0.50</strong></td>
-<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.17</td>
 </tr>
 <tr>
 <td>Out of sample (fitted without this stay)</td>
-<td style="text-align: right;">0.33</td>
+<td style="text-align: right;">0.35</td>
 <td style="text-align: right;"><strong>0.45</strong></td>
-<td style="text-align: right;">0.23</td>
+<td style="text-align: right;">0.20</td>
 </tr>
 <tr>
 <td>Nearest-entity rule</td>
@@ -5321,13 +5321,13 @@ Two more inputs enter.
 <p>The framework picks street, which is correct. It still gives almost a third to building, so the reader can see that this stay is uncertain.</p>
 <h2 id="4-other-changes-in-the-paper">4. Other changes in the paper</h2>
 <ul>
-<li><strong>A table of the final weights</strong> in Section 4.1, because the worked example uses them. The same sentence explains why the distance weights for street and open space are negative: at α = 2.764, f_distance is close to 1 for most candidates (median 0.95), so these weights act mostly as a fixed extra value for each type.</li>
+<li><strong>A table of the final weights</strong> in Section 4.1, because the worked example uses them. The same sentence explains why the distance weights for street and open space are negative: at α = 2.979, f_distance is close to 1 for most candidates (median 0.96), so these weights act mostly as a fixed extra value for each type.</li>
 <li><strong>Definitions that were missing</strong>: the medoid, share_t (the share of the stay's candidates that have the candidate's type) and the σ input.</li>
 <li><strong>share_t wording.</strong> Section 4.2 now speaks of a share, not a count of competing segments, which matches <a href="../../concepts/m-share-type/">share_type</a>.</li>
 </ul>
 <h2 id="question">Question</h2>
 <ol>
-<li><strong>Nearest-entity in the abstract?</strong> The comparison (0.479 against 0.719) is now in Section 4.2 only. The abstract and the conclusion are unchanged.</li>
+<li><strong>Nearest-entity in the abstract?</strong> The comparison (0.479 against 0.718) is now in Section 4.2 only. The abstract and the conclusion are unchanged.</li>
 </ol>
 <div class="backlinks">
 <p><strong>Linked from</strong> <a href="../../plans/m-ceus-paper/">CEUS paper</a></p>

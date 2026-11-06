@@ -5065,8 +5065,8 @@
 </ol>
 <h2 id="where-it-stands">Where it stands</h2>
 <ul>
-<li>The final model has 11 parameters. On data it had not seen, it picks the correct type for <strong>71.9% of stays (± 3.2%)</strong>, written as grouped CV accuracy 0.719 ± 0.032 (<a href="../../analysis/m-final-model/">Final model</a>).</li>
-<li>It finds 90.0% of building stays, but only 48.6% of street stays and 44.0% of open-space stays. When it gets streets or open spaces wrong, it usually says "building". For streets, the reason is how the street map is cut into pieces; for open space, the reason is still open (<a href="../../analysis/m-confusion-matrix/">Confusion matrix</a>, <a href="../../analysis/m-candidate-density-bias/">Candidate density bias toward building</a>).</li>
+<li>The final model has 11 parameters. On data it had not seen, it picks the correct type for <strong>71.8% of stays (± 2.8%)</strong>, written as grouped CV accuracy 0.718 ± 0.028 (<a href="../../analysis/m-final-model/">Final model</a>).</li>
+<li>It finds 89.3% of building stays, but only 49.2% of street stays and 45.0% of open-space stays. When it gets streets or open spaces wrong, it usually says "building". For streets, the reason is how the street map is cut into pieces; for open space, the reason is still open (<a href="../../analysis/m-confusion-matrix/">Confusion matrix</a>, <a href="../../analysis/m-candidate-density-bias/">Candidate density bias toward building</a>).</li>
 <li>Random Forest and XGBoost fit the training data better, but on unseen data this simpler model does better (<a href="../../analysis/m-ml-ceiling-row-level/">ML ceiling check, row level</a>).</li>
 <li>The thesis is complete. The questions that were still open in these notes are answered in the final text (<a href="../../analysis/m-final-model/">Final model</a>, <a href="../../concepts/m-ground-truth-cleaning/">Ground truth cleaning</a>, <a href="../../concepts/m-street-space-tension/">Tension with the street-space argument</a>).</li>
 </ul>

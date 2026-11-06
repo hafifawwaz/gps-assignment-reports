@@ -4924,26 +4924,26 @@
 <tbody>
 <tr>
 <td>Building</td>
-<td style="text-align: right;">7.00</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">21.78</td>
+<td style="text-align: right;">5.99</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">20.77</td>
 </tr>
 <tr>
 <td>Street</td>
 <td style="text-align: right;"><strong>13.13</strong></td>
 <td style="text-align: right;"><strong>11</strong></td>
-<td style="text-align: right;">36.24</td>
+<td style="text-align: right;">35.44</td>
 </tr>
 <tr>
 <td>Open space</td>
 <td style="text-align: right;">4.25</td>
 <td style="text-align: right;">3</td>
-<td style="text-align: right;">14.69</td>
+<td style="text-align: right;">13.79</td>
 </tr>
 </tbody>
 </table>
-<p>The <a href="../../concepts/m-share-type/">share_type</a> term gives a lower value to a candidate with many neighbours of the same type. The penalty is strongest for streets (the weight <code>share_street</code> is -5.16 in the <a href="../m-final-model/">Final model</a>, against -1.01 for buildings). The map stores streets as <strong>many short pieces next to each other</strong> (<a href="../../concepts/m-spatial-entity-layers/">Spatial entity layers</a>). So a stay on a street is punished for a crowd of street pieces that the map itself created. The probability then moves to the nearest building (<a href="../m-confusion-matrix/">Confusion matrix</a>).</p>
-<p>This explains the street errors only. Open-space stays have the fewest candidates of their own type, and <code>share_os</code> is small and not significant (-0.80). So the open-space errors toward building need another explanation, which has not been found yet.</p>
+<p>The <a href="../../concepts/m-share-type/">share_type</a> term gives a lower value to a candidate with many neighbours of the same type. The penalty is strongest for streets (the weight <code>share_street</code> is -5.16 in the <a href="../m-final-model/">Final model</a>, against -1.18 for buildings). The map stores streets as <strong>many short pieces next to each other</strong> (<a href="../../concepts/m-spatial-entity-layers/">Spatial entity layers</a>). So a stay on a street is punished for a crowd of street pieces that the map itself created. The probability then moves to the nearest building (<a href="../m-confusion-matrix/">Confusion matrix</a>).</p>
+<p>This explains the street errors only. Open-space stays have the fewest candidates of their own type, and <code>share_os</code> is small and not significant (+0.25). So the open-space errors toward building need another explanation, which has not been found yet.</p>
 <p>The street part comes from the street map, so it can be fixed. The GPS data itself does not set the limit (<a href="../../concepts/m-contributions/">Contributions</a>). But it weakens the argument that streets are real places of activity: <a href="../../concepts/m-street-space-tension/">Tension with the street-space argument</a>, <a href="../../concepts/m-boundary-matching-analogy/">Candidate density as boundary-matching difficulty</a>.</p>
 <p>Part of <a href="../../threads/m-error-analysis/">Error analysis</a>.</p>
 <div class="backlinks">

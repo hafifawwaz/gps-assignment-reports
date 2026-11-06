@@ -4924,33 +4924,33 @@
 <tbody>
 <tr>
 <td>LL(C) / LL(b)</td>
-<td style="text-align: right;">-0.9359 / -0.9513</td>
-<td style="text-align: right;">-0.9992 / -1.0078</td>
+<td style="text-align: right;">-0.9507 / -0.9998</td>
+<td style="text-align: right;">-1.0212 / -1.0590</td>
 </tr>
 <tr>
 <td>ρ² vs LL(C)</td>
-<td style="text-align: right;"><strong>-0.016</strong></td>
-<td style="text-align: right;"><strong>-0.009</strong></td>
+<td style="text-align: right;"><strong>-0.052</strong></td>
+<td style="text-align: right;"><strong>-0.037</strong></td>
 </tr>
 <tr>
 <td>Accuracy</td>
-<td style="text-align: right;">0.540</td>
-<td style="text-align: right;">0.538</td>
+<td style="text-align: right;">0.519</td>
+<td style="text-align: right;">0.512</td>
 </tr>
 <tr>
 <td>Building / street / open space</td>
-<td style="text-align: right;">0.631 / 0.130 / 0.686</td>
-<td style="text-align: right;">0.638 / 0.076 / 0.707</td>
+<td style="text-align: right;">0.573 / 0.103 / 0.775</td>
+<td style="text-align: right;">0.578 / 0.049 / 0.775</td>
 </tr>
 <tr>
 <td>CV accuracy (grouped)</td>
-<td style="text-align: right;">0.539 ± 0.051</td>
-<td style="text-align: right;">0.533 ± 0.033</td>
+<td style="text-align: right;">0.522 ± 0.055</td>
+<td style="text-align: right;">0.505 ± 0.065</td>
 </tr>
 <tr>
 <td>Condition number</td>
-<td style="text-align: right;">84</td>
-<td style="text-align: right;">76</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: right;">78</td>
 </tr>
 </tbody>
 </table>
@@ -4966,35 +4966,35 @@
 <tbody>
 <tr>
 <td>f_distribution</td>
-<td style="text-align: right;">+4.258</td>
-<td style="text-align: right;">4.90</td>
-<td style="text-align: right;">21.92</td>
+<td style="text-align: right;">+4.261</td>
+<td style="text-align: right;">4.88</td>
+<td style="text-align: right;">21.65</td>
 </tr>
 <tr>
 <td>f_distance</td>
-<td style="text-align: right;">-0.491</td>
-<td style="text-align: right;">-1.24</td>
-<td style="text-align: right;">3.22</td>
+<td style="text-align: right;">-0.518</td>
+<td style="text-align: right;">-1.31</td>
+<td style="text-align: right;">3.19</td>
 </tr>
 <tr>
 <td>f_temporal</td>
-<td style="text-align: right;">-1.303</td>
-<td style="text-align: right;">-1.56</td>
-<td style="text-align: right;">21.72</td>
+<td style="text-align: right;">-1.281</td>
+<td style="text-align: right;">-1.53</td>
+<td style="text-align: right;">21.43</td>
 </tr>
 <tr>
 <td>f_directional</td>
-<td style="text-align: right;">-1.176</td>
-<td style="text-align: right;">-4.29</td>
-<td style="text-align: right;">2.20</td>
+<td style="text-align: right;">-1.391</td>
+<td style="text-align: right;">-4.91</td>
+<td style="text-align: right;">2.21</td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li><strong>Worse than a simple baseline.</strong> ρ² is negative, so this model does worse than just knowing how common each type is. No value of α fixes this: for every α from 0.2 to 6, LL(b) stays between -0.952 and -0.948, below LL(C) (<a href="../m-alpha-calibration/">Alpha calibration</a>).</li>
+<li><strong>Worse than a simple baseline.</strong> ρ² is negative, so this model does worse than just knowing how common each type is. No value of α fixes this: for every α from 0.2 to 6, LL(b) stays between -1.001 and -0.996, below LL(C) (<a href="../m-alpha-calibration/">Alpha calibration</a>).</li>
 <li><a href="../../concepts/m-f-distribution/">f_distribution</a> is significant at both distances. <a href="../../concepts/m-f-temporal/">f_temporal</a> is not, and it moves almost the same way as f_distribution (r ≈ 0.96), so it was removed.</li>
 <li><a href="../../concepts/m-f-directional/">f_directional</a> is significant at both distances, but with a negative weight. It turns positive once share_type and σ are added (<a href="../m-model-2-share-type-sigma/">Model 2: share-type and sigma</a>).</li>
-<li><a href="../../concepts/m-f-distance/">f_distance</a> has a negative weight at 10 m (-0.49) and a positive one at 15 m (+0.73). This had to wait until α was tuned.</li>
+<li><a href="../../concepts/m-f-distance/">f_distance</a> has a negative weight at 10 m (-0.52) and a positive one at 15 m (+0.72). This had to wait until α was tuned.</li>
 <li>The condition number is low, so the fit itself is stable. The problem is which inputs the model has, not the fitting.</li>
 </ul>
 <p>Next: <a href="../m-model-2-share-type-sigma/">Model 2: share-type and sigma</a>. Part of <a href="../../threads/m-calibration/">Calibration</a>.</p>

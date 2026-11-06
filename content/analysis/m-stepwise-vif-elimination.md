@@ -3,7 +3,7 @@ source: report/analysis/m-stepwise-vif-elimination.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-11-06T11:37:20
 ---
 
 # Stepwise VIF elimination
@@ -14,19 +14,19 @@ Removing weak terms one at a time from [Model 6, re-derived at calibrated alpha]
 
 | Step | Worst droppable | VIF | Action |
 |---:|---|---:|---|
-| 0 | σ² | 19.51 | drop |
-| 1 | f_distribution × share_type | 10.44 | drop |
+| 0 | σ² | 19.54 | drop |
+| 1 | f_distribution × share_type | 10.71 | drop |
 | 2 | none left | | stop |
 
-Both extra terms go. f_distribution × share_type is only just above the line of 10, although it is significant on its own (t = 4.61 before the first step). Removing both costs some fit (LR = 20.42, df = 2, **p < 0.0001**), but accuracy on unseen data goes up (0.703 → 0.712), and the condition number drops about 5 times (9,031 → 1,878), so the model becomes much more stable.
+Both extra terms go. f_distribution × share_type is only just above the line of 10, although it is significant on its own (t = 4.77 before the first step). Removing both costs some fit (LR = 17.73, df = 2, **p < 0.001**), but accuracy on unseen data goes up (0.698 → 0.710), and the condition number drops about 6 times (11,696 → 2,036), so the model becomes much more stable.
 
-**Result, the 13-parameter model:** the 13 core terms of Model 4a, at α = 2.764.
+**Result, the 13-parameter model:** the 13 core terms of Model 4a, at α = 2.979.
 
 
 $$V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_{3,t} f_\text{directional} + w_{4,t}\,share_t + w_5\,\sigma$$
 
 
-Accuracy 0.733, accuracy on unseen data **0.712 ± 0.038**, condition number 1,878.
+Accuracy 0.727, accuracy on unseen data **0.710 ± 0.030**, condition number 2,036.
 
 Later it was made smaller, to 11 parameters: [f_directional: shared vs split](m-f-directional-shared-vs-split.md). Part of [Calibration](../threads/m-calibration.md).
 

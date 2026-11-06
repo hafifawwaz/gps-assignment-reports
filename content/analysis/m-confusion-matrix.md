@@ -3,7 +3,7 @@ source: report/analysis/m-confusion-matrix.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-11-06T11:37:20
 ---
 
 # Confusion matrix
@@ -14,17 +14,17 @@ A table of the [Final model](m-final-model.md)'s answers against the correct ans
 
 | actual \ predicted | building | street | open space | recall |
 |---|---:|---:|---:|---:|
-| building | 478 | 26 | 27 | **90.0%** |
-| street | 76 | 90 | 19 | **48.6%** |
-| open space | 97 | 10 | 84 | **44.0%** |
+| building | 474 | 24 | 33 | **89.3%** |
+| street | 77 | 91 | 17 | **49.2%** |
+| open space | 95 | 10 | 86 | **45.0%** |
 
-Recall is the share of stays of one type that the model found. For example, 90 of 185 street stays were called street: 48.6%.
+Recall is the share of stays of one type that the model found. For example, 91 of 185 street stays were called street: 49.2%.
 
 - The model finds building stays about **twice** as often as the other two types.
-- When it gets a street or open-space stay wrong, it mostly says **building** (41.1% and 50.8% of those stays). It rarely mixes up street and open space (10.3% and 5.2%).
-- More open-space stays were called building (97) than open space (84).
+- When it gets a street or open-space stay wrong, it mostly says **building** (41.6% and 49.7% of those stays). It rarely mixes up street and open space (9.2% and 5.2%).
+- More open-space stays were called building (95) than open space (86).
 
-On the training data the table looks much the same (building 90.8%, street 52.4%, open space 44.0%). So overfitting does not explain this pattern.
+On the training data the table looks much the same (building 90.4%, street 51.9%, open space 44.5%). So overfitting does not explain this pattern.
 
 Why it happens for streets: [Candidate density bias toward building](m-candidate-density-bias.md). How it changes from test set to test set: [Fold difficulty](m-fold-difficulty.md). Answers RQ2 of [Research questions](../concepts/m-research-questions.md). Part of [Error analysis](../threads/m-error-analysis.md).
 

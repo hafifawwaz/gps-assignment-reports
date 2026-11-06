@@ -3,7 +3,7 @@ source: report/analysis/m-model-5-asc-rejected.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-11-06T11:37:20
 ---
 
 # Model 5: alternative-specific constants (rejected)
@@ -18,15 +18,15 @@ $$V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_{3,t} f_\t
 
 | | 4a | 5 (+ ASC) |
 |---|---:|---:|
-| Accuracy | 0.722 | 0.728 |
-| CV accuracy (grouped) | 0.700 ± 0.036 | 0.719 ± 0.033 |
-| LR vs 4a (df=2) | | 35.6, p < 0.0001 |
-| Max VIF | 8.83 | **30.57** |
-| Condition number | 737 | **2,027** |
+| Accuracy | 0.714 | 0.728 |
+| CV accuracy (grouped) | 0.697 ± 0.026 | 0.719 ± 0.016 |
+| LR vs 4a (df=2) | | 44.7, p < 0.0001 |
+| Max VIF | 8.94 | **31.04** |
+| Condition number | 739 | **2,055** |
 
-On paper, the constants are significant, and accuracy on unseen data also goes up (by less than the normal spread between test sets). But **`asc_street` and `f_directional_street` move almost together (r = 0.94)**. The reason: [f_directional](../concepts/m-f-directional.md) hardly changes between street candidates, so it acts almost like a constant for streets. The model is asked to measure the same "street-ness" twice. As a result, the weight of the street direction score **changes sign**, from +3.46 in Model 4a to -5.30, so the two weights can no longer be read on their own.
+On paper, the constants are significant, and accuracy on unseen data also goes up (by a little less than the normal spread between test sets of Model 4a). But **`asc_street` and `f_directional_street` move almost together (r = 0.94)**. The reason: [f_directional](../concepts/m-f-directional.md) hardly changes between street candidates, so it acts almost like a constant for streets. The model is asked to measure the same "street-ness" twice. As a result, the weight of the street direction score **changes sign**, from +3.59 in Model 4a to -5.23, so the two weights can no longer be read on their own.
 
-With the tuned α it gets worse: each constant also moves almost together with its own f_distance score (`asc_t` and `f_distance_t`, r = 0.99), and the highest VIF rises to 95. With a 15 m search distance the model behaves about the same as at 10 m (accuracy on unseen data 0.714 ± 0.019, condition number 1,827).
+With the tuned α it gets worse: each constant also moves almost together with its own f_distance score (`asc_t` and `f_distance_t`, r = 0.99), and the highest VIF rises to 116. With a 15 m search distance the model behaves about the same as at 10 m (accuracy on unseen data 0.707 ± 0.019, condition number 1,844).
 
 **Rejected, because its weights cannot be trusted.** It is not a case of overfitting: the gain on unseen data is real, but it comes from a near-copy of another input ([Overfitting signature](../concepts/m-overfitting-signature.md)). Part of [Calibration](../threads/m-calibration.md).
 

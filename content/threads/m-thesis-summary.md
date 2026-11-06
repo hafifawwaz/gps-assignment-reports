@@ -3,7 +3,7 @@ source: report/threads/m-thesis-summary.md
 date: 05-08-2026
 kind: thread
 comments: true
-generated: 2026-10-27T18:04:09
+generated: 2026-11-06T11:37:20
 ---
 
 # Thesis summary
@@ -37,8 +37,8 @@ The notes are grouped by theme, not by thesis chapter:
 
 ## Where it stands
 
-- The final model has 11 parameters. On data it had not seen, it picks the correct type for **71.9% of stays (± 3.2%)**, written as grouped CV accuracy 0.719 ± 0.032 ([Final model](../analysis/m-final-model.md)).
-- It finds 90.0% of building stays, but only 48.6% of street stays and 44.0% of open-space stays. When it gets streets or open spaces wrong, it usually says "building". For streets, the reason is how the street map is cut into pieces; for open space, the reason is still open ([Confusion matrix](../analysis/m-confusion-matrix.md), [Candidate density bias toward building](../analysis/m-candidate-density-bias.md)).
+- The final model has 11 parameters. On data it had not seen, it picks the correct type for **71.8% of stays (± 2.8%)**, written as grouped CV accuracy 0.718 ± 0.028 ([Final model](../analysis/m-final-model.md)).
+- It finds 89.3% of building stays, but only 49.2% of street stays and 45.0% of open-space stays. When it gets streets or open spaces wrong, it usually says "building". For streets, the reason is how the street map is cut into pieces; for open space, the reason is still open ([Confusion matrix](../analysis/m-confusion-matrix.md), [Candidate density bias toward building](../analysis/m-candidate-density-bias.md)).
 - Random Forest and XGBoost fit the training data better, but on unseen data this simpler model does better ([ML ceiling check, row level](../analysis/m-ml-ceiling-row-level.md)).
 - The thesis is complete. The questions that were still open in these notes are answered in the final text ([Final model](../analysis/m-final-model.md), [Ground truth cleaning](../concepts/m-ground-truth-cleaning.md), [Tension with the street-space argument](../concepts/m-street-space-tension.md)).
 

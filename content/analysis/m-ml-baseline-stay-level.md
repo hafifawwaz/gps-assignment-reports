@@ -3,7 +3,7 @@ source: report/analysis/m-ml-baseline-stay-level.md
 date: 20-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-26T20:41:14
+generated: 2026-11-06T11:37:20
 ---
 
 # ML baseline, stay level (superseded)
@@ -14,11 +14,11 @@ Sensei asked whether Random Forest or XGBoost could show the best possible resul
 
 | Model | CV accuracy | Building | Street | Open space |
 |---|---:|---:|---:|---:|
-| Logit (final, 11 params) | 0.721 ± 0.018 | | | |
-| RF | 0.739 ± 0.019 | 0.889 | 0.584 | 0.471 |
-| RF, class-weighted | **0.741 ± 0.016** | 0.900 | 0.578 | 0.455 |
-| XGBoost | 0.721 ± 0.021 | 0.857 | 0.595 | 0.466 |
-| XGBoost, class-weighted | 0.711 ± 0.028 | 0.814 | 0.627 | 0.508 |
+| Logit (final, 11 params) | 0.716 ± 0.016 | | | |
+| RF | 0.734 ± 0.023 | 0.878 | 0.584 | 0.482 |
+| RF, class-weighted | **0.745 ± 0.019** | 0.898 | 0.584 | 0.476 |
+| XGBoost | 0.722 ± 0.027 | 0.846 | 0.589 | 0.508 |
+| XGBoost, class-weighted | 0.717 ± 0.020 | 0.823 | 0.605 | 0.529 |
 
 "Class-weighted" means the less common types (street, open space) were given more importance during training.
 

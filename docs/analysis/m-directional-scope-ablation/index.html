@@ -4924,35 +4924,35 @@
 <tbody>
 <tr>
 <td>LL(b)</td>
-<td style="text-align: right;"><strong>-0.7359</strong></td>
-<td style="text-align: right;">-0.7503</td>
+<td style="text-align: right;"><strong>-0.7455</strong></td>
+<td style="text-align: right;">-0.7604</td>
 </tr>
 <tr>
 <td>Accuracy</td>
-<td style="text-align: right;"><strong>0.673</strong></td>
-<td style="text-align: right;">0.671</td>
+<td style="text-align: right;"><strong>0.663</strong></td>
+<td style="text-align: right;">0.653</td>
 </tr>
 <tr>
 <td>Building / street / open space</td>
-<td style="text-align: right;">0.851 / <strong>0.459</strong> / 0.382</td>
-<td style="text-align: right;"><strong>0.861</strong> / 0.422 / <strong>0.387</strong></td>
+<td style="text-align: right;">0.838 / <strong>0.438</strong> / <strong>0.393</strong></td>
+<td style="text-align: right;">0.838 / 0.395 / 0.387</td>
 </tr>
 <tr>
 <td>CV accuracy (grouped)</td>
-<td style="text-align: right;"><strong>0.666 ± 0.035</strong></td>
-<td style="text-align: right;">0.655 ± 0.027</td>
+<td style="text-align: right;"><strong>0.655 ± 0.029</strong></td>
+<td style="text-align: right;">0.644 ± 0.023</td>
 </tr>
 <tr>
 <td>Condition number</td>
-<td style="text-align: right;"><strong>115</strong></td>
-<td style="text-align: right;">216</td>
+<td style="text-align: right;"><strong>114</strong></td>
+<td style="text-align: right;">231</td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li>Keeping the score only for streets does not help. The fit is worse and the model is less stable (the direction score's VIF is 7.87 instead of 7.12, and the condition number almost doubles).</li>
-<li>It mainly <strong>moves</strong> accuracy from street to building.</li>
-<li>In 3b, <code>share_bldg</code> gets stronger (t goes from 2.82 to 3.59). So how the direction score is set up changes what <code>share_bldg</code> picks up.</li>
+<li>Keeping the score only for streets does not help. The fit is worse and the model is less stable (the direction score's VIF is 8.00 instead of 7.23, and the condition number doubles).</li>
+<li>It mainly <strong>lowers</strong> street accuracy; building stays the same.</li>
+<li>In 3b, <code>share_bldg</code> gets stronger (t goes from 2.79 to 3.50). So how the direction score is set up changes what <code>share_bldg</code> picks up.</li>
 </ul>
 <p>3a was kept. The same result came back later with the tuned α, in <a href="../m-f-directional-shared-vs-split/">f_directional: shared vs split</a>. Next: <a href="../m-model-4a-alternative-specific/">Model 4a: alternative-specific parameters</a>. Part of <a href="../../threads/m-calibration/">Calibration</a>.</p>
 <div class="backlinks">

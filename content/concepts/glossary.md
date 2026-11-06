@@ -3,7 +3,7 @@ source: report/concepts/glossary.md
 date: 05-08-2026
 kind: concept
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-11-06T11:37:20
 ---
 
 # Glossary
@@ -50,7 +50,7 @@ Plain explanations of the words that come back in many notes. Each note also exp
 
 ## How results are measured
 
-**Accuracy.** The share of stays where the model's top answer is the correct type. 0.719 means 71.9% correct.
+**Accuracy.** The share of stays where the model's top answer is the correct type. 0.718 means 71.8% correct.
 
 **Recall (per type).** Of all stays that really were, for example, street, the share the model called street.
 
@@ -60,7 +60,7 @@ Plain explanations of the words that come back in many notes. Each note also exp
 
 **Grouped CV.** CV where all recordings of the same stop stay in the same part. This study needs it because several phones (three for most stops) recorded each stop at the same time.
 
-**± value.** How much the result changes from fold to fold (one standard deviation). In 0.719 ± 0.032, the 0.032 shows that some folds are easier than others.
+**± value.** How much the result changes from fold to fold (one standard deviation). In 0.718 ± 0.028, the 0.028 shows that some folds are easier than others.
 
 **Log-likelihood (LL).** A number that shows how well the model's probabilities fit the correct answers. Closer to 0 is better.
 

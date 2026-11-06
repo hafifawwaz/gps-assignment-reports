@@ -3,7 +3,7 @@ source: report/plans/m-ceus-paper.md
 date: 26-10-2026
 kind: plan
 comments: true
-generated: 2026-11-04T17:56:45
+generated: 2026-11-06T11:37:20
 ---
 
 # CEUS paper
@@ -12,7 +12,7 @@ generated: 2026-11-04T17:56:45
 
 A methodological paper for the journal *Computers, Environment and Urban Systems* (CEUS), written from the content of the master's thesis ([Thesis summary](../threads/m-thesis-summary.md)). It presents how to assign GPS stays to buildings, streets and open spaces with probabilities, under GPS error. The model learns from the Hiroshima ground truth (GT), the stays with known correct answers from the field survey.
 
-All the material already exists in the thesis. The paper uses the final numbers: 11 parameters, α = 2.764, grouped CV accuracy 0.719 ± 0.032 ([Final model](../analysis/m-final-model.md)).
+All the material already exists in the thesis. The paper uses the final numbers: 11 parameters, α = 2.979, grouped CV accuracy 0.718 ± 0.028 ([Final model](../analysis/m-final-model.md)).
 
 ## Revisions from the meeting on 20-10-2026
 Revised [d-progress-05-11-2026](../progress/d-progress-05-11-2026.md)

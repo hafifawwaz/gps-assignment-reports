@@ -4925,32 +4925,32 @@
 <tbody>
 <tr>
 <td>Logit, <a href="../m-final-model/">Final model</a></td>
-<td style="text-align: right;">0.731</td>
-<td style="text-align: right;"><strong>0.719 ± 0.032</strong></td>
-<td style="text-align: right;">0.900</td>
-<td style="text-align: right;">0.486</td>
-<td style="text-align: right;"><strong>0.439</strong></td>
+<td style="text-align: right;">0.729</td>
+<td style="text-align: right;"><strong>0.718 ± 0.028</strong></td>
+<td style="text-align: right;">0.893</td>
+<td style="text-align: right;">0.491</td>
+<td style="text-align: right;"><strong>0.450</strong></td>
 </tr>
 <tr>
 <td>Random Forest</td>
-<td style="text-align: right;">0.750</td>
-<td style="text-align: right;">0.708 ± 0.027</td>
-<td style="text-align: right;">0.947</td>
-<td style="text-align: right;">0.459</td>
+<td style="text-align: right;">0.751</td>
+<td style="text-align: right;">0.705 ± 0.027</td>
+<td style="text-align: right;">0.945</td>
+<td style="text-align: right;">0.448</td>
 <td style="text-align: right;">0.282</td>
 </tr>
 <tr>
 <td>XGBoost</td>
-<td style="text-align: right;"><strong>0.829</strong></td>
-<td style="text-align: right;">0.703 ± 0.049</td>
-<td style="text-align: right;">0.913</td>
-<td style="text-align: right;">0.486</td>
-<td style="text-align: right;">0.329</td>
+<td style="text-align: right;"><strong>0.830</strong></td>
+<td style="text-align: right;">0.697 ± 0.044</td>
+<td style="text-align: right;">0.895</td>
+<td style="text-align: right;">0.491</td>
+<td style="text-align: right;">0.345</td>
 </tr>
 </tbody>
 </table>
 <p>Both tree models win on the training data (in-sample), and <strong>both lose on unseen data</strong> (CV). Almost the whole difference comes from open space. For street the three models are close, and for building the trees do a little better. So with a fair test, the machine-learning models offer no improvement. This reverses the earlier result in <a href="../m-ml-baseline-stay-level/">ML baseline, stay level (superseded)</a>.</p>
-<p>Settings: Random Forest with 400 trees, depth 8, at least 5 rows per leaf. XGBoost with 300 rounds, depth 4, learning rate 0.1. Neither was tuned. The three models agree only in part on which test sets are hard: fold 1 is the hardest for all three (<a href="../m-fold-difficulty/">Fold difficulty</a>).</p>
+<p>Settings: Random Forest with 400 trees, depth 8, at least 5 rows per leaf. XGBoost with 300 rounds, depth 4, learning rate 0.1. Neither was tuned. The three models agree only in part on which test sets are hard: fold 1 is among the two hardest for all three (<a href="../m-fold-difficulty/">Fold difficulty</a>).</p>
 <p>The clearest case of <a href="../../concepts/m-overfitting-signature/">Overfitting signature</a>. Which inputs the trees use: <a href="../m-sigma-tree-importance/">Sigma in tree importance</a>. Part of <a href="../../threads/m-complexity-and-transfer/">Complexity and transfer</a>.</p>
 <div class="backlinks">
 <p><strong>Linked from</strong> <a href="../../threads/m-complexity-and-transfer/">Complexity and transfer</a> · <a href="../m-fold-difficulty/">Fold difficulty</a> · <a href="../m-ml-baseline-stay-level/">ML baseline, stay level (superseded)</a> · <a href="../../concepts/m-overfitting-signature/">Overfitting signature</a> · <a href="../../concepts/m-positioning-vs-deterministic-assignment/">Positioning against deterministic assignment</a> · <a href="../../progress/m-progress-23-07-2026/">RQ2 diagnostics and RQ3 ceiling check</a> · <a href="../../concepts/m-research-questions/">Research questions</a> · <a href="../m-sigma-tree-importance/">Sigma in tree importance</a> · <a href="../../threads/m-thesis-summary/">Thesis summary</a></p>

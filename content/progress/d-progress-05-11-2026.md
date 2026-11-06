@@ -3,7 +3,7 @@ source: report/progress/d-progress-05-11-2026.md
 date: 05-11-2026
 kind: progress
 comments: true
-generated: 2026-11-04T17:56:45
+generated: 2026-11-06T11:37:20
 ---
 
 # CEUS paper revisions
@@ -35,17 +35,17 @@ Four stays from the ground truth: two inside buildings, one on a street and one 
 | | Accuracy | Building | Street | Open space |
 |---|---:|---:|---:|---:|
 | Nearest-entity rule | 0.479 | 0.501 | 0.281 | 0.607 |
-| Framework (out of sample) | 0.719 | 0.900 | 0.486 | 0.440 |
+| Framework (out of sample) | 0.718 | 0.893 | 0.492 | 0.450 |
 
 **Where the two methods agree and disagree** (number of stays, out of 907):
 
-| | Rule correct | Rule wrong | Total |
-|---|---:|---:|---:|
-| **Framework correct** | 347 (both right) | **305** (only the framework) | 652 |
-| **Framework wrong** | **87** (only the rule) | 168 (both wrong) | 255 |
-| **Total** | 434 | 473 | 907 |
+|                       |           Rule correct |                   Rule wrong | Total |
+| --------------------- | ---------------------: | ---------------------------: | ----: |
+| **Framework correct** |       351 (both right) | **300** (only the framework) |   651 |
+| **Framework wrong**   | **83** (only the rule) |             173 (both wrong) |   256 |
+| **Total**             |                    434 |                          473 |   907 |
 
-- The bold cells are where the two methods disagree. When they disagree, the framework is right more than three times as often (305 against 87).
+- The bold cells are where the two methods disagree. When they disagree, the framework is right more than three times as often (300 against 83).
 - In 9 stays the medoid lies inside a building and a street at the same time (the two map layers overlap). The rule then picks building.
 
 ## 3. One stay through every step
@@ -73,39 +73,39 @@ The street stay of map (c) goes through the method in Sections 3.1 to 3.3 ([Fram
 | O1        |                    1.8 |       **0.93** |       1.00 |       0.93 |          0.07 |
 | O2        |                   10.8 |           0.37 |       1.00 |       0.29 |          0.07 |
 | O3        |                   28.4 |           0.27 |       0.98 |       0.27 |          0.07 |
-| O4        |                   34.7 |           0.07 |       0.96 |       0.07 |          0.07 |
+| O4        |                   34.7 |           0.07 |       0.97 |       0.07 |          0.07 |
 
 How to read it:
 
 - [f_distribution](../concepts/m-f-distribution.md): S1 (the sidewalk) and the open space O1 next to it are near the points for 93% of the time. Building B1, which contains the medoid, gets 55%.
-- [f_distance](../concepts/m-f-distance.md): above 0.94 for every candidate. The points are so spread out that distance does not separate the candidates for this stay.
+- [f_distance](../concepts/m-f-distance.md): above 0.95 for every candidate. The points are so spread out that distance does not separate the candidates for this stay.
 - [f_temporal](../concepts/m-f-temporal.md): close to f_distribution for most candidates. This overlap is why the final model drops it.
 - [f_directional](../concepts/m-f-directional.md): the steps between points follow the road. S1 and S2 (the two segments of Fukutomachi Road) score 0.92 to 0.93, the cross streets 0.27, every building and open space below 0.08.
 
 **Step 3: utility** (a second table, Section 3.3). The final weights turn the scores into a value $V_k$ for each candidate. 
 Two more inputs enter. 
-- [share_type](../concepts/m-share-type.md): 5 of the 14 candidates are streets, so every street loses 5.163 × 5/14 = 1.84. 
-- [sigma](../concepts/m-sigma.md): the points are spread out, so every street and open-space candidate gains 1.016 × 1.332 = 1.35. S1 has the highest value, 2.09.
+- [share_type](../concepts/m-share-type.md): 5 of the 14 candidates are streets, so every street loses 5.156 × 5/14 = 1.84. 
+- [sigma](../concepts/m-sigma.md): the points are spread out, so every street and open-space candidate gains 1.045 × 1.332 = 1.39. S1 has the highest value, 1.89.
 
 **Step 4: probability.**
 
 | | Building | Street | Open space |
 |---|---:|---:|---:|
-| Final model (fitted on all 907 stays) | 0.31 | **0.50** | 0.20 |
-| Out of sample (fitted without this stay) | 0.33 | **0.45** | 0.23 |
+| Final model (fitted on all 907 stays) | 0.32 | **0.50** | 0.17 |
+| Out of sample (fitted without this stay) | 0.35 | **0.45** | 0.20 |
 | Nearest-entity rule | B1 (wrong) | | |
 
 The framework picks street, which is correct. It still gives almost a third to building, so the reader can see that this stay is uncertain.
 
 ## 4. Other changes in the paper
 
-- **A table of the final weights** in Section 4.1, because the worked example uses them. The same sentence explains why the distance weights for street and open space are negative: at α = 2.764, f_distance is close to 1 for most candidates (median 0.95), so these weights act mostly as a fixed extra value for each type.
+- **A table of the final weights** in Section 4.1, because the worked example uses them. The same sentence explains why the distance weights for street and open space are negative: at α = 2.979, f_distance is close to 1 for most candidates (median 0.96), so these weights act mostly as a fixed extra value for each type.
 - **Definitions that were missing**: the medoid, share_t (the share of the stay's candidates that have the candidate's type) and the σ input.
 - **share_t wording.** Section 4.2 now speaks of a share, not a count of competing segments, which matches [share_type](../concepts/m-share-type.md).
 
 ## Question
 
-1. **Nearest-entity in the abstract?** The comparison (0.479 against 0.719) is now in Section 4.2 only. The abstract and the conclusion are unchanged.
+1. **Nearest-entity in the abstract?** The comparison (0.479 against 0.718) is now in Section 4.2 only. The abstract and the conclusion are unchanged.
 
 
 <div class="backlinks" markdown>

@@ -4924,13 +4924,13 @@
 <tr>
 <td style="text-align: right;">0</td>
 <td>σ²</td>
-<td style="text-align: right;">19.51</td>
+<td style="text-align: right;">19.54</td>
 <td>drop</td>
 </tr>
 <tr>
 <td style="text-align: right;">1</td>
 <td>f_distribution × share_type</td>
-<td style="text-align: right;">10.44</td>
+<td style="text-align: right;">10.71</td>
 <td>drop</td>
 </tr>
 <tr>
@@ -4941,10 +4941,10 @@
 </tr>
 </tbody>
 </table>
-<p>Both extra terms go. f_distribution × share_type is only just above the line of 10, although it is significant on its own (t = 4.61 before the first step). Removing both costs some fit (LR = 20.42, df = 2, <strong>p &lt; 0.0001</strong>), but accuracy on unseen data goes up (0.703 → 0.712), and the condition number drops about 5 times (9,031 → 1,878), so the model becomes much more stable.</p>
-<p><strong>Result, the 13-parameter model:</strong> the 13 core terms of Model 4a, at α = 2.764.</p>
+<p>Both extra terms go. f_distribution × share_type is only just above the line of 10, although it is significant on its own (t = 4.77 before the first step). Removing both costs some fit (LR = 17.73, df = 2, <strong>p &lt; 0.001</strong>), but accuracy on unseen data goes up (0.698 → 0.710), and the condition number drops about 6 times (11,696 → 2,036), so the model becomes much more stable.</p>
+<p><strong>Result, the 13-parameter model:</strong> the 13 core terms of Model 4a, at α = 2.979.</p>
 <div class="arithmatex">\[V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_{3,t} f_\text{directional} + w_{4,t}\,share_t + w_5\,\sigma\]</div>
-<p>Accuracy 0.733, accuracy on unseen data <strong>0.712 ± 0.038</strong>, condition number 1,878.</p>
+<p>Accuracy 0.727, accuracy on unseen data <strong>0.710 ± 0.030</strong>, condition number 2,036.</p>
 <p>Later it was made smaller, to 11 parameters: <a href="../m-f-directional-shared-vs-split/">f_directional: shared vs split</a>. Part of <a href="../../threads/m-calibration/">Calibration</a>.</p>
 <div class="backlinks">
 <p><strong>Linked from</strong> <a href="../../threads/m-calibration/">Calibration</a> · <a href="../../progress/m-progress-19-07-2026/">MNL model development</a> · <a href="../m-model-6-rederived/">Model 6, re-derived at calibrated alpha</a> · <a href="../m-model-progression-table/">Model progression</a> · <a href="../../concepts/m-multicollinearity-is-structural/">Multicollinearity is structural</a> · <a href="../../concepts/m-overfitting-signature/">Overfitting signature</a> · <a href="../../progress/m-progress-21-07-2026/">RQ1 rebuilt with grouped CV</a> · <a href="../m-sigma-tree-importance/">Sigma in tree importance</a> · <a href="../../concepts/m-f-distribution/">f_distribution</a></p>

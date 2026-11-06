@@ -3,7 +3,7 @@ source: report/progress/d-progress-20-10-2026.md
 date: 20-10-2026
 kind: progress
 comments: true
-generated: 2026-11-04T17:19:19
+generated: 2026-11-06T11:37:20
 ---
 
 # Publications and doctoral plan
@@ -18,21 +18,21 @@ Two separate outputs, an event and a journal. Each uses only the thesis content 
 
 - **CSIS Days 2026 poster** ([CSIS DAYS 2026 poster](../analysis/m-csis-poster.md)). Fairly complete. Sensei approved it in this meeting.
 - **CEUS paper** (*Computers, Environment and Urban Systems*) ([CEUS paper](../plans/m-ceus-paper.md)). A methodological paper, written from the thesis content.
-- Each uses the final numbers: 11 parameters, α = 2.764, grouped CV accuracy 0.719 ± 0.032 ([Final model](../analysis/m-final-model.md)).
+- Each uses the final numbers: 11 parameters, α = 2.979, grouped CV accuracy 0.718 ± 0.028 ([Final model](../analysis/m-final-model.md)).
 
 ## Code check and adopted rerun
 
 Thesis bug fixes and adopted rerun. A check of the code against the thesis on 19-10-2026 found six problems: two in the scores and four in the ground truth cleaning. The fixed pipeline (run C) is now the official one, and the thesis, paper, poster, abstract and slides use its numbers. The old versions are archived.
 
-- Accuracy on unseen data does not change significantly (0.716 → 0.719; McNemar p = 0.67 on the 895 shared stays).
-- Recall moves from open space (0.492 → 0.440) to street (0.427 → 0.486). Building barely moves (0.896 → 0.900).
-- The final model loses the `f_distribution × share_type` term (VIF 10.4, just above the limit of 10) and has 11 parameters instead of 12.
+- Accuracy on unseen data does not change significantly (0.716 → 0.718; McNemar p = 0.74 on the 895 shared stays).
+- Recall moves from open space (0.492 → 0.450) to street (0.427 → 0.492). Building barely moves (0.896 → 0.893).
+- The final model loses the `f_distribution × share_type` term (VIF 10.7, just above the limit of 10) and has 11 parameters instead of 12.
 - Most thesis decisions hold: 10 m search distance, no ASC, one shared direction weight, the simple model beats Random Forest and XGBoost, downsampling does no harm.
 
 Points for sensei:
 
-1. α is bounded from below only. The fit is almost flat above 2.2, and the model uses the inside best point, 2.764.
-2. Two tests close to their limits decide the model shape: VIF 10.4 against 10, and p = 0.054 against 0.05.
+1. α is bounded from below only. The fit is almost flat above 2.4, and the model uses the inside best point, 2.979.
+2. One test close to its limit decides the model shape: VIF 10.7 against 10. The other test, one shared direction weight against one per type, is clear (p = 0.115).
 3. The ASC raises accuracy on unseen data, so the case against it rests on its copy of the street direction score (r = 0.94) and the sign flip that follows ([Model 5: alternative-specific constants (rejected)](../analysis/m-model-5-asc-rejected.md)).
 4. Crowded street candidates explain the street errors. The open-space errors still have no cause.
 

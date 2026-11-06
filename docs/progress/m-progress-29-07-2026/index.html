@@ -4912,8 +4912,8 @@
 
 <p>Sensei's question. Before fitting, the survey data is downsampled: points are removed so that it looks like MILES. Does this step change the result? To check, the <a href="../../analysis/m-final-model/">Final model</a> was fitted again on the full survey data, without downsampling.</p>
 <ul>
-<li><strong>Downsampling does no harm.</strong> On unseen data, the downsampled data gives 0.719 ± 0.032 and the full data gives 0.719 ± 0.033. The model is more stable with downsampled data (condition number 1,681 vs 4,849) (<a href="../../analysis/m-raw-density-refit/">Raw-density refit</a>).</li>
-<li><strong>α changes.</strong> With the full data, the fit keeps improving up to the search limit, α = 6, instead of stopping at 2.764. But it changes very little over a wide range of α, so neither value is pinned down well (<a href="../../analysis/m-raw-density-alpha-profile/">Raw-density alpha profile</a>).</li>
+<li><strong>Downsampling does no harm.</strong> On unseen data, the downsampled data gives 0.718 ± 0.028 and the full data gives 0.709 ± 0.032. The model is more stable with downsampled data (condition number 1,869 vs 4,735) (<a href="../../analysis/m-raw-density-refit/">Raw-density refit</a>).</li>
+<li><strong>α changes.</strong> With the full data, the fit keeps improving up to the search limit, α = 6, instead of stopping at 2.979. But it changes very little over a wide range of α, so neither value is pinned down well (<a href="../../analysis/m-raw-density-alpha-profile/">Raw-density alpha profile</a>).</li>
 <li><strong>Side finding.</strong> Downsampling also makes the search area around each stay smaller, so each stay gets fewer candidates (<a href="../../analysis/m-candidate-search-area/">Downsampling shrinks the candidate search area</a>).</li>
 </ul>
 <div class="backlinks">

@@ -4923,33 +4923,33 @@
 <tbody>
 <tr>
 <td>Accuracy</td>
-<td style="text-align: right;">0.722</td>
+<td style="text-align: right;">0.714</td>
 <td style="text-align: right;">0.728</td>
 </tr>
 <tr>
 <td>CV accuracy (grouped)</td>
-<td style="text-align: right;">0.700 ± 0.036</td>
-<td style="text-align: right;">0.719 ± 0.033</td>
+<td style="text-align: right;">0.697 ± 0.026</td>
+<td style="text-align: right;">0.719 ± 0.016</td>
 </tr>
 <tr>
 <td>LR vs 4a (df=2)</td>
 <td style="text-align: right;"></td>
-<td style="text-align: right;">35.6, p &lt; 0.0001</td>
+<td style="text-align: right;">44.7, p &lt; 0.0001</td>
 </tr>
 <tr>
 <td>Max VIF</td>
-<td style="text-align: right;">8.83</td>
-<td style="text-align: right;"><strong>30.57</strong></td>
+<td style="text-align: right;">8.94</td>
+<td style="text-align: right;"><strong>31.04</strong></td>
 </tr>
 <tr>
 <td>Condition number</td>
-<td style="text-align: right;">737</td>
-<td style="text-align: right;"><strong>2,027</strong></td>
+<td style="text-align: right;">739</td>
+<td style="text-align: right;"><strong>2,055</strong></td>
 </tr>
 </tbody>
 </table>
-<p>On paper, the constants are significant, and accuracy on unseen data also goes up (by less than the normal spread between test sets). But <strong><code>asc_street</code> and <code>f_directional_street</code> move almost together (r = 0.94)</strong>. The reason: <a href="../../concepts/m-f-directional/">f_directional</a> hardly changes between street candidates, so it acts almost like a constant for streets. The model is asked to measure the same "street-ness" twice. As a result, the weight of the street direction score <strong>changes sign</strong>, from +3.46 in Model 4a to -5.30, so the two weights can no longer be read on their own.</p>
-<p>With the tuned α it gets worse: each constant also moves almost together with its own f_distance score (<code>asc_t</code> and <code>f_distance_t</code>, r = 0.99), and the highest VIF rises to 95. With a 15 m search distance the model behaves about the same as at 10 m (accuracy on unseen data 0.714 ± 0.019, condition number 1,827).</p>
+<p>On paper, the constants are significant, and accuracy on unseen data also goes up (by a little less than the normal spread between test sets of Model 4a). But <strong><code>asc_street</code> and <code>f_directional_street</code> move almost together (r = 0.94)</strong>. The reason: <a href="../../concepts/m-f-directional/">f_directional</a> hardly changes between street candidates, so it acts almost like a constant for streets. The model is asked to measure the same "street-ness" twice. As a result, the weight of the street direction score <strong>changes sign</strong>, from +3.59 in Model 4a to -5.23, so the two weights can no longer be read on their own.</p>
+<p>With the tuned α it gets worse: each constant also moves almost together with its own f_distance score (<code>asc_t</code> and <code>f_distance_t</code>, r = 0.99), and the highest VIF rises to 116. With a 15 m search distance the model behaves about the same as at 10 m (accuracy on unseen data 0.707 ± 0.019, condition number 1,844).</p>
 <p><strong>Rejected, because its weights cannot be trusted.</strong> It is not a case of overfitting: the gain on unseen data is real, but it comes from a near-copy of another input (<a href="../../concepts/m-overfitting-signature/">Overfitting signature</a>). Part of <a href="../../threads/m-calibration/">Calibration</a>.</p>
 <div class="backlinks">
 <p><strong>Linked from</strong> <a href="../m-alpha-calibration/">Alpha calibration</a> · <a href="../../threads/m-calibration/">Calibration</a> · <a href="../../progress/m-progress-19-07-2026/">MNL model development</a> · <a href="../m-model-4a-alternative-specific/">Model 4a: alternative-specific parameters</a> · <a href="../m-model-progression-table/">Model progression</a> · <a href="../../concepts/m-multicollinearity-is-structural/">Multicollinearity is structural</a> · <a href="../../concepts/m-overfitting-signature/">Overfitting signature</a> · <a href="../../progress/d-progress-20-10-2026/">Publications and doctoral plan</a> · <a href="../../progress/m-progress-21-07-2026/">RQ1 rebuilt with grouped CV</a> · <a href="../../concepts/m-f-directional/">f_directional</a></p>

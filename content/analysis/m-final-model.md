@@ -3,14 +3,14 @@ source: report/analysis/m-final-model.md
 date: 21-07-2026
 kind: analysis
 comments: true
-generated: 2026-11-04T17:19:19
+generated: 2026-11-06T11:37:20
 ---
 
 # Final model
 
 <p class="doc-meta"><span class="chip chip-analysis">Analysis</span> <span class="chip chip-project">Master</span> <span class="chip chip-date">21-07-2026</span></p>
 
-The model the thesis ends with (Section 5.1.8). It has 11 parameters, uses α = 2.764 and a search distance (`R_buffer`) of 10 m.
+The model the thesis ends with (Section 5.1.8). It has 11 parameters, uses α = 2.979 and a search distance (`R_buffer`) of 10 m.
 
 
 $$V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_3 f_\text{directional} + w_{4,t}\,share_t + w_5\,\sigma$$
@@ -18,32 +18,32 @@ $$V_t = w_{1,t} f_\text{distribution} + w_{2,t} f_\text{distance} + w_3 f_\text{
 
 A small $t$ means the weight is different for each place type (building, street, open space). No $t$ means one weight shared by all types.
 
-**How well it fits.** The most important line is CV accuracy: on data it did not learn from, the model picks the correct type for 71.9% of stays.
+**How well it fits.** The most important line is CV accuracy: on data it did not learn from, the model picks the correct type for 71.8% of stays.
 
 | | |
 |---|---:|
-| LL(0) / LL(C) / LL(b) | -1.0712 / -0.9359 / -0.6509 |
-| ρ² vs LL(0) / LL(C) | 0.392 / 0.305 |
-| Accuracy (in-sample) | 0.731 |
-| **CV accuracy (grouped, 5-fold)** | **0.719 ± 0.032** |
-| CV building / street / open space | 0.900 / 0.486 / 0.439 |
-| Condition number | 1,681 |
+| LL(0) / LL(C) / LL(b) | -1.1318 / -0.9507 / -0.6477 |
+| ρ² vs LL(0) / LL(C) | 0.428 / 0.319 |
+| Accuracy (in-sample) | 0.729 |
+| **CV accuracy (grouped, 5-fold)** | **0.718 ± 0.028** |
+| CV building / street / open space | 0.893 / 0.491 / 0.450 |
+| Condition number | 1,869 |
 
 **The weights.** w is the learned weight: positive raises the probability, negative lowers it. t shows how clearly the weight differs from zero (about 2 or more is significant). VIF shows overlap with other inputs (above 10 is the usual warning line; see [Multicollinearity is structural](../concepts/m-multicollinearity-is-structural.md)).
 
 | Term | w | t | VIF |
 |---|---:|---:|---:|
-| f_distribution, bldg | +2.066 | 4.12 | 1.78 |
-| f_distribution, street | +2.648 | 5.32 | 1.98 |
-| f_distribution, os | +6.520 | 10.93 | 2.13 |
-| f_distance, bldg | -0.384 | -0.32 | 7.83 |
-| f_distance, street | -3.042 | -2.86 | 22.36 |
-| f_distance, os | -6.065 | -4.98 | 12.80 |
-| f_directional | +3.429 | 6.68 | 10.03 |
-| share, bldg | -1.014 | -1.98 | 6.35 |
-| share, street | -5.163 | -7.05 | 10.77 |
-| share, os | -0.798 | -0.72 | 9.10 |
-| sigma | +1.016 | 7.36 | 3.34 |
+| f_distribution, bldg | +1.960 | 4.06 | 1.75 |
+| f_distribution, street | +2.659 | 5.36 | 1.97 |
+| f_distribution, os | +6.410 | 11.01 | 2.11 |
+| f_distance, bldg | -0.465 | -0.37 | 7.87 |
+| f_distance, street | -3.350 | -2.92 | 23.79 |
+| f_distance, os | -6.665 | -5.16 | 13.64 |
+| f_directional | +3.488 | 6.82 | 10.35 |
+| share, bldg | -1.182 | -2.38 | 6.32 |
+| share, street | -5.156 | -7.27 | 11.33 |
+| share, os | +0.246 | 0.23 | 9.93 |
+| sigma | +1.045 | 7.63 | 3.36 |
 
 How the model was built: [Model progression](m-model-progression-table.md). Overlap between inputs: [Final model correlation matrix](m-final-model-correlation-matrix.md). Where it makes mistakes: [Confusion matrix](m-confusion-matrix.md). It also holds up without downsampling the data: [Raw-density refit](m-raw-density-refit.md).
 

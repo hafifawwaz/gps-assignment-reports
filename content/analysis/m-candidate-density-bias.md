@@ -3,7 +3,7 @@ source: report/analysis/m-candidate-density-bias.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-11-06T11:37:20
 ---
 
 # Candidate density bias toward building
@@ -16,13 +16,13 @@ A first guess would be that street stays have too few street candidates. The dat
 
 | True type | Same-type candidates, mean | median | Total candidates, mean |
 |---|---:|---:|---:|
-| Building | 7.00 | 5 | 21.78 |
-| Street | **13.13** | **11** | 36.24 |
-| Open space | 4.25 | 3 | 14.69 |
+| Building | 5.99 | 4 | 20.77 |
+| Street | **13.13** | **11** | 35.44 |
+| Open space | 4.25 | 3 | 13.79 |
 
-The [share_type](../concepts/m-share-type.md) term gives a lower value to a candidate with many neighbours of the same type. The penalty is strongest for streets (the weight `share_street` is -5.16 in the [Final model](m-final-model.md), against -1.01 for buildings). The map stores streets as **many short pieces next to each other** ([Spatial entity layers](../concepts/m-spatial-entity-layers.md)). So a stay on a street is punished for a crowd of street pieces that the map itself created. The probability then moves to the nearest building ([Confusion matrix](m-confusion-matrix.md)).
+The [share_type](../concepts/m-share-type.md) term gives a lower value to a candidate with many neighbours of the same type. The penalty is strongest for streets (the weight `share_street` is -5.16 in the [Final model](m-final-model.md), against -1.18 for buildings). The map stores streets as **many short pieces next to each other** ([Spatial entity layers](../concepts/m-spatial-entity-layers.md)). So a stay on a street is punished for a crowd of street pieces that the map itself created. The probability then moves to the nearest building ([Confusion matrix](m-confusion-matrix.md)).
 
-This explains the street errors only. Open-space stays have the fewest candidates of their own type, and `share_os` is small and not significant (-0.80). So the open-space errors toward building need another explanation, which has not been found yet.
+This explains the street errors only. Open-space stays have the fewest candidates of their own type, and `share_os` is small and not significant (+0.25). So the open-space errors toward building need another explanation, which has not been found yet.
 
 The street part comes from the street map, so it can be fixed. The GPS data itself does not set the limit ([Contributions](../concepts/m-contributions.md)). But it weakens the argument that streets are real places of activity: [Tension with the street-space argument](../concepts/m-street-space-tension.md), [Candidate density as boundary-matching difficulty](../concepts/m-boundary-matching-analogy.md).
 

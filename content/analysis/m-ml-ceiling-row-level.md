@@ -3,7 +3,7 @@ source: report/analysis/m-ml-ceiling-row-level.md
 date: 23-07-2026
 kind: analysis
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-11-06T11:37:20
 ---
 
 # ML ceiling check, row level
@@ -14,13 +14,13 @@ A fair comparison between the simple model and two machine-learning models. Rand
 
 | Model | In-sample | **CV (grouped)** | CV building | CV street | CV open space |
 |---|---:|---:|---:|---:|---:|
-| Logit, [Final model](m-final-model.md) | 0.731 | **0.719 ± 0.032** | 0.900 | 0.486 | **0.439** |
-| Random Forest | 0.750 | 0.708 ± 0.027 | 0.947 | 0.459 | 0.282 |
-| XGBoost | **0.829** | 0.703 ± 0.049 | 0.913 | 0.486 | 0.329 |
+| Logit, [Final model](m-final-model.md) | 0.729 | **0.718 ± 0.028** | 0.893 | 0.491 | **0.450** |
+| Random Forest | 0.751 | 0.705 ± 0.027 | 0.945 | 0.448 | 0.282 |
+| XGBoost | **0.830** | 0.697 ± 0.044 | 0.895 | 0.491 | 0.345 |
 
 Both tree models win on the training data (in-sample), and **both lose on unseen data** (CV). Almost the whole difference comes from open space. For street the three models are close, and for building the trees do a little better. So with a fair test, the machine-learning models offer no improvement. This reverses the earlier result in [ML baseline, stay level (superseded)](m-ml-baseline-stay-level.md).
 
-Settings: Random Forest with 400 trees, depth 8, at least 5 rows per leaf. XGBoost with 300 rounds, depth 4, learning rate 0.1. Neither was tuned. The three models agree only in part on which test sets are hard: fold 1 is the hardest for all three ([Fold difficulty](m-fold-difficulty.md)).
+Settings: Random Forest with 400 trees, depth 8, at least 5 rows per leaf. XGBoost with 300 rounds, depth 4, learning rate 0.1. Neither was tuned. The three models agree only in part on which test sets are hard: fold 1 is among the two hardest for all three ([Fold difficulty](m-fold-difficulty.md)).
 
 The clearest case of [Overfitting signature](../concepts/m-overfitting-signature.md). Which inputs the trees use: [Sigma in tree importance](m-sigma-tree-importance.md). Part of [Complexity and transfer](../threads/m-complexity-and-transfer.md).
 

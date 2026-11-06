@@ -3,7 +3,7 @@ source: report/plans/d-street-segmentation.md
 date: 16-10-2026
 kind: plan
 comments: true
-generated: 2026-11-04T17:19:19
+generated: 2026-11-06T11:37:20
 ---
 
 # Street segmentation
@@ -27,7 +27,7 @@ A flaw found in the master's thesis: how streets are cut into segments affects t
 
 The direction score (`f_directional`) in the thesis never used the real direction of a street: every street was treated as pointing east (found 19-10-2026). The fixed code takes each street's direction from its centerline. So the thesis results say nothing yet about whether shorter or longer street pieces help the direction score.
 
-First result with the real direction (experimental rerun, 19-10-2026): the small movements inside a stay follow the street direction about as much as random movement would. People standing on a street even move slightly less along the street than people near it (0.61 against 0.63, where 0.64 means random). In the refitted models, the direction score gets a clear weight when all three types share one weight (+3.43, t = 6.7). With one weight per type, the street weight is negative (about -5), so movement along a street counts against that street. A raw signal close to random and a street weight that points the wrong way make the direction score weak evidence at the moment, whatever the segmentation.
+First result with the real direction (experimental rerun, 19-10-2026): the small movements inside a stay follow the street direction about as much as random movement would. People standing on a street even move slightly less along the street than people near it (0.61 against 0.63, where 0.64 means random). In the refitted models, the direction score gets a clear weight when all three types share one weight (+3.49, t = 6.8). With one weight per type, the street weight is negative (about -5), so movement along a street counts against that street. A raw signal close to random and a street weight that points the wrong way make the direction score weak evidence at the moment, whatever the segmentation.
 
 Part of [Doctoral plan](../threads/d-doctoral-plan.md).
 

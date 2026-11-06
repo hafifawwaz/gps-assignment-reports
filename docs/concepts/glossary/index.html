@@ -5063,12 +5063,12 @@
 <p><strong>σ (sigma).</strong> How spread out the GPS points of a stay are. A large σ means the GPS position was uncertain.</p>
 <p><strong>R_buffer.</strong> The search distance around each GPS point. Entities inside this distance become candidates. The study uses 10 m.</p>
 <h2 id="how-results-are-measured">How results are measured</h2>
-<p><strong>Accuracy.</strong> The share of stays where the model's top answer is the correct type. 0.719 means 71.9% correct.</p>
+<p><strong>Accuracy.</strong> The share of stays where the model's top answer is the correct type. 0.718 means 71.8% correct.</p>
 <p><strong>Recall (per type).</strong> Of all stays that really were, for example, street, the share the model called street.</p>
 <p><strong>In-sample.</strong> Accuracy measured on the same data the model learned from. It is usually too optimistic.</p>
 <p><strong>Cross-validation (CV).</strong> The data is split into 5 parts (folds). The model learns from 4 parts and is tested on the 5th, five times. This shows how well the model works on data it has not seen.</p>
 <p><strong>Grouped CV.</strong> CV where all recordings of the same stop stay in the same part. This study needs it because several phones (three for most stops) recorded each stop at the same time.</p>
-<p><strong>± value.</strong> How much the result changes from fold to fold (one standard deviation). In 0.719 ± 0.032, the 0.032 shows that some folds are easier than others.</p>
+<p><strong>± value.</strong> How much the result changes from fold to fold (one standard deviation). In 0.718 ± 0.028, the 0.028 shows that some folds are easier than others.</p>
 <p><strong>Log-likelihood (LL).</strong> A number that shows how well the model's probabilities fit the correct answers. Closer to 0 is better.</p>
 <p><strong>ρ² (rho-squared).</strong> How much better the model is than a simple baseline. Negative means worse than the baseline.</p>
 <p><strong>t-value.</strong> How clearly a weight differs from zero. Above about 2 (or below -2) usually counts as significant.</p>

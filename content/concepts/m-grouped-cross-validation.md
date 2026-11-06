@@ -3,7 +3,7 @@ source: report/concepts/m-grouped-cross-validation.md
 date: 21-07-2026
 kind: concept
 comments: true
-generated: 2026-11-04T17:19:19
+generated: 2026-11-06T11:37:20
 ---
 
 # Grouped cross-validation
@@ -16,7 +16,7 @@ In this survey, several phones recorded each stop at the same time: three for mo
 
 Since 21-07-2026, every CV number uses `StratifiedGroupKFold` with 5 parts, **grouped by real stop** (participant and stop number). All records of one stop always stay in the same part. All models were tested again this way ([Model progression](../analysis/m-model-progression-table.md)).
 
-The effect, shown on the final 11-parameter model: normal CV gives 0.721 ± 0.018, grouped CV gives **0.719 ± 0.032**. The average barely moves, but the range is almost twice as wide. The wider range is the honest one. Earlier results from normal CV, such as [ML baseline, stay level (superseded)](../analysis/m-ml-baseline-stay-level.md), are replaced.
+The effect, shown on the final 11-parameter model: normal CV gives 0.716 ± 0.016, grouped CV gives **0.718 ± 0.028**. The average barely moves, but the range is almost twice as wide. The wider range is the honest one. Earlier results from normal CV, such as [ML baseline, stay level (superseded)](../analysis/m-ml-baseline-stay-level.md), are replaced.
 
 Part of [Calibration](../threads/m-calibration.md).
 

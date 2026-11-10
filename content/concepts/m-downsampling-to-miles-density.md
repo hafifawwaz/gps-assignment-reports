@@ -3,7 +3,7 @@ source: report/concepts/m-downsampling-to-miles-density.md
 date: 25-07-2026
 kind: concept
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-11-10T14:29:37
 ---
 
 # Downsampling to MILES density
@@ -29,6 +29,6 @@ Part of [Ground truth data](../threads/m-ground-truth-data.md).
 
 <div class="backlinks" markdown>
 
-**Linked from** [Ground truth data](../threads/m-ground-truth-data.md) · [Ground truth dataset](m-ground-truth-dataset.md) · [Raw-density refit](../analysis/m-raw-density-refit.md)
+**Linked from** [Ground truth data](../threads/m-ground-truth-data.md) · [Ground truth dataset](m-ground-truth-dataset.md) · [Raw-density refit](../analysis/m-raw-density-refit.md) · [Seasonal variance](../plans/d-seasonal-variance.md)
 
 </div>

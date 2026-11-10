@@ -1965,6 +1965,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    seasonal variance
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1981,6 +1999,102 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#progress-10-11-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Progress (10-11-2026)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-st-dbscan-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing the ST-DBSCAN settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stays-in-the-four-seasons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stays in the four seasons
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indoor-vs-outdoor-first-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indoor vs outdoor: first results
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anomalies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anomalies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-for-sensei" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Questions for sensei
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -4892,6 +5006,91 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#progress-10-11-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Progress (10-11-2026)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-st-dbscan-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Choosing the ST-DBSCAN settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stays-in-the-four-seasons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stays in the four seasons
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indoor-vs-outdoor-first-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indoor vs outdoor: first results
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anomalies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anomalies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#questions-for-sensei" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Questions for sensei
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -4940,6 +5139,517 @@
 </tbody>
 </table>
 <p>A small area is enough.</p>
+<h2 id="progress-10-11-2026">Progress (10-11-2026)</h2>
+<p>The data is prepared (steps 1–3), and the framework has been applied to every stay (step 4, first results below).</p>
+<ol>
+<li><strong>Clip.</strong> Keep only the GPS points inside the study area. The area is the same as the ground truth (GT) area: the rectangle covered by the street map, about 12 km × 9.5 km of central Hiroshima. All data uses one map projection (EPSG:32653, distances in metres). Unlike the GT, the points are not thinned (no downsampling, <a href="../../concepts/m-downsampling-to-miles-density/">Downsampling to MILES density</a>).</li>
+<li><strong>Overview.</strong> Look at how often the phones record a point and how far apart the points are, before choosing the stay detection settings.</li>
+<li><strong>Stay detection.</strong> Find the stays with ST-DBSCAN, a method that groups GPS points that are close in space and in time. It has three settings: the largest distance between points of one stay (eps1), the largest time gap (eps2), and the smallest number of points that makes a stay (min_samples). The settings come from Kato et al. (2024), who tuned them on GPS data from Hiroshima for different recording intervals.</li>
+<li><strong>Framework.</strong> Give every stay its probabilities of building, street and open space, then compare indoor and outdoor time across the seasons.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Season</th>
+<th>Clip</th>
+<th>Overview</th>
+<th>Stay detection</th>
+<th>Framework</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Winter (15–21 Jan 2024)</td>
+<td>done</td>
+<td>done</td>
+<td>done</td>
+<td>done</td>
+</tr>
+<tr>
+<td>Spring (15–21 Apr 2024)</td>
+<td>done</td>
+<td>done</td>
+<td>done</td>
+<td>done</td>
+</tr>
+<tr>
+<td>Summer (8–14 Jul 2024)</td>
+<td>done</td>
+<td>done</td>
+<td>done</td>
+<td>done</td>
+</tr>
+<tr>
+<td>Autumn (21–27 Oct 2023)</td>
+<td>done</td>
+<td>done</td>
+<td>done</td>
+<td>done</td>
+</tr>
+<tr>
+<td>Autumn (21–27 Oct 2024)</td>
+<td>done</td>
+<td>done</td>
+<td>on hold (anomaly 4)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Autumn 2023 (21–27 October 2023) was added to check whether autumn 2024 differs because of the season or because of the way the data was collected. <strong>For now, autumn 2023 stands for autumn</strong> (decision of 10-11-2026), because autumn 2024 is not comparable (anomaly 4).</p>
+<p><strong>Decisions of 10-11-2026</strong> for stay detection:</p>
+<ul>
+<li><strong>No trip-label filter.</strong> Every GPS point goes into ST-DBSCAN, whatever its trip label. Before, points with a trip label (walk, car, train, ...) were removed first. The labels are not reliable in every week (anomaly 4), so stay detection no longer depends on them.</li>
+<li><strong>Stays cut at midnight are joined</strong>, but only when they are certainly the same stay (anomaly 2).</li>
+<li><strong>Split visits are not joined</strong> for now (anomaly 3).</li>
+</ul>
+<h2 id="the-data">The data</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Winter</th>
+<th style="text-align: right;">Spring</th>
+<th style="text-align: right;">Summer</th>
+<th style="text-align: right;">Autumn 2024</th>
+<th style="text-align: right;">Autumn 2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPS points in the area</td>
+<td style="text-align: right;">2,821,778</td>
+<td style="text-align: right;">2,349,164</td>
+<td style="text-align: right;">2,088,422</td>
+<td style="text-align: right;">1,406,182</td>
+<td style="text-align: right;">3,696,829</td>
+</tr>
+<tr>
+<td>People</td>
+<td style="text-align: right;">6,006</td>
+<td style="text-align: right;">5,146</td>
+<td style="text-align: right;">4,536</td>
+<td style="text-align: right;">3,090</td>
+<td style="text-align: right;">8,693</td>
+</tr>
+<tr>
+<td>Time between two points (median)</td>
+<td style="text-align: right;">41 s</td>
+<td style="text-align: right;">41 s</td>
+<td style="text-align: right;">41 s</td>
+<td style="text-align: right;">40 s</td>
+<td style="text-align: right;">41 s</td>
+</tr>
+<tr>
+<td>Points with accuracy of 100 m or worse</td>
+<td style="text-align: right;">14.7%</td>
+<td style="text-align: right;">15.3%</td>
+<td style="text-align: right;">17.6%</td>
+<td style="text-align: right;">14.3%</td>
+<td style="text-align: right;">15.5%</td>
+</tr>
+</tbody>
+</table>
+<p>The phones record about one point every 40 seconds, in every week and at every hour of the day. The number of people changes a lot: autumn 2024 has about a third of the people of autumn 2023.</p>
+<p><strong>Checks on the single points</strong> (before any stays are built):</p>
+<ul>
+<li>Every week has the year it should (four weeks of 2024, one of 2023): every clipped point, and every row of five sampled hours of the raw files (all of Japan). Every time stamp falls inside its hour folder.</li>
+<li>No two points of one person share the same time. No person sends points unusually fast (no one above one point per 10 seconds for an hour).</li>
+<li>The same people appear in several weeks: for example 2,984 people are in both winter and spring, 2,275–2,496 in summer and winter or spring, about 1,550–1,800 in autumn 2024 and one of the other 2024 weeks, and 1,612 in both autumns. The person IDs are coded the same way in every week, so the same people can be followed from season to season.</li>
+<li>Gender and age group are missing for about three in four people.</li>
+</ul>
+<p><img alt="" src="../../figures/seasons_data.png" /></p>
+<p>The left chart shows the trip label that MILES gives each point (walk, car, train, ...). A point without a label counts as not travelling. Winter, spring and autumn 2023 look the same. Summer and autumn 2024 have far fewer walk labels (anomaly 4).</p>
+<h2 id="choosing-the-st-dbscan-settings">Choosing the ST-DBSCAN settings</h2>
+<p>Kato et al. (2024) give settings for a 30-second interval and for a 1-minute interval. MILES records about every 40 seconds, so three options were compared on spring:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Kato 30 s</th>
+<th style="text-align: right;">Between the two (~40 s)</th>
+<th style="text-align: right;">Kato 1 min</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Settings (eps1, eps2, min_samples)</td>
+<td style="text-align: right;">70 m, 1100 s, 18</td>
+<td style="text-align: right;">63 m, 920 s, 14</td>
+<td style="text-align: right;">50 m, 610 s, 6</td>
+</tr>
+<tr>
+<td>Stays found (one week)</td>
+<td style="text-align: right;">7,966</td>
+<td style="text-align: right;">11,012</td>
+<td style="text-align: right;">44,051</td>
+</tr>
+<tr>
+<td>Typical stay length (median)</td>
+<td style="text-align: right;">44 min</td>
+<td style="text-align: right;">32 min</td>
+<td style="text-align: right;">5 min</td>
+</tr>
+<tr>
+<td>Stays shorter than 10 minutes</td>
+<td style="text-align: right;">0.6%</td>
+<td style="text-align: right;">5.3%</td>
+<td style="text-align: right;">64%</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../../figures/summary.png" /></p>
+<ul>
+<li>The 30 s settings and the in-between settings find almost the same stays (94% of the stay points are shared). The in-between settings add about 3,000 shorter stays of 10–18 minutes.</li>
+<li>The 1 min settings find four times as many stays. Most are stops of about 5 minutes, and long visits break into many small pieces. They do not fit MILES.</li>
+<li><strong>Chosen: the 30 s settings</strong> (70 m, 1100 s, 18). With one point every 41 seconds, a stay must last at least about 12 minutes.</li>
+</ul>
+<h2 id="stays-in-the-four-seasons">Stays in the four seasons</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Winter</th>
+<th style="text-align: right;">Spring</th>
+<th style="text-align: right;">Summer</th>
+<th style="text-align: right;">Autumn (2023)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stays</td>
+<td style="text-align: right;">10,222</td>
+<td style="text-align: right;">8,695</td>
+<td style="text-align: right;">7,497</td>
+<td style="text-align: right;">13,767</td>
+</tr>
+<tr>
+<td>People with at least one stay</td>
+<td style="text-align: right;">1,649</td>
+<td style="text-align: right;">1,369</td>
+<td style="text-align: right;">1,180</td>
+<td style="text-align: right;">2,050</td>
+</tr>
+<tr>
+<td>Share of people with at least one stay</td>
+<td style="text-align: right;">27%</td>
+<td style="text-align: right;">27%</td>
+<td style="text-align: right;">26%</td>
+<td style="text-align: right;">24%</td>
+</tr>
+<tr>
+<td>Stays per person (people with a stay)</td>
+<td style="text-align: right;">6.2</td>
+<td style="text-align: right;">6.4</td>
+<td style="text-align: right;">6.4</td>
+<td style="text-align: right;">6.7</td>
+</tr>
+<tr>
+<td>Typical stay length (median)</td>
+<td style="text-align: right;">40 min</td>
+<td style="text-align: right;">41 min</td>
+<td style="text-align: right;">42 min</td>
+<td style="text-align: right;">41 min</td>
+</tr>
+<tr>
+<td>Stays joined over midnight</td>
+<td style="text-align: right;">260</td>
+<td style="text-align: right;">185</td>
+<td style="text-align: right;">201</td>
+<td style="text-align: right;">349</td>
+</tr>
+<tr>
+<td>Spread of the points in a stay (σ, median)</td>
+<td style="text-align: right;">19.7 m</td>
+<td style="text-align: right;">19.8 m</td>
+<td style="text-align: right;">19.8 m</td>
+<td style="text-align: right;">20.1 m</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../../figures/seasons_stays.png" /></p>
+<p>The stays of the four seasons have almost the same length, size and start times. Any seasonal difference should therefore show up in where the stays are (indoor or outdoor), which is the next step. The peak at midnight in the start-hour chart is gone since the midnight join.</p>
+<p><strong>What dropping the trip-label filter changed</strong> (winter and spring, same settings otherwise):</p>
+<p><img alt="" src="../../figures/filter_effect.png" /></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Winter</th>
+<th>Spring</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stays with the filter → without</td>
+<td>9,410 → 10,222</td>
+<td>7,966 → 8,695</td>
+</tr>
+<tr>
+<td>Earlier stays lost</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>New stays (none of their points was in a stay)</td>
+<td>1,133</td>
+<td>975</td>
+</tr>
+<tr>
+<td>New stays mostly made of labelled travel points</td>
+<td>48</td>
+<td>74</td>
+</tr>
+<tr>
+<td>Shared stay points (overlap)</td>
+<td>96%</td>
+<td>96%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Every earlier stay is still there. About 1,000 new stays appear per season. They are shorter (median 20 minutes, against 45) and mostly made of unlabelled points; only about 5–7% of them are mostly labelled travel.</li>
+<li>Most new stays contain a few labelled points, typically at their edges (anomaly 9).</li>
+</ul>
+<h2 id="indoor-vs-outdoor-first-results">Indoor vs outdoor: first results</h2>
+<p>The framework (<a href="../../analysis/m-final-model/">Final model</a>) was applied to every stay exactly as it was fitted on the GT, with no refit. For each stay it gives three probabilities: building, street and open space. <strong>Indoor</strong> means building; <strong>outdoor</strong> means street or open space.</p>
+<p><strong>Main measure</strong> (decision of 10-11-2026): the share of stay time spent indoors, using the probabilities. Each stay counts with its length times its probability of being in a building. A 2-hour stay with P(building) = 0.7 adds 1.4 indoor hours and 0.6 outdoor hours.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Winter</th>
+<th style="text-align: right;">Spring</th>
+<th style="text-align: right;">Summer</th>
+<th style="text-align: right;">Autumn (2023)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stays</td>
+<td style="text-align: right;">10,165</td>
+<td style="text-align: right;">8,654</td>
+<td style="text-align: right;">7,459</td>
+<td style="text-align: right;">13,691</td>
+</tr>
+<tr>
+<td>People</td>
+<td style="text-align: right;">1,647</td>
+<td style="text-align: right;">1,367</td>
+<td style="text-align: right;">1,178</td>
+<td style="text-align: right;">2,047</td>
+</tr>
+<tr>
+<td><strong>Indoor share of stay time</strong></td>
+<td style="text-align: right;"><strong>69.8%</strong></td>
+<td style="text-align: right;"><strong>69.0%</strong></td>
+<td style="text-align: right;"><strong>69.0%</strong></td>
+<td style="text-align: right;"><strong>69.8%</strong></td>
+</tr>
+<tr>
+<td>95% interval</td>
+<td style="text-align: right;">68.1–71.3%</td>
+<td style="text-align: right;">67.7–70.2%</td>
+<td style="text-align: right;">67.4–70.4%</td>
+<td style="text-align: right;">68.4–71.2%</td>
+</tr>
+<tr>
+<td>Street / open space</td>
+<td style="text-align: right;">14.4 / 15.9%</td>
+<td style="text-align: right;">14.3 / 16.7%</td>
+<td style="text-align: right;">13.6 / 17.5%</td>
+<td style="text-align: right;">14.7 / 15.6%</td>
+</tr>
+<tr>
+<td>Indoor share if each stay takes its most likely type</td>
+<td style="text-align: right;">94.2%</td>
+<td style="text-align: right;">94.2%</td>
+<td style="text-align: right;">93.7%</td>
+<td style="text-align: right;">93.8%</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../../figures/indoor_outdoor_seasons.png" /></p>
+<ul>
+<li><strong>No season differs from another.</strong> All differences are below 1 percentage point, and every 95% interval includes zero. The interval comes from a bootstrap over people: the people of a season are drawn again at random 1,000 times, and the share is recomputed each time.</li>
+<li><strong>The same people tell the same story.</strong> 370 people have stays in all four seasons; their indoor share is 68–70% in every season, with no significant difference. Pairs of seasons with 493–824 shared people give the same result.</li>
+<li><strong>Most likely type vs probability.</strong> Building is the most likely type for 93–95% of stays, but the probabilities put about 69–70% of the time indoors. Many stays are uncertain, and the probabilistic measure keeps that uncertainty instead of rounding it away.</li>
+</ul>
+<p><img alt="" src="../../figures/indoor_outdoor_hourly.png" /></p>
+<ul>
+<li><strong>By hour:</strong> about 71–72% indoors around midday, but only 63–67% at night (00:00–06:00). This is probably not real outdoor time. Long stays (8 hours or more, mostly nights at home) get a lower P(building), 0.63 on average. Their positions are often rough: stays whose typical accuracy is exactly 100 m get 0.68, and 500 m or worse 0.58, against 0.74–0.76 for 10–50 m. A rough position can fall on the street or open space next to the home.</li>
+<li><strong>Weekday and weekend</strong> are almost the same in every season.</li>
+</ul>
+<p><img alt="" src="../../figures/indoor_outdoor_differences.png" /></p>
+<p><strong>Sensitivity</strong> (indoor share of stay time):</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Winter</th>
+<th style="text-align: right;">Spring</th>
+<th style="text-align: right;">Summer</th>
+<th style="text-align: right;">Autumn (2023)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Main</td>
+<td style="text-align: right;">69.8%</td>
+<td style="text-align: right;">69.0%</td>
+<td style="text-align: right;">69.0%</td>
+<td style="text-align: right;">69.8%</td>
+</tr>
+<tr>
+<td>Without stays with typical accuracy of 500 m or worse</td>
+<td style="text-align: right;">69.8%</td>
+<td style="text-align: right;">69.1%</td>
+<td style="text-align: right;">69.0%</td>
+<td style="text-align: right;">69.9%</td>
+</tr>
+<tr>
+<td>Without stays with typical accuracy of 100 m or worse</td>
+<td style="text-align: right;">71.7%</td>
+<td style="text-align: right;">69.7%</td>
+<td style="text-align: right;">70.1%</td>
+<td style="text-align: right;">71.7%</td>
+</tr>
+<tr>
+<td>Travel points at stay edges removed (anomaly 9)</td>
+<td style="text-align: right;">71.7%</td>
+<td style="text-align: right;">70.8%</td>
+<td style="text-align: right;">70.1%</td>
+<td style="text-align: right;">71.2%</td>
+</tr>
+</tbody>
+</table>
+<p>Both corrections raise the indoor share by about 1–2 points in every season, and the seasons stay as close as before. Without the 100 m stays the night dip becomes smaller but does not disappear.</p>
+<p><strong>Most likely type, one stay = one count.</strong> A second way to compare the seasons: each stay counts once, with the type that has the highest probability.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">Winter</th>
+<th style="text-align: right;">Spring</th>
+<th style="text-align: right;">Summer</th>
+<th style="text-align: right;">Autumn (2023)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stays</td>
+<td style="text-align: right;">10,165</td>
+<td style="text-align: right;">8,654</td>
+<td style="text-align: right;">7,459</td>
+<td style="text-align: right;">13,691</td>
+</tr>
+<tr>
+<td>Building</td>
+<td style="text-align: right;">95.0% (9,661)</td>
+<td style="text-align: right;">93.5% (8,095)</td>
+<td style="text-align: right;">93.2% (6,953)</td>
+<td style="text-align: right;">94.8% (12,982)</td>
+</tr>
+<tr>
+<td>Street</td>
+<td style="text-align: right;">1.2% (122)</td>
+<td style="text-align: right;">1.2% (103)</td>
+<td style="text-align: right;">0.8% (61)</td>
+<td style="text-align: right;">1.2% (169)</td>
+</tr>
+<tr>
+<td>Open space</td>
+<td style="text-align: right;">3.8% (382)</td>
+<td style="text-align: right;">5.3% (456)</td>
+<td style="text-align: right;">6.0% (445)</td>
+<td style="text-align: right;">3.9% (540)</td>
+</tr>
+<tr>
+<td>Open space, 95% interval</td>
+<td style="text-align: right;">3.1–4.6%</td>
+<td style="text-align: right;">4.4–6.3%</td>
+<td style="text-align: right;">4.9–7.1%</td>
+<td style="text-align: right;">3.4–4.6%</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../../figures/indoor_outdoor_argmax.png" /></p>
+<ul>
+<li><strong>This measure shows a seasonal pattern.</strong> More stays are in open space in spring and summer (5.3% and 6.0%) than in winter and autumn (3.8% and 3.9%). The differences between these two groups are significant (their 95% intervals do not include zero).</li>
+<li><strong>The same 370 people:</strong> summer has more open-space stays than each of the other three seasons (5.9% against 3.5–4.1%). Spring is not higher than winter or autumn for these people.</li>
+<li><strong>Why the time share does not show it.</strong> Open-space stays are not shorter (about 40 minutes, like the others). But the time share is dominated by long stays at home and at work, and the open-space probability is spread thinly over many uncertain stays. Counting each stay once makes the confident open-space stays stand out.</li>
+<li><strong>Caution.</strong> Outdoor stays are few (street 61–169, open space 382–540 per season), and taking the most likely type hides the uncertainty: a stay labelled open space has, on average, a 71% probability of being in open space.</li>
+</ul>
+<p><strong>Limits of this first result.</strong> The model learned from GT stops of about 10 minutes in the daytime. MILES stays are longer, and include whole nights at home, which the GT never had. Autumn is the 2023 week. Split visits are not joined (anomaly 3), and the travel points at stay edges make stays wider in the main run (anomaly 9).</p>
+<h2 id="anomalies">Anomalies</h2>
+<ol>
+<li><strong>Times are in UTC, not Japan time.</strong> The downloaded files follow UTC (9 hours behind Japan). Each week therefore runs from 09:00 on the first day to 08:59 on the day after the last day (Japan time). The first and the last day are not complete and are marked as partial. About 100 stays per season are cut where the week starts or ends.</li>
+<li><strong>Stays are cut at midnight</strong> (now joined). Stays are searched day by day, so a stay over midnight becomes two stays. Before the fix, about 3% of stays started between 00:00 and 00:05 or ended between 23:55 and 24:00. Two parts are now joined only when all of these hold: the first part ends at most 5 minutes before midnight, the second starts at most 5 minutes after it, their centre points are at most 70 m apart (eps1), and the person never goes farther than 70 m away in between. Almost every candidate pair passes (winter 260 of 264, spring 185 of 187, summer 201 of 201, autumn 349 of 351). About 30–70 stays per season still start or end within 5 minutes of midnight; they did not pass these checks.</li>
+<li><strong>One visit split into several stays</strong> (not joined for now). About 23% of stays in every season start at the same place as the person's previous stay that day. For each such pair, the points between the two stays were checked (the "same place" chart above):<ul>
+<li><strong>The person stayed</strong> (11% of all stays). The person did not go more than 200 m away, but the phone recorded only about 2 points per 15 minutes instead of about 22. ST-DBSCAN needs 18 points close in time, so this time counts as no stay at all. Phones record less often when they are not moving.</li>
+<li><strong>No points at all</strong> (7–8% of all stays). The phone recorded nothing between the two stays, typically for 15–17 minutes.</li>
+<li><strong>A real return</strong> (4–5% of all stays). The person went more than 200 m away and came back, typically after about 2 hours.</li>
+</ul>
+</li>
+</ol>
+<p>So about 4 in 5 of these pairs are one visit cut in two. Joining them would reduce the stays by about 18–19% in every season (winter 10,222 → 8,309, spring 8,695 → 7,072, summer 7,497 → 6,107, autumn 13,767 → 11,277). The time lost in the gaps is mostly long, still periods, probably indoors, so without a fix indoor time is underestimated.
+4. <strong>Fewer walk labels in summer and autumn 2024.</strong> Walking is labelled much less often in these two weeks:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Winter</th>
+<th>Spring</th>
+<th>Summer</th>
+<th>Autumn 2024</th>
+<th>Autumn 2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Points labelled walk</td>
+<td>6.5%</td>
+<td>7.1%</td>
+<td>1.7%</td>
+<td>0.9%</td>
+<td>7.0%</td>
+</tr>
+<tr>
+<td>Labelled trips that are walking trips</td>
+<td>29%</td>
+<td>30%</td>
+<td>10%</td>
+<td>9%</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>Unlabelled points faster than 1 m/s</td>
+<td>14%</td>
+<td>14%</td>
+<td>15%</td>
+<td>27%</td>
+<td>14%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Not the season.</strong> Autumn 2023 looks exactly like winter and spring in every check (labels, distance between points, missing values). So autumn 2024 differs because of the way the data was collected or processed, as sensei suggested. The autumn 2024 files also have another format (other column names, extra ID columns, another folder structure, a missing speed written as −2.24 instead of left empty; the speed is still in metres per second).</li>
+<li><strong>Autumn 2024:</strong> many people who are walking count as not travelling (27% of the unlabelled points move at walking pace or faster, against 14%). Stay detection would use these walking points, so autumn 2024 stays would not be comparable with the other weeks.</li>
+<li><strong>Summer:</strong> the files have the usual format, and the unlabelled points move as in winter and spring (15%). The walk labels drop on every day of the week (1.2–2.1%), while the share of points moving at walking speed stays the same (about 8%). So summer looks like a change in how walking is labelled, not in how much people walk. Summer and autumn 2024 are both later than April 2024, so the labelling may have changed between April and July 2024. The effect on stay detection looks small in summer.</li>
+<li><strong>Many points report exactly 100 m accuracy.</strong> 12% of all points and 20% of points that are not travelling report an accuracy of exactly 100 m, 97% of them from Android phones. This looks like a fixed value for a rough position, not a measured error. They are much more common in long stays (28% of the points) than in short stops (5%).</li>
+<li><strong>Most people only pass through.</strong> Three in four person-days have no stay in the area. A person-day has a median of about 67 points, roughly 45 minutes of recording inside the area.</li>
+<li><strong>Some positions are very rough.</strong> About 0.6% of points report an accuracy of 1,000 m or worse. Some of them sit at exactly the same position for many people (up to 35 people at one spot, with an accuracy of 1,500 m in winter and 2,200 m in autumn): probably a position taken from the phone network, not from GPS. 152 winter, 143 spring, 84 summer and 240 autumn stays (about 1–2%) have a median accuracy of 500 m or worse.</li>
+<li><strong>Small items.</strong> 26–67 stays per season have fewer than 18 points (a known side effect of how the method shares border points between nearby stays); they are kept. Two map layers (centerline and open space) were stored in another projection (EPSG:6691) and are now EPSG:32653; the shapes did not change, so no earlier result changes.</li>
+<li><strong>Stays are wider without the trip-label filter.</strong> Points labelled as travel now join a stay when they are close enough in space and time: mostly the arrival and departure at its edges. They are only 2.4% of the stay points, but they sit far from the centre (median 43 m, against 2 m for the other points), and 61% of stays contain at least one. The spread of a stay (σ, the standard deviation of its points) grows from 15.3 m to 19.8 m in spring, and the largest distance from the centre point from 54 m to 71 m. σ is one of the inputs of the model (<a href="../../concepts/m-sigma/">sigma</a>), so this will matter when the model is applied.</li>
+</ul>
+<h2 id="questions-for-sensei">Questions for sensei</h2>
+<ol>
+<li><strong>Join split visits later?</strong> Not joined for now. The rule would join two stays at the same place when the person did not go more than 200 m away in between (anomaly 3); it is a new rule, added after the Kato et al. method.</li>
+<li><strong>Walk labels.</strong> Ask the data provider whether the trip labelling changed between April and July 2024, and whether autumn 2024 can be processed like the other weeks (anomaly 4). Autumn 2023 is used until then.</li>
+<li><strong>Travel points at the edges of stays.</strong> Keep them, or remove the labelled travel points at the edges of each stay after ST-DBSCAN, so that σ is not inflated (anomaly 9)?</li>
+<li><strong>The 100 m points.</strong> Keep them (as now), or treat them separately (anomaly 5)? Leaving out the stays they dominate raises the indoor share by up to 2 points.</li>
+<li><strong>Night stays.</strong> The framework was fitted on daytime stops. Should long night stays at home be checked separately (for example with a few labelled nights), since they get a lower P(building)?</li>
+<li><strong>What to report as the result.</strong> The time share shows no seasonal difference (about 69–72% indoors in every season, every correction). Counting each stay once with its most likely type shows more open-space stays in spring and summer (5.3–6.0% against 3.8–3.9%). Which measure answers the research question, or should both be reported?</li>
+</ol>
 <p>Part of <a href="../../threads/d-doctoral-plan/">Doctoral plan</a>.</p>
 <div class="backlinks">
 <p><strong>Linked from</strong> <a href="../../threads/d-doctoral-plan/">Doctoral plan</a> · <a href="../../progress/d-progress-20-10-2026/">Publications and doctoral plan</a></p>

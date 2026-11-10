@@ -1858,6 +1858,14 @@
   },
   {
    "source": "plans/d-seasonal-variance.md",
+   "target": "concepts/m-downsampling-to-miles-density.md"
+  },
+  {
+   "source": "plans/d-seasonal-variance.md",
+   "target": "concepts/m-sigma.md"
+  },
+  {
+   "source": "plans/d-seasonal-variance.md",
    "target": "progress/d-progress-20-10-2026.md"
   },
   {

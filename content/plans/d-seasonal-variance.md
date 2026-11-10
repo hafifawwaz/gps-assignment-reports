@@ -3,7 +3,7 @@ source: report/plans/d-seasonal-variance.md
 date: 26-10-2026
 kind: plan
 comments: true
-generated: 2026-11-10T15:55:00
+generated: 2026-11-10T18:06:58
 ---
 
 # Seasonal variance
@@ -120,23 +120,6 @@ The spread of the points is σ (sigma), see [sigma](../concepts/m-sigma.md).
 ![](../figures/seasons_stays.png)
 
 **The stays look the same in every season**: same length, same size, same start times. So if the seasons differ, the difference must be in **where** people stay (indoor or outdoor). That is the next step. The start-hour chart no longer has a peak at midnight, because stays cut at midnight are now joined.
-
-**What changed when all points were kept** (winter and spring; all other settings the same):
-
-![](../figures/filter_effect.png)
-
-|                                                 | Winter         | Spring        |
-| ----------------------------------------------- | -------------- | ------------- |
-| Stays: before → now                             | 9,410 → 10,222 | 7,966 → 8,695 |
-| Earlier stays lost                              | 0              | 0             |
-| New stays                                       | 1,133          | 975           |
-| New stays made mostly of travel points          | 48             | 74            |
-| Stay points that are the same as before         | 96%            | 96%           |
-
-- **No stay was lost.** About 1,000 new stays appear per season.
-- The new stays are shorter: 20 minutes (median), against 45. Only about 5–7% of them are mostly travel points.
-- Many stays now have a few travel points at their edges: the arrival and the departure (problem 9).
-
 ## Indoor or outdoor?
 
 The model ([Final model](../analysis/m-final-model.md)) was used exactly as it was trained on the GT. It was not trained again on MILES. For each stay it gives three probabilities that add up to 1: building, street, and open space.
@@ -171,19 +154,9 @@ A **95% interval** shows how sure a number is. It comes from a bootstrap: the pe
 ![](../figures/indoor_outdoor_hourly.png)
 
 - **By hour:** about 71–72% indoors around midday, but only 63–67% at night (00:00–06:00). This is probably **not** real time outdoors. Most night stays are long stays at home, and their positions are often rough:
-
-| Typical accuracy of the stay | Average P(building) |
-| ---------------------------- | ------------------: |
-| 10–50 m                      |           0.74–0.76 |
-| exactly 100 m                |                0.68 |
-| 500 m or worse               |                0.58 |
-
-  A rough position can fall on the street or the open space next to the home. Stays of 8 hours or more get P(building) = 0.63 on average.
 - **Weekday and weekend** are almost the same in every season.
 
-![](../figures/indoor_outdoor_differences.png)
-
-**Checks** (sensitivity: does the result change when the data is cleaned in another way?). Indoor share of stay time:
+- **Checks** (sensitivity: does the result change when the data is cleaned in another way?). Indoor share of stay time:
 
 |                                                         | Winter | Spring | Summer | Autumn (2023) |
 | ------------------------------------------------------- | -----: | -----: | -----: | ------------: |
@@ -203,8 +176,6 @@ The cleaning raises the indoor share by about 1–2 points in every season. The 
 | Street                   |     1.2% (122) |     1.2% (103) |      0.8% (61) |     1.2% (169) |
 | **Open space**           | **3.8%** (382) | **5.3%** (456) | **6.0%** (445) | **3.9%** (540) |
 | Open space, 95% interval |       3.1–4.6% |       4.4–6.3% |       4.9–7.1% |       3.4–4.6% |
-
-![](../figures/indoor_outdoor_argmax.png)
 
 - **Here the seasons differ.** Spring and summer have more stays in open space (5.3% and 6.0%) than winter and autumn (3.8% and 3.9%). These differences are significant.
 - **The same 370 people:** summer has more open-space stays than each of the other three seasons (5.9% against 3.5–4.1%). For these people, spring is not higher than winter or autumn.
@@ -248,12 +219,6 @@ The cleaning raises the indoor share by about 1–2 points in every season. The 
 	- **Autumn 2024:** many people who walk are counted as not travelling. 27% of the unlabelled points move at walking pace or faster, against 14% in the other weeks. These walking points would end up in stays, so autumn 2024 stays cannot be compared with the other weeks.
 	- **Summer:** the files have the usual format, and the unlabelled points move as in winter and spring. The walk labels drop on every day of the week (1.2–2.1%), but the share of points moving at walking speed stays the same (about 8%). So **the labelling changed, not the walking.** Summer and autumn 2024 are both after April 2024, so the labelling may have changed between April and July 2024. The effect on the summer stays looks small.
 
-|                                       | Winter | Spring | Summer | Autumn 2024 | Autumn 2023 |
-| ------------------------------------- | ------ | ------ | ------ | ----------- | ----------- |
-| Points labelled walk                  | 6.5%   | 7.1%   | 1.7%   | 0.9%        | 7.0%        |
-| Labelled trips that are walking trips | 29%    | 30%    | 10%    | 9%          | 30%         |
-| Unlabelled points faster than 1 m/s   | 14%    | 14%    | 15%    | 27%         | 14%         |
-
 5. **Many points say "exactly 100 m" accuracy.** 12% of all points, and 20% of points that are not travelling, report an accuracy of exactly 100 m. 97% of them come from Android phones. This looks like a fixed value for a rough position, not a real measurement. These points are much more common in long stays (28% of the points) than in short stops (5%).
 
 6. **Most people only pass through.** Three in four person-days have no stay in the area. A person-day has about 67 points (median), roughly 45 minutes of recording inside the area.
@@ -270,7 +235,7 @@ The cleaning raises the indoor share by about 1–2 points in every season. The 
     - The spread of a stay (σ) grows from 15.3 m to 19.8 m in spring, and the largest distance from the centre from 54 m to 71 m.
     - σ is one of the inputs of the model ([sigma](../concepts/m-sigma.md)), so this changes the results a little (see the checks above).
 
-## Questions for sensei
+## Open questions
 
 1. **Join visits cut in two?** The rule would be: join two stays at the same place when the person did not go more than 200 m away in between (problem 3). This is a new rule, added on top of the method of Kato et al.
 2. **Walk labels.** Ask the data provider: did the trip labelling change between April and July 2024? Can autumn 2024 be processed like the other weeks (problem 4)? Autumn 2023 is used until then.

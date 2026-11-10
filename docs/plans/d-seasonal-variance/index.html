@@ -2143,10 +2143,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#questions-for-sensei" class="md-nav__link">
+  <a href="#open-questions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Questions for sensei
+        Open questions
       
     </span>
   </a>
@@ -5201,10 +5201,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#questions-for-sensei" class="md-nav__link">
+  <a href="#open-questions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Questions for sensei
+        Open questions
       
     </span>
   </a>
@@ -5508,49 +5508,6 @@
 <p>The spread of the points is σ (sigma), see <a href="../../concepts/m-sigma/">sigma</a>.</p>
 <p><img alt="" src="../../figures/seasons_stays.png" /></p>
 <p><strong>The stays look the same in every season</strong>: same length, same size, same start times. So if the seasons differ, the difference must be in <strong>where</strong> people stay (indoor or outdoor). That is the next step. The start-hour chart no longer has a peak at midnight, because stays cut at midnight are now joined.</p>
-<p><strong>What changed when all points were kept</strong> (winter and spring; all other settings the same):</p>
-<p><img alt="" src="../../figures/filter_effect.png" /></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Winter</th>
-<th>Spring</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Stays: before → now</td>
-<td>9,410 → 10,222</td>
-<td>7,966 → 8,695</td>
-</tr>
-<tr>
-<td>Earlier stays lost</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>New stays</td>
-<td>1,133</td>
-<td>975</td>
-</tr>
-<tr>
-<td>New stays made mostly of travel points</td>
-<td>48</td>
-<td>74</td>
-</tr>
-<tr>
-<td>Stay points that are the same as before</td>
-<td>96%</td>
-<td>96%</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><strong>No stay was lost.</strong> About 1,000 new stays appear per season.</li>
-<li>The new stays are shorter: 20 minutes (median), against 45. Only about 5–7% of them are mostly travel points.</li>
-<li>Many stays now have a few travel points at their edges: the arrival and the departure (problem 9).</li>
-</ul>
 <h2 id="indoor-or-outdoor">Indoor or outdoor?</h2>
 <p>The model (<a href="../../analysis/m-final-model/">Final model</a>) was used exactly as it was trained on the GT. It was not trained again on MILES. For each stay it gives three probabilities that add up to 1: building, street, and open space.</p>
 <ul>
@@ -5621,33 +5578,13 @@
 <p><img alt="" src="../../figures/indoor_outdoor_hourly.png" /></p>
 <ul>
 <li><strong>By hour:</strong> about 71–72% indoors around midday, but only 63–67% at night (00:00–06:00). This is probably <strong>not</strong> real time outdoors. Most night stays are long stays at home, and their positions are often rough:</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Typical accuracy of the stay</th>
-<th style="text-align: right;">Average P(building)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>10–50 m</td>
-<td style="text-align: right;">0.74–0.76</td>
-</tr>
-<tr>
-<td>exactly 100 m</td>
-<td style="text-align: right;">0.68</td>
-</tr>
-<tr>
-<td>500 m or worse</td>
-<td style="text-align: right;">0.58</td>
-</tr>
-</tbody>
-</table>
-<p>A rough position can fall on the street or the open space next to the home. Stays of 8 hours or more get P(building) = 0.63 on average.
-- <strong>Weekday and weekend</strong> are almost the same in every season.</p>
-<p><img alt="" src="../../figures/indoor_outdoor_differences.png" /></p>
+<li>
+<p><strong>Weekday and weekend</strong> are almost the same in every season.</p>
+</li>
+<li>
 <p><strong>Checks</strong> (sensitivity: does the result change when the data is cleaned in another way?). Indoor share of stay time:</p>
+</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -5739,7 +5676,6 @@
 </tr>
 </tbody>
 </table>
-<p><img alt="" src="../../figures/indoor_outdoor_argmax.png" /></p>
 <ul>
 <li><strong>Here the seasons differ.</strong> Spring and summer have more stays in open space (5.3% and 6.0%) than winter and autumn (3.8% and 3.9%). These differences are significant.</li>
 <li><strong>The same 370 people:</strong> summer has more open-space stays than each of the other three seasons (5.9% against 3.5–4.1%). For these people, spring is not higher than winter or autumn.</li>
@@ -5785,52 +5721,14 @@
 </ol>
 <p>So about 4 in 5 of these pairs are <strong>one visit cut in two</strong>. Joining them would reduce the stays by about 18–19% (winter 10,222 → 8,309, spring 8,695 → 7,072, summer 7,497 → 6,107, autumn 13,767 → 11,277). The missing time between the parts is mostly time spent still, probably indoors. So <strong>indoor time is probably counted too low</strong> now.</p>
 <ol>
-<li><strong>Fewer walk labels in summer and autumn 2024.</strong><ul>
+<li>
+<p><strong>Fewer walk labels in summer and autumn 2024.</strong></p>
+<ul>
 <li><strong>It is not the season.</strong> Autumn 2023 looks exactly like winter and spring. So autumn 2024 is different because of how the data was collected or processed, as sensei suggested. The autumn 2024 files also have another format: other column names, extra ID columns, another folder structure, and a missing speed written as −2.24 instead of left empty. The speed is still in metres per second.</li>
 <li><strong>Autumn 2024:</strong> many people who walk are counted as not travelling. 27% of the unlabelled points move at walking pace or faster, against 14% in the other weeks. These walking points would end up in stays, so autumn 2024 stays cannot be compared with the other weeks.</li>
 <li><strong>Summer:</strong> the files have the usual format, and the unlabelled points move as in winter and spring. The walk labels drop on every day of the week (1.2–2.1%), but the share of points moving at walking speed stays the same (about 8%). So <strong>the labelling changed, not the walking.</strong> Summer and autumn 2024 are both after April 2024, so the labelling may have changed between April and July 2024. The effect on the summer stays looks small.</li>
 </ul>
 </li>
-</ol>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Winter</th>
-<th>Spring</th>
-<th>Summer</th>
-<th>Autumn 2024</th>
-<th>Autumn 2023</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Points labelled walk</td>
-<td>6.5%</td>
-<td>7.1%</td>
-<td>1.7%</td>
-<td>0.9%</td>
-<td>7.0%</td>
-</tr>
-<tr>
-<td>Labelled trips that are walking trips</td>
-<td>29%</td>
-<td>30%</td>
-<td>10%</td>
-<td>9%</td>
-<td>30%</td>
-</tr>
-<tr>
-<td>Unlabelled points faster than 1 m/s</td>
-<td>14%</td>
-<td>14%</td>
-<td>15%</td>
-<td>27%</td>
-<td>14%</td>
-</tr>
-</tbody>
-</table>
-<ol>
 <li>
 <p><strong>Many points say "exactly 100 m" accuracy.</strong> 12% of all points, and 20% of points that are not travelling, report an accuracy of exactly 100 m. 97% of them come from Android phones. This looks like a fixed value for a rough position, not a real measurement. These points are much more common in long stays (28% of the points) than in short stops (5%).</p>
 </li>
@@ -5857,7 +5755,7 @@
 </ul>
 </li>
 </ol>
-<h2 id="questions-for-sensei">Questions for sensei</h2>
+<h2 id="open-questions">Open questions</h2>
 <ol>
 <li><strong>Join visits cut in two?</strong> The rule would be: join two stays at the same place when the person did not go more than 200 m away in between (problem 3). This is a new rule, added on top of the method of Kato et al.</li>
 <li><strong>Walk labels.</strong> Ask the data provider: did the trip labelling change between April and July 2024? Can autumn 2024 be processed like the other weeks (problem 4)? Autumn 2023 is used until then.</li>

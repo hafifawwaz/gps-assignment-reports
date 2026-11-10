@@ -1742,10 +1742,6 @@
   },
   {
    "source": "index.md",
-   "target": "plans/csisdays-2026.md"
-  },
-  {
-   "source": "index.md",
    "target": "plans/d-comprehensive-litrev.md"
   },
   {
@@ -1775,18 +1771,6 @@
   {
    "source": "index.md",
    "target": "plans/m-ceus-paper.md"
-  },
-  {
-   "source": "index.md",
-   "target": "progress/d-progress-05-11-2026.md"
-  },
-  {
-   "source": "index.md",
-   "target": "progress/d-progress-20-10-2026.md"
-  },
-  {
-   "source": "index.md",
-   "target": "threads/d-doctoral-plan.md"
   },
   {
    "source": "index.md",

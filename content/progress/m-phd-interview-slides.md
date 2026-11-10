@@ -3,7 +3,7 @@ source: report/progress/m-phd-interview-slides.md
 date: 07-08-2026
 kind: progress
 comments: true
-generated: 2026-11-10T18:07:27
+generated: 2026-11-10T18:17:14
 ---
 
 # PhD interview slides

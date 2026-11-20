@@ -3,7 +3,7 @@ source: report/plans/d-seasonal-variance.md
 date: 26-10-2026
 kind: plan
 comments: true
-generated: 2026-11-10T18:06:58
+generated: 2026-11-20T09:07:21
 ---
 
 # Seasonal variance
@@ -16,10 +16,10 @@ New work from the meeting on 20-10-2026 ([Publications and doctoral plan](../pro
 
 Take the framework as it is for now, as if it were final ([Final model](../analysis/m-final-model.md)), and apply it to MILES on one week per season:
 
-| Season | Week |
-|---|---|
-| Spring | 15–21 April 2024 |
-| Summer | 8–14 July 2024 |
+| Season | Week               |
+| ------ | ------------------ |
+| Spring | 15–21 April 2024   |
+| Summer | 8–14 July 2024     |
 | Autumn | 21–27 October 2024 |
 | Winter | 15–21 January 2024 |
 
@@ -31,6 +31,8 @@ A small area is enough.
 - The stays (places where people stopped) look the same in every season: same length, same size, same start times.
 - **Time:** people spend about 70% of their stay time inside buildings in every season. There is no difference between seasons.
 - **Number of stays:** when each stay counts once, spring and summer have more stays in open space (parks, plazas) than winter and autumn: about 5–6% against about 4%.
+- **Without home and work** (sensei's feedback, 11-11-2026): spring and summer have about 4 points less time in buildings than winter and autumn (about 71% against 75%), all of it in open space. Much of this is the baseball stadium next to Hiroshima Station. Without the stadium, spring is like winter and autumn, and summer stays about 2 points lower.
+- Three stay detection settings were compared. They agree on the direction; the shortest setting (1 min) gives a smaller difference.
 - Some problems in the data are still open. They are listed at the end, with questions for sensei.
 
 ## What was done
@@ -195,6 +197,84 @@ The cleaning raises the indoor share by about 1–2 points in every season. The 
 - Visits cut into two stays are not joined (problem 3).
 - The travel points at the edges of stays make the stays wider (problem 9).
 
+## After sensei's feedback (11-11-2026)
+
+Sensei's comments on the results above:
+
+- **The 30 s settings are too strict.** They only keep stays of about 12 minutes or more, but short stays matter too.
+- **Home and work should be left out first.** Long stays at home and at work fill most of the stay time and do not change with the season.
+- Additional fixes: 
+	- the trip labels are not a problem as long as they are not used at all; 
+	- visits cut in two stay separate for now;
+	- travel points at the edges of a stay may be removed, but it must be checked that they really move.
+
+What was done:
+
+1. **Three settings compared**, on all four seasons, with the same steps:
+
+   | Settings (eps1, eps2, min_samples) | Shortest stay | Stays per season | Typical stay length |
+   | --- | --- | ---: | ---: |
+   | Kato 30 s (70 m, 1100 s, 18) | about 12 min | 7,497–13,767 | 40 min |
+   | In between (63 m, 920 s, 14) | about 9 min | 10,714–19,603 | 29 min |
+   | Kato 1 min (50 m, 610 s, 6) | about 4 min | 45,742–81,332 | 5 min |
+
+2. **Moving points at the edges of a stay are removed**, using only position and time, no labels: from each end of a stay, a point is removed while it is more than 20 m from the stay's centre **and** moving at 1 m/s or faster. The check shows that the removed points really move (typically 1.3 m/s, against almost 0 for the points that stay) and lie far from the centre (typically 50–65 m, against 2 m). Only 0.5–1.3% of the stay points are removed, less than a minute per stay, and the spread σ becomes about 2 m smaller.
+
+   ![](../figures/edge_trim_check.png)
+
+3. **Home and work for each person and season.** 
+	- A **place** is a group of the person's stays whose centres are within 70 m of each other. 
+	- **Home** is the place with the most stay time at night (22:00–06:00). 
+	- **Work** is another place with the most stay time on weekdays 09:00–18:00, on at least two different days. 
+	- All other stays are **other**.
+	    - Only 6–15% of the people have a home in the study area, and 8–21% a work place: most people live outside central Hiroshima. Their stays all count as "other".
+	    - Still, home and work stays fill 60–70% of the stay time (30 s and in-between settings).
+	    - Home stays are long and start in the evening; work stays start on weekday mornings and after lunch.
+	
+![](../figures/home_work.png)
+
+### Result: without home and work, the seasons differ
+
+Share of stay time in a building (Way 1), "other" stays only:
+
+| Settings   | Winter | Spring | Summer | Autumn (2023) |
+| ---------- | -----: | -----: | -----: | ------------: |
+| Kato 30 s  |  74.9% |  70.7% |  70.4% |         74.9% |
+| In between |  74.8% |  71.2% |  71.0% |         74.9% |
+| Kato 1 min |  71.4% |  68.8% |  68.6% |         71.4% |
+
+![](../figures/settings_compare.png)
+
+- **Spring and summer have less time in buildings** than winter and autumn: about 4 percentage points with the 30 s and in-between settings, about 3 with the 1 min settings. These differences are significant, also for the same people in all four seasons (320–1,492 people, depending on the settings).
+- **The missing time is in open space.** With the 30 s settings, open space takes 12.8 / 16.5 / 17.4 / 12.7% of the stay time (winter / spring / summer / autumn). Street time is the same in every season (about 12%).
+- With home and work included, the share stays flat (about 70%), as before. Leaving them out is what makes the difference visible.
+- The difference is in the **longer** "other" stays (30 minutes and more) and in the **afternoon and evening** (about 15:00–21:00).
+
+![](../figures/indoor_outdoor_other_detail.png)
+
+### Much of it is the baseball stadium
+
+In spring and summer, about one third of the open-space stays are at the open-air baseball stadium next to Hiroshima Station (30 s settings: spring 124 of 325 open-space stays, from 74 people; summer 101 of 341, from 61 people; winter none; autumn 5). These stays start between late morning and evening and gather on a few days of the week, which fits the home games of the baseball season (April to September). In the map, the stadium's field is one open space.
+
+Without the stays within 250 m of the stadium:
+
+| Settings   | Winter | Spring | Summer | Autumn (2023) |
+| ---------- | -----: | -----: | -----: | ------------: |
+| Kato 30 s  |  74.9% |  74.0% |  72.5% |         74.9% |
+| In between |  74.8% |  74.1% |  73.0% |         74.9% |
+| Kato 1 min |  71.4% |  70.6% |  70.0% |         71.4% |
+
+- **Spring is then like winter and autumn.**
+- **Summer stays lower** than winter and autumn, by about 1.4–2.4 points, with more time in open space (15.5% against 12.7–12.9% with the 30 s settings). This is significant for all people with every setting, and for the same people only with the 30 s settings.
+
+![](../figures/indoor_outdoor_groups.png)
+
+### What the settings change
+
+- All three settings show the same direction.
+- The 1 min settings find many very short stops (two thirds under 10 minutes). These are more often outside: about 10% of the stays are open space, against 4–8% with the other settings, and the share of time in buildings is lower in every season. The seasonal difference becomes smaller.
+- The model learned from stops of about 10 minutes, so the 1 min stays (typically 5 minutes) are shorter than anything the model has seen.
+
 ## Problems found in the data
 
 1. **Times are in UTC, not Japan time.** UTC is 9 hours behind Japan. So each downloaded week runs from 09:00 on the first day to 08:59 on the day after the last day (Japan time). The first and the last day are incomplete and are marked as partial. About 100 stays per season are cut where the week starts or ends.
@@ -237,11 +317,15 @@ The cleaning raises the indoor share by about 1–2 points in every season. The 
 
 ## Open questions
 
-1. **Join visits cut in two?** The rule would be: join two stays at the same place when the person did not go more than 200 m away in between (problem 3). This is a new rule, added on top of the method of Kato et al.
-2. **Walk labels.** Ask the data provider: did the trip labelling change between April and July 2024? Can autumn 2024 be processed like the other weeks (problem 4)? Autumn 2023 is used until then.
-3. **Travel points at the edges of stays.** Keep them, or remove them after stay detection so that σ does not grow (problem 9)?
-4. **The 100 m points.** Keep them as now, or treat them separately (problem 5)? Leaving out the stays they dominate raises the indoor share by up to 2 points.
-5. **Night stays.** The model learned from daytime stops. Should long night stays at home be checked separately, for example with a few nights where the answer is known? They get a lower P(building).
+Answered by sensei on 11-11-2026: visits cut in two stay separate for now (problem 3); the trip labels are fine as long as they are not used at all (problem 4; nothing uses them now); travel points at the edges of stays are removed by position and time, with a check (problem 9).
+
+1. **Which settings?** Kato 30 s, in between, or Kato 1 min? All three show the same direction. The 1 min stays are much shorter than the stops the model learned from.
+2. **The stadium.** Is the stadium a real part of the seasonal change (people go to games in spring and summer), or should places with events be treated apart?
+3. **Summer without the stadium.** Summer stays about 2 points lower. Where are these extra open-space stays (parks, riverbanks, events)?
+4. **Home and work rule.** Is the rule (night 22:00–06:00; weekdays 09:00–18:00 on at least two days; places within 70 m) good enough? Most homes lie outside the study area.
+5. **Walk labels.** Ask the data provider whether the trip labelling changed between April and July 2024, and whether autumn 2024 can be used (problem 4). Autumn 2023 is used until then.
+6. **The 100 m points.** Keep them as now, or treat them separately (problem 5)?
+7. **Night stays.** The model learned from daytime stops. Should long night stays at home be checked separately? (Less important now that home stays are left out.)
 
 
 

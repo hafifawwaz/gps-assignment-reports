@@ -3,7 +3,7 @@ source: report/notes/new-gt-experiment-en.md
 date: 29-10-2026
 kind: note
 comments: true
-generated: 2026-11-04T17:19:19
+generated: 2026-11-25T16:56:05
 ---
 
 # New GT experiment
@@ -95,6 +95,6 @@ hafifawwaz@hiroshima-u.ac.jp
 
 <div class="backlinks" markdown>
 
-**Linked from** [新GT実験の概要](new-gt-experiment-ja.md)
+**Linked from** [Individual meeting progress](../progress/d-progress-25-11-2026.md) · [新GT実験の概要](new-gt-experiment-ja.md)
 
 </div>

@@ -78,6 +78,13 @@
    "url": "../progress/d-progress-20-10-2026/"
   },
   {
+   "id": "progress/d-progress-25-11-2026.md",
+   "title": "Individual meeting progress",
+   "kind": "progress",
+   "date": "25-11-2026",
+   "url": "../progress/d-progress-25-11-2026/"
+  },
+  {
    "id": "progress/m-phd-interview-slides.md",
    "title": "PhD interview slides",
    "kind": "progress",
@@ -2031,6 +2038,10 @@
   {
    "source": "progress/d-progress-20-10-2026.md",
    "target": "threads/m-thesis-summary.md"
+  },
+  {
+   "source": "progress/d-progress-25-11-2026.md",
+   "target": "notes/new-gt-experiment-en.md"
   },
   {
    "source": "progress/m-phd-interview-slides.md",

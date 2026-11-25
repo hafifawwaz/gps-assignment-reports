@@ -8,9 +8,9 @@ hide:
 
 # Recently updated
 
+- <span class="chip chip-progress">Progress</span> [Individual meeting progress](progress/d-progress-25-11-2026.md) <span class="recent-date">edited 25-11-2026</span>
 - <span class="chip chip-plan">Plan</span> [Seasonal variance](plans/d-seasonal-variance.md) <span class="recent-date">edited 16-11-2026</span>
 - <span class="chip chip-progress">Progress</span> [Publications and doctoral plan](progress/d-progress-20-10-2026.md) <span class="recent-date">edited 06-11-2026</span>
-- <span class="chip chip-concept">Concept</span> [Spatial entity layers](concepts/m-spatial-entity-layers.md) <span class="recent-date">edited 06-11-2026</span>
 
 </div>
 
@@ -71,13 +71,13 @@ hide:
 
 <p class="section-blurb">Dated updates for sensei, and slide exports.</p>
 
+- [Individual meeting progress](progress/d-progress-25-11-2026.md)
 - [CEUS paper revisions](progress/d-progress-05-11-2026.md)
 - [Publications and doctoral plan](progress/d-progress-20-10-2026.md)
 - [PhD interview slides](progress/m-phd-interview-slides.md) <span class="chip chip-pdf">PDF</span>
 - [Does downsampling matter?](progress/m-progress-29-07-2026.md)
-- [RQ2 diagnostics and RQ3 ceiling check](progress/m-progress-23-07-2026.md)
 
-[All 9](progress/index.md){ .more }
+[All 10](progress/index.md){ .more }
 
 </div>
 

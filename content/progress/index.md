@@ -10,6 +10,10 @@ Dated updates for sensei, and slide exports.
 
 -   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
 
+    **[Individual meeting progress](d-progress-25-11-2026.md)**
+
+-   <p class="doc-meta"><span class="chip chip-progress">Progress</span></p>
+
     **[CEUS paper revisions](d-progress-05-11-2026.md)**
 
 </div>

@@ -326,3 +326,19 @@
 .md-header__button.header-map svg { width: 1.2rem; height: 1.2rem; fill: currentColor; }
 .md-header__button.header-map:hover { opacity: .8; }
 @media screen and (max-width: 44.9375em) { .header-map__label { display: none; } }
+
+/* Click-to-zoom figures (javascripts/zoom.js): enlarged in an overlay on the same page */
+.md-typeset img.zoomable { cursor: zoom-in; }
+.zoom-overlay {
+  position: fixed; inset: 0; z-index: 1000;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .6rem;
+  background: rgba(0, 0, 0, .72); cursor: zoom-out;
+  animation: zoom-fade .15s ease-out;
+}
+.zoom-overlay img {
+  max-width: 90vw; max-height: 88vh; height: auto;
+  background: #fff; border-radius: .3rem; box-shadow: 0 .4rem 1.6rem rgba(0, 0, 0, .45);
+}
+.zoom-caption { color: #fff; font-size: .7rem; max-width: 90vw; text-align: center; }
+html.zoom-open { overflow: hidden; }
+@keyframes zoom-fade { from { opacity: 0; } to { opacity: 1; } }

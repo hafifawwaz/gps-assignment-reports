@@ -17,6 +17,9 @@ theme:
   name: material
   custom_dir: overrides
   language: en
+  icon:
+    logo: material/map-marker-path
+  favicon: images/favicon.svg
   font:
     text: Inter
     code: Fira Code

@@ -164,9 +164,10 @@
 .md-typeset .section-blurb { margin-top: -.3em; color: var(--c-muted); }
 .md-typeset .empty { color: var(--c-muted); font-style: italic; }
 
-/* year / month groups on section pages */
-.md-typeset h2 + h3 { margin-top: .8em; }
-.md-typeset h3 { color: var(--c-muted); text-transform: uppercase; letter-spacing: .08em; font-size: .64rem; }
+/* year / month groups on section pages only (sync.py tags them .group-heading); a note's own
+   ### headings keep the plain h3 style above (25-11-2026) */
+.md-typeset h2 + h3.group-heading { margin-top: .8em; }
+.md-typeset h3.group-heading { color: var(--c-muted); text-transform: uppercase; letter-spacing: .08em; font-size: .64rem; }
 
 /* ---- home ---- */
 .md-content .md-typeset .home-section { font-family: var(--serif); }

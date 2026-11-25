@@ -4,7 +4,7 @@ Hubs by theme: the thesis summary and the doctoral plan, then one list of notes 
 
 ## 2026
 
-### October
+### October { .group-heading }
 
 <div class="grid cards" markdown>
 
@@ -14,7 +14,7 @@ Hubs by theme: the thesis summary and the doctoral plan, then one list of notes 
 
 </div>
 
-### August
+### August { .group-heading }
 
 <div class="grid cards" markdown>
 

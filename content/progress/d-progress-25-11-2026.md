@@ -3,7 +3,7 @@ source: report/progress/d-progress-25-11-2026.md
 date: 25-11-2026
 kind: progress
 comments: true
-generated: 2026-11-25T17:00:10
+generated: 2026-11-25T17:14:44
 ---
 
 # Individual meeting progress
@@ -11,12 +11,14 @@ generated: 2026-11-25T17:00:10
 <p class="doc-meta"><span class="chip chip-progress">Progress</span> <span class="chip chip-project">Doctoral</span> <span class="chip chip-date">25-11-2026</span></p>
 
 ## 1. Paper direction
+
 ### Methodological Framework
 
 - **Target journal:** Computer, Environment and Urban Systems (CEUS)
 - **Main topic:** Develop and validate the probabilistic stay-cluster assignment framework using the Hiroshima ground-truth data. The main contribution is methodological: how to assign GPS stays probabilistically to buildings, streets, and open spaces under positional uncertainty.
 - **Progress**: Completing the draft as a whole.
-## Transferability
+
+### Transferability
 
 - **Target journal:** Transportation Research Part C: Emerging Technologies (TRC)
 - **Main topic:** Collect additional ground-truth data in different urban environments, particularly dense urban areas such as central Tokyo, and examine whether the Hiroshima-calibrated model is transferable across urban contexts. Then apply the validated framework to the nationwide MILES dataset.
@@ -38,13 +40,17 @@ generated: 2026-11-25T17:00:10
 | Kato 30 s  |  74.9% |  70.7% |  70.4% |         74.9% |
 | In between |  74.8% |  71.2% |  71.0% |         74.9% |
 | Kato 1 min |  71.4% |  68.8% |  68.6% |         71.4% |
+
 - All three settings show the **same direction.**
 - **The 1 min settings find many very short stops** (two thirds under 10 minutes). These are more often outside: about 10% of the stays are open space, against 4–8% with the other settings, and the share of time in buildings is lower in every season. The seasonal difference becomes smaller.
 - The model **learned from stops of about 10 minutes,** so the 1 min stays (typically 5 minutes) are shorter than anything the model has seen.
 - Comparison for 3 x 365 days seems pretty computationally expensive.
 - Might be better to decide one setting.
+
 ### Problem with Data
+
 #### MILES data label
+
 - Label that could be used?
 	- trip_mode
 	- device_os
@@ -55,12 +61,15 @@ generated: 2026-11-25T17:00:10
 
 #### Street network limitation
 ![](../figures/mapple_coverage.png)
+
 - Our smallest boundary of analysis is bounded by MAPPLE pedestrian network,
 - Should we scale up for 365 days analysis?
 
 #### Kiban Chizu Kihon Joho (基盤地図情報)
+
 - Found some additional data from https://service.gsi.go.jp/kiban/app/
 ![](../figures/gsi_fgd_preview.png)
+
 - **What it is:** the official base map of Japan from GSI. It is free and comes as GML files, one per map mesh.
 - **Area:** the download has 64 meshes and covers about 80 × 67 km around Hiroshima. Our study area (the MAPPLE area, mesh 513243) is only one of these meshes (the red square, left).
 - **Layers:** building footprints, road edges, sidewalk lines, railways, rivers and sea, ward boundaries, contour lines.

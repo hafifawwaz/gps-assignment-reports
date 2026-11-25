@@ -3,7 +3,7 @@ source: report/progress/d-progress-05-11-2026.md
 date: 05-11-2026
 kind: progress
 comments: true
-generated: 2026-11-06T11:37:20
+generated: 2026-11-25T17:14:44
 ---
 
 # CEUS paper revisions
@@ -84,6 +84,7 @@ How to read it:
 
 **Step 3: utility** (a second table, Section 3.3). The final weights turn the scores into a value $V_k$ for each candidate. 
 Two more inputs enter. 
+
 - [share_type](../concepts/m-share-type.md): 5 of the 14 candidates are streets, so every street loses 5.156 × 5/14 = 1.84. 
 - [sigma](../concepts/m-sigma.md): the points are spread out, so every street and open-space candidate gains 1.045 × 1.332 = 1.39. S1 has the highest value, 1.89.
 

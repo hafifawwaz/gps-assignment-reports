@@ -3,7 +3,7 @@ source: report/plans/d-seasonal-variance.md
 date: 26-10-2026
 kind: plan
 comments: true
-generated: 2026-11-20T09:07:21
+generated: 2026-11-25T17:14:44
 ---
 
 # Seasonal variance
@@ -122,6 +122,7 @@ The spread of the points is σ (sigma), see [sigma](../concepts/m-sigma.md).
 ![](../figures/seasons_stays.png)
 
 **The stays look the same in every season**: same length, same size, same start times. So if the seasons differ, the difference must be in **where** people stay (indoor or outdoor). That is the next step. The start-hour chart no longer has a peak at midnight, because stays cut at midnight are now joined.
+
 ## Indoor or outdoor?
 
 The model ([Final model](../analysis/m-final-model.md)) was used exactly as it was trained on the GT. It was not trained again on MILES. For each stay it gives three probabilities that add up to 1: building, street, and open space.

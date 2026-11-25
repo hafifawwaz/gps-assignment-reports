@@ -1262,12 +1262,7 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#transferability" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1275,6 +1270,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1299,8 +1299,30 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Final ST-DBSCAN Hyperparameters">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-with-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem with Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problem with Data">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#miles-data-label" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MILES data label
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#street-network-limitation" class="md-nav__link">
@@ -5155,12 +5177,7 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#transferability" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5168,6 +5185,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5192,8 +5214,30 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Final ST-DBSCAN Hyperparameters">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-with-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem with Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Problem with Data">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#miles-data-label" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MILES data label
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#street-network-limitation" class="md-nav__link">
@@ -5326,7 +5370,7 @@
 <li><strong>Main topic:</strong> Develop and validate the probabilistic stay-cluster assignment framework using the Hiroshima ground-truth data. The main contribution is methodological: how to assign GPS stays probabilistically to buildings, streets, and open spaces under positional uncertainty.</li>
 <li><strong>Progress</strong>: Completing the draft as a whole.</li>
 </ul>
-<h2 id="transferability">Transferability</h2>
+<h3 id="transferability">Transferability</h3>
 <ul>
 <li><strong>Target journal:</strong> Transportation Research Part C: Emerging Technologies (TRC)</li>
 <li><strong>Main topic:</strong> Collect additional ground-truth data in different urban environments, particularly dense urban areas such as central Tokyo, and examine whether the Hiroshima-calibrated model is transferable across urban contexts. Then apply the validated framework to the nationwide MILES dataset.<ul>
@@ -5399,115 +5443,43 @@
 <td style="text-align: right;">68.6%</td>
 <td style="text-align: right;">71.4%</td>
 </tr>
-<tr>
-<td>- All three settings show the <strong>same direction.</strong></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td>- <strong>The 1 min settings find many very short stops</strong> (two thirds under 10 minutes). These are more often outside: about 10% of the stays are open space, against 4–8% with the other settings, and the share of time in buildings is lower in every season. The seasonal difference becomes smaller.</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td>- The model <strong>learned from stops of about 10 minutes,</strong> so the 1 min stays (typically 5 minutes) are shorter than anything the model has seen.</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td>- Comparison for 3 x 365 days seems pretty computationally expensive.</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td>- Might be better to decide one setting.</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td>### Problem with Data</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td>#### MILES data label</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td>- Label that could be used?</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td>- trip_mode</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td>- device_os</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td>- heading</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td>- altitude</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td>- gender 76% NA</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td>- age_group 73% NA</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
 </tbody>
 </table>
+<ul>
+<li>All three settings show the <strong>same direction.</strong></li>
+<li><strong>The 1 min settings find many very short stops</strong> (two thirds under 10 minutes). These are more often outside: about 10% of the stays are open space, against 4–8% with the other settings, and the share of time in buildings is lower in every season. The seasonal difference becomes smaller.</li>
+<li>The model <strong>learned from stops of about 10 minutes,</strong> so the 1 min stays (typically 5 minutes) are shorter than anything the model has seen.</li>
+<li>Comparison for 3 x 365 days seems pretty computationally expensive.</li>
+<li>Might be better to decide one setting.</li>
+</ul>
+<h3 id="problem-with-data">Problem with Data</h3>
+<h4 id="miles-data-label">MILES data label</h4>
+<ul>
+<li>Label that could be used?<ul>
+<li>trip_mode</li>
+<li>device_os</li>
+<li>heading</li>
+<li>altitude</li>
+</ul>
+</li>
+<li>gender 76% NA</li>
+<li>age_group 73% NA</li>
+</ul>
 <h4 id="street-network-limitation">Street network limitation</h4>
-<p><img alt="" src="../../figures/mapple_coverage.png" />
-- Our smallest boundary of analysis is bounded by MAPPLE pedestrian network,
-- Should we scale up for 365 days analysis?</p>
+<p><img alt="" src="../../figures/mapple_coverage.png" /></p>
+<ul>
+<li>Our smallest boundary of analysis is bounded by MAPPLE pedestrian network,</li>
+<li>Should we scale up for 365 days analysis?</li>
+</ul>
 <h4 id="kiban-chizu-kihon-joho">Kiban Chizu Kihon Joho (基盤地図情報)</h4>
 <ul>
-<li>Found some additional data from https://service.gsi.go.jp/kiban/app/
-<img alt="" src="../../figures/gsi_fgd_preview.png" /></li>
-<li><strong>What it is:</strong> the official base map of Japan from GSI. It is free and comes as GML files, one per map mesh.</li>
+<li>
+<p>Found some additional data from https://service.gsi.go.jp/kiban/app/
+<img alt="" src="../../figures/gsi_fgd_preview.png" /></p>
+</li>
+<li>
+<p><strong>What it is:</strong> the official base map of Japan from GSI. It is free and comes as GML files, one per map mesh.</p>
+</li>
 <li><strong>Area:</strong> the download has 64 meshes and covers about 80 × 67 km around Hiroshima. Our study area (the MAPPLE area, mesh 513243) is only one of these meshes (the red square, left).</li>
 <li><strong>Layers:</strong> building footprints, road edges, sidewalk lines, railways, rivers and sea, ward boundaries, contour lines.</li>
 <li><strong>Buildings, compared with Z-Map</strong> (inside our study area):<ul>

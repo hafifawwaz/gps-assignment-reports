@@ -4,7 +4,7 @@ Loose notes and sketches, not part of the main line yet.
 
 ## 2026
 
-### October
+### October { .group-heading }
 
 <div class="grid cards" markdown>
 

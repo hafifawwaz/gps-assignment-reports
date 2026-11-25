@@ -4,7 +4,7 @@ Raw analysis output: tables, numbers and diagnostics.
 
 ## 2026
 
-### October
+### October { .group-heading }
 
 <div class="grid cards" markdown>
 
@@ -18,7 +18,7 @@ Raw analysis output: tables, numbers and diagnostics.
 
 </div>
 
-### July
+### July { .group-heading }
 
 <div class="grid cards" markdown>
 

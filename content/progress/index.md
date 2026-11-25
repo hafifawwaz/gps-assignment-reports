@@ -4,7 +4,7 @@ Dated updates for sensei, and slide exports.
 
 ## 2026
 
-### November
+### November { .group-heading }
 
 <div class="grid cards" markdown>
 
@@ -18,7 +18,7 @@ Dated updates for sensei, and slide exports.
 
 </div>
 
-### October
+### October { .group-heading }
 
 <div class="grid cards" markdown>
 
@@ -28,7 +28,7 @@ Dated updates for sensei, and slide exports.
 
 </div>
 
-### August
+### August { .group-heading }
 
 <div class="grid cards" markdown>
 
@@ -38,7 +38,7 @@ Dated updates for sensei, and slide exports.
 
 </div>
 
-### July
+### July { .group-heading }
 
 <div class="grid cards" markdown>
 

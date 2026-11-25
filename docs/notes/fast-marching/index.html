@@ -5451,10 +5451,12 @@
 
 <hr />
 <h2 id="1-executive-summary-problem-context">1. Executive Summary &amp; Problem Context</h2>
-<p>In spatial modeling and urban form analysis, converting point or footprint-based parcel representations into realistic influence zones often leads to geometrical degeneracies when using classical Voronoi tessellations:
-- <strong>Submerged Sites:</strong> Sites with small weights are completely absorbed by sites with large weights.
-- <strong>Site Eviction:</strong> Points are pushed outside their own Voronoi cells.
-- <strong>Topological Leakage / Over-reaching:</strong> Unconstrained Euclidean expansion allows massive structures (e.g., shopping malls) to "wrap around" barriers and absorb parcels located behind intervening buildings.</p>
+<p>In spatial modeling and urban form analysis, converting point or footprint-based parcel representations into realistic influence zones often leads to geometrical degeneracies when using classical Voronoi tessellations:</p>
+<ul>
+<li><strong>Submerged Sites:</strong> Sites with small weights are completely absorbed by sites with large weights.</li>
+<li><strong>Site Eviction:</strong> Points are pushed outside their own Voronoi cells.</li>
+<li><strong>Topological Leakage / Over-reaching:</strong> Unconstrained Euclidean expansion allows massive structures (e.g., shopping malls) to "wrap around" barriers and absorb parcels located behind intervening buildings.</li>
+</ul>
 <p>The <strong>Fast Marching Method (FMM)</strong> resolves these pathologies by reformulating spatial allocation as a <strong>boundary-value propagation problem</strong> governed by the <strong>Eikonal partial differential equation</strong>. Building footprints serve as zero-cost initialization interfaces, opposing footprints act as impenetrable obstacles, and the Total Floor Area (TFA) parameterizes the local propagation speed.</p>
 <hr />
 <h2 id="2-continuous-mathematical-formulation">2. Continuous Mathematical Formulation</h2>
@@ -5463,12 +5465,14 @@
 <p>The governing boundary-value problem is the stationary <strong>Eikonal Equation</strong>:</p>
 <div class="arithmatex">\[|\nabla T(x)| = \frac{1}{F(x)}, \quad x \in \Omega \setminus \Gamma\]</div>
 <div class="arithmatex">\[\text{subject to} \quad T(x) = 0, \quad x \in \Gamma\]</div>
-<p>where:
-- <span class="arithmatex">\(T(x): \Omega \to [0, \infty)\)</span> denotes the arrival time (or geodesic action potential).
-- <span class="arithmatex">\(\nabla T(x) = \left( \frac{\partial T}{\partial x_1}, \dots, \frac{\partial T}{\partial x_n} \right)\)</span> is the spatial gradient vector of the arrival time.
-- <span class="arithmatex">\(F(x) &gt; 0\)</span> is the scalar speed function of the front at point <span class="arithmatex">\(x\)</span>.
-- <span class="arithmatex">\(f(x) = \frac{1}{F(x)}\)</span> is the slowness or cost function.
-- <span class="arithmatex">\(\Gamma = \bigcup_{i=1}^M \Gamma_i\)</span> represents the initial source boundary consisting of <span class="arithmatex">\(M\)</span> discrete interfaces (e.g., building footprint boundaries).</p>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(T(x): \Omega \to [0, \infty)\)</span> denotes the arrival time (or geodesic action potential).</li>
+<li><span class="arithmatex">\(\nabla T(x) = \left( \frac{\partial T}{\partial x_1}, \dots, \frac{\partial T}{\partial x_n} \right)\)</span> is the spatial gradient vector of the arrival time.</li>
+<li><span class="arithmatex">\(F(x) &gt; 0\)</span> is the scalar speed function of the front at point <span class="arithmatex">\(x\)</span>.</li>
+<li><span class="arithmatex">\(f(x) = \frac{1}{F(x)}\)</span> is the slowness or cost function.</li>
+<li><span class="arithmatex">\(\Gamma = \bigcup_{i=1}^M \Gamma_i\)</span> represents the initial source boundary consisting of <span class="arithmatex">\(M\)</span> discrete interfaces (e.g., building footprint boundaries).</li>
+</ul>
 <h3 id="22-geodesic-metric-and-characteristics">2.2 Geodesic Metric and Characteristics</h3>
 <p>By the method of characteristics and the calculus of variations (Fermat's Principle), the solution <span class="arithmatex">\(T(x)\)</span> to the Eikonal equation corresponds to the minimum travel-time metric:</p>
 <div class="arithmatex">\[T(x) = \inf_{\gamma \in \mathcal{P}(\Gamma, x)} \int_0^L \frac{1}{F(\gamma(s))} \, ds\]</div>
@@ -5575,20 +5579,24 @@ Output: - Arrival Time Field T(x, y)
 4. Return Fields T and L.
 </code></pre></div>
 <h3 id="42-computational-complexity">4.2 Computational Complexity</h3>
-<p>For a grid containing <span class="arithmatex">\(N\)</span> total elements:
-- Each node enters and exits the <code>TRIAL</code> heap at most once.
-- Inserting and deleting minimum elements from a binary min-heap requires <span class="arithmatex">\(\mathcal{O}(\log |\mathcal{T}|)\)</span> operations.
-- Since <span class="arithmatex">\(|\mathcal{T}| \le N\)</span>, total algorithmic time complexity is:</p>
+<p>For a grid containing <span class="arithmatex">\(N\)</span> total elements:</p>
+<ul>
+<li>Each node enters and exits the <code>TRIAL</code> heap at most once.</li>
+<li>Inserting and deleting minimum elements from a binary min-heap requires <span class="arithmatex">\(\mathcal{O}(\log |\mathcal{T}|)\)</span> operations.</li>
+<li>Since <span class="arithmatex">\(|\mathcal{T}| \le N\)</span>, total algorithmic time complexity is:</li>
+</ul>
 <div class="arithmatex">\[\mathcal{O}(N \log N)\]</div>
 <p>Using advanced priority structures (e.g., untidy priority queues or Fibonacci heaps) can theoretically lower the amortized complexity toward <span class="arithmatex">\(\mathcal{O}(N)\)</span>, though standard binary heaps remain optimal in practical spatial memory layouts.</p>
 <hr />
 <h2 id="5-overcoming-voronoi-pathologies-in-urban-blocks">5. Overcoming Voronoi Pathologies in Urban Blocks</h2>
 <h3 id="51-prevention-of-submerged-sites">5.1 Prevention of Submerged Sites</h3>
 <p>In conventional Voronoi configurations, if building <span class="arithmatex">\(A\)</span> has weight <span class="arithmatex">\(w_A \gg w_B\)</span>, the condition <span class="arithmatex">\(\|x - p_B\| - w_B &gt; \|x - p_A\| - w_A\)</span> can hold over the entirety of <span class="arithmatex">\(\Omega\)</span>, leaving site <span class="arithmatex">\(B\)</span> with no cell (<span class="arithmatex">\(\emptyset\)</span>). </p>
-<p>In the FMM framework:
-- Footprint <span class="arithmatex">\(B\)</span> is explicitly seeded at initialization: <span class="arithmatex">\(\forall x \in \text{Footprint}_B \implies T(x) = 0\)</span>.
-- By causality of the upwind scheme, <span class="arithmatex">\(T(x) \ge 0\)</span> everywhere.
-- Consequently, site <span class="arithmatex">\(B\)</span> retains its base footprint area:</p>
+<p>In the FMM framework:</p>
+<ul>
+<li>Footprint <span class="arithmatex">\(B\)</span> is explicitly seeded at initialization: <span class="arithmatex">\(\forall x \in \text{Footprint}_B \implies T(x) = 0\)</span>.</li>
+<li>By causality of the upwind scheme, <span class="arithmatex">\(T(x) \ge 0\)</span> everywhere.</li>
+<li>Consequently, site <span class="arithmatex">\(B\)</span> retains its base footprint area:</li>
+</ul>
 <div class="arithmatex">\[\text{Area}(\text{Cell}_B) \ge \text{Area}(\text{Footprint}_B) &gt; 0\]</div>
 <h3 id="52-prevention-of-site-eviction">5.2 Prevention of Site Eviction</h3>
 <p>Because every building centroid <span class="arithmatex">\(p_i\)</span> is embedded within <span class="arithmatex">\(\text{Footprint}_i\)</span>, and that footprint is initialized with <span class="arithmatex">\(L(x) = i\)</span>, the point <span class="arithmatex">\(p_i\)</span> is geometrically guaranteed to reside within its assigned allocation zone:</p>
@@ -5629,10 +5637,12 @@ Output: - Arrival Time Field T(x, y)
 </ol>
 <div class="arithmatex">\[F_k = F_{\text{base}} \cdot \left( 1 + \alpha \ln\left( 1 + \frac{\text{TFA}_k}{A_{\text{fp}, k}} \right) \right)\]</div>
 <h3 id="62-target-area-termination-condition">6.2 Target Area Termination Condition</h3>
-<p>If each building has an upper bound quota <span class="arithmatex">\(A_k^{\max}\)</span>, augment step 3 of the Marching Loop:
-- Maintain an active counter of allocated cells <span class="arithmatex">\(C_k = \sum \mathbb{I}(L = k)\)</span>.
-- Once <span class="arithmatex">\(C_k \ge \frac{A_k^{\max}}{h^2}\)</span>, freeze expansion for label <span class="arithmatex">\(k\)</span> by setting <span class="arithmatex">\(F_k \to 0\)</span>.
-- Remaining unallocated space is dynamically absorbed by neighboring active fronts.</p>
+<p>If each building has an upper bound quota <span class="arithmatex">\(A_k^{\max}\)</span>, augment step 3 of the Marching Loop:</p>
+<ul>
+<li>Maintain an active counter of allocated cells <span class="arithmatex">\(C_k = \sum \mathbb{I}(L = k)\)</span>.</li>
+<li>Once <span class="arithmatex">\(C_k \ge \frac{A_k^{\max}}{h^2}\)</span>, freeze expansion for label <span class="arithmatex">\(k\)</span> by setting <span class="arithmatex">\(F_k \to 0\)</span>.</li>
+<li>Remaining unallocated space is dynamically absorbed by neighboring active fronts.</li>
+</ul>
 
 
 

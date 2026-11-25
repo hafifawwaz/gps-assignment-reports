@@ -3,7 +3,7 @@ source: report/notes/fast-marching.md
 date: ''
 kind: note
 comments: true
-generated: 2026-10-26T20:52:49
+generated: 2026-11-25T17:14:44
 ---
 
 # Fast marching method
@@ -15,6 +15,7 @@ generated: 2026-10-26T20:52:49
 ## 1. Executive Summary & Problem Context
 
 In spatial modeling and urban form analysis, converting point or footprint-based parcel representations into realistic influence zones often leads to geometrical degeneracies when using classical Voronoi tessellations:
+
 - **Submerged Sites:** Sites with small weights are completely absorbed by sites with large weights.
 - **Site Eviction:** Points are pushed outside their own Voronoi cells.
 - **Topological Leakage / Over-reaching:** Unconstrained Euclidean expansion allows massive structures (e.g., shopping malls) to "wrap around" barriers and absorb parcels located behind intervening buildings.
@@ -40,6 +41,7 @@ $$\text{subject to} \quad T(x) = 0, \quad x \in \Gamma$$
 
 
 where:
+
 - $T(x): \Omega \to [0, \infty)$ denotes the arrival time (or geodesic action potential).
 - $\nabla T(x) = \left( \frac{\partial T}{\partial x_1}, \dots, \frac{\partial T}{\partial x_n} \right)$ is the spatial gradient vector of the arrival time.
 - $F(x) > 0$ is the scalar speed function of the front at point $x$.
@@ -216,6 +218,7 @@ Output: - Arrival Time Field T(x, y)
 ### 4.2 Computational Complexity
 
 For a grid containing $N$ total elements:
+
 - Each node enters and exits the `TRIAL` heap at most once.
 - Inserting and deleting minimum elements from a binary min-heap requires $\mathcal{O}(\log |\mathcal{T}|)$ operations.
 - Since $|\mathcal{T}| \le N$, total algorithmic time complexity is:
@@ -234,6 +237,7 @@ Using advanced priority structures (e.g., untidy priority queues or Fibonacci he
 In conventional Voronoi configurations, if building $A$ has weight $w_A \gg w_B$, the condition $\|x - p_B\| - w_B > \|x - p_A\| - w_A$ can hold over the entirety of $\Omega$, leaving site $B$ with no cell ($\emptyset$). 
 
 In the FMM framework:
+
 - Footprint $B$ is explicitly seeded at initialization: $\forall x \in \text{Footprint}_B \implies T(x) = 0$.
 - By causality of the upwind scheme, $T(x) \ge 0$ everywhere.
 - Consequently, site $B$ retains its base footprint area:
@@ -299,6 +303,7 @@ $$F_k = F_{\text{base}} \cdot \left( 1 + \alpha \ln\left( 1 + \frac{\text{TFA}_k
 
 ### 6.2 Target Area Termination Condition
 If each building has an upper bound quota $A_k^{\max}$, augment step 3 of the Marching Loop:
+
 - Maintain an active counter of allocated cells $C_k = \sum \mathbb{I}(L = k)$.
 - Once $C_k \ge \frac{A_k^{\max}}{h^2}$, freeze expansion for label $k$ by setting $F_k \to 0$.
 - Remaining unallocated space is dynamically absorbed by neighboring active fronts.

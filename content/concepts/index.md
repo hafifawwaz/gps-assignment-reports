@@ -4,7 +4,7 @@ Settled pieces of the work: method, data, interpretation, discussion.
 
 ## 2026
 
-### August
+### August { .group-heading }
 
 <div class="grid cards" markdown>
 
@@ -14,7 +14,7 @@ Settled pieces of the work: method, data, interpretation, discussion.
 
 </div>
 
-### July
+### July { .group-heading }
 
 <div class="grid cards" markdown>
 

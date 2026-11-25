@@ -3,7 +3,7 @@ source: report/analysis/m-csis-slide.md
 date: 27-10-2026
 kind: analysis
 comments: true
-generated: 2026-11-25T17:00:40
+generated: 2026-11-25T17:15:42
 ---
 
 # CSIS DAYS 2026 slides

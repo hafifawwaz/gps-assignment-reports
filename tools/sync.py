@@ -527,7 +527,41 @@ def obsidian_to_site(text: str) -> str:
             out.append("")
         line = OBS_BLOCK_ID_RE.sub("", line)
         out.append(OBS_HIGHLIGHT_RE.sub(r"<mark>\1</mark>", line))
-    return "\n".join(out)
+    return "\n".join(separate_blocks(out))
+
+
+LIST_ITEM_RE = re.compile(r"^\s*(?:[-*+]|\d+[.)])\s+\S")
+HEADING_RE = re.compile(r"^#{1,6}\s")
+
+
+def separate_blocks(lines: list[str]) -> list[str]:
+    """Add the blank lines Obsidian does not need but Python-Markdown does (25-11-2026).
+
+    Obsidian (CommonMark/GFM) ends a table at the first line without a pipe, and lets a list or a
+    heading start right after a paragraph, an image or a table. Python-Markdown would instead read
+    such lines as more table rows or as the same paragraph. A blank line is inserted before a
+    non-table line that follows a table row, before a table that follows text, and before a list
+    item that follows a non-indented, non-list line, and before any heading. Code blocks are left
+    alone.
+    """
+    out, fenced = [], False
+    for line in lines:
+        if FENCE_RE.match(line):
+            fenced = not fenced
+        prev = out[-1] if out else ""
+        if not fenced and line.strip() and prev.strip() and not FENCE_RE.match(prev):
+            prev_table = prev.lstrip().startswith("|")
+            is_table = line.lstrip().startswith("|")
+            if prev_table and not is_table:
+                out.append("")
+            elif is_table and not prev_table:
+                out.append("")
+            elif HEADING_RE.match(line):
+                out.append("")
+            elif LIST_ITEM_RE.match(line) and not prev[:1].isspace() and not LIST_ITEM_RE.match(prev):
+                out.append("")
+        out.append(line)
+    return out
 
 
 STATUS_LABEL = {"thread": "Thread", "concept": "Concept", "note": "Note", "plan": "Plan", "progress": "Progress",
@@ -732,7 +766,7 @@ def build(mode: str, pdfs: list[str]) -> dict:
                 lines += [f"## {year}", ""]
                 for month, group in months:
                     if month:
-                        lines += [f"### {month}", ""]
+                        lines += [f"### {month} {{ .group-heading }}", ""]
                     lines += cards(group, base, rel)
         files[base] = "\n".join(lines).rstrip() + "\n"
 

@@ -180,6 +180,13 @@
 }
 .md-typeset .hero p, .md-typeset .hero li { font-size: .84rem; line-height: 1.65; }
 .md-typeset .hero h2, .md-typeset .hero h3 { border: 0; margin: 1em 0 .3em; font-size: .95rem; text-transform: none; letter-spacing: 0; color: var(--c-heading); }
+/* home hero: the published notes edited most recently */
+.md-typeset .hero ul { list-style: none; margin: .4rem 0 0; padding: 0; }
+.md-typeset .hero ul li { margin: 0; padding: .45rem 0; border-top: 1px solid var(--c-line); }
+.md-typeset .hero ul li:first-child { border-top: 0; }
+.md-typeset .hero ul li .chip { margin-right: .4rem; vertical-align: middle; }
+.md-typeset .hero ul li a { font-weight: 600; }
+.md-typeset .hero .recent-date { margin-left: .4rem; font-size: .7rem; color: var(--c-muted); font-variant-numeric: tabular-nums; }
 .md-typeset .about { margin-top: 3rem; padding-top: .2rem; border-top: 3px solid var(--c-red); }
 .md-typeset .about h2 { border: 0; margin-top: 1em; }
 .md-typeset .about p { font-size: .72rem; }

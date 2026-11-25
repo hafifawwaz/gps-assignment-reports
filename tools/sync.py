@@ -51,7 +51,7 @@ SECTIONS = {  # also the tab order (Home and Map are in the header, not tabs)
     "analysis": ("analysis", "analysis", "Analysis", "Raw analysis output: tables, numbers and diagnostics."),
     "notes": ("notes", "note", "Notes", "Loose notes and sketches, not part of the main line yet."),
 }
-CATCHUP = "catchup.md"  # report/catchup.md: the hand-written hero text on the home page
+RECENT = 3  # the home page opens with the published notes edited most recently (file modification time)
 BOARD = "plans/board.md"  # an Obsidian Kanban board: its lanes (## headings) are the plans' statuses
 HOME_CARDS = 5  # newest items shown per section on the home page
 HOME_HIDDEN_LANES = {"Done"}  # board lanes the home page leaves out (the Plans page shows every lane)
@@ -82,8 +82,8 @@ class Source:
     path: Path  # absolute source file
     key: str  # repo-relative posix path, e.g. report/analysis/final-model.md
     dest: str  # content-relative posix path, e.g. timeline/19-07-2026.md
-    section: str  # a SECTIONS key, or hero / board
-    status: str  # thread / progress / plan / concept / analysis / note / hero / board
+    section: str  # a SECTIONS key, or board
+    status: str  # thread / progress / plan / concept / analysis / note / board
     date: str | None  # DD-MM-YYYY if one appears in the path
     sha256: str = ""
     state: str = "ask"  # include / skip / ask
@@ -143,14 +143,14 @@ def discover() -> list[Source]:
                 src.state = entry["decision"]
             src.title = read_title(p)
             out.append(src)
-    for path, dest, section in ((REPORT / CATCHUP, "index.md", "hero"), (REPORT / BOARD, "plans/index.md", "board")):
+    for path, dest, section in ((REPORT / BOARD, "plans/index.md", "board"),):
         if path.is_file():
             src = Source(path, path.relative_to(REPO).as_posix(), dest, section, section, None)
             src.sha256 = sha256_file(path)
             entry = approvals.get(src.key)
             if entry and entry.get("sha256") == src.sha256:
                 src.state = entry["decision"]
-            src.title = "Plans" if section == "board" else read_title(path)
+            src.title = "Plans"
             out.append(src)
     return out
 
@@ -531,7 +531,7 @@ def obsidian_to_site(text: str) -> str:
 
 
 STATUS_LABEL = {"thread": "Thread", "concept": "Concept", "note": "Note", "plan": "Plan", "progress": "Progress",
-                "analysis": "Analysis", "hero": "Catch-up", "board": "Plans"}
+                "analysis": "Analysis", "board": "Plans"}
 
 
 # `project:` in a note's front matter -> a chip, so thesis and dissertation notes stay apart on the site
@@ -642,10 +642,9 @@ def build(mode: str, pdfs: list[str]) -> dict:
     rel = r._rel
     files: dict[str, bytes | str] = {}  # content-relative path -> text (with {generated}) or bytes
 
-    hero = next((s for s in selected if s.section == "hero"), None)
     board = next((s for s in selected if s.section == "board"), None)
     listing: dict[str, list[Item]] = {name: [] for name in SECTIONS}
-    pages = [s for s in selected if s.section not in ("hero", "board")]
+    pages = [s for s in selected if s.section != "board"]
 
     # PDFs picked in this run. Each is shown under Progress: on the page of the note that embeds it
     # (![[...pdf]]), or else on a page of its own.
@@ -737,15 +736,16 @@ def build(mode: str, pdfs: list[str]) -> dict:
                     lines += cards(group, base, rel)
         files[base] = "\n".join(lines).rstrip() + "\n"
 
-    # Home: hero + newest items of each section
+    # Home: the notes edited most recently, then the board, then the newest items of each section
     home = ["---", "hide:", "  - navigation", "  - toc", "---", "", '<div class="hero" markdown>', "",
-            "# Catch-up summary", ""]
-    if hero:
-        # the file's own top heading, if any, becomes a bold lead line under the fixed hero title
-        home += [f"**{clean_title(line[2:].strip())}**" if line.startswith("# ") else line
-                 for line in r.body(hero, "index.md").split("\n")]
-    else:
-        home += ['<p class="empty">No summary written yet. Add one in <code>report/catchup.md</code>.</p>']
+            "# Recently updated", ""]
+    recent = sorted(pages, key=lambda s: s.path.stat().st_mtime, reverse=True)[:RECENT]
+    for s in recent:
+        edited = datetime.fromtimestamp(s.path.stat().st_mtime).strftime("%d-%m-%Y")
+        home += [f'- <span class="chip chip-{s.status}">{STATUS_LABEL[s.status]}</span> '
+                 f'[{s.title}]({rel("index.md", s.dest)}) <span class="recent-date">edited {edited}</span>']
+    if not recent:
+        home += ['<p class="empty">Nothing published yet.</p>']
     home += ["", "</div>", ""]
     def home_col(section: str, cls: str) -> list[str]:
         folder, _, heading, blurb = SECTIONS[section]
@@ -761,7 +761,7 @@ def build(mode: str, pdfs: list[str]) -> dict:
             out += ['<p class="empty">Nothing yet.</p>', ""]
         return out + ["</div>", ""]
 
-    if lanes:  # the plans board right under the catch-up
+    if lanes:  # the plans board right under the recent notes
         # one box per lane, titled like the section columns below; each plan is a small card
         home += ['<div class="home-board" markdown>', ""]
         for lane, lane_cards in lanes:

@@ -6,17 +6,11 @@ hide:
 
 <div class="hero" markdown>
 
-# Catch-up summary
+# Recently updated
 
-The master's thesis is complete. Work now runs on two lines:
-
-- **A paper for the journal *Computers, Environment and Urban Systems* (CEUS)** ([CEUS paper](plans/m-ceus-paper.md)): in discussion with sensei. It presents the method from the thesis ([Thesis summary](threads/m-thesis-summary.md)).
-- **Seasonal variance** ([Seasonal variance](plans/d-seasonal-variance.md)): does the split between indoor and outdoor time change with the season in Hiroshima? The framework is used as it is, with no new training, on one week of MILES GPS data per season in central Hiroshima. Autumn uses the 2023 week for now, because the 2024 week was collected in a different way. The stays look the same in every season (about 40 minutes, same size, same start times). Counted by time, people spend about 70% of their stay time inside buildings in every season, with no difference between seasons, also for the same 370 people followed through all four. Counted by stays (each stay once, with its most likely type), spring and summer have more stays in open space than winter and autumn: about 5–6% against about 4%. Some data problems are still open, for example one visit that is cut into two stays and walk labels that changed in the 2024 summer and autumn weeks; they are listed in the note with questions for sensei.
-
-The board below shows every work item by status: **Inbox** (not started, or still to discuss with sensei), **On-going** and **On-hold**. A finished item moves to **Done** (shown on the Plans page), and its results move into the notes.
-
-The thesis code was checked against the text on 19-10-2026, and every number on this site comes from the checked pipeline. The check is settled and its notes are archived.
-
+- <span class="chip chip-plan">Plan</span> [Seasonal variance](plans/d-seasonal-variance.md) <span class="recent-date">edited 16-11-2026</span>
+- <span class="chip chip-progress">Progress</span> [Publications and doctoral plan](progress/d-progress-20-10-2026.md) <span class="recent-date">edited 06-11-2026</span>
+- <span class="chip chip-concept">Concept</span> [Spatial entity layers](concepts/m-spatial-entity-layers.md) <span class="recent-date">edited 06-11-2026</span>
 
 </div>
 

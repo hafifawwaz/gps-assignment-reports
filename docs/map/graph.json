@@ -1741,42 +1741,6 @@
    "target": "threads/m-ground-truth-data.md"
   },
   {
-   "source": "index.md",
-   "target": "plans/d-comprehensive-litrev.md"
-  },
-  {
-   "source": "index.md",
-   "target": "plans/d-gt-open-space.md"
-  },
-  {
-   "source": "index.md",
-   "target": "plans/d-nested-probabilities.md"
-  },
-  {
-   "source": "index.md",
-   "target": "plans/d-seasonal-variance.md"
-  },
-  {
-   "source": "index.md",
-   "target": "plans/d-sequence-aware.md"
-  },
-  {
-   "source": "index.md",
-   "target": "plans/d-street-segmentation.md"
-  },
-  {
-   "source": "index.md",
-   "target": "plans/d-transferability.md"
-  },
-  {
-   "source": "index.md",
-   "target": "plans/m-ceus-paper.md"
-  },
-  {
-   "source": "index.md",
-   "target": "threads/m-thesis-summary.md"
-  },
-  {
    "source": "notes/new-gt-experiment-en.md",
    "target": "notes/new-gt-experiment-ja.md"
   },
